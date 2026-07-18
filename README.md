@@ -17,9 +17,8 @@
 
 <!-- ░░░ SOCIAL / STATUS BADGES ░░░ -->
 ![Profile Views](https://komarev.com/ghpvc/?username=devsecforge&label=Profile%20views&color=0e75b6&style=flat)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-HANDLE) <!-- EDIT -->
-[![X](https://img.shields.io/badge/X-Follow-000000?style=flat&logo=x&logoColor=white)](https://x.com/YOUR-HANDLE) <!-- EDIT -->
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:YOUR-EMAIL) <!-- EDIT -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/naz-cyber-solutions)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:snaz2004@yahoo.com)
 
 </div>
 
@@ -29,14 +28,13 @@
 
 <!-- EDIT this whole block with your real story. Keep it honest — recruiters verify. -->
 ```yaml
-name:        "YOUR NAME"                 # EDIT
-role:        "DevSecOps Engineer (aspiring)"   # EDIT to your real level
+name:        "devsecforge"
+role:        "DevSecOps Engineer (aspiring)"
 focus:       ["Secure CI/CD", "Cloud Security", "Automation"]
 currently:   "Building an open-source security operations toolkit"
-learning:    ["Kubernetes security", "Terraform", "Threat modeling"]  # EDIT
+learning:    ["Kubernetes security", "Terraform", "Threat modeling"]
 open_to:     ["Junior/Entry DevSecOps roles", "Freelance security automation"]
-location:    "YOUR CITY, COUNTRY"        # EDIT
-pronouns:    "they/them"                 # EDIT
+location:    "Ontario, Canada"
 ```
 
 > I build things that make software delivery **secure by default** — from CI/CD pipelines that
@@ -126,7 +124,7 @@ pronouns:    "they/them"                 # EDIT
 
 **Looking for:** Entry / Junior **DevSecOps · Cloud Security · Security Automation** roles — and select **freelance** security-automation projects.
 
-[![Hire Me](https://img.shields.io/badge/📩_Get_in_touch-Let's_talk-success?style=for-the-badge)](mailto:YOUR-EMAIL) <!-- EDIT -->
+[![Hire Me](https://img.shields.io/badge/📩_Get_in_touch-Let's_talk-success?style=for-the-badge)](mailto:snaz2004@yahoo.com)
 
 </div>
 
