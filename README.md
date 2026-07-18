@@ -100,13 +100,15 @@ location:    "Ontario, Canada"
 
 [![Security Operations Toolkit](https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=security-operations-toolkit&theme=tokyonight&hide_border=true)](https://github.com/devsecforge/security-operations-toolkit)
 [![Kubernetes Security Lab](https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=kubernetes-security-lab&theme=tokyonight&hide_border=true)](https://github.com/devsecforge/kubernetes-security-lab)
+[![secure-terraform-aws](https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=secure-terraform-aws&theme=tokyonight&hide_border=true)](https://github.com/devsecforge/secure-terraform-aws)
 
 </div>
 
 - 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** — Secure CI/CD pipeline with automated SAST, SCA, secret scanning, container & IaC scanning. *Shell · GitHub Actions · Trivy · Semgrep*
 - ☸️ **[kubernetes-security-lab](https://github.com/devsecforge/kubernetes-security-lab)** — Five-layer defense-in-depth demo: Pod Security Admission, least-privilege RBAC, zero-trust NetworkPolicies, hardened workloads & Falco runtime rules. *Kubernetes · Falco · Trivy · kube-linter*
+- 🔐 **[secure-terraform-aws](https://github.com/devsecforge/secure-terraform-aws)** — Secure-by-default AWS Terraform: hardened S3/KMS modules, least-privilege IAM, and a tfsec + checkov policy gate in CI. *Terraform · AWS · tfsec · checkov*
 
-<!-- Phase 3 will add more pinned projects here -->
+<!-- More pinned projects added as they ship -->
 
 ---
 
