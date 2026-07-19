@@ -1,27 +1,33 @@
 <!--
   ════════════════════════════════════════════════════════════════════════
   PROFILE README — repo: devsecforge/devsecforge
-  Bold · animated · jobs-first. All stats widgets pull LIVE data — nothing faked.
+  Senior Cybersecurity Leader. All content reflects a real 15+ yr resume;
+  stats widgets pull LIVE data. Nothing fabricated.
   ════════════════════════════════════════════════════════════════════════
 -->
 
 <!-- ░░░░░░░░░░░░░░░░░░░░ HERO BANNER ░░░░░░░░░░░░░░░░░░░░ -->
 <a href="https://github.com/devsecforge">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,40:203A43,100:2C5364&height=230&section=header&text=devsecforge&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Secure%20by%20design%20%E2%80%A2%20DevSecOps%20%E2%80%A2%20Cloud%20Security%20%E2%80%A2%20Automation&descAlignY=62&descSize=20&stroke=36BCF7&strokeWidth=1" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,40:203A43,100:2C5364&height=240&section=header&text=S.%20Naz&fontSize=76&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Senior%20Cybersecurity%20Leader%20%E2%80%A2%20SOC%20%E2%80%A2%20Cloud%20Security%20%E2%80%A2%20Risk%20%26%20Governance&descAlignY=60&descSize=18&stroke=36BCF7&strokeWidth=1" width="100%" />
 </a>
 
-<!-- ░░░░░░░░░░░░░░░░░░░░ TYPING ANIMATION ░░░░░░░░░░░░░░░░░░░░ -->
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&height=60&lines=Securing+CI%2FCD+pipelines+%F0%9F%9B%A1%EF%B8%8F;Hardening+Kubernetes+%26+the+cloud+%E2%98%81%EF%B8%8F;Automating+security%2C+shift-left+%E2%9A%A1;Learning+in+public%2C+building+in+the+open)](https://github.com/devsecforge)
+<!-- CREDENTIAL LINE -->
+<img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/CISM-1B75BB?style=for-the-badge" />
+<img src="https://img.shields.io/badge/CISA-00539B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/CRISC-6B2C91?style=for-the-badge" />
+<img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" />
 
-<!-- ░░░░░░░░░░░░░░░░░░░░ SOCIAL / STATUS BADGES ░░░░░░░░░░░░░░░░░░░░ -->
+<!-- TYPING ANIMATION -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=720&height=55&lines=15%2B+years+securing+enterprise+environments;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+across+Azure%2C+AWS+%26+hybrid;Cyber+Risk%2C+Governance+%26+Compliance)](https://www.linkedin.com/in/naz-cyber-solutions)
+
 <a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://github.com/devsecforge?tab=repositories"><img src="https://img.shields.io/badge/Projects-2C5364?style=for-the-badge&logo=github&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/Ontario,%20Canada%20%F0%9F%87%A8%F0%9F%87%A6-2C5364?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Security%20Clearance-Level%204%20(Canada)-006400?style=for-the-badge" />
 <img src="https://komarev.com/ghpvc/?username=devsecforge&label=Profile%20views&color=36BCF7&style=for-the-badge" />
-
-<img src="https://img.shields.io/badge/Open%20to%20Work-DevSecOps%20%C2%B7%20Cloud%20Security-2ea043?style=for-the-badge&logo=briefcase&logoColor=white" />
 
 </div>
 
@@ -29,122 +35,162 @@
 
 ## 👋 About Me
 
-> **Secure-by-default engineer.** I build CI/CD pipelines that catch vulnerabilities before they ship, and cloud/Kubernetes infrastructure that's locked down from day one. I learn in public and ship everything to GitHub.
+> **Senior Cybersecurity Leader with 15+ years** of progressive experience leading Security Operations (SOC), Incident Response, Cyber Risk Management, Governance & Compliance, and Cloud Security across **Microsoft Azure, AWS, and hybrid** environments. Proven success running 24/7 SOCs, building cyber-risk programs, driving audit readiness, and aligning security strategy to **NIST CSF, ISO 27001, CIS Controls, and PCI-DSS** — while leading high-performing teams and advising executive stakeholders.
 
 ```yaml
-name:      "devsecforge"
-role:      "DevSecOps Engineer (aspiring)"
-focus:     ["Secure CI/CD", "Cloud Security", "Kubernetes Hardening", "Automation"]
-building:  "An open-source DevSecOps portfolio — 4 repos and growing"
-learning:  ["Kubernetes security", "Terraform", "Threat modeling", "SIEM/Detection"]
-open_to:   ["Junior/Entry DevSecOps roles", "Freelance security automation"]
-location:  "Ontario, Canada 🇨🇦"
-motto:     "Shift left. Automate everything. Trust nothing."
+name:          "S. Naz"
+title:         "Senior Cybersecurity Operations Manager | Cloud Security & Risk Leader"
+experience:    "15+ years"
+education:     "MSc, Information Technology (MSIT)"
+specialties:   ["SOC & Incident Response", "Cyber Risk & Governance", "Cloud Security", "Zero Trust", "Compliance & Audit"]
+clouds:        ["Microsoft Azure", "AWS", "GCP", "Hybrid"]
+open_to:       ["Security Leadership / SOC Management", "Cloud Security Architecture", "vCISO / Advisory", "Consulting"]
+location:      "Ontario, Canada 🇨🇦"
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## 🎓 Certifications
 
 <div align="center">
 
-**Languages & Scripting**
+**Security Leadership & Governance**
 
-<img src="https://skillicons.dev/icons?i=bash,python,go&theme=dark" height="48" />
+<img src="https://img.shields.io/badge/CISSP-Certified_Information_Systems_Security_Professional-EE3124?style=flat-square" />
+<img src="https://img.shields.io/badge/CISM-Certified_Information_Security_Manager-1B75BB?style=flat-square" />
+<img src="https://img.shields.io/badge/CISA-Certified_Information_Systems_Auditor-00539B?style=flat-square" />
+<img src="https://img.shields.io/badge/CRISC-Risk_%26_Information_Systems_Control-6B2C91?style=flat-square" />
+<img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=flat-square" />
 
-**Security · DevSecOps**
+**Cloud — AWS & Azure**
 
-<img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=aqua&logoColor=white" />
-<img src="https://img.shields.io/badge/Semgrep-1B2A4A?style=for-the-badge&logo=semgrep&logoColor=white" />
-<img src="https://img.shields.io/badge/Checkov-6C3EF7?style=for-the-badge&logo=bridgecrew&logoColor=white" />
-<img src="https://img.shields.io/badge/Falco-00AEC7?style=for-the-badge&logo=falco&logoColor=white" />
-<img src="https://img.shields.io/badge/gitleaks-EC2C40?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_Security-Specialty-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_Solutions_Architect-Professional-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_Solutions_Architect-Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/Azure-Solutions_Architect_Expert-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+<img src="https://img.shields.io/badge/Azure_Security-AZ--500-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
 
-**Cloud · Infrastructure · CI/CD**
+**Microsoft & Foundations**
 
-<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,git,githubactions&theme=dark" height="48" />
-
-</div>
-
-<sub>📚 <b>Currently leveling up:</b> Kubernetes hardening · service-mesh security · SIEM & detection engineering</sub>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=devsecforge&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=devsecforge&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-
-<img width="49%" src="https://streak-stats.demolab.com?user=devsecforge&theme=tokyonight&hide_border=true&fire=FF6B35" />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devsecforge&theme=tokyonight" width="100%" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=devsecforge&theme=tokyo-night&hide_border=true&area=true&color=36BCF7&line=36BCF7&point=ffffff" width="100%" />
-
-[![Trophies](https://github-profile-trophy.vercel.app/?username=devsecforge&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6)](https://github.com/devsecforge)
-
-<!-- Contribution snake — appears after the snake workflow runs once (Actions tab) -->
-<img src="https://raw.githubusercontent.com/devsecforge/devsecforge/output/github-contribution-grid-snake-dark.svg" width="100%" />
+<img src="https://img.shields.io/badge/Security_Operations-SC--200-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
+<img src="https://img.shields.io/badge/M365_Administrator-MS--102-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
+<img src="https://img.shields.io/badge/CompTIA-Security%2B-E31E24?style=flat-square&logo=comptia&logoColor=white" />
+<img src="https://img.shields.io/badge/CompTIA-Network%2B-E31E24?style=flat-square&logo=comptia&logoColor=white" />
+<img src="https://img.shields.io/badge/JAMF-Certified_Administrator-5C5C5C?style=flat-square&logo=jamf&logoColor=white" />
 
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## 🧰 Technical Arsenal
+
+**SIEM · XDR · SOAR**
+<br>
+![Microsoft Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk_ES-000000?style=for-the-badge&logo=splunk&logoColor=white)
+![Defender XDR](https://img.shields.io/badge/Defender_XDR-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![CrowdStrike](https://img.shields.io/badge/CrowdStrike_Falcon-E01F3D?style=for-the-badge&logo=crowdstrike&logoColor=white)
+![Security Copilot](https://img.shields.io/badge/Security_Copilot-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+
+**Cloud Security — Azure · AWS · GCP**
+<br>
+<img src="https://skillicons.dev/icons?i=azure,aws,gcp&theme=dark" height="44" />
+&nbsp;
+![Defender for Cloud](https://img.shields.io/badge/Defender_for_Cloud-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![AWS Security Hub](https://img.shields.io/badge/Security_Hub-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
+![GuardDuty](https://img.shields.io/badge/GuardDuty-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Control Tower](https://img.shields.io/badge/Control_Tower-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
+
+**Identity & Zero Trust**
+<br>
+![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![PIM](https://img.shields.io/badge/Privileged_Identity_Mgmt-0078D4?style=flat-square)
+![Conditional Access](https://img.shields.io/badge/Conditional_Access-0078D4?style=flat-square)
+![MFA / SSO](https://img.shields.io/badge/MFA_%2F_SSO-2C5364?style=flat-square)
+![Zero Trust](https://img.shields.io/badge/Zero_Trust_Architecture-1B2A4A?style=flat-square)
+
+**Data · Endpoint · Automation**
+<br>
+![Purview](https://img.shields.io/badge/Microsoft_Purview_DLP-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Intune](https://img.shields.io/badge/Intune-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![JAMF](https://img.shields.io/badge/JAMF_Pro-5C5C5C?style=flat-square&logo=jamf&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+**Governance & Frameworks**
+<br>
+![NIST CSF](https://img.shields.io/badge/NIST_CSF-005EA2?style=flat-square)
+![ISO 27001](https://img.shields.io/badge/ISO_27001-0A7E8C?style=flat-square)
+![CIS Controls](https://img.shields.io/badge/CIS_Controls-D22730?style=flat-square)
+![PCI-DSS](https://img.shields.io/badge/PCI--DSS-004C97?style=flat-square)
+![COBIT](https://img.shields.io/badge/COBIT-6B2C91?style=flat-square)
+![ITIL](https://img.shields.io/badge/ITIL-EF3D42?style=flat-square)
+
+---
+
+## 💼 Professional Experience
+
+**🔹 Senior Cybersecurity Operations Manager — Cloud Security & Risk Leader**
+`SysIntelligence · Peel, Ontario 🇨🇦 · Aug 2021 – Present`
+> Run 24/7 SOC & threat detection on Microsoft Sentinel + Splunk; lead incident response & forensics mapped to MITRE ATT&CK; architect enterprise Zero Trust; automate SecOps with Python/PowerShell/Logic Apps; own GRC alignment to ISO 27001 / NIST CSF / PCI-DSS / GDPR; lead & mentor the security team.
+
+**🔹 Senior Security Architect & Cloud Security Lead**
+`Sysintelli Inc · Calgary, Alberta 🇨🇦 · Jan 2018 – Jul 2021`
+> Designed secure hybrid-cloud architectures & identity governance across Azure AD / Windows Server; drove vulnerability management, risk assessment & remediation; managed escalations, GPOs & multi-tenant isolation; produced audit-readiness documentation.
+
+**🔹 Senior IT Security & Systems Administration Lead**
+`University of Hail · Jan 2016 – Dec 2017`
+> Secured multi-tenant enterprise IT (Azure, M365, Active Directory); translated NIST CSF / ISO 27001 into technical controls; built micro-segmentation & DLP; authored IR workflows and SOPs.
+
+**🔹 Lecturer — Computer Science & Cyber Security**
+`University of Hail · Jan 2012 – Dec 2015`
+> Designed and taught coursework in enterprise networks, systems administration, virtualization, and information-security fundamentals.
+
+<sub>🎓 <b>MSc, Information Technology (MSIT)</b> — University of Phoenix, California, USA</sub>
+
+---
+
+## 🧪 Hands-On Labs (building in public)
+
+> Reference implementations I build to stay hands-on with modern DevSecOps tooling — each with working code, CI, docs, and a threat model.
 
 <div align="center">
 
 <a href="https://github.com/devsecforge/security-operations-toolkit"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=security-operations-toolkit&theme=tokyonight&hide_border=true" /></a>
 <a href="https://github.com/devsecforge/kubernetes-security-lab"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=kubernetes-security-lab&theme=tokyonight&hide_border=true" /></a>
 <a href="https://github.com/devsecforge/secure-terraform-aws"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=secure-terraform-aws&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/devsecforge/devsecops-roadmap"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=devsecops-roadmap&theme=tokyonight&hide_border=true" /></a>
 
 </div>
 
-| Project | What it proves | Stack |
-|---|---|---|
-| 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** | Secure CI/CD gate — secrets, SAST, SCA, IaC & container scanning | `Shell` `Actions` `Trivy` `Semgrep` |
-| ☸️ **[kubernetes-security-lab](https://github.com/devsecforge/kubernetes-security-lab)** | 5-layer defense-in-depth: PSA, RBAC, NetworkPolicy, Falco | `Kubernetes` `Falco` `Trivy` |
-| 🔐 **[secure-terraform-aws](https://github.com/devsecforge/secure-terraform-aws)** | Secure-by-default AWS: hardened S3/KMS, least-priv IAM, tfsec+checkov | `Terraform` `AWS` `tfsec` |
-| 🗺️ **[devsecops-roadmap](https://github.com/devsecforge/devsecops-roadmap)** | My learning path — built in public, projects proving each stage | `Docs` |
+- 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
+- ☸️ **[kubernetes-security-lab](https://github.com/devsecforge/kubernetes-security-lab)** — 5-layer defense-in-depth: Pod Security Admission, RBAC, NetworkPolicy, Falco.
+- 🔐 **[secure-terraform-aws](https://github.com/devsecforge/secure-terraform-aws)** — Secure-by-default AWS: hardened S3/KMS, least-privilege IAM, tfsec + checkov.
 
 ---
 
-<details>
-<summary><b>🎯 Current Focus & Roadmap</b> (click to expand)</summary>
-
-<br>
-
-- [x] Ship the **security operations toolkit** v1 (secure CI/CD gate)
-- [x] Build a **Kubernetes security** lab (PSA + RBAC + NetworkPolicy + Falco)
-- [x] Build a **secure Terraform/AWS** baseline (hardened modules + IAM + policy scans)
-- [ ] Add **DAST** (OWASP ZAP) + **SBOM/signing** (Syft + Cosign) to the toolkit
-- [ ] Publish a **threat-modeling walkthrough** with real examples
-- [ ] Earn a **foundational cert** (Security+ / AWS CCP)
-- [ ] Write my **first technical article** on secure CI/CD
-
-Full path → **[devsecops-roadmap](https://github.com/devsecforge/devsecops-roadmap)**
-
-</details>
-
----
-
-## 💼 Let's Work Together
+## 📊 GitHub Activity
 
 <div align="center">
 
-**Open to** Entry / Junior **DevSecOps · Cloud Security · Security Automation** roles
-&nbsp;·&nbsp; and select **freelance** security-automation projects.
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=devsecforge&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=devsecforge&layout=compact&theme=tokyonight&hide_border=true" />
 
-<a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Get%20in%20touch-Let's%20talk-2ea043?style=for-the-badge" /></a>
-<a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=devsecforge&theme=tokyo-night&hide_border=true&area=true&color=36BCF7&line=36BCF7&point=ffffff" width="100%" />
 
 </div>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,60:203A43,100:0F2027&height=120&section=footer&text=Thanks%20for%20visiting!&fontColor=ffffff&fontSize=22&fontAlignY=75" width="100%" />
+## 🤝 Let's Connect
 
-<div align="center"><sub>⭐ If any of my work helps you, a star means a lot.</sub></div>
+<div align="center">
+
+Open to **security leadership, cloud security architecture, vCISO / advisory, and consulting** engagements.
+
+<a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email%20me-Let's%20talk-2ea043?style=for-the-badge" /></a>
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,60:203A43,100:0F2027&height=120&section=footer&text=Secure%20by%20design.&fontColor=ffffff&fontSize=22&fontAlignY=75" width="100%" />
