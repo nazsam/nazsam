@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170" width="720" height="170" role="img" aria-label="devsecforge logo (for light backgrounds)" font-family="'Consolas','SF Mono',monospace">
+  <g transform="translate(20,12) scale(0.9)">
+    <path d="M56,4 L112,24 L112,80 C112,122 86,146 56,158 C26,146 0,122 0,80 L0,24 Z" fill="#0B1533" stroke="#2B50E4" stroke-width="6"/>
+    <rect x="26" y="72" width="20" height="12" fill="#F2F7FF"/>
+    <path d="M32,84 L80,84 L90,104 L22,104 Z" fill="#F2F7FF"/>
+    <path d="M28,104 L84,104 L84,118 L28,118 Z" fill="#2B50E4"/>
+    <path d="M88,44 l4,14 l14,4 l-14,4 l-4,14 l-4,-14 l-14,-4 l14,-4 Z" fill="#2B50E4"/>
+  </g>
+  <text x="150" y="110" fill="#0B1533" font-size="62" font-weight="800">dev<tspan fill="#2B50E4">sec</tspan>forge</text>
+</svg>
