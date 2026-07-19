@@ -241,36 +241,34 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ---
 
-## 🏛️ Security Architecture & Operations
+## 🚀 Featured Work
 
-> Reference material distilled from 15+ years leading SOC, cloud security, risk & governance.
+> 15+ years distilled into open reference material — architecture, detection, response, governance & AI security — plus hands-on DevSecOps labs. **10 repositories, one coherent security program.**
 
 <div align="center">
 
-<a href="https://github.com/devsecforge/zero-trust-reference-architecture"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/devsecforge/soc-detection-engineering"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=soc-detection-engineering&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/devsecforge/cloud-security-baseline"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=cloud-security-baseline&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/devsecforge/zero-trust-reference-architecture"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/devsecforge/soc-detection-engineering"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=soc-detection-engineering&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/devsecforge/ai-security-lab"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=ai-security-lab&theme=tokyonight&hide_border=true" /></a>
 
 </div>
 
-- 🛡️ **[zero-trust-reference-architecture](https://github.com/devsecforge/zero-trust-reference-architecture)** — NIST 800-207 principles, maturity model, CIS/ISO control mappings, Azure/AWS enforcement examples.
-- 🎯 **[soc-detection-engineering](https://github.com/devsecforge/soc-detection-engineering)** — Sentinel KQL + Splunk detections mapped to MITRE ATT&CK, plus NIST 800-61 IR playbooks.
+### 🏛️ Security Architecture
+- 🛡️ **[zero-trust-reference-architecture](https://github.com/devsecforge/zero-trust-reference-architecture)** — NIST 800-207 principles, maturity model, ISO/CIS control mappings, Azure/AWS enforcement.
 - ☁️ **[cloud-security-baseline](https://github.com/devsecforge/cloud-security-baseline)** — Azure Policy + AWS Terraform guardrails mapped to CIS / NIST CSF, with a CSPM operating model.
 
----
+### 🎯 SOC · Detection · Incident Response
+- 🎯 **[soc-detection-engineering](https://github.com/devsecforge/soc-detection-engineering)** — Sentinel KQL + Splunk detections mapped to MITRE ATT&CK.
+- 🚨 **[incident-response-playbooks](https://github.com/devsecforge/incident-response-playbooks)** — NIST 800-61 IR playbooks, tabletop exercises & report templates.
+- 📊 **[security-metrics-dashboard](https://github.com/devsecforge/security-metrics-dashboard)** — SOC / exec / DORA metrics catalog, KQL, and board-ready reporting.
 
-## 🧪 Hands-On Labs (building in public)
+### 📜 Governance & Compliance
+- 📜 **[compliance-as-code](https://github.com/devsecforge/compliance-as-code)** — ISO 27001 / NIST CSF / CIS crosswalk + OPA & Azure Policy enforcement + continuous-evidence model.
 
-> Reference implementations I build to stay hands-on with modern DevSecOps tooling — each with working code, CI, docs, and a threat model.
+### 🤖 AI Security
+- 🤖 **[ai-security-lab](https://github.com/devsecforge/ai-security-lab)** — OWASP LLM Top 10, prompt-injection guardrails, STRIDE-for-AI threat model, NIST AI RMF / ISO 42001.
 
-<div align="center">
-
-<a href="https://github.com/devsecforge/security-operations-toolkit"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=security-operations-toolkit&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/devsecforge/kubernetes-security-lab"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=kubernetes-security-lab&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/devsecforge/secure-terraform-aws"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=secure-terraform-aws&theme=tokyonight&hide_border=true" /></a>
-
-</div>
-
+### 🧪 DevSecOps Labs (building in public)
 - 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
 - ☸️ **[kubernetes-security-lab](https://github.com/devsecforge/kubernetes-security-lab)** — 5-layer defense-in-depth: Pod Security Admission, RBAC, NetworkPolicy, Falco.
 - 🔐 **[secure-terraform-aws](https://github.com/devsecforge/secure-terraform-aws)** — Secure-by-default AWS: hardened S3/KMS, least-privilege IAM, tfsec + checkov.
