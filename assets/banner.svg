@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="devsecforge — Cybersecurity, Cloud Security, DevSecOps, AI Security" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1B22"/>
+      <stop offset="0.5" stop-color="#173540"/>
+      <stop offset="1" stop-color="#0F2027"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.4" r="0.5">
+      <stop offset="0" stop-color="#36BCF7" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#36BCF7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" rx="0" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#glow)"/>
+
+  <!-- hex texture (right) -->
+  <g stroke="#36BCF7" stroke-opacity="0.10" fill="none" stroke-width="2">
+    <path d="M1050,40 l34,20 l0,40 l-34,20 l-34,-20 l0,-40 Z"/>
+    <path d="M1140,95 l34,20 l0,40 l-34,20 l-34,-20 l0,-40 Z"/>
+    <path d="M1050,150 l34,20 l0,40 l-34,20 l-34,-20 l0,-40 Z"/>
+    <path d="M1155,205 l34,20 l0,40 l-34,20 l-34,-20 l0,-40 Z"/>
+  </g>
+
+  <!-- forge-shield mark -->
+  <g transform="translate(70,86) scale(0.92)">
+    <path d="M56,4 L112,24 L112,80 C112,122 86,146 56,158 C26,146 0,122 0,80 L0,24 Z" fill="#122A33" stroke="#36BCF7" stroke-width="5"/>
+    <rect x="26" y="72" width="20" height="12" fill="#EAF7FF"/>
+    <path d="M32,84 L80,84 L90,104 L22,104 Z" fill="#EAF7FF"/>
+    <path d="M28,104 L84,104 L84,118 L28,118 Z" fill="#36BCF7"/>
+    <path d="M88,44 l4,14 l14,4 l-14,4 l-4,14 l-4,-14 l-14,-4 l14,-4 Z" fill="#36BCF7"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="240" y="132" fill="#EAF7FF" font-size="68" font-weight="800" font-family="'Consolas','SF Mono',monospace">dev<tspan fill="#36BCF7">sec</tspan>forge</text>
+  <!-- tagline -->
+  <text x="243" y="180" fill="#9FC4D4" font-size="24" letter-spacing="0.5">Cybersecurity · Cloud Security · DevSecOps · AI Security</text>
+  <rect x="243" y="198" width="470" height="3" rx="1.5" fill="#36BCF7"/>
+  <!-- identity + certs -->
+  <text x="243" y="238" fill="#7FA6B6" font-size="18" letter-spacing="1">S. Naz  ·  CISSP · CISM · CISA · CRISC · ISO 27001 LA  ·  Ontario, Canada</text>
+</svg>
