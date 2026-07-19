@@ -14,11 +14,11 @@
 <div align="center">
 
 <!-- CREDENTIAL LINE -->
-<img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge&logoColor=white" />
 <img src="https://img.shields.io/badge/CISM-1B75BB?style=for-the-badge" />
 <img src="https://img.shields.io/badge/CISA-00539B?style=for-the-badge" />
 <img src="https://img.shields.io/badge/CRISC-6B2C91?style=for-the-badge" />
 <img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" />
+<img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge&logoColor=white" />
 
 <!-- TYPING ANIMATION -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=720&height=55&lines=15%2B+years+securing+enterprise+environments;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+across+Azure%2C+AWS+%26+hybrid;Cyber+Risk%2C+Governance+%26+Compliance)](https://www.linkedin.com/in/naz-cyber-solutions)
@@ -35,17 +35,44 @@
 
 ## 👋 About Me
 
-> **Senior Cybersecurity Leader with 15+ years** of progressive experience leading Security Operations (SOC), Incident Response, Cyber Risk Management, Governance & Compliance, and Cloud Security across **Microsoft Azure, AWS, and hybrid** environments. Proven success running 24/7 SOCs, building cyber-risk programs, driving audit readiness, and aligning security strategy to **NIST CSF, ISO 27001, CIS Controls, and PCI-DSS** — while leading high-performing teams and advising executive stakeholders.
+> **Versatile Cybersecurity & DevSecOps Leader** with deep expertise across **Cloud Security, AI Security, SOC Operations, DevOps Automation, Networking, System Administration, and Platform Engineering.** Over a decade of building secure, scalable, high‑performance environments across **Azure, AWS, GCP, and hybrid infrastructures.** Known for blending hands‑on technical mastery with strategic leadership — delivering secure architectures, automating everything, uplifting engineering teams, and driving enterprise‑grade resilience. Passionate about open‑source tooling, Zero Trust, modern cloud-native security, and building systems that never break.
 
 ```yaml
 name:          "S. Naz"
-title:         "Senior Cybersecurity Operations Manager | Cloud Security & Risk Leader"
-experience:    "15+ years"
+title:         "Cybersecurity, DevSecOps & Cloud Engineering Leader | AI Security, SOC & Platform Ops"
+experience:    "Over a decade of multi-domain experience across security, cloud, DevOps, networking & systems"
 education:     "MSc, Information Technology (MSIT)"
-specialties:   ["SOC & Incident Response", "Cyber Risk & Governance", "Cloud Security", "Zero Trust", "Compliance & Audit"]
-clouds:        ["Microsoft Azure", "AWS", "GCP", "Hybrid"]
-open_to:       ["Security Leadership / SOC Management", "Cloud Security Architecture", "vCISO / Advisory", "Consulting"]
+
+specialties:
+  - "DevSecOps & Security Automation"
+  - "Cloud Security Architecture (Azure, AWS, GCP)"
+  - "AI Security & Secure ML Pipelines"
+  - "SOC Operations & Incident Response"
+  - "Zero Trust Architecture"
+  - "Cyber Risk Governance & Compliance"
+  - "Open Source Security Tooling"
+  - "Networking & System Administration"
+  - "Platform Engineering & Infrastructure-as-Code"
+  - "Delivery & Engineering Management"
+
+clouds:
+  - "Azure"
+  - "AWS"
+  - "GCP"
+  - "Hybrid / Multi-Cloud"
+
+open_to:
+  - "Security Leadership / SOC Management"
+  - "DevSecOps Engineering"
+  - "Cloud Security Architecture"
+  - "AI Security Engineering"
+  - "Platform Engineering"
+  - "vCISO / Advisory"
+
 location:      "Ontario, Canada 🇨🇦"
+
+
+
 ```
 
 ---
