@@ -264,6 +264,7 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 📜 ![Governance & Compliance](https://img.shields.io/badge/GOVERNANCE_%26_COMPLIANCE-16C060?style=for-the-badge)
 - 📜 **[compliance-as-code](https://github.com/devsecforge/compliance-as-code)** — ISO 27001 / NIST CSF / CIS crosswalk + OPA & Azure Policy enforcement + continuous-evidence model.
+- 🔏 **[privacy-skills](https://github.com/devsecforge/privacy-skills)** — structured privacy & data-protection skills mapped to GDPR · CCPA · PIPEDA · EU AI Act · HIPAA · LGPD · PIPL · DPDP.
 
 🤖 ![AI Security](https://img.shields.io/badge/AI_SECURITY-10D0C4?style=for-the-badge)
 - 🤖 **[ai-security-lab](https://github.com/devsecforge/ai-security-lab)** — OWASP LLM Top 10, prompt-injection guardrails, STRIDE-for-AI threat model, NIST AI RMF / ISO 42001.
@@ -273,6 +274,7 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 - 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
 - ☸️ **[kubernetes-security-lab](https://github.com/devsecforge/kubernetes-security-lab)** — 5-layer defense-in-depth: Pod Security Admission, RBAC, NetworkPolicy, Falco.
 - 🔐 **[secure-terraform-aws](https://github.com/devsecforge/secure-terraform-aws)** — Secure-by-default AWS: hardened S3/KMS, least-privilege IAM, tfsec + checkov.
+- 🛰️ **[security-intel-mcp](https://github.com/devsecforge/security-intel-mcp)** — MCP server giving AI assistants CVE (NVD), EPSS & CISA KEV intelligence with combined risk enrichment.
 
 ---
 
