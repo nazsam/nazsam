@@ -253,22 +253,22 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 </div>
 
-### 🏛️ Security Architecture
+🏛️ ![Security Architecture](https://img.shields.io/badge/SECURITY_ARCHITECTURE-9E1B45?style=for-the-badge)
 - 🛡️ **[zero-trust-reference-architecture](https://github.com/devsecforge/zero-trust-reference-architecture)** — NIST 800-207 principles, maturity model, ISO/CIS control mappings, Azure/AWS enforcement.
 - ☁️ **[cloud-security-baseline](https://github.com/devsecforge/cloud-security-baseline)** — Azure Policy + AWS Terraform guardrails mapped to CIS / NIST CSF, with a CSPM operating model.
 
-### 🎯 SOC · Detection · Incident Response
+🎯 ![SOC · Detection · IR](https://img.shields.io/badge/SOC_%C2%B7_DETECTION_%C2%B7_INCIDENT_RESPONSE-EF2D3C?style=for-the-badge)
 - 🎯 **[soc-detection-engineering](https://github.com/devsecforge/soc-detection-engineering)** — Sentinel KQL + Splunk detections mapped to MITRE ATT&CK.
 - 🚨 **[incident-response-playbooks](https://github.com/devsecforge/incident-response-playbooks)** — NIST 800-61 IR playbooks, tabletop exercises & report templates.
 - 📊 **[security-metrics-dashboard](https://github.com/devsecforge/security-metrics-dashboard)** — SOC / exec / DORA metrics catalog, KQL, and board-ready reporting.
 
-### 📜 Governance & Compliance
+📜 ![Governance & Compliance](https://img.shields.io/badge/GOVERNANCE_%26_COMPLIANCE-16C060?style=for-the-badge)
 - 📜 **[compliance-as-code](https://github.com/devsecforge/compliance-as-code)** — ISO 27001 / NIST CSF / CIS crosswalk + OPA & Azure Policy enforcement + continuous-evidence model.
 
-### 🤖 AI Security
+🤖 ![AI Security](https://img.shields.io/badge/AI_SECURITY-10D0C4?style=for-the-badge)
 - 🤖 **[ai-security-lab](https://github.com/devsecforge/ai-security-lab)** — OWASP LLM Top 10, prompt-injection guardrails, STRIDE-for-AI threat model, NIST AI RMF / ISO 42001.
 
-### 🧪 DevSecOps Labs (building in public)
+🧪 ![DevSecOps Labs](https://img.shields.io/badge/DEVSECOPS_LABS-FB8C1A?style=for-the-badge) <sub>building in public</sub>
 - 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
 - ☸️ **[kubernetes-security-lab](https://github.com/devsecforge/kubernetes-security-lab)** — 5-layer defense-in-depth: Pod Security Admission, RBAC, NetworkPolicy, Falco.
 - 🔐 **[secure-terraform-aws](https://github.com/devsecforge/secure-terraform-aws)** — Secure-by-default AWS: hardened S3/KMS, least-privilege IAM, tfsec + checkov.
