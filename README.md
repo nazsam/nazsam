@@ -277,14 +277,14 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ## ✍️ Writing & Thought Leadership
 
-> I share what I learn — practical security, cloud, and AI-governance writing for engineers and leaders.
+> Practical security, cloud & AI writing for engineers and leaders. &nbsp; **[Browse all →](articles/)**
 
-- 🔐 **Zero Trust in practice** — turning NIST 800-207 into Conditional Access & least-privilege that actually ship
-- 🎯 **Detection engineering** — building high-fidelity Sentinel/Splunk rules mapped to MITRE ATT&CK
-- 🤖 **Securing AI** — OWASP LLM Top 10, NIST AI RMF & ISO 42001, and privacy-by-design for ML pipelines
-- ☁️ **Cloud security baselines** — policy-as-code guardrails for Azure & AWS at enterprise scale
+- 🔐 **[Zero Trust in Practice](articles/zero-trust-in-practice.md)** — turning NIST 800-207 into Conditional Access & least-privilege that actually ship
+- 🎯 **[Detection Engineering That Works](articles/detection-engineering-that-works.md)** — high-fidelity Sentinel/Splunk rules mapped to MITRE ATT&CK, not alert noise
+- 🤖 **[Securing AI: A Leader's Field Guide](articles/securing-ai-a-leaders-guide.md)** — OWASP LLM Top 10, NIST AI RMF & ISO 42001, privacy-by-design
+- ☁️ *Cloud security baselines — policy-as-code guardrails for Azure & AWS* &nbsp;`(coming soon)`
 
-<sub>📝 <b>First articles coming soon.</b> Follow on <a href="https://www.linkedin.com/in/naz-cyber-solutions">LinkedIn</a> — this section will link live posts as they publish.</sub>
+<sub>📝 Also publishing on <a href="https://www.linkedin.com/in/naz-cyber-solutions">LinkedIn</a>.</sub>
 
 ---
 
