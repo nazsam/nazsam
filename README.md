@@ -180,6 +180,10 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 <img src="https://img.shields.io/badge/CompTIA-Network%2B-E31E24?style=flat-square&logo=comptia&logoColor=white" />
 <img src="https://img.shields.io/badge/JAMF-Certified_Administrator-5C5C5C?style=flat-square&logo=jamf&logoColor=white" />
 
+**🎓 Education**
+
+<img src="https://img.shields.io/badge/MSc-Information_Technology_(MSIT)-2C5364?style=flat-square" />
+
 </div>
 
 ---
