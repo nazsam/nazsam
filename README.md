@@ -31,6 +31,17 @@
 
 </div>
 
+<!-- ░░░░░░░░░░░░░░░░░░░░ NAV BAR ░░░░░░░░░░░░░░░░░░░░ -->
+<p align="center">
+  <a href="#about"><img src="https://img.shields.io/badge/🏠_About-2B50E4?style=for-the-badge" /></a>
+  <a href="#certs"><img src="https://img.shields.io/badge/🎓_Certifications-1E3AA8?style=for-the-badge" /></a>
+  <a href="#stack"><img src="https://img.shields.io/badge/🧰_Stack-2B50E4?style=for-the-badge" /></a>
+  <a href="#projects"><img src="https://img.shields.io/badge/🚀_Projects-1E3AA8?style=for-the-badge" /></a>
+  <a href="#ai"><img src="https://img.shields.io/badge/🤖_AI_Security-10D0C4?style=for-the-badge" /></a>
+  <a href="#writing"><img src="https://img.shields.io/badge/✍️_Writing-2B50E4?style=for-the-badge" /></a>
+  <a href="#contact"><img src="https://img.shields.io/badge/📫_Contact-16C060?style=for-the-badge" /></a>
+</p>
+
 ---
 
 ## 🧠 Expertise at a Glance
@@ -61,6 +72,8 @@ mindmap
 ```
 
 ---
+
+<a id="about"></a>
 
 ## 👋 About Me
 
@@ -129,6 +142,8 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ---
 
+<a id="ai"></a>
+
 ## 🤖 AI Security & Privacy
 
 > Securing AI is the defining security challenge of this decade. I focus on governing and hardening AI/ML systems and protecting the data that powers them — mapping emerging AI risk to the frameworks below.
@@ -151,6 +166,8 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 | **Secure AI in CI/CD** | Guardrails, secrets hygiene, and provenance for model & dependency pipelines |
 
 ---
+
+<a id="certs"></a>
 
 ## 🎓 Certifications
 
@@ -195,6 +212,8 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 </div>
 
 ---
+
+<a id="stack"></a>
 
 ## 🧰 Technical Arsenal
 
@@ -249,6 +268,8 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ---
 
+<a id="projects"></a>
+
 ## 🚀 Featured Work
 
 > over a decade and a half distilled into open reference material — architecture, detection, response, governance & AI security — plus hands-on DevSecOps labs. **10 repositories, one coherent security program.**
@@ -285,6 +306,8 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 - 🛰️ **[security-intel-mcp](https://github.com/devsecforge/security-intel-mcp)** — MCP server giving AI assistants CVE (NVD), EPSS & CISA KEV intelligence with combined risk enrichment.
 
 ---
+
+<a id="writing"></a>
 
 ## ✍️ Writing & Thought Leadership
 
@@ -331,6 +354,8 @@ hands-on DevSecOps labs.
 </div>
 
 ---
+
+<a id="contact"></a>
 
 ## 🤝 Let's Connect
 
