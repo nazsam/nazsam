@@ -21,7 +21,7 @@
 <img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" />
 
 <!-- TYPING ANIMATION -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+15%2B+years;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/naz-cyber-solutions)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+over+a+decade+and+a+half;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/naz-cyber-solutions)
 
 <a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
@@ -64,12 +64,12 @@ mindmap
 
 ## 👋 About Me
 
-> **Multi-discipline Cybersecurity, Cloud & DevSecOps leader** with **15+ years** building secure, scalable, high-performance environments across **Azure, AWS, GCP, and hybrid** infrastructures. I blend hands-on technical mastery with strategic leadership — designing secure architectures, automating everything, driving **Zero Trust**, and uplifting engineering teams. Increasingly focused on the next frontier: **securing AI systems and protecting privacy** in a machine-learning world.
+> **Multi-discipline Cybersecurity, Cloud & DevSecOps leader** with **over a decade and a half** building secure, scalable, high-performance environments across **Azure, AWS, GCP, and hybrid** infrastructures. I blend hands-on technical mastery with strategic leadership — designing secure architectures, automating everything, driving **Zero Trust**, and uplifting engineering teams. Increasingly focused on the next frontier: **securing AI systems and protecting privacy** in a machine-learning world.
 
 ```yaml
 name:        "S. Naz"
 title:       "Cybersecurity · Cloud · DevSecOps Leader | AI Security & Privacy"
-experience:  "15+ years across security, cloud, DevOps, networking & systems"
+experience:  "over a decade and a half across security, cloud, DevOps, networking & systems"
 education:   "MSc, Information Technology (MSIT)"
 focus:       ["Cloud Security", "DevSecOps", "AI Security & Privacy", "SOC & IR", "Zero Trust", "Risk & Governance"]
 clouds:      ["Azure", "AWS", "GCP", "Hybrid / Multi-Cloud"]
@@ -243,7 +243,7 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ## 🚀 Featured Work
 
-> 15+ years distilled into open reference material — architecture, detection, response, governance & AI security — plus hands-on DevSecOps labs. **10 repositories, one coherent security program.**
+> over a decade and a half distilled into open reference material — architecture, detection, response, governance & AI security — plus hands-on DevSecOps labs. **10 repositories, one coherent security program.**
 
 <div align="center">
 
@@ -293,7 +293,7 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ## 🚀 Building in Public
 
-> **Launched July 2026** — 15+ years of security leadership brought into the open as working,
+> **Launched July 2026** — over a decade and a half of security leadership brought into the open as working,
 > framework-mapped projects. This is an intentional body of work, and it's actively growing.
 
 **Shipped so far:** 14 repositories spanning security architecture, SOC & incident response,
