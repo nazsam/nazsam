@@ -21,13 +21,13 @@
 <img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" />
 
 <!-- TYPING ANIMATION -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+15%2B+years;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/naz-cyber-solutions)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+15%2B+years;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/naz-cyber-solutions)
 
 <a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<img src="https://img.shields.io/badge/Ontario,%20Canada%20%F0%9F%87%A8%F0%9F%87%A6-2C5364?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Ontario,%20Canada%20%F0%9F%87%A8%F0%9F%87%A6-1E3AA8?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Security%20Clearance-Level%204%20(Canada)-006400?style=for-the-badge" />
-<img src="https://komarev.com/ghpvc/?username=devsecforge&label=Profile%20views&color=36BCF7&style=for-the-badge" />
+<img src="https://komarev.com/ghpvc/?username=devsecforge&label=Profile%20views&color=22D3EE&style=for-the-badge" />
 
 </div>
 
@@ -182,7 +182,7 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 **🎓 Education**
 
-<img src="https://img.shields.io/badge/MSc-Information_Technology_(MSIT)-2C5364?style=flat-square" />
+<img src="https://img.shields.io/badge/MSc-Information_Technology_(MSIT)-1E3AA8?style=flat-square" />
 
 </div>
 
@@ -212,15 +212,15 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 ![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 ![PIM](https://img.shields.io/badge/Privileged_Identity_Mgmt-0078D4?style=flat-square)
 ![Conditional Access](https://img.shields.io/badge/Conditional_Access-0078D4?style=flat-square)
-![MFA / SSO](https://img.shields.io/badge/MFA_%2F_SSO-2C5364?style=flat-square)
-![Zero Trust](https://img.shields.io/badge/Zero_Trust_Architecture-1B2A4A?style=flat-square)
+![MFA / SSO](https://img.shields.io/badge/MFA_%2F_SSO-1E3AA8?style=flat-square)
+![Zero Trust](https://img.shields.io/badge/Zero_Trust_Architecture-0B1533?style=flat-square)
 
 **⚙️ DevSecOps · IaC · Automation**
 <br>
 <img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,githubactions,python,powershell&theme=dark" height="44" />
 &nbsp;
 ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aqua&logoColor=white)
-![Semgrep](https://img.shields.io/badge/Semgrep-1B2A4A?style=flat-square&logo=semgrep&logoColor=white)
+![Semgrep](https://img.shields.io/badge/Semgrep-0B1533?style=flat-square&logo=semgrep&logoColor=white)
 
 **🤖 AI Security · Data**
 <br>
@@ -247,9 +247,9 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 <div align="center">
 
-<a href="https://github.com/devsecforge/zero-trust-reference-architecture"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/devsecforge/soc-detection-engineering"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=soc-detection-engineering&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/devsecforge/ai-security-lab"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=ai-security-lab&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/devsecforge/zero-trust-reference-architecture"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
+<a href="https://github.com/devsecforge/soc-detection-engineering"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
+<a href="https://github.com/devsecforge/ai-security-lab"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=ai-security-lab&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
 
 </div>
 
@@ -292,10 +292,10 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=devsecforge&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=devsecforge&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=devsecforge&show_icons=true&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533&count_private=true&include_all_commits=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=devsecforge&layout=compact&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=devsecforge&theme=tokyo-night&hide_border=true&area=true&color=36BCF7&line=36BCF7&point=ffffff" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=devsecforge&theme=tokyo-night&hide_border=true&area=true&color=22D3EE&line=22D3EE&point=ffffff" width="100%" />
 
 </div>
 
@@ -312,4 +312,4 @@ Open to **security leadership · cloud security architecture · AI security · v
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:36BCF7,30:2C5364,70:203A43,100:0F2027&height=130&section=footer&text=Secure%20by%20design.%20Secure%20the%20future.&fontColor=ffffff&fontSize=22&fontAlignY=72" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,30:1E3AA8,70:1E3AA8,100:0B1533&height=130&section=footer&text=Secure%20by%20design.%20Secure%20the%20future.&fontColor=ffffff&fontSize=22&fontAlignY=72" width="100%" />
