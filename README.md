@@ -291,6 +291,26 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ---
 
+## 🚀 Building in Public
+
+> **Launched July 2026** — 15+ years of security leadership brought into the open as working,
+> framework-mapped projects. This is an intentional body of work, and it's actively growing.
+
+**Shipped so far:** 14 repositories spanning security architecture, SOC & incident response,
+security metrics, governance & compliance, AI security, AI-agent & privacy skills, an MCP tool, and
+hands-on DevSecOps labs.
+
+**On the roadmap:**
+- [ ] Expand the **agent-security-skills** & **privacy-skills** libraries toward broader framework coverage
+- [ ] Add **DAST + SBOM/signing** (ZAP · Syft · Cosign) to the DevSecOps toolkit
+- [ ] Publish the first **articles** on LinkedIn (drafts ready in [`articles/`](articles/))
+- [ ] Grow **security-intel-mcp** with more threat-intel sources
+- [ ] Earn/refresh a cloud-security cert and share the notes
+
+<sub>⭐ Following along? Star the repos you find useful — new work ships regularly.</sub>
+
+---
+
 ## 📊 GitHub Activity
 
 <div align="center">
