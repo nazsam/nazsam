@@ -267,6 +267,7 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 🤖 ![AI Security](https://img.shields.io/badge/AI_SECURITY-10D0C4?style=for-the-badge)
 - 🤖 **[ai-security-lab](https://github.com/devsecforge/ai-security-lab)** — OWASP LLM Top 10, prompt-injection guardrails, STRIDE-for-AI threat model, NIST AI RMF / ISO 42001.
+- 🧠 **[agent-security-skills](https://github.com/devsecforge/agent-security-skills)** — framework-mapped defensive security skills for AI agents (MITRE ATT&CK · NIST CSF · D3FEND · NIST AI RMF), schema-validated in CI.
 
 🧪 ![DevSecOps Labs](https://img.shields.io/badge/DEVSECOPS_LABS-FB8C1A?style=for-the-badge) <sub>building in public</sub>
 - 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
