@@ -180,6 +180,14 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 <img src="https://img.shields.io/badge/CompTIA-Network%2B-E31E24?style=flat-square&logo=comptia&logoColor=white" />
 <img src="https://img.shields.io/badge/JAMF-Certified_Administrator-5C5C5C?style=flat-square&logo=jamf&logoColor=white" />
 
+**🎯 AI & Emerging — _On My Roadmap_** <sub>(targeting / in progress)</sub>
+
+<img src="https://img.shields.io/badge/IAPP-AIGP_·_AI_Governance-8AA0C6?style=flat-square" />
+<img src="https://img.shields.io/badge/ISACA-AAISM_·_AI_Security_Mgmt-8AA0C6?style=flat-square" />
+<img src="https://img.shields.io/badge/ISACA-AAIA_·_AI_Audit-8AA0C6?style=flat-square" />
+<img src="https://img.shields.io/badge/Microsoft-AI--102_Azure_AI_Engineer-8AA0C6?style=flat-square&logo=microsoft&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-Certified_AI_Practitioner-8AA0C6?style=flat-square&logo=amazonwebservices&logoColor=white" />
+
 **🎓 Education**
 
 <img src="https://img.shields.io/badge/MSc-Information_Technology_(MSIT)-1E3AA8?style=flat-square" />
