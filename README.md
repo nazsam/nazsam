@@ -237,28 +237,6 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 
 ---
 
-## 💼 Professional Experience
-
-**🔹 Senior Cybersecurity Operations Manager — Cloud Security & Risk Leader**
-`SysIntelligence · Peel, Ontario 🇨🇦 · Aug 2021 – Present`
-> Run 24/7 SOC & threat detection on Microsoft Sentinel + Splunk; lead incident response & forensics mapped to MITRE ATT&CK; architect enterprise Zero Trust; automate SecOps with Python/PowerShell/Logic Apps; own GRC alignment to ISO 27001 / NIST CSF / PCI-DSS / GDPR; lead & mentor the security team.
-
-**🔹 Senior Security Architect & Cloud Security Lead**
-`Sysintelli Inc · Calgary, Alberta 🇨🇦 · Jan 2018 – Jul 2021`
-> Designed secure hybrid-cloud architectures & identity governance across Azure AD / Windows Server; drove vulnerability management, risk assessment & remediation; managed escalations, GPOs & multi-tenant isolation; produced audit-readiness documentation.
-
-**🔹 Senior IT Security & Systems Administration Lead**
-`University of Hail · Jan 2016 – Dec 2017`
-> Secured multi-tenant enterprise IT (Azure, M365, Active Directory); translated NIST CSF / ISO 27001 into technical controls; built micro-segmentation & DLP; authored IR workflows and SOPs.
-
-**🔹 Lecturer — Computer Science & Cyber Security**
-`University of Hail · Jan 2012 – Dec 2015`
-> Designed and taught coursework in enterprise networks, systems administration, virtualization, and information-security fundamentals.
-
-<sub>🎓 <b>MSc, Information Technology (MSIT)</b> — University of Phoenix, California, USA</sub>
-
----
-
 ## 🏛️ Security Architecture & Operations
 
 > Reference material distilled from 15+ years leading SOC, cloud security, risk & governance.
