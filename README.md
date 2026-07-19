@@ -151,6 +151,24 @@ location:      "Ontario, Canada 🇨🇦"
 
 ---
 
+## 🏛️ Security Architecture & Operations
+
+> Reference material distilled from 15+ years leading SOC, cloud security, risk & governance.
+
+<div align="center">
+
+<a href="https://github.com/devsecforge/zero-trust-reference-architecture"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/devsecforge/soc-detection-engineering"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=soc-detection-engineering&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/devsecforge/cloud-security-baseline"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=cloud-security-baseline&theme=tokyonight&hide_border=true" /></a>
+
+</div>
+
+- 🛡️ **[zero-trust-reference-architecture](https://github.com/devsecforge/zero-trust-reference-architecture)** — NIST 800-207 principles, maturity model, CIS/ISO control mappings, Azure/AWS enforcement examples.
+- 🎯 **[soc-detection-engineering](https://github.com/devsecforge/soc-detection-engineering)** — Sentinel KQL + Splunk detections mapped to MITRE ATT&CK, plus NIST 800-61 IR playbooks.
+- ☁️ **[cloud-security-baseline](https://github.com/devsecforge/cloud-security-baseline)** — Azure Policy + AWS Terraform guardrails mapped to CIS / NIST CSF, with a CSPM operating model.
+
+---
+
 ## 🧪 Hands-On Labs (building in public)
 
 > Reference implementations I build to stay hands-on with modern DevSecOps tooling — each with working code, CI, docs, and a threat model.
