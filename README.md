@@ -275,12 +275,66 @@ mindmap
 <a id="writing"></a>
 ## ✍️ Writing & Thought Leadership
 
-> Practical security, cloud & AI writing for engineers and leaders. &nbsp; **[Browse all →](articles/)**
+> 24 articles on practical security, cloud & AI — for engineers and leaders. Full archive → [`articles/`](https://github.com/devsecforge/devsecforge/tree/main/articles) · cross-posted on <a href="https://www.linkedin.com/in/naz-cyber-solutions">LinkedIn</a>
 
-- 🔐 **[Zero Trust in Practice](articles/zero-trust-in-practice.md)** — turning NIST 800-207 into Conditional Access & least-privilege that actually ship
-- 🎯 **[Detection Engineering That Works](articles/detection-engineering-that-works.md)** — high-fidelity Sentinel/Splunk rules mapped to MITRE ATT&CK, not alert noise
-- 🤖 **[Securing AI: A Leader's Field Guide](articles/securing-ai-a-leaders-guide.md)** — OWASP LLM Top 10, NIST AI RMF & ISO 42001, privacy-by-design
+<details>
+<summary><b>🛡️ Cybersecurity, SOC & Zero Trust</b> — 5 articles</summary>
+<br>
+
+- 🔐 [Zero Trust in Practice](articles/zero-trust-in-practice.md) — turning NIST 800-207 into Conditional Access & least-privilege that actually ship
+- 🎯 [Detection Engineering That Works](articles/detection-engineering-that-works.md) — high-fidelity Sentinel/Splunk rules mapped to MITRE ATT&CK, not alert noise
+- 📐 [Detection Engineering with Sigma Rules](articles/detection-engineering-with-sigma-rules.md) — vendor-agnostic threat detection you can port across SIEMs
+- 🪪 [Identity Is the New Perimeter](articles/identity-is-the-new-perimeter.md) — lessons from a decade of IAM breaches
+- 🧯 [Ransomware Resilience](articles/ransomware-resilience.md) — building an incident response plan that actually works under pressure
+
+</details>
+
+<details>
+<summary><b>☁️ Cloud & Infrastructure Security</b> — 2 articles</summary>
+<br>
+
 - ☁️ *Cloud security baselines — policy-as-code guardrails for Azure & AWS* &nbsp;`(coming soon)`
+- 🌐 [CSPM in a Multi-Cloud World](articles/cspm-in-a-multi-cloud-world.md) — one posture-management operating model across Azure, AWS & GCP
+
+</details>
+
+<details>
+<summary><b>🤖 AI & LLM Security</b> — 7 articles</summary>
+<br>
+
+- 🤖 [Securing AI: A Leader's Field Guide](articles/securing-ai-a-leaders-guide.md) — OWASP LLM Top 10, NIST AI RMF & ISO 42001, privacy-by-design
+- 🕹️ [Agentic AI Security](articles/agentic-ai-security.md) — threat-modeling autonomous agents before they run wild
+- 📋 [The OWASP LLM Top 10, Explained](articles/owasp-llm-top-10-explained.md) — for security leaders, not just ML engineers
+- 💉 [Prompt Injection 101](articles/prompt-injection-101.md) — the new SQL injection, and how to defend against it
+- 🔍 [Securing RAG Pipelines](articles/securing-rag-pipelines.md) — data leakage risks in retrieval-augmented generation
+- 🧪 [Red-Teaming LLMs](articles/red-teaming-llms.md) — a practical playbook using MITRE ATLAS
+- 🛡️ [Zero Trust for AI Workloads](articles/zero-trust-for-ai-workloads.md) — extending ZTA principles to model endpoints
+
+</details>
+
+<details>
+<summary><b>📜 Governance, Privacy & Compliance</b> — 6 articles</summary>
+<br>
+
+- 🧾 [Building an AI-BOM](articles/building-an-ai-bom.md) — model supply-chain visibility for security teams
+- 🗓️ [NIST AI RMF in Practice](articles/nist-ai-rmf-in-practice.md) — a 90-day implementation plan
+- ⚖️ [ISO/IEC 42001 vs NIST AI RMF](articles/iso-42001-vs-nist-ai-rmf.md) — which AI governance framework fits your org
+- 🕵️ [Shadow AI](articles/shadow-ai.md) — discovering and governing the AI tools your employees already use
+- 🤝 [The CISO's Guide to Third-Party AI Risk](articles/cisos-guide-to-third-party-ai-risk.md) — vendor due diligence for the AI era
+- 🔏 [Data Privacy by Design](articles/data-privacy-by-design.md) — embedding GDPR & PIPEDA into the SDLC
+
+</details>
+
+<details>
+<summary><b>⚙️ DevSecOps & Automation</b> — 4 articles</summary>
+<br>
+
+- 📦 [SBOM & Software Supply Chain Security](articles/sbom-and-software-supply-chain-security.md) — what SolarWinds taught the industry
+- ☸️ [Kubernetes Security in Production](articles/kubernetes-security-in-production.md) — beyond the basics
+- 📏 [Continuous Compliance](articles/continuous-compliance.md) — turning audits into code with policy-as-code
+- 🔄 [DevSecOps Meets AIOps](articles/devsecops-meets-aiops.md) — automating security at machine speed
+
+</details>
 
 <sub>📝 Also publishing on <a href="https://www.linkedin.com/in/naz-cyber-solutions">LinkedIn</a>.</sub>
 
