@@ -45,9 +45,9 @@
 <a id="about"></a>
 ## About Me
 
-### Building secure, intelligent platforms for the future
+### **Building secure, intelligent platforms for the future**
 
-*Technology never stands still. My mission is to make sure security keeps pace with innovation.*
+***Technology never stands still. My mission is to make sure security keeps pace with innovation.***
 
 I help organizations design, build, and operate digital platforms that are secure, resilient, and ready for the future. My work brings together cybersecurity, cloud computing, artificial intelligence, platform engineering, infrastructure, networking, and automation, so security becomes part of every decision instead of an afterthought.
 
