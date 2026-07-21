@@ -152,9 +152,10 @@ mindmap
 
 **☁️ Cloud — AWS & Azure**
 
-<img src="https://img.shields.io/badge/AWS_Security-Specialty-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS_Solutions_Architect-Professional-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS_Solutions_Architect-Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_Certified-Cloud_Practitioner-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_Certified-Solutions_Architect_Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_Certified-DevOps_Engineer_Professional-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_Certified-Advanced_Networking_Specialty-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
 <img src="https://img.shields.io/badge/Azure-Solutions_Architect_Expert-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
 <img src="https://img.shields.io/badge/Azure_Security-AZ--500-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
 
@@ -185,6 +186,15 @@ mindmap
 <a id="stack"></a>
 ## 🧰 Technical Arsenal
 
+**🧩 Core Skills**
+<br>
+![Cloud Cybersecurity](https://img.shields.io/badge/Cloud_Cybersecurity-0B1533?style=flat-square)
+![DevOps](https://img.shields.io/badge/DevOps-FB8C1A?style=flat-square)
+![Cloud Security](https://img.shields.io/badge/Cloud_Security-2B50E4?style=flat-square)
+![Cloud Computing](https://img.shields.io/badge/Cloud_Computing-1E3AA8?style=flat-square)
+![Systems Engineer](https://img.shields.io/badge/Systems_Engineer-5B6C88?style=flat-square)
+![SysOps Linux Administrator](https://img.shields.io/badge/SysOps_Linux_Administrator-5B6C88?style=flat-square)
+
 **🛰️ SIEM · XDR · SOAR**
 <br>
 ![Microsoft Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
@@ -212,10 +222,48 @@ mindmap
 
 **⚙️ DevSecOps · IaC · Automation**
 <br>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,githubactions,python,powershell&theme=dark" height="44" />
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,ansible,vagrant,githubactions,python,powershell&theme=dark" height="44" />
 &nbsp;
 ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aqua&logoColor=white)
 ![Semgrep](https://img.shields.io/badge/Semgrep-0B1533?style=flat-square&logo=semgrep&logoColor=white)
+![Chef](https://img.shields.io/badge/Chef-F09820?style=flat-square&logo=chef&logoColor=white)
+
+**🐧 Operating Systems**
+<br>
+<img src="https://skillicons.dev/icons?i=ubuntu,centos,kali,windows&theme=dark" height="44" />
+&nbsp;
+![Windows Server 2019](https://img.shields.io/badge/Windows_Server_2019-0078D4?style=flat-square&logo=windows&logoColor=white)
+
+**🔀 Version Control & CI/CD Pipeline**
+<br>
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,jenkins,circleci&theme=dark" height="44" />
+
+**☁️ Cloud Technologies — AWS**
+<br>
+![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white)
+![S3](https://img.shields.io/badge/S3-FF9900?style=flat-square&logo=amazons3&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
+
+**📝 Scripting & Programming Languages**
+<br>
+<img src="https://skillicons.dev/icons?i=python,bash&theme=dark" height="44" />
+&nbsp;
+![Groovy](https://img.shields.io/badge/Groovy-4298B8?style=flat-square&logo=apachegroovy&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-CB171E?style=flat-square)
+
+**🗄️ Web & Database Management**
+<br>
+![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-6C78AF?style=flat-square&logo=phpmyadmin&logoColor=white)
+![cPanel](https://img.shields.io/badge/cPanel-FF6C2C?style=flat-square&logo=cpanel&logoColor=white)
+![SQL Databases](https://img.shields.io/badge/SQL_Databases-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![NoSQL Databases](https://img.shields.io/badge/NoSQL_Databases-47A248?style=flat-square&logo=mongodb&logoColor=white)
+
+**📡 Monitoring Tools**
+<br>
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
+![Nagios](https://img.shields.io/badge/Nagios-000000?style=flat-square&logo=nagios&logoColor=white)
 
 **🤖 AI Security · Data**
 <br>
