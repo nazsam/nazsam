@@ -25,7 +25,7 @@
 
 <a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<img src="https://img.shields.io/badge/Ontario,%20Canada%20%F0%9F%87%A8%F0%9F%87%A6-1E3AA8?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Canada%20%F0%9F%87%A8%F0%9F%87%A6-1E3AA8?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Security%20Clearance-Level%204%20(Canada)-006400?style=for-the-badge" />
 <img src="https://komarev.com/ghpvc/?username=devsecforge&label=Profile%20views&color=22D3EE&style=for-the-badge" />
 
@@ -79,15 +79,27 @@ mindmap
 > **Multi-discipline Cybersecurity, Cloud & DevSecOps leader** with **over a decade and a half** building secure, scalable, high-performance environments across **Azure, AWS, GCP, and hybrid** infrastructures. I blend hands-on technical mastery with strategic leadership — designing secure architectures, automating everything, driving **Zero Trust**, and uplifting engineering teams. Increasingly focused on the next frontier: **securing AI systems and protecting privacy** in a machine-learning world.
 
 ```yaml
-name:        "S. Naz"
-title:       "Cybersecurity · Cloud · DevSecOps Leader | AI Security & Privacy"
-experience:  "over a decade and a half across security, cloud, DevOps, networking & systems"
-education:   "MSc, Information Technology (MSIT)"
-focus:       ["Cloud Security", "DevSecOps", "AI Security & Privacy", "SOC & IR", "Zero Trust", "Risk & Governance"]
-clouds:      ["Azure", "AWS", "GCP", "Hybrid / Multi-Cloud"]
-open_to:     ["Security Leadership / SOC", "Cloud Security Architecture", "AI Security", "vCISO / Advisory", "Consulting"]
-location:    "Ontario, Canada 🇨🇦"
-motto:       "Shift left · Automate everything · Trust nothing · Secure the future."
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║                        🛡️  IDENTITY.YAML  🛡️                      ║
+# ╚══════════════════════════════════════════════════════════════════╝
+
+name:          "S. Naz"
+title:         "Cybersecurity · Cloud · DevSecOps Leader | AI Security & Privacy"
+experience:    "over a decade and a half across security, cloud, DevOps, networking & systems"
+education:     "MSc, Information Technology (MSIT)"
+
+# ── core disciplines ─────────────────────────────────────────────────
+focus:         ["Cloud Security", "DevSecOps", "AI Security & Privacy", "SOC & IR", "Zero Trust", "Risk & Governance"]
+clouds:        ["Azure", "AWS", "GCP", "Hybrid / Multi-Cloud"]
+
+# ── where I add value ────────────────────────────────────────────────
+open_to:       ["Security Leadership / SOC", "Cloud Security Architecture", "AI Security", "vCISO / Advisory", "Consulting"]
+signature:     "15+ years · 14 repositories shipped in the open · one security philosophy"
+
+location:      "Canada 🇨🇦"
+motto:         "Shift left · Automate everything · Trust nothing · Secure the future."
+
+# ╚══════════════════════════════════════════════════════════════════╝
 ```
 
 ---
@@ -153,15 +165,21 @@ motto:       "Shift left · Automate everything · Trust nothing · Secure the f
 ![OWASP LLM Top 10](https://img.shields.io/badge/OWASP_LLM_Top_10-000000?style=for-the-badge&logo=owasp&logoColor=white)
 ![MITRE ATLAS](https://img.shields.io/badge/MITRE_ATLAS-C00?style=for-the-badge)
 ![EU AI Act](https://img.shields.io/badge/EU_AI_Act-Aware-003399?style=for-the-badge)
+![Agentic AI](https://img.shields.io/badge/Agentic_AI-Trending-FF5DA2?style=for-the-badge)
 
 </div>
 
-| Domain | What I cover |
-|--------|--------------|
-| **LLM / ML security** | Prompt injection, jailbreaks, insecure output handling, model/data poisoning, supply-chain (OWASP LLM Top 10, MITRE ATLAS) |
-| **AI governance** | AI risk management & assurance aligned to **NIST AI RMF** and **ISO/IEC 42001**; model inventories, approval gates |
-| **Data privacy** | Data classification, DLP, minimization, and privacy-by-design under **GDPR / PIPEDA**; securing training & inference data |
-| **Secure AI in CI/CD** | Guardrails, secrets hygiene, and provenance for model & dependency pipelines |
+| Domain | What I Cover |
+|---|---|
+| 🧠 **LLM / ML Security** | Prompt injection, jailbreaks, insecure output handling, model/data poisoning, supply-chain risk — mapped to **OWASP LLM Top 10** & **MITRE ATLAS** |
+| 🏛️ **AI Governance** | AI risk management & assurance aligned to **NIST AI RMF** and **ISO/IEC 42001** — model inventories, approval gates, accountability frameworks |
+| 🔏 **Data Privacy** | Data classification, DLP, minimization, and privacy-by-design under **GDPR / PIPEDA**; securing training & inference data end-to-end |
+| ⚙️ **Secure AI in CI/CD** | Guardrails, secrets hygiene, and provenance for model & dependency pipelines — security gates baked into MLOps |
+| 🤖 **Agentic AI Security** <sub>·trending</sub> | Threat modeling for autonomous AI agents — tool-scoping, sandboxing, permission boundaries, and agent-to-agent trust |
+| 🎯 **AI Red-Teaming & Adversarial Testing** <sub>·trending</sub> | Structured adversarial testing of models & pipelines against **MITRE ATLAS** and **OWASP LLM** attack techniques |
+| ☁️ **Cloud AI Workload Security** | Securing Azure AI, AWS Bedrock & GCP Vertex AI workloads — identity, network isolation, and data-boundary controls |
+| 🧭 **Responsible & Ethical AI** | Bias, fairness, and transparency reviews woven into the model lifecycle and governance gates |
+| 🔗 **Third-Party AI & Vendor Risk** | Due diligence and continuous risk assessment for third-party models, APIs, and AI vendors |
 
 ---
 
