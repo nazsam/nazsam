@@ -42,39 +42,10 @@
 
 ---
 
-## 🗺️ Skills Map
-
-```mermaid
-mindmap
-  root(("🛡️ S. Naz"))
-    Cybersecurity
-      SOC & Incident Response
-      Threat Hunting · MITRE ATT&CK
-      Detection Engineering
-    Cloud Security
-      Azure
-      AWS
-      GCP · Hybrid
-    DevSecOps
-      Secure CI/CD
-      IaC & Container Security
-      Automation
-    AI Security & Privacy
-      LLM / ML Security
-      AI Governance
-      Data Privacy
-    Governance & Risk
-      NIST · ISO 27001
-      Zero Trust
-      Compliance & Audit
-```
-
----
-
 <a id="about"></a>
-## 👋 About Me
+## About Me
 
-### 🚀 Building secure, intelligent platforms for the future
+### Building secure, intelligent platforms for the future
 
 *Technology never stands still. My mission is to make sure security keeps pace with innovation.*
 
