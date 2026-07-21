@@ -282,6 +282,14 @@ mindmap
 ![COBIT](https://img.shields.io/badge/COBIT-6B2C91?style=flat-square)
 ![ITIL](https://img.shields.io/badge/ITIL-EF3D42?style=flat-square)
 
+<br>
+
+**🗂️ Everything at a Glance**
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=azure,aws,gcp,docker,kubernetes,terraform,ansible,vagrant,git,github,githubactions,gitlab,jenkins,python,bash,mysql,postgresql,mongodb,ubuntu,centos,kali,linux,windows,php&theme=dark" />
+</div>
+
 ---
 
 <a id="projects"></a>
