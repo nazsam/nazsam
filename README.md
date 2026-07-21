@@ -42,7 +42,7 @@
 
 ---
 
-## 🧠 Expertise at a Glance
+## 🗺️ Skills Map
 
 ```mermaid
 mindmap
@@ -76,17 +76,9 @@ mindmap
 
 > **Multi-discipline Cybersecurity, Cloud & DevSecOps leader** with **over a decade and a half** building secure, scalable, high-performance environments across **Azure, AWS, GCP, and hybrid** infrastructures. I blend hands-on technical mastery with strategic leadership — designing secure architectures, automating everything, driving **Zero Trust**, and uplifting engineering teams. Increasingly focused on the next frontier: **securing AI systems and protecting privacy** in a machine-learning world.
 
-<table>
-<tr><td width="22%"><b>🧑‍💻 Name</b></td><td>S. Naz</td></tr>
-<tr><td><b>🎯 Title</b></td><td>Cybersecurity · Cloud · DevSecOps Leader | AI Security & Privacy</td></tr>
-<tr><td><b>⏳ Experience</b></td><td>Over a decade and a half across security, cloud, DevOps, networking & systems</td></tr>
-<tr><td><b>🎓 Education</b></td><td>MSc, Information Technology (MSIT)</td></tr>
-<tr><td><b>🧭 Focus</b></td><td>Cloud Security · DevSecOps · AI Security & Privacy · SOC & IR · Zero Trust · Risk & Governance</td></tr>
-<tr><td><b>☁️ Clouds</b></td><td>Azure · AWS · GCP · Hybrid / Multi-Cloud</td></tr>
-<tr><td><b>🤝 Open to</b></td><td>Security Leadership / SOC · Cloud Security Architecture · AI Security · vCISO / Advisory · Consulting</td></tr>
-<tr><td><b>📍 Location</b></td><td>Canada 🇨🇦</td></tr>
-<tr><td><b>💬 Motto</b></td><td><i>Shift left · Automate everything · Trust nothing · Secure the future.</i></td></tr>
-</table>
+Over a decade and a half working across security, cloud, DevOps, networking and systems, backed by an MSc in Information Technology. Focus areas span cloud security, DevSecOps, AI security and privacy, SOC and incident response, zero trust, and risk and governance. Comfortable across Azure, AWS, GCP, and hybrid multi-cloud environments. Open to security leadership and SOC roles, cloud security architecture, AI security work, vCISO or advisory engagements, and consulting.
+
+*Shift left. Automate everything. Trust nothing. Secure the future.*
 
 ---
 
