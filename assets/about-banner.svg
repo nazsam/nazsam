@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="130" viewBox="0 0 1200 130" preserveAspectRatio="none">
+    <defs>
+          <linearGradient id="bg" x1="0%" y1="0%" x2="86%" y2="185%">
+                  <stop offset="0%" stop-color="#212d36"/>
+                  <stop offset="28%" stop-color="#26333c"/>
+                  <stop offset="55%" stop-color="#34434c"/>
+                  <stop offset="78%" stop-color="#3d4d55"/>
+                  <stop offset="100%" stop-color="#47575e"/>
+          </linearGradient>
+          <radialGradient id="glow" cx="100%" cy="0%" r="55%">
+                  <stop offset="0%" stop-color="#d98b6f" stop-opacity="0.20"/>
+                  <stop offset="70%" stop-color="#d98b6f" stop-opacity="0"/>
+          </radialGradient>
+          <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.18"/>
+          </pattern>
+          <linearGradient id="dotsFade" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                  <stop offset="55%" stop-color="#ffffff" stop-opacity="1"/>
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+          <mask id="dotsMask">
+                  <rect x="0" y="0" width="260" height="130" fill="url(#dotsFade)"/>
+          </mask>
+    </defs>
+    <rect width="1200" height="130" fill="url(#bg)"/>
+    <rect width="260" height="130" fill="url(#dots)" mask="url(#dotsMask)"/>
+    <rect width="1200" height="130" fill="url(#glow)"/>
+    <text x="68" y="56" font-family="Calibri, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#d98b6f">WHO I AM</text>
+    <text x="68" y="98" font-family="Calibri, 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="0.5" fill="#f5f1ec">ABOUT ME</text>
+</svg>
