@@ -26,7 +26,6 @@
 <a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <img src="https://img.shields.io/badge/Canada%20%F0%9F%87%A8%F0%9F%87%A6-1E3AA8?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Security%20Clearance-Level%204%20(Canada)-006400?style=for-the-badge" />
 <img src="https://komarev.com/ghpvc/?username=devsecforge&label=Profile%20views&color=22D3EE&style=for-the-badge" />
 
 </div>
@@ -78,78 +77,33 @@ mindmap
 
 > **Multi-discipline Cybersecurity, Cloud & DevSecOps leader** with **over a decade and a half** building secure, scalable, high-performance environments across **Azure, AWS, GCP, and hybrid** infrastructures. I blend hands-on technical mastery with strategic leadership — designing secure architectures, automating everything, driving **Zero Trust**, and uplifting engineering teams. Increasingly focused on the next frontier: **securing AI systems and protecting privacy** in a machine-learning world.
 
-```yaml
-# ╔══════════════════════════════════════════════════════════════════╗
-# ║                        🛡️  IDENTITY.YAML  🛡️                      ║
-# ╚══════════════════════════════════════════════════════════════════╝
-
-name:          "S. Naz"
-title:         "Cybersecurity · Cloud · DevSecOps Leader | AI Security & Privacy"
-experience:    "over a decade and a half across security, cloud, DevOps, networking & systems"
-education:     "MSc, Information Technology (MSIT)"
-
-# ── core disciplines ─────────────────────────────────────────────────
-focus:         ["Cloud Security", "DevSecOps", "AI Security & Privacy", "SOC & IR", "Zero Trust", "Risk & Governance"]
-clouds:        ["Azure", "AWS", "GCP", "Hybrid / Multi-Cloud"]
-
-# ── where I add value ────────────────────────────────────────────────
-open_to:       ["Security Leadership / SOC", "Cloud Security Architecture", "AI Security", "vCISO / Advisory", "Consulting"]
-signature:     "15+ years · 14 repositories shipped in the open · one security philosophy"
-
-location:      "Canada 🇨🇦"
-motto:         "Shift left · Automate everything · Trust nothing · Secure the future."
-
-# ╚══════════════════════════════════════════════════════════════════╝
-```
+<table>
+<tr><td width="22%"><b>🧑‍💻 Name</b></td><td>S. Naz</td></tr>
+<tr><td><b>🎯 Title</b></td><td>Cybersecurity · Cloud · DevSecOps Leader | AI Security & Privacy</td></tr>
+<tr><td><b>⏳ Experience</b></td><td>Over a decade and a half across security, cloud, DevOps, networking & systems</td></tr>
+<tr><td><b>🎓 Education</b></td><td>MSc, Information Technology (MSIT)</td></tr>
+<tr><td><b>🧭 Focus</b></td><td>Cloud Security · DevSecOps · AI Security & Privacy · SOC & IR · Zero Trust · Risk & Governance</td></tr>
+<tr><td><b>☁️ Clouds</b></td><td>Azure · AWS · GCP · Hybrid / Multi-Cloud</td></tr>
+<tr><td><b>🤝 Open to</b></td><td>Security Leadership / SOC · Cloud Security Architecture · AI Security · vCISO / Advisory · Consulting</td></tr>
+<tr><td><b>📍 Location</b></td><td>Canada 🇨🇦</td></tr>
+<tr><td><b>💬 Motto</b></td><td><i>Shift left · Automate everything · Trust nothing · Secure the future.</i></td></tr>
+</table>
 
 ---
 
 ## 🎯 Focus Areas
 
-<table>
-<tr>
-<td width="25%" valign="top">
-
-### 🛡️ Cybersecurity & SOC
-- 24/7 SOC leadership
-- Incident Response & Forensics
-- Threat Hunting (ATT&CK)
-- Detection Engineering
-- SIEM / XDR / SOAR
-
-</td>
-<td width="25%" valign="top">
-
-### ☁️ Cloud Security
-- Azure · AWS · GCP
-- Secure landing zones
-- CSPM & posture mgmt
-- Identity & Zero Trust
-- Encryption & KMS
-
-</td>
-<td width="25%" valign="top">
-
-### ⚙️ DevSecOps
-- Secure CI/CD gates
-- IaC & container security
-- SAST · SCA · DAST
-- Policy-as-code
-- Security automation
-
-</td>
-<td width="25%" valign="top">
-
-### 🤖 AI Security & Privacy
-- LLM / ML security
-- AI governance
-- Data privacy & DLP
-- Model risk & red-teaming
-- Responsible AI
-
-</td>
-</tr>
-</table>
+> ![Cybersecurity & SOC](https://img.shields.io/badge/🛡️_CYBERSECURITY_&_SOC-EF2D3C?style=for-the-badge)
+> 24/7 SOC leadership · Incident Response & Forensics · Threat Hunting (ATT&CK) · Detection Engineering · SIEM / XDR / SOAR
+>
+>> ![Cloud Security](https://img.shields.io/badge/☁️_CLOUD_SECURITY-2B50E4?style=for-the-badge)
+>> Azure · AWS · GCP · Secure landing zones · CSPM & posture management · Identity & Zero Trust · Encryption & KMS
+>>
+>>> ![DevSecOps](https://img.shields.io/badge/⚙️_DEVSECOPS-FB8C1A?style=for-the-badge)
+>>> Secure CI/CD gates · IaC & container security · SAST · SCA · DAST · Policy-as-code · Security automation
+>>>
+>>>> ![AI Security & Privacy](https://img.shields.io/badge/🤖_AI_SECURITY_&_PRIVACY-10D0C4?style=for-the-badge)
+>>>> LLM / ML security · AI governance · Data privacy & DLP · Model risk & red-teaming · Responsible AI
 
 ---
 
