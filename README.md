@@ -8,8 +8,7 @@
 
 <!-- ░░░░░░░░░░░░░░░░░░░░ HERO BANNER ░░░░░░░░░░░░░░░░░░░░ -->
 <a href="https://github.com/devsecforge">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1533,30:1E3AA8,70:2B50E4,100:22D3EE&height=220&section=header&text=devsecforge&fontColor=ffffff&fontSize=64&fontAlignY=38&desc=Cybersecurity%20%C2%B7%20Cloud%20Security%20%C2%B7%20DevSecOps%20%C2%B7%20AI%20Security&descAlignY=58&descSize=20&animation=fadeIn" width="100%" alt="devsecforge — Cybersecurity · Cloud Security · DevSecOps · AI Security" />
-</a>
+    <img src="assets/header-banner.png" width="100%" alt="devsecforge -- Cybersecurity, Cloud, DevSecOps, AI Security" /></a>
 
 <div align="center">
 
