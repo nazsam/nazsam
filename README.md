@@ -74,11 +74,35 @@ mindmap
 <a id="about"></a>
 ## 👋 About Me
 
-> **Multi-discipline Cybersecurity, Cloud & DevSecOps leader** with **over a decade and a half** building secure, scalable, high-performance environments across **Azure, AWS, GCP, and hybrid** infrastructures. I blend hands-on technical mastery with strategic leadership — designing secure architectures, automating everything, driving **Zero Trust**, and uplifting engineering teams. Increasingly focused on the next frontier: **securing AI systems and protecting privacy** in a machine-learning world.
+### 🚀 Building secure, intelligent platforms for the future
 
-Over a decade and a half working across security, cloud, DevOps, networking and systems, backed by an MSc in Information Technology. Focus areas span cloud security, DevSecOps, AI security and privacy, SOC and incident response, zero trust, and risk and governance. Comfortable across Azure, AWS, GCP, and hybrid multi-cloud environments. Open to security leadership and SOC roles, cloud security architecture, AI security work, vCISO or advisory engagements, and consulting.
+*Technology never stands still. My mission is to make sure security keeps pace with innovation.*
 
-*Shift left. Automate everything. Trust nothing. Secure the future.*
+I help organizations design, build, and operate digital platforms that are secure, resilient, and ready for the future. My work brings together cybersecurity, cloud computing, artificial intelligence, platform engineering, infrastructure, networking, and automation, so security becomes part of every decision instead of an afterthought.
+
+I believe great technology is built on strong architecture, intelligent automation, and continuous improvement. Whether I'm designing cloud platforms, securing artificial intelligence, improving engineering practices, or modernizing enterprise infrastructure, my goal stays the same: deliver solutions that protect people, support business growth, and inspire confidence.
+
+**What I focus on**
+
+- Building secure cloud platforms
+- Protecting artificial intelligence systems
+- Creating modern engineering practices
+- Automating security and operations
+- Designing resilient enterprise architecture
+- Strengthening security operations
+- Developing zero trust strategies
+- Enabling secure innovation
+
+**My approach**
+
+  ```
+  Secure by Design
+  Automate by Default
+  Trust Nothing, Verify Everything
+  Build for the Future
+  ```
+
+  *Security should never slow innovation. It should make innovation possible.*
 
 ---
 
