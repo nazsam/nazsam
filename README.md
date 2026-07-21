@@ -43,7 +43,7 @@
 ---
 
 <a id="about"></a>
-## About Me
+<img src="assets/about-banner.svg" width="100%" alt="About Me — Who I Am" />
 
 ### **Building secure, intelligent platforms for the future**
 
