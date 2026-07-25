@@ -209,6 +209,12 @@
       transition:opacity .15s, transform .15s;
     }
     .repo-tile .open-btn:hover { opacity:.92; transform:scale(1.02); }
+    .repo-tile .open-btn.sec { background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2); }
+    .repo-tile .learn-line { font-size:.74rem; color:var(--muted); line-height:1.4; }
+    .repo-tile .learn-line.out { color:var(--green); font-size:.72rem; }
+    .repo-tile .learn-line strong { color:var(--text); }
+    .tile-actions { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:auto; }
+    .tile-actions .open-btn { flex:1; min-width:7rem; }
 
     /* learn topics section */
     .learn-section { margin-top:3rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,.1); }
@@ -269,7 +275,8 @@
     <div class="nav-links">
       <a href="#portal">📦 All Repos</a>
       <a href="#learn">📚 Topics</a>
-      <a href="README.md">📖 README</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/README.md">📖 README</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/INDEX.md">📑 Topics</a>
       <a class="blue" href="https://github.com/devsecforge/devsecforge">🏠 devsecforge</a>
       <a href="https://github.com/bregman-arie/devops-exercises">Upstream ↗</a>
     </div>
@@ -307,7 +314,7 @@
   <div class="notices">
     <div class="notice info">ℹ️ <strong>About:</strong> Questions and exercises on DevOps, SRE, Cloud, K8s — structured hub linking to <a href="https://github.com/bregman-arie/devops-exercises">devops-exercises</a>.</div>
     <div class="notice stat">📊 <strong>2624+</strong> exercises and questions in the upstream library.</div>
-    <div class="notice warn">⚠️ Interview prep — most questions don't represent an actual interview. <a href="FAQ.md">FAQ</a></div>
+    <div class="notice warn">⚠️ Interview prep — most questions don't represent an actual interview. <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/FAQ.md">FAQ</a></div>
     <div class="notice stop">🛑 You don't need every topic — learn what matches your role and goals.</div>
     <div class="notice contrib">📝 Contribute via upstream PRs or <a href="https://github.com/devsecforge/devsecops-exercises">devsecops-exercises</a> for security Q&A.</div>
   </div>
@@ -318,13 +325,13 @@
   <section class="learn-section" id="learn">
     <h2><span>🎯</span> Featured topics · Objective · Outcomes</h2>
     <div class="topic-grid">
-      <div class="topic-card"><div class="icon">🌐</div><h3>Network</h3><p class="obj"><strong>Objective:</strong> TCP/IP, DNS, routing, OSI</p><p class="out"><strong>Outcomes:</strong> Debug connectivity · Design zones · NAT/VLAN/MTU</p><a class="btn" href="topics/network.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#network">Upstream ↗</a></div>
-      <div class="topic-card"><div class="icon">🐧</div><h3>Operating System</h3><p class="obj"><strong>Objective:</strong> Processes, memory, kernel</p><p class="out"><strong>Outcomes:</strong> IPC · Virtual memory · VM vs containers</p><a class="btn" href="topics/operating-system.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#operating-system">Upstream ↗</a></div>
-      <div class="topic-card"><div class="icon">🐹</div><h3>Go</h3><p class="obj"><strong>Objective:</strong> Go for cloud-native tooling</p><p class="out"><strong>Outcomes:</strong> Goroutines · Slices · iota puzzles</p><a class="btn" href="topics/go.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#go">Upstream ↗</a></div>
-      <div class="topic-card"><div class="icon">🔥</div><h3>Prometheus</h3><p class="obj"><strong>Objective:</strong> Metrics monitoring & PromQL</p><p class="out"><strong>Outcomes:</strong> Exporters · Alerting · HA patterns</p><a class="btn" href="topics/prometheus.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#prometheus">Upstream ↗</a></div>
-      <div class="topic-card"><div class="icon">🗄️</div><h3>SQL & Mongo</h3><p class="obj"><strong>Objective:</strong> Relational & document DBs</p><p class="out"><strong>Outcomes:</strong> JOINs · NoSQL trade-offs · Queries</p><a class="btn" href="topics/databases.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#databases">Upstream ↗</a></div>
-      <div class="topic-card"><div class="icon">🔍</div><h3>Elastic Stack</h3><p class="obj"><strong>Objective:</strong> ELK — search, logs, dashboards</p><p class="out"><strong>Outcomes:</strong> Grok · Shards · Kibana · Security</p><a class="btn" href="topics/elastic.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#elastic">Upstream ↗</a></div>
-      <div class="topic-card"><div class="icon">🏛️</div><h3>System Design</h3><p class="obj"><strong>Objective:</strong> Scalable resilient architectures</p><p class="out"><strong>Outcomes:</strong> Cache · CDN · Design interviews</p><a class="btn" href="topics/system-design.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#system-design">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🌐</div><h3>Network</h3><p class="obj"><strong>Objective:</strong> TCP/IP, DNS, routing, OSI</p><p class="out"><strong>Outcomes:</strong> Debug connectivity · Design zones · NAT/VLAN/MTU</p><a class="btn" href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/network.md">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#network">Exercises ↗</a></div>
+      <div class="topic-card"><div class="icon">🐧</div><h3>Operating System</h3><p class="obj"><strong>Objective:</strong> Processes, memory, kernel</p><p class="out"><strong>Outcomes:</strong> IPC · Virtual memory · VM vs containers</p><a class="btn" href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/operating-system.md">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#operating-system">Exercises ↗</a></div>
+      <div class="topic-card"><div class="icon">🐹</div><h3>Go</h3><p class="obj"><strong>Objective:</strong> Go for cloud-native tooling</p><p class="out"><strong>Outcomes:</strong> Goroutines · Slices · iota puzzles</p><a class="btn" href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/go.md">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#go">Exercises ↗</a></div>
+      <div class="topic-card"><div class="icon">🔥</div><h3>Prometheus</h3><p class="obj"><strong>Objective:</strong> Metrics monitoring & PromQL</p><p class="out"><strong>Outcomes:</strong> Exporters · Alerting · HA patterns</p><a class="btn" href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/prometheus.md">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#prometheus">Exercises ↗</a></div>
+      <div class="topic-card"><div class="icon">🗄️</div><h3>SQL & Mongo</h3><p class="obj"><strong>Objective:</strong> Relational & document DBs</p><p class="out"><strong>Outcomes:</strong> JOINs · NoSQL trade-offs · Queries</p><a class="btn" href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/databases.md">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#databases">Exercises ↗</a></div>
+      <div class="topic-card"><div class="icon">🔍</div><h3>Elastic Stack</h3><p class="obj"><strong>Objective:</strong> ELK — search, logs, dashboards</p><p class="out"><strong>Outcomes:</strong> Grok · Shards · Kibana · Security</p><a class="btn" href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/elastic.md">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#elastic">Exercises ↗</a></div>
+      <div class="topic-card"><div class="icon">🏛️</div><h3>System Design</h3><p class="obj"><strong>Objective:</strong> Scalable resilient architectures</p><p class="out"><strong>Outcomes:</strong> Cache · CDN · Design interviews</p><a class="btn" href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/system-design.md">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#system-design">Exercises ↗</a></div>
       <div class="topic-card"><div class="icon">☸️</div><h3>Kubernetes</h3><p class="obj"><strong>Objective:</strong> Container orchestration at scale</p><p class="out"><strong>Outcomes:</strong> Workloads · RBAC · CKA prep</p><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#kubernetes">Upstream ↗</a></div>
       <div class="topic-card"><div class="icon">🛡️</div><h3>Security</h3><p class="obj"><strong>Objective:</strong> DevSecOps in DevOps context</p><p class="out"><strong>Outcomes:</strong> Shift-left · Secrets · Sec Q&A</p><a class="btn" href="https://github.com/devsecforge/devsecops-exercises">devsecops-exercises</a></div>
     </div>
@@ -333,30 +340,30 @@
     <div class="topic-pills">
       <a href="https://github.com/bregman-arie/devops-exercises#devops">⚙️ DevOps</a>
       <a href="https://github.com/bregman-arie/devops-exercises#git">📦 Git</a>
-      <a href="topics/network.md">🌐 Network</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/network.md">🌐 Network</a>
       <a href="https://github.com/bregman-arie/devops-exercises#kubernetes">☸️ Kubernetes</a>
       <a href="https://github.com/bregman-arie/devops-exercises#python">🐍 Python</a>
-      <a href="topics/go.md">🐹 Go</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/go.md">🐹 Go</a>
       <a href="https://github.com/bregman-arie/devops-exercises#cloud">☁️ Cloud</a>
       <a href="https://github.com/bregman-arie/devops-exercises#aws">🟠 AWS</a>
       <a href="https://github.com/bregman-arie/devops-exercises#azure">🔷 Azure</a>
-      <a href="topics/operating-system.md">🐧 OS</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/operating-system.md">🐧 OS</a>
       <a href="https://github.com/bregman-arie/devops-exercises#linux">Linux</a>
       <a href="https://github.com/bregman-arie/devops-exercises#shell-scripting">Bash</a>
-      <a href="topics/databases.md">🗄️ SQL</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/databases.md">🗄️ SQL</a>
       <a href="https://github.com/bregman-arie/devops-exercises#cicd">🔄 CI/CD</a>
       <a href="https://github.com/bregman-arie/devops-exercises#terraform">🏗️ Terraform</a>
-      <a href="topics/prometheus.md">🔥 Prometheus</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/prometheus.md">🔥 Prometheus</a>
       <a href="https://github.com/bregman-arie/devops-exercises#observability">📈 Observability</a>
-      <a href="topics/system-design.md">🏛️ System Design</a>
-      <a href="topics/elastic.md">🔍 Elastic</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/system-design.md">🏛️ System Design</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/elastic.md">🔍 Elastic</a>
+      <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/topics/INDEX.md">📑 All topics</a>
       <a href="https://github.com/bregman-arie/devops-exercises#questions-you-can-ask">💬 Ask interviewer</a>
     </div>
   </section>
 
   <footer>
-    <p><strong>Credits:</strong> <a href="https://github.com/bregman-arie">Arie Bregman</a> & 209+ contributors · <a href="https://github.com/bregman-arie/devops-exercises">devops-exercises</a></p>
-    <p style="margin-top:.4rem">Hub by <a href="https://github.com/devsecforge">devsecforge</a> · <a href="LICENSE">MIT</a> · <a href="https://github.com/devsecforge/DevOps-learn-and-Practice">DevOps-learn-and-Practice</a></p>
+    <p><a href="https://github.com/devsecforge">devsecforge</a> · <a href="https://github.com/devsecforge/DevOps-learn-and-Practice">DevOps-learn-and-Practice</a> · <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/README.md">README</a> · <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/FAQ.md">FAQ</a></p>
   </footer>
 </div>
 
@@ -373,45 +380,48 @@ const CATEGORIES = {
 };
 
 const REPOS = [
-  {"name":"devsecforge","icon":"🏠","cat":"profile","color":"#2B50E4","overview":"Profile hub — README, resources & links to all projects"},
-  {"name":"DevOps-learn-and-Practice","icon":"🔴","cat":"learn","color":"#EF2D3C","overview":"You are here — 2624+ DevOps/SRE exercises hub & repo portal"},
-  {"name":"devsecops-roadmap","icon":"🗺️","cat":"learn","color":"#16C060","overview":"Structured learning path — start here"},
-  {"name":"devsecops-exercises","icon":"📚","cat":"learn","color":"#22D3EE","overview":"72+ security Q&A — interview prep"},
-  {"name":"security-awareness-training-content","icon":"🎓","cat":"learn","color":"#16C060","overview":"Security awareness training modules"},
-  {"name":"security-operations-toolkit","icon":"🛡️","cat":"lab","color":"#FB8C1A","overview":"CI/CD security gate — SAST, SCA, secrets, containers"},
-  {"name":"kubernetes-security-lab","icon":"☸️","cat":"lab","color":"#326CE5","overview":"5-layer Kubernetes defense lab"},
-  {"name":"devsecops-pipeline-security-gates","icon":"⚙️","cat":"lab","color":"#FB8C1A","overview":"Reusable pipeline security gates"},
-  {"name":"secure-terraform-aws","icon":"🔐","cat":"lab","color":"#FF9900","overview":"Hardened AWS Terraform patterns"},
-  {"name":"container-image-hardening","icon":"📦","cat":"lab","color":"#22D3EE","overview":"Container image hardening"},
-  {"name":"secrets-management-patterns","icon":"🔑","cat":"lab","color":"#1E3AA8","overview":"Secrets & KMS patterns"},
-  {"name":"zero-trust-reference-architecture","icon":"🛡️","cat":"architecture","color":"#9E1B45","overview":"NIST 800-207 Zero Trust reference"},
-  {"name":"cloud-security-baseline","icon":"☁️","cat":"architecture","color":"#2B50E4","overview":"Azure/AWS cloud guardrails"},
-  {"name":"aws-security-baseline","icon":"🟠","cat":"architecture","color":"#FF9900","overview":"AWS security baseline"},
-  {"name":"cloud-iam-least-privilege-toolkit","icon":"👤","cat":"architecture","color":"#1E3AA8","overview":"IAM least-privilege toolkit"},
-  {"name":"cloud-security-posture-dashboard","icon":"📊","cat":"architecture","color":"#22D3EE","overview":"CSPM dashboard framework"},
-  {"name":"soc-detection-engineering","icon":"🎯","cat":"soc","color":"#EF2D3C","overview":"MITRE ATT&CK detections — Sentinel/Splunk"},
-  {"name":"siem-detection-content-library","icon":"📡","cat":"soc","color":"#2B50E4","overview":"SIEM detection content library"},
-  {"name":"incident-response-playbooks","icon":"🚨","cat":"soc","color":"#EF2D3C","overview":"NIST 800-61 IR playbooks"},
-  {"name":"incident-response-automation-playbooks","icon":"⚡","cat":"soc","color":"#FB8C1A","overview":"Automated IR playbooks"},
-  {"name":"security-metrics-dashboard","icon":"📊","cat":"soc","color":"#22D3EE","overview":"SOC & exec metrics"},
-  {"name":"threat-intel-feed-aggregator","icon":"🛰️","cat":"soc","color":"#0B1533","overview":"Threat intel feed aggregation"},
-  {"name":"purple-team-exercise-framework","icon":"🟣","cat":"soc","color":"#6B2C91","overview":"Purple team exercise framework"},
-  {"name":"ransomware-tabletop-exercise-kit","icon":"🔒","cat":"soc","color":"#EF2D3C","overview":"Ransomware tabletop kit"},
-  {"name":"compliance-as-code","icon":"📜","cat":"governance","color":"#16C060","overview":"ISO/NIST/CIS compliance as code"},
-  {"name":"privacy-skills","icon":"🔏","cat":"governance","color":"#1E3AA8","overview":"Privacy framework skills"},
-  {"name":"vulnerability-management-program","icon":"🎯","cat":"governance","color":"#2B50E4","overview":"Vulnerability management program"},
-  {"name":"threat-modeling-toolkit","icon":"🗺️","cat":"governance","color":"#16C060","overview":"STRIDE threat modeling"},
-  {"name":"ai-security-lab","icon":"🤖","cat":"ai","color":"#10D0C4","overview":"OWASP LLM Top 10 lab"},
-  {"name":"agent-security-skills","icon":"🧠","cat":"ai","color":"#22D3EE","overview":"AI agent defensive skills + A2A"},
-  {"name":"security-intel-mcp","icon":"🛰️","cat":"ai","color":"#0B1533","overview":"CVE · EPSS · KEV MCP server"},
-  {"name":"api-security-testing-framework","icon":"🔍","cat":"appsec","color":"#EF2D3C","overview":"API security testing"},
-  {"name":"secure-header-linter","icon":"🌐","cat":"appsec","color":"#0B1533","overview":"HTTP security headers linter"},
-  {"name":"phishing-simulation-toolkit","icon":"🎣","cat":"appsec","color":"#EF2D3C","overview":"Phishing simulation toolkit"}
+  {"name":"devsecforge","icon":"🏠","cat":"profile","color":"#2B50E4","overview":"Profile hub — README, resources & links to all projects","objective":"Navigate the full devsecforge ecosystem","outcomes":"Find labs · roadmaps · exercises · profile README","learn":"Start: README.md · REPO-HUB.md · participation bridges"},
+  {"name":"DevOps-learn-and-Practice","icon":"🔴","cat":"learn","color":"#EF2D3C","overview":"2624+ DevOps/SRE exercises hub & this portal","objective":"Structured DevOps/SRE learning with objectives","outcomes":"Topic guides · interview prep · upstream exercise links","learn":"topics/INDEX.md · FAQ.md · featured topic pages"},
+  {"name":"devsecops-roadmap","icon":"🗺️","cat":"learn","color":"#16C060","overview":"Structured public learning path with checkboxes","objective":"Follow a phased cybersecurity & DevSecOps path","outcomes":"Track progress · know what to learn next","learn":"README.md · docs/LEARN-CYBERSECURITY-FREE.md"},
+  {"name":"devsecops-exercises","icon":"📚","cat":"learn","color":"#22D3EE","overview":"72+ security Q&A with collapsible answers","objective":"Self-test DevSecOps & security knowledge","outcomes":"Interview prep · flashcards · memorize rhythm","learn":"exercises/ folder · docs/MEMORIZE.md · faq.md"},
+  {"name":"security-awareness-training-content","icon":"🎓","cat":"learn","color":"#16C060","overview":"Security awareness modules for teams","objective":"Deliver security awareness training","outcomes":"Ready modules · phishing · password hygiene","learn":"README.md · content modules by topic"},
+  {"name":"security-operations-toolkit","icon":"🛡️","cat":"lab","color":"#FB8C1A","overview":"CI/CD security gate — SAST, SCA, secrets, containers","objective":"Hands-on DevSecOps pipeline security","outcomes":"Run gates in CI · scan secrets · containers · IaC","learn":"README.md · .github/workflows · gate configs"},
+  {"name":"kubernetes-security-lab","icon":"☸️","cat":"lab","color":"#326CE5","overview":"5-layer Kubernetes defense lab","objective":"Harden Kubernetes clusters in practice","outcomes":"PSA · RBAC · NetworkPolicy · Falco · audit","learn":"README.md · manifests/ · lab scenarios"},
+  {"name":"devsecops-pipeline-security-gates","icon":"⚙️","cat":"lab","color":"#FB8C1A","overview":"Reusable pipeline gates for GitHub Actions & GitLab","objective":"Drop-in secure CI/CD gates","outcomes":"Reusable workflows · policy checks · shift-left","learn":"README.md · examples/ · gate templates"},
+  {"name":"secure-terraform-aws","icon":"🔐","cat":"lab","color":"#FF9900","overview":"Hardened AWS Terraform — S3, KMS, IAM","objective":"Secure AWS infrastructure as code","outcomes":"Hardened modules · tfsec · checkov patterns","learn":"README.md · terraform/ · security controls"},
+  {"name":"container-image-hardening","icon":"📦","cat":"lab","color":"#22D3EE","overview":"Container image hardening & supply-chain hygiene","objective":"Build minimal secure container images","outcomes":"Distroless · non-root · scan · sign images","learn":"README.md · Dockerfile patterns · checklists"},
+  {"name":"secrets-management-patterns","icon":"🔑","cat":"lab","color":"#1E3AA8","overview":"Secrets, KMS & vault patterns for cloud-native","objective":"Manage secrets without leaking credentials","outcomes":"Vault · KMS · rotation · CI secret hygiene","learn":"README.md · patterns/ · integration examples"},
+  {"name":"zero-trust-reference-architecture","icon":"🛡️","cat":"architecture","color":"#9E1B45","overview":"NIST 800-207 Zero Trust reference","objective":"Design Zero Trust architecture","outcomes":"Maturity model · Azure/AWS enforcement maps","learn":"README.md · architecture diagrams · controls"},
+  {"name":"cloud-security-baseline","icon":"☁️","cat":"architecture","color":"#2B50E4","overview":"Azure Policy + AWS guardrails — CIS / NIST","objective":"Baseline cloud security posture","outcomes":"Policy packs · guardrails · compliance maps","learn":"README.md · policies/ · terraform modules"},
+  {"name":"aws-security-baseline","icon":"🟠","cat":"architecture","color":"#FF9900","overview":"AWS landing zone & security baseline","objective":"Secure AWS accounts & landing zones","outcomes":"Control mappings · CIS · account hardening","learn":"README.md · baseline controls · Terraform"},
+  {"name":"cloud-iam-least-privilege-toolkit","icon":"👤","cat":"architecture","color":"#1E3AA8","overview":"IAM least-privilege across Azure & AWS","objective":"Implement least-privilege IAM","outcomes":"Role templates · permission boundaries · reviews","learn":"README.md · IAM patterns · audit scripts"},
+  {"name":"cloud-security-posture-dashboard","icon":"📊","cat":"architecture","color":"#22D3EE","overview":"CSPM operating model & posture dashboard","objective":"Measure & improve cloud security posture","outcomes":"CSPM framework · exec dashboards · KPIs","learn":"README.md · dashboard templates · metrics"},
+  {"name":"soc-detection-engineering","icon":"🎯","cat":"soc","color":"#EF2D3C","overview":"Sentinel KQL + Splunk — MITRE ATT&CK mapped","objective":"Build production SOC detections","outcomes":"KQL · Splunk · ATT&CK mapping · tuning","learn":"README.md · detections/ · rule templates"},
+  {"name":"siem-detection-content-library","icon":"📡","cat":"soc","color":"#2B50E4","overview":"Portable SIEM detection content library","objective":"Reuse detection rules across SIEMs","outcomes":"Portable rules · use cases · content packs","learn":"README.md · rules/ · content catalog"},
+  {"name":"incident-response-playbooks","icon":"🚨","cat":"soc","color":"#EF2D3C","overview":"NIST 800-61 IR playbooks & tabletops","objective":"Run structured incident response","outcomes":"Playbooks · tabletop · report templates","learn":"README.md · playbooks/ · runbook index"},
+  {"name":"incident-response-automation-playbooks","icon":"⚡","cat":"soc","color":"#FB8C1A","overview":"SOAR-ready automated IR playbooks","objective":"Automate incident response steps","outcomes":"SOAR workflows · enrichment · containment","learn":"README.md · automation/ · playbook YAML"},
+  {"name":"security-metrics-dashboard","icon":"📊","cat":"soc","color":"#22D3EE","overview":"SOC, exec & DORA security metrics","objective":"Report security metrics to leadership","outcomes":"KQL queries · board reports · DORA metrics","learn":"README.md · dashboards/ · metric definitions"},
+  {"name":"threat-intel-feed-aggregator","icon":"🛰️","cat":"soc","color":"#0B1533","overview":"Aggregate threat intel for detection enrichment","objective":"Centralize threat intelligence feeds","outcomes":"Feed aggregation · IOC enrichment · STIX","learn":"README.md · feeds/ · integration guide"},
+  {"name":"purple-team-exercise-framework","icon":"🟣","cat":"soc","color":"#6B2C91","overview":"Purple team exercises — validate detections","objective":"Test detections with safe offense","outcomes":"Exercise plans · atomic tests · validation","learn":"README.md · exercises/ · facilitator guide"},
+  {"name":"ransomware-tabletop-exercise-kit","icon":"🔒","cat":"soc","color":"#EF2D3C","overview":"Ransomware tabletop scenarios & guides","objective":"Facilitate ransomware tabletops","outcomes":"Scenarios · injects · facilitator scripts","learn":"README.md · scenarios/ · response checklist"},
+  {"name":"compliance-as-code","icon":"📜","cat":"governance","color":"#16C060","overview":"ISO 27001 / NIST CSF / CIS crosswalk + OPA","objective":"Automate compliance validation","outcomes":"Crosswalks · OPA · Azure Policy · evidence","learn":"README.md · policies/ · control mappings"},
+  {"name":"privacy-skills","icon":"🔏","cat":"governance","color":"#1E3AA8","overview":"GDPR, CCPA, PIPEDA, EU AI Act privacy skills","objective":"Master privacy frameworks & controls","outcomes":"GDPR · CCPA · DPIA · privacy by design","learn":"README.md · skills/ · framework guides"},
+  {"name":"vulnerability-management-program","icon":"🎯","cat":"governance","color":"#2B50E4","overview":"Vulnerability management program design","objective":"Build a VM program with metrics","outcomes":"SLAs · prioritization · exec reporting","learn":"README.md · program templates · metrics"},
+  {"name":"threat-modeling-toolkit","icon":"🗺️","cat":"governance","color":"#16C060","overview":"STRIDE threat modeling templates","objective":"Run STRIDE threat modeling sessions","outcomes":"Templates · data flows · risk registers","learn":"README.md · templates/ · workshop guide"},
+  {"name":"ai-security-lab","icon":"🤖","cat":"ai","color":"#10D0C4","overview":"OWASP LLM Top 10 · prompt injection · NIST AI RMF","objective":"Secure LLM applications & AI systems","outcomes":"LLM Top 10 · guardrails · red team basics","learn":"README.md · labs/ · OWASP mappings"},
+  {"name":"agent-security-skills","icon":"🧠","cat":"ai","color":"#22D3EE","overview":"Defensive AI agent skills + A2A Agent Cards","objective":"Secure AI agents & MCP integrations","outcomes":"Agent Cards · schema validation · defensive skills","learn":"README.md · agent-cards/ · docs/A2A-INTEGRATION.md"},
+  {"name":"security-intel-mcp","icon":"🛰️","cat":"ai","color":"#0B1533","overview":"MCP server — CVE, EPSS & CISA KEV enrichment","objective":"Enrich vulnerabilities for agents & analysts","outcomes":"NVD · EPSS · KEV via MCP · agent tooling","learn":"README.md · server setup · API usage"},
+  {"name":"api-security-testing-framework","icon":"🔍","cat":"appsec","color":"#EF2D3C","overview":"API security testing patterns & checklist","objective":"Test REST/GraphQL APIs for security flaws","outcomes":"OWASP API Top 10 · test cases · checklists","learn":"README.md · checklists/ · test patterns"},
+  {"name":"secure-header-linter","icon":"🌐","cat":"appsec","color":"#0B1533","overview":"HTTP security headers linter & hardening","objective":"Harden HTTP security headers","outcomes":"CSP · HSTS · X-Frame · header scoring","learn":"README.md · linter usage · header guide"},
+  {"name":"phishing-simulation-toolkit","icon":"🎣","cat":"appsec","color":"#EF2D3C","overview":"Phishing simulation planning for awareness","objective":"Plan phishing awareness campaigns","outcomes":"Campaign templates · metrics · safe testing","learn":"README.md · campaign plans · facilitator tips"}
 ];
 
 function repoUrl(name) {
-  if (name === 'DevOps-learn-and-Practice') return 'https://github.com/devsecforge/DevOps-learn-and-Practice';
   return 'https://github.com/devsecforge/' + encodeURIComponent(name);
+}
+
+function readmeUrl(name) {
+  return repoUrl(name) + '/blob/main/README.md';
 }
 
 function renderTile(r, delay) {
@@ -426,7 +436,13 @@ function renderTile(r, delay) {
         </div>
       </div>
       <p class="overview">${r.overview}</p>
-      <a class="open-btn" href="${repoUrl(r.name)}" target="_blank" rel="noopener">Open repository →</a>
+      ${r.objective ? `<p class="learn-line"><strong>Objective:</strong> ${r.objective}</p>` : ''}
+      ${r.outcomes ? `<p class="learn-line out"><strong>Outcomes:</strong> ${r.outcomes}</p>` : ''}
+      ${r.learn ? `<p class="learn-line"><strong>Start reading:</strong> ${r.learn}</p>` : ''}
+      <div class="tile-actions">
+        <a class="open-btn" href="${repoUrl(r.name)}" target="_blank" rel="noopener">Open repo →</a>
+        <a class="open-btn sec" href="${readmeUrl(r.name)}" target="_blank" rel="noopener">Read README →</a>
+      </div>
     </article>`;
 }
 
@@ -435,7 +451,11 @@ function render(filter = '') {
   const portal = document.getElementById('portal');
   const empty = document.getElementById('empty');
   const filtered = REPOS.filter(r =>
-    !q || r.name.toLowerCase().includes(q) || r.overview.toLowerCase().includes(q) || r.cat.includes(q)
+    !q || r.name.toLowerCase().includes(q) || r.overview.toLowerCase().includes(q) ||
+    (r.objective && r.objective.toLowerCase().includes(q)) ||
+    (r.outcomes && r.outcomes.toLowerCase().includes(q)) ||
+    (r.learn && r.learn.toLowerCase().includes(q)) ||
+    r.cat.includes(q)
   );
   empty.style.display = filtered.length ? 'none' : 'block';
   const order = Object.keys(CATEGORIES);
