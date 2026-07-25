@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ai Security | devsecforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --navy:#0B1533; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.65; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.45), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.35), transparent 50%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .back { display:inline-block; margin-bottom:1rem; padding:.45rem .9rem; background:var(--red); color:#fff; text-decoration:none; border-radius:8px; font-weight:600; font-size:.85rem; }
+    .back.blue { background:var(--royal); margin-left:.4rem; }
+    h1 { color:var(--cyan); font-size:1.75rem; margin:.5rem 0 1rem; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.5rem 0 .65rem; border-bottom:1px solid rgba(239,45,60,.3); padding-bottom:.3rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1rem 0 .4rem; }
+    p, li { color:var(--muted); font-size:.9rem; }
+    ul { margin:.5rem 0 .5rem 1.25rem; }
+    li { margin:.25rem 0; }
+    hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:1.5rem 0; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    td, th { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    a { color:var(--cyan); }
+    details.qa { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.25); border-radius:10px; padding:.75rem 1rem; margin:.65rem 0; }
+    details.qa summary { cursor:pointer; font-weight:600; color:var(--text); }
+    details.qa p { margin-top:.65rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.65rem; margin:1rem 0; }
+    .grid a { display:block; padding:.65rem; background:rgba(11,21,51,.8); border:1px solid rgba(34,211,238,.3); border-radius:10px; text-decoration:none; color:var(--text); font-weight:600; font-size:.85rem; }
+    .grid a:hover { border-color:var(--cyan); background:rgba(43,80,228,.25); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../security-exercises.html">← Portal</a>
+    <a class="back blue" href="https://devsecforge.github.io/devsecforge/DevOps-learn-and-Practice/">Home</a>
+    <h1>AI &amp; LLM Security</h1>
+<h2>Name three items from the OWASP Top 10 for LLM Applications.</h2>
+<details>
+<summary>Answer</summary>
+<p>Examples: <strong>Prompt Injection</strong>, <strong>Insecure Output Handling</strong>, <strong>Training Data Poisoning</strong>, <strong>Model Denial of Service</strong>, <strong>Supply Chain Vulnerabilities</strong>, <strong>Sensitive Information Disclosure</strong>.</p>
+</details>
+<h2>What is prompt injection?</h2>
+<details>
+<summary>Answer</summary>
+<p>Manipulating an LLM via crafted input to <strong>override instructions</strong>, leak data, or trigger unintended actions — direct (user input) or indirect (poisoned retrieved content).</p>
+</details>
+<h2>How does the A2A (Agent2Agent) protocol relate to MCP?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>MCP</strong> connects agents to <strong>tools/data</strong>. <strong>A2A</strong> (<a href="https://github.com/a2aproject/A2A">Agent2Agent Protocol</a>) enables <strong>agent-to-agent</strong> collaboration — discovery via Agent Cards, standardized JSON-RPC tasks. Complementary layers.</p>
+</details>
+<h2>What is the NIST AI RMF?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>AI Risk Management Framework</strong> — Govern, Map, Measure, Manage functions for trustworthy AI. Voluntary guidance for identifying and mitigating AI-specific risks.</p>
+</details>
+<h2>Why should LLM outputs be treated as untrusted input?</h2>
+<details>
+<summary>Answer</summary>
+<p>Models can hallucinate, leak training data, or emit executable content — <strong>sanitize and validate</strong> before rendering HTML, running SQL, or passing to downstream systems (Insecure Output Handling).</p>
+</details>
+<h2>What is model inversion and membership inference?</h2>
+<details>
+<summary>Answer</summary>
+<p>Attacks infer <strong>training data</strong> or whether a record was in training — privacy risks for sensitive datasets. Mitigate with differential privacy, minimization, and access controls.</p>
+</details>
+<h2>What guardrails should wrap a production LLM API?</h2>
+<details>
+<summary>Answer</summary>
+<p>Input filtering, output schema validation, rate limits, authN/Z, logging without secrets, human review for high-risk actions, and grounding with cited retrieval sources.</p>
+</details>
+<h2>What is MITRE ATLAS?</h2>
+<details>
+<summary>Answer</summary>
+<p>Adversarial ML knowledge base — tactics/techniques for attacking and defending <strong>ML systems</strong>, analogous to ATT&amp;CK for traditional IT.</p>
+</details>
+<h2>When should AI assist vs decide in security workflows?</h2>
+<details>
+<summary>Answer</summary>
+<p>AI <strong>assists</strong> investigation, drafting, correlation — humans <strong>decide</strong> on containment, access revocation, and regulatory notification. See <a href="https://github.com/devsecforge/2025-ai-threat-modeling">2025-ai-threat-modeling</a>.</p>
+</details>
+<h2>What data should never be pasted into a public LLM?</h2>
+<details>
+<summary>Answer</summary>
+<p>Production credentials, PII/PHI, unreleased vuln details, classified material, full production logs with tokens, and proprietary customer data.</p>
+</details>
+  </div>
+</body>
+</html>

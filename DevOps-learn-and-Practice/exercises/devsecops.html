@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devsecops | devsecforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --navy:#0B1533; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.65; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.45), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.35), transparent 50%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .back { display:inline-block; margin-bottom:1rem; padding:.45rem .9rem; background:var(--red); color:#fff; text-decoration:none; border-radius:8px; font-weight:600; font-size:.85rem; }
+    .back.blue { background:var(--royal); margin-left:.4rem; }
+    h1 { color:var(--cyan); font-size:1.75rem; margin:.5rem 0 1rem; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.5rem 0 .65rem; border-bottom:1px solid rgba(239,45,60,.3); padding-bottom:.3rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1rem 0 .4rem; }
+    p, li { color:var(--muted); font-size:.9rem; }
+    ul { margin:.5rem 0 .5rem 1.25rem; }
+    li { margin:.25rem 0; }
+    hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:1.5rem 0; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    td, th { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    a { color:var(--cyan); }
+    details.qa { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.25); border-radius:10px; padding:.75rem 1rem; margin:.65rem 0; }
+    details.qa summary { cursor:pointer; font-weight:600; color:var(--text); }
+    details.qa p { margin-top:.65rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.65rem; margin:1rem 0; }
+    .grid a { display:block; padding:.65rem; background:rgba(11,21,51,.8); border:1px solid rgba(34,211,238,.3); border-radius:10px; text-decoration:none; color:var(--text); font-weight:600; font-size:.85rem; }
+    .grid a:hover { border-color:var(--cyan); background:rgba(43,80,228,.25); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../security-exercises.html">← Portal</a>
+    <a class="back blue" href="https://devsecforge.github.io/devsecforge/DevOps-learn-and-Practice/">Home</a>
+    <h1>DevSecOps &amp; CI/CD</h1>
+<h2>What is shift-left security?</h2>
+<details>
+<summary>Answer</summary>
+<p>Integrating security activities <strong>earlier</strong> in the software delivery lifecycle — at design, commit, build, and test — rather than only at release or in production. Goal: cheaper fixes, fewer surprises, shared ownership between Dev, Sec, and Ops.</p>
+</details>
+<h2>Name three security checks you would add to a CI pipeline.</h2>
+<details>
+<summary>Answer</summary>
+<p>Common examples: <strong>secret scanning</strong> (gitleaks), <strong>SAST</strong> (Semgrep), <strong>SCA</strong> (Trivy/npm audit), <strong>IaC scanning</strong> (checkov/tfsec), <strong>container image scanning</strong>, and <strong>policy-as-code</strong> gates (OPA/Conftest).</p>
+</details>
+<h2>What is the difference between SAST and DAST?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>SAST</strong> (Static Application Security Testing) analyzes source or bytecode without running the app — fast feedback in CI. <strong>DAST</strong> (Dynamic Application Security Testing) tests a <strong>running</strong> application, often from outside, finding runtime/config issues SAST misses.</p>
+</details>
+<h2>What is an SBOM and why does it matter for supply chain security?</h2>
+<details>
+<summary>Answer</summary>
+<p>A <strong>Software Bill of Materials</strong> lists components, libraries, and dependencies in an artifact. It enables rapid CVE response, license compliance, and provenance tracking — central to SLSA and modern supply-chain programs.</p>
+</details>
+<h2>What is policy-as-code in DevSecOps?</h2>
+<details>
+<summary>Answer</summary>
+<p>Expressing security and compliance rules as <strong>versioned, testable code</strong> (OPA/Rego, Kyverno, Sentinel, Azure Policy) evaluated automatically in CI/CD or at admission time — replacing manual checklist reviews.</p>
+</details>
+<h2>Why should CI pipelines use OIDC instead of long-lived cloud keys?</h2>
+<details>
+<summary>Answer</summary>
+<p>OIDC federation lets GitHub Actions (or similar) obtain <strong>short-lived tokens</strong> scoped to a role — no static secrets in repos, reduced blast radius, easier rotation and audit.</p>
+</details>
+<h2>What does &quot;fail open&quot; vs &quot;fail closed&quot; mean for a security gate?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>Fail closed:</strong> block the pipeline when the scanner errors or finds critical issues — safer, may slow delivery. <strong>Fail open:</strong> allow on scanner failure — faster, risky. Production DevSecOps usually <strong>fail closed</strong> on critical findings after tuning false positives.</p>
+</details>
+<h2>What is GitOps and how does security fit in?</h2>
+<details>
+<summary>Answer</summary>
+<p>GitOps uses Git as the <strong>source of truth</strong> for desired state; controllers reconcile clusters. Security fits via signed commits, PR reviews, IaC scanning on merge, admission policies, and drift detection.</p>
+</details>
+<h2>What is SLSA and what problem does it address?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>Supply-chain Levels for Software Artifacts</strong> — a framework for build integrity and provenance. Addresses tampered builds, dependency confusion, and untrusted artifacts in the delivery pipeline.</p>
+</details>
+<h2>How would you prioritize which scanners to enable first in a greenfield pipeline?</h2>
+<details>
+<summary>Answer</summary>
+<p>1. <strong>Secrets</strong> (immediate high impact). 2. <strong>SCA</strong> on dependencies. 3. <strong>SAST</strong> on application code. 4. <strong>IaC</strong> if Terraform/K8s manifests ship. 5. <strong>Container scan</strong> before deploy. Tune severity thresholds before blocking merges.</p>
+</details>
+  </div>
+</body>
+</html>

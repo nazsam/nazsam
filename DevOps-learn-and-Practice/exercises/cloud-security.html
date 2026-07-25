@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Security | devsecforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --navy:#0B1533; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.65; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.45), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.35), transparent 50%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .back { display:inline-block; margin-bottom:1rem; padding:.45rem .9rem; background:var(--red); color:#fff; text-decoration:none; border-radius:8px; font-weight:600; font-size:.85rem; }
+    .back.blue { background:var(--royal); margin-left:.4rem; }
+    h1 { color:var(--cyan); font-size:1.75rem; margin:.5rem 0 1rem; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.5rem 0 .65rem; border-bottom:1px solid rgba(239,45,60,.3); padding-bottom:.3rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1rem 0 .4rem; }
+    p, li { color:var(--muted); font-size:.9rem; }
+    ul { margin:.5rem 0 .5rem 1.25rem; }
+    li { margin:.25rem 0; }
+    hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:1.5rem 0; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    td, th { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    a { color:var(--cyan); }
+    details.qa { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.25); border-radius:10px; padding:.75rem 1rem; margin:.65rem 0; }
+    details.qa summary { cursor:pointer; font-weight:600; color:var(--text); }
+    details.qa p { margin-top:.65rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.65rem; margin:1rem 0; }
+    .grid a { display:block; padding:.65rem; background:rgba(11,21,51,.8); border:1px solid rgba(34,211,238,.3); border-radius:10px; text-decoration:none; color:var(--text); font-weight:600; font-size:.85rem; }
+    .grid a:hover { border-color:var(--cyan); background:rgba(43,80,228,.25); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../security-exercises.html">← Portal</a>
+    <a class="back blue" href="https://devsecforge.github.io/devsecforge/DevOps-learn-and-Practice/">Home</a>
+    <h1>Cloud Security</h1>
+<h2>What is CSPM?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>Cloud Security Posture Management</strong> — continuous assessment of cloud configs against benchmarks (CIS, NIST) to find public storage, open SGs, missing encryption, excessive IAM, etc.</p>
+</details>
+<h2>Explain the shared responsibility model for IaaS vs SaaS.</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>IaaS:</strong> provider secures physical/network/hypervisor; customer secures OS, apps, data, IAM. <strong>SaaS:</strong> provider secures app/platform; customer secures identity, data classification, access policies. Always know <strong>your</strong> line.</p>
+</details>
+<h2>What is a wildcard IAM policy and why is it dangerous?</h2>
+<details>
+<summary>Answer</summary>
+<p><code>&quot;Action&quot;: &quot;*&quot;, &quot;Resource&quot;: &quot;*&quot;</code> grants unrestricted API access. One compromised key = full account takeover. Replace with scoped actions and resource ARNs.</p>
+</details>
+<h2>How does encryption at rest differ from in transit in cloud storage?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>At rest:</strong> data encrypted on disk/object store (SSE-S3, SSE-KMS, Azure SSE). <strong>In transit:</strong> TLS between client and service. Both required; neither replaces the other.</p>
+</details>
+<h2>What is a landing zone in cloud architecture?</h2>
+<details>
+<summary>Answer</summary>
+<p>A <strong>pre-configured, secure multi-account/subscription foundation</strong> — logging, guardrails, networking hub, IAM baseline — before application teams deploy workloads.</p>
+</details>
+<h2>Name three AWS services commonly used for security monitoring.</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>CloudTrail</strong> (API audit), <strong>GuardDuty</strong> (threat detection), <strong>Security Hub</strong> (posture aggregation). Also Config, Macie, Inspector depending on use case.</p>
+</details>
+<h2>What is Azure Policy vs Azure RBAC?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>RBAC</strong> = who can take actions. <strong>Policy</strong> = what configurations are <strong>allowed</strong> (e.g., deny public IPs on storage). Use both — RBAC without policy still allows insecure configs.</p>
+</details>
+<h2>What is the blast radius of a compromised cloud admin account?</h2>
+<details>
+<summary>Answer</summary>
+<p>Potentially <strong>entire tenant</strong> — data exfiltration, resource deletion, persistence via new IAM users, crypto-mining. Mitigate with PIM/PAM, MFA, break-glass procedures, and activity alerting.</p>
+</details>
+<h2>What is infrastructure drift and why does it matter for security?</h2>
+<details>
+<summary>Answer</summary>
+<p>Manual console changes diverging from IaC — untracked open ports, disabled logging. Drift breaks compliance and incident reconstruction. Detect with Config/Terraform drift scans.</p>
+</details>
+<h2>How would you secure an S3 bucket storing sensitive logs?</h2>
+<details>
+<summary>Answer</summary>
+<p>Block public access, enforce SSE-KMS, least-privilege bucket policy, access logging, Object Lock for immutability, VPC endpoints for private access, and lifecycle rules.</p>
+</details>
+  </div>
+</body>
+</html>

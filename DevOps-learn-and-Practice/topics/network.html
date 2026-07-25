@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Network | devsecforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --navy:#0B1533; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.65; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.45), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.35), transparent 50%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .back { display:inline-block; margin-bottom:1rem; padding:.45rem .9rem; background:var(--red); color:#fff; text-decoration:none; border-radius:8px; font-weight:600; font-size:.85rem; }
+    .back.blue { background:var(--royal); margin-left:.4rem; }
+    h1 { color:var(--cyan); font-size:1.75rem; margin:.5rem 0 1rem; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.5rem 0 .65rem; border-bottom:1px solid rgba(239,45,60,.3); padding-bottom:.3rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1rem 0 .4rem; }
+    p, li { color:var(--muted); font-size:.9rem; }
+    ul { margin:.5rem 0 .5rem 1.25rem; }
+    li { margin:.25rem 0; }
+    hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:1.5rem 0; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    td, th { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    a { color:var(--cyan); }
+    details.qa { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.25); border-radius:10px; padding:.75rem 1rem; margin:.65rem 0; }
+    details.qa summary { cursor:pointer; font-weight:600; color:var(--text); }
+    details.qa p { margin-top:.65rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.65rem; margin:1rem 0; }
+    .grid a { display:block; padding:.65rem; background:rgba(11,21,51,.8); border:1px solid rgba(34,211,238,.3); border-radius:10px; text-decoration:none; color:var(--text); font-weight:600; font-size:.85rem; }
+    .grid a:hover { border-color:var(--cyan); background:rgba(43,80,228,.25); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../index.html">← Portal</a>
+    <a class="back blue" href="https://devsecforge.github.io/devsecforge/DevOps-learn-and-Practice/">Home</a>
+    <h1>🌐 Network</h1>
+<table><tr><th><strong>Objective</strong></th><th>Build foundation in TCP/IP, routing, DNS, switching, and modern data-center networking</th></tr><tr><td><strong>Outcomes</strong></td><td>Explain OSI &amp; TCP/IP · Debug connectivity · Design zones &amp; understand control/data plane</td></tr><tr><td><strong>Icon</strong></td><td>🌐</td></tr><tr><td><strong>Questions</strong></td><td>~80+ in upstream</td></tr><tr><td><strong>Full answers</strong></td><td><a href="https://github.com/bregman-arie/devops-exercises#network">devops-exercises → Network ↗</a></td></tr></table>
+<hr/>
+<h2>Question index</h2>
+<p>&gt; Titles below — open upstream for full exercises and solutions.</p>
+<h3>Fundamentals</h3>
+<ul>
+<li>What do you need in order to communicate?</li>
+<li>What is TCP/IP?</li>
+<li>What is Ethernet?</li>
+<li>What is a MAC address? What is it used for?</li>
+<li>When is this MAC address used?: <code>ff:ff:ff:ff:ff:ff</code></li>
+<li>What is an IP address?</li>
+<li>Explain the subnet mask and give an example</li>
+<li>What is a private IP address? When should you use it?</li>
+<li>What is a public IP address? When should you use it?</li>
+</ul>
+<h3>OSI model</h3>
+<ul>
+<li>Explain the OSI model — layers and responsibilities</li>
+<li>Map to OSI: error correction, routing, cables, MAC, IP, terminate connections, 3-way handshake</li>
+</ul>
+<h3>Devices &amp; domains</h3>
+<ul>
+<li>Router vs switch vs hub</li>
+<li>Collision domain · Broadcast domain</li>
+<li>Three PCs on a switch — collision/broadcast domains?</li>
+</ul>
+<h3>Protocols &amp; transport</h3>
+<ul>
+<li>How does a router work? · NAT · Proxy</li>
+<li>TCP · 3-way handshake · RTT · SSL handshake</li>
+<li>TCP vs UDP · TCP/IP protocols you know</li>
+<li>Default gateway · ARP · TTL · DHCP · SSL tunneling</li>
+<li>Socket · IPv6 · VLAN · MTU · oversized packets</li>
+<li>Ping — UDP? · SDN · ICMP</li>
+</ul>
+<h3>Ports &amp; performance</h3>
+<ul>
+<li>Port numbers: SSH, SMTP, HTTP, DNS, HTTPS, FTP, SFTP</li>
+<li>Factors affecting network performance · APIPA</li>
+</ul>
+<h3>Control / data plane</h3>
+<ul>
+<li>Control plane · Data plane · Management plane</li>
+<li>Routing tables — which plane?</li>
+<li>STP · Link aggregation · Asymmetric routing</li>
+<li>GRE · VXLAN · SNAT · OSPF</li>
+</ul>
+<h3>Metrics &amp; design</h3>
+<ul>
+<li>Latency · Bandwidth · Throughput</li>
+<li>Search vs video upload — latency or throughput?</li>
+<li>Spine &amp; leaf · Network congestion</li>
+<li>UDP vs TCP packet format · Exponential backoff · Hamming code</li>
+<li>Application vs Network layer protocol examples · HSTS</li>
+</ul>
+<h3>Misc</h3>
+<ul>
+<li>Internet vs WWW · ISP</li>
+</ul>
+<hr/>
+<p><a href="index.html">← All topics</a> · <a href="https://github.com/devsecforge/DevOps-learn-and-Practice/blob/main/README.md">🏠 README</a></p>
+  </div>
+</body>
+</html>
