@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DevOps Learn & Practice — repo portal, 2624+ exercises, objectives & outcomes. devsecforge hub." />
+  <title>DevOps Learn & Practice | Repository Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --royal:#2B50E4; --cyan:#22D3EE; --navy:#0B1533; --midnight:#070C1C;
+      --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --orange:#FB8C1A;
+      --red:#EF2D3C; --purple:#6B2C91; --burgundy:#9E1B45; --teal:#10D0C4;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+
+    html, body { min-height:100%; }
+
+    body {
+      font-family:'Inter',system-ui,sans-serif;
+      color:var(--text); line-height:1.55;
+      overflow-x:hidden;
+      background-color:#070C1C;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Cdefs%3E%3CradialGradient id='b1' cx='20%25' cy='15%25' r='55%25'%3E%3Cstop offset='0%25' stop-color='%2322D3EE' stop-opacity='0.85'/%3E%3Cstop offset='55%25' stop-color='%232B50E4' stop-opacity='0.45'/%3E%3Cstop offset='100%25' stop-color='%232B50E4' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b2' cx='85%25' cy='22%25' r='50%25'%3E%3Cstop offset='0%25' stop-color='%23EF2D3C' stop-opacity='0.75'/%3E%3Cstop offset='55%25' stop-color='%236B2C91' stop-opacity='0.4'/%3E%3Cstop offset='100%25' stop-color='%236B2C91' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b3' cx='15%25' cy='78%25' r='52%25'%3E%3Cstop offset='0%25' stop-color='%2316C060' stop-opacity='0.65'/%3E%3Cstop offset='100%25' stop-color='%2322D3EE' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b4' cx='72%25' cy='68%25' r='48%25'%3E%3Cstop offset='0%25' stop-color='%23FB8C1A' stop-opacity='0.6'/%3E%3Cstop offset='100%25' stop-color='%23EF2D3C' stop-opacity='0'/%3E%3C/radialGradient%3E%3ClinearGradient id='base' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23070C1C'/%3E%3Cstop offset='100%25' stop-color='%231a1040'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1920' height='1080' fill='url(%23base)'/%3E%3Crect width='1920' height='1080' fill='url(%23b1)'/%3E%3Crect width='1920' height='1080' fill='url(%23b2)'/%3E%3Crect width='1920' height='1080' fill='url(%23b3)'/%3E%3Crect width='1920' height='1080' fill='url(%23b4)'/%3E%3C/svg%3E");
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+      background-repeat:no-repeat;
+    }
+
+    /* Animated color wash on top of SVG */
+    body::before {
+      content:'';
+      position:fixed; inset:0; z-index:0; pointer-events:none;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.55), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.45), transparent 50%),
+        radial-gradient(ellipse 65% 50% at 50% 90%, rgba(34,211,238,.4), transparent 55%),
+        radial-gradient(ellipse 60% 45% at 70% 60%, rgba(107,44,145,.45), transparent 50%);
+      animation:bgPulse 14s ease-in-out infinite alternate;
+    }
+    @keyframes bgPulse {
+      0% { opacity:.85; transform:scale(1); }
+      100% { opacity:1; transform:scale(1.04); }
+    }
+
+    /* ░░░ FLOWING WATERCOLOR BACKGROUND ░░░ */
+    .aurora {
+      position:fixed; inset:0; z-index:1; overflow:hidden; pointer-events:none;
+      background:transparent;
+    }
+    .aurora::after {
+      content:''; position:absolute; inset:0;
+      background:radial-gradient(ellipse at 50% 100%, rgba(7,12,28,.45) 0%, transparent 72%);
+      pointer-events:none;
+    }
+    .blob {
+      position:absolute; border-radius:50%;
+      -webkit-filter:blur(70px);
+      filter:blur(70px);
+      opacity:.72;
+      will-change:transform;
+      transform:translateZ(0);
+    }
+    .blob-1 { width:min(55vw,620px); height:min(55vw,620px); background:radial-gradient(circle,#22D3EE 0%,#2B50E4 70%); top:-8%; left:-6%; animation:flow1 18s ease-in-out infinite; }
+    .blob-2 { width:min(50vw,560px); height:min(50vw,560px); background:radial-gradient(circle,#EF2D3C 0%,#6B2C91 70%); top:18%; right:-8%; animation:flow2 22s ease-in-out infinite; }
+    .blob-3 { width:min(45vw,500px); height:min(45vw,500px); background:radial-gradient(circle,#22D3EE 0%,#16C060 70%); bottom:8%; left:12%; animation:flow3 20s ease-in-out infinite; }
+    .blob-4 { width:min(40vw,480px); height:min(40vw,480px); background:radial-gradient(circle,#FB8C1A 0%,#EF2D3C 70%); bottom:22%; right:18%; animation:flow4 25s ease-in-out infinite; }
+    .blob-5 { width:min(35vw,400px); height:min(35vw,400px); background:radial-gradient(circle,#10D0C4 0%,#2B50E4 70%); top:42%; left:38%; animation:flow5 16s ease-in-out infinite; opacity:.55; }
+    .blob-6 { width:min(30vw,360px); height:min(30vw,360px); background:radial-gradient(circle,#6B2C91 0%,#9E1B45 70%); top:4%; left:48%; animation:flow6 19s ease-in-out infinite; opacity:.6; }
+    @keyframes flow1 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(8vw,12vh) scale(1.08)} 66%{transform:translate(4vw,6vh) scale(.95)} }
+    @keyframes flow2 { 0%,100%{transform:translate(0,0) scale(1) rotate(0deg)} 50%{transform:translate(-10vw,8vh) scale(1.12) rotate(15deg)} }
+    @keyframes flow3 { 0%,100%{transform:translate(0,0) scale(1)} 40%{transform:translate(12vw,-6vh) scale(1.05)} 70%{transform:translate(-5vw,4vh) scale(.92)} }
+    @keyframes flow4 { 0%,100%{transform:translate(0,0) scale(1)} 45%{transform:translate(-8vw,-10vh) scale(1.1)} }
+    @keyframes flow5 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(4vw,-5vh) scale(1.12)} }
+    @keyframes flow6 { 0%,100%{transform:translate(0,0) scale(1)} 60%{transform:translate(-6vw,14vh) scale(1.08)} }
+    .water-overlay {
+      position:fixed; inset:0; z-index:2; pointer-events:none; opacity:.04;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .page { position:relative; z-index:3; }
+
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+    @keyframes shimmer { 0%{background-position:0% 50%} 100%{background-position:200% 50%} }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:none} }
+    @keyframes waterFlow {
+      0% { background-position:0% 50%; transform:rotate(0deg) scale(1.2); }
+      25% { background-position:50% 100%; }
+      50% { background-position:100% 50%; transform:rotate(2deg) scale(1.25); }
+      75% { background-position:50% 0%; }
+      100% { background-position:0% 50%; transform:rotate(0deg) scale(1.2); }
+    }
+
+    nav.topbar {
+      position:sticky; top:0; z-index:200;
+      background:rgba(7,12,28,.72); backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(239,45,60,.35); padding:.7rem 1.25rem;
+      box-shadow:0 4px 30px rgba(239,45,60,.12);
+    }
+    nav .inner { max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; gap:.6rem; align-items:center; justify-content:space-between; }
+    .logo { font-family:'JetBrains Mono',monospace; font-weight:800; font-size:1.25rem; }
+    .logo span { color:var(--red); }
+    .nav-links { display:flex; flex-wrap:wrap; gap:.35rem; }
+    .nav-links a {
+      padding:.4rem .75rem; border-radius:8px; font-size:.75rem; font-weight:600;
+      background:rgba(239,45,60,.25); color:var(--text); text-decoration:none;
+    }
+    .nav-links a:hover { background:var(--red); }
+    .nav-links a.blue { background:rgba(43,80,228,.35); }
+    .nav-links a.blue:hover { background:var(--royal); }
+
+    .wrap { max-width:1280px; margin:0 auto; padding:0 1.25rem 4rem; }
+
+    .hero { text-align:center; padding:2rem 1rem 1.25rem; animation:fadeUp .6s ease; }
+    .hero-banner {
+      margin:0 auto 1.25rem; max-width:920px; height:96px; border-radius:20px;
+      overflow:hidden; position:relative; box-shadow:0 8px 40px rgba(239,45,60,.3);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .hero-banner .flow-bg {
+      position:absolute; inset:-50%;
+      background:linear-gradient(-45deg,#2B50E4,#22D3EE,#6B2C91,#EF2D3C,#16C060,#FB8C1A,#10D0C4,#2B50E4);
+      background-size:400% 400%; animation:waterFlow 12s ease infinite; filter:blur(2px);
+    }
+    .hero-banner .banner-content {
+      position:relative; z-index:1; height:100%;
+      display:flex; align-items:center; justify-content:center;
+      background:rgba(7,12,28,.35); backdrop-filter:blur(8px);
+    }
+    .hero-banner .banner-content span {
+      font-family:'JetBrains Mono',monospace; font-weight:800; font-size:clamp(1rem,3vw,1.45rem);
+      background:linear-gradient(90deg,#fff,#EF2D3C,#22D3EE,#2B50E4,#fff);
+      background-size:300% auto; animation:shimmer 5s linear infinite;
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .hero-icons { font-size:2.5rem; animation:float 3s ease-in-out infinite; display:block; margin-bottom:.35rem; }
+    .hero h1 {
+      font-family:'JetBrains Mono',monospace; font-size:clamp(1.75rem,4.5vw,2.75rem); font-weight:800;
+      background:linear-gradient(90deg,#fff,var(--red),var(--cyan));
+      background-size:200% auto; animation:shimmer 4s linear infinite;
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .hero .sub { color:var(--muted); max-width:680px; margin:.65rem auto 1rem; font-size:.95rem; }
+    .hero-badges { display:flex; flex-wrap:wrap; gap:.45rem; justify-content:center; margin-bottom:1rem; }
+    .hb { padding:.35rem .8rem; border-radius:999px; font-size:.72rem; font-weight:700; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); }
+    .hb.hot { border-color:var(--red); color:var(--red); }
+
+    .search-bar { max-width:520px; margin:0 auto 1.25rem; display:flex; gap:.5rem; }
+    .search-bar input {
+      flex:1; padding:.75rem 1rem; border-radius:12px; border:1px solid rgba(239,45,60,.4);
+      background:rgba(11,21,51,.75); backdrop-filter:blur(8px); color:var(--text); font-size:.95rem;
+    }
+    .search-bar input:focus { outline:2px solid var(--red); }
+    .search-bar input::placeholder { color:var(--muted); }
+
+    .quick-start { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; margin-bottom:1.75rem; }
+    .qs {
+      padding:.55rem 1.1rem; border-radius:10px; font-weight:700; font-size:.82rem;
+      text-decoration:none; color:#fff; transition:transform .15s, box-shadow .15s;
+    }
+    .qs:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.35); }
+    .qs.green { background:linear-gradient(135deg,var(--green),#0d9e4a); }
+    .qs.blue { background:linear-gradient(135deg,var(--royal),var(--cyan)); color:var(--navy); }
+    .qs.red { background:linear-gradient(135deg,var(--red),#c41e3a); }
+    .qs.orange { background:linear-gradient(135deg,var(--orange),#e67a0a); }
+
+    /* notices */
+    .notices { max-width:900px; margin:0 auto 2rem; }
+    .notice {
+      padding:.85rem 1rem; border-radius:12px; margin:.5rem 0; font-size:.85rem;
+      border-left:4px solid; background:rgba(11,21,51,.55); backdrop-filter:blur(10px);
+    }
+    .notice.info { border-color:var(--royal); }
+    .notice.stat { border-color:var(--cyan); }
+    .notice.warn { border-color:var(--red); }
+    .notice.stop { border-color:var(--orange); }
+    .notice.contrib { border-color:var(--green); }
+    .notice a { color:var(--cyan); }
+
+    .cat-header {
+      display:flex; align-items:center; gap:.65rem; margin:2rem 0 1rem;
+      padding:.65rem 1rem; border-radius:12px; font-weight:800; font-size:1rem;
+      background:rgba(11,21,51,.45); backdrop-filter:blur(8px);
+    }
+    .cat-header .emoji { font-size:1.5rem; animation:float 3.5s ease-in-out infinite; }
+
+    .repo-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; }
+    .repo-tile {
+      background:rgba(11,21,51,.72); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+      border-radius:16px; padding:1.15rem 1.2rem;
+      border:1px solid rgba(255,255,255,.12); border-top:3px solid var(--accent);
+      display:flex; flex-direction:column; gap:.65rem;
+      transition:transform .2s, box-shadow .2s, border-color .2s;
+      animation:fadeUp .5s ease backwards;
+    }
+    .repo-tile:hover { transform:translateY(-5px); box-shadow:0 12px 32px rgba(0,0,0,.4); border-color:var(--accent); }
+    .repo-tile .top { display:flex; align-items:flex-start; gap:.75rem; }
+    .repo-tile .icon { font-size:2rem; line-height:1; flex-shrink:0; animation:float 4s ease-in-out infinite; }
+    .repo-tile .meta { flex:1; min-width:0; }
+    .repo-tile .name { font-family:'JetBrains Mono',monospace; font-size:.82rem; font-weight:700; word-break:break-word; }
+    .repo-tile .cat-label { font-size:.65rem; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); font-weight:700; margin-top:.2rem; }
+    .repo-tile .overview { font-size:.8rem; color:var(--muted); line-height:1.45; flex:1; }
+    .repo-tile .open-btn {
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:.55rem 1rem; border-radius:10px; font-weight:700; font-size:.78rem;
+      text-decoration:none; color:#fff; background:var(--accent); margin-top:auto;
+      transition:opacity .15s, transform .15s;
+    }
+    .repo-tile .open-btn:hover { opacity:.92; transform:scale(1.02); }
+
+    /* learn topics section */
+    .learn-section { margin-top:3rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,.1); }
+    .learn-section h2 {
+      color:var(--red); font-size:1.15rem; margin:1.5rem 0 .75rem;
+      padding-bottom:.35rem; border-bottom:2px solid rgba(239,45,60,.4);
+    }
+    .learn-section h2 span { animation:float 4s ease-in-out infinite; display:inline-block; }
+    .topic-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
+    .topic-card {
+      background:rgba(11,21,51,.55); backdrop-filter:blur(10px);
+      border-radius:14px; padding:1rem 1.1rem; border-top:3px solid var(--red);
+      transition:transform .2s, box-shadow .2s;
+    }
+    .topic-card:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(239,45,60,.2); }
+    .topic-card .icon { font-size:1.75rem; animation:float 3.5s ease-in-out infinite; }
+    .topic-card h3 { margin:.4rem 0 .35rem; font-size:1rem; color:var(--cyan); }
+    .topic-card .obj { font-size:.78rem; color:var(--muted); margin-bottom:.5rem; }
+    .topic-card .out { font-size:.72rem; color:var(--green); margin-bottom:.6rem; }
+    .topic-card a.btn {
+      display:inline-block; padding:.35rem .75rem; background:var(--red); color:#fff;
+      border-radius:6px; text-decoration:none; font-size:.72rem; font-weight:600; margin:.25rem .35rem 0 0;
+    }
+    .topic-card a.btn.sec { background:var(--royal); }
+    .topic-pills { display:flex; flex-wrap:wrap; gap:.4rem; margin:1rem 0; }
+    .topic-pills a {
+      padding:.4rem .7rem; background:rgba(239,45,60,.12); border:1px solid rgba(239,45,60,.35);
+      border-radius:8px; color:var(--text); text-decoration:none; font-size:.75rem; transition:.15s;
+    }
+    .topic-pills a:hover { background:rgba(239,45,60,.3); }
+
+    .empty { text-align:center; color:var(--muted); padding:2rem; display:none; }
+    footer {
+      text-align:center; padding:2.5rem 1rem; margin-top:3rem;
+      border-top:1px solid rgba(255,255,255,.08); color:var(--muted); font-size:.85rem;
+    }
+    footer a { color:var(--cyan); }
+    @media(max-width:600px){ .repo-grid, .topic-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+  <div class="blob blob-5"></div>
+  <div class="blob blob-6"></div>
+</div>
+<div class="water-overlay" aria-hidden="true"></div>
+
+<div class="page">
+
+<nav class="topbar">
+  <div class="inner">
+    <div class="logo">DevOps <span>Learn</span> & Practice</div>
+    <div class="nav-links">
+      <a href="#portal">📦 All Repos</a>
+      <a href="#learn">📚 Topics</a>
+      <a href="README.md">📖 README</a>
+      <a class="blue" href="https://github.com/devsecforge/devsecforge">🏠 devsecforge</a>
+      <a href="https://github.com/bregman-arie/devops-exercises">Upstream ↗</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-banner">
+      <div class="flow-bg"></div>
+      <div class="banner-content">
+        <span>🔴 DevOps Learn & Practice · Repository Portal</span>
+      </div>
+    </div>
+    <span class="hero-icons">📚🔴⚙️</span>
+    <h1>Pick a Repo · Then Learn</h1>
+    <p class="sub">Your landing page <strong>before</strong> any repo — icon · name · overview · one-click open. Plus 2624+ DevOps/SRE exercises with objectives & outcomes.</p>
+    <div class="hero-badges">
+      <span class="hb hot">34 Projects</span>
+      <span class="hb">2624+ Exercises</span>
+      <span class="hb">100% Free</span>
+      <span class="hb">devsecforge 🇨🇦</span>
+    </div>
+    <div class="search-bar">
+      <input type="search" id="search" placeholder="🔍 Search repos… kubernetes, SOC, DevOps, AI" autocomplete="off" />
+    </div>
+    <div class="quick-start">
+      <a class="qs red" href="https://github.com/bregman-arie/devops-exercises">▶ devops-exercises ↗</a>
+      <a class="qs green" href="https://github.com/devsecforge/devsecops-roadmap">🗺️ Roadmap</a>
+      <a class="qs blue" href="https://github.com/devsecforge/devsecops-exercises">📚 Security Q&A</a>
+      <a class="qs orange" href="https://github.com/devsecforge/security-operations-toolkit">🔧 Hands-On Lab</a>
+    </div>
+  </header>
+
+  <div class="notices">
+    <div class="notice info">ℹ️ <strong>About:</strong> Questions and exercises on DevOps, SRE, Cloud, K8s — structured hub linking to <a href="https://github.com/bregman-arie/devops-exercises">devops-exercises</a>.</div>
+    <div class="notice stat">📊 <strong>2624+</strong> exercises and questions in the upstream library.</div>
+    <div class="notice warn">⚠️ Interview prep — most questions don't represent an actual interview. <a href="FAQ.md">FAQ</a></div>
+    <div class="notice stop">🛑 You don't need every topic — learn what matches your role and goals.</div>
+    <div class="notice contrib">📝 Contribute via upstream PRs or <a href="https://github.com/devsecforge/devsecops-exercises">devsecops-exercises</a> for security Q&A.</div>
+  </div>
+
+  <main id="portal"></main>
+  <p class="empty" id="empty">No repos match your search.</p>
+
+  <section class="learn-section" id="learn">
+    <h2><span>🎯</span> Featured topics · Objective · Outcomes</h2>
+    <div class="topic-grid">
+      <div class="topic-card"><div class="icon">🌐</div><h3>Network</h3><p class="obj"><strong>Objective:</strong> TCP/IP, DNS, routing, OSI</p><p class="out"><strong>Outcomes:</strong> Debug connectivity · Design zones · NAT/VLAN/MTU</p><a class="btn" href="topics/network.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#network">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🐧</div><h3>Operating System</h3><p class="obj"><strong>Objective:</strong> Processes, memory, kernel</p><p class="out"><strong>Outcomes:</strong> IPC · Virtual memory · VM vs containers</p><a class="btn" href="topics/operating-system.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#operating-system">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🐹</div><h3>Go</h3><p class="obj"><strong>Objective:</strong> Go for cloud-native tooling</p><p class="out"><strong>Outcomes:</strong> Goroutines · Slices · iota puzzles</p><a class="btn" href="topics/go.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#go">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🔥</div><h3>Prometheus</h3><p class="obj"><strong>Objective:</strong> Metrics monitoring & PromQL</p><p class="out"><strong>Outcomes:</strong> Exporters · Alerting · HA patterns</p><a class="btn" href="topics/prometheus.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#prometheus">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🗄️</div><h3>SQL & Mongo</h3><p class="obj"><strong>Objective:</strong> Relational & document DBs</p><p class="out"><strong>Outcomes:</strong> JOINs · NoSQL trade-offs · Queries</p><a class="btn" href="topics/databases.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#databases">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🔍</div><h3>Elastic Stack</h3><p class="obj"><strong>Objective:</strong> ELK — search, logs, dashboards</p><p class="out"><strong>Outcomes:</strong> Grok · Shards · Kibana · Security</p><a class="btn" href="topics/elastic.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#elastic">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🏛️</div><h3>System Design</h3><p class="obj"><strong>Objective:</strong> Scalable resilient architectures</p><p class="out"><strong>Outcomes:</strong> Cache · CDN · Design interviews</p><a class="btn" href="topics/system-design.md">Topic</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#system-design">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">☸️</div><h3>Kubernetes</h3><p class="obj"><strong>Objective:</strong> Container orchestration at scale</p><p class="out"><strong>Outcomes:</strong> Workloads · RBAC · CKA prep</p><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#kubernetes">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">🛡️</div><h3>Security</h3><p class="obj"><strong>Objective:</strong> DevSecOps in DevOps context</p><p class="out"><strong>Outcomes:</strong> Shift-left · Secrets · Sec Q&A</p><a class="btn" href="https://github.com/devsecforge/devsecops-exercises">devsecops-exercises</a></div>
+    </div>
+
+    <h2><span>📚</span> All topic buttons</h2>
+    <div class="topic-pills">
+      <a href="https://github.com/bregman-arie/devops-exercises#devops">⚙️ DevOps</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#git">📦 Git</a>
+      <a href="topics/network.md">🌐 Network</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#kubernetes">☸️ Kubernetes</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#python">🐍 Python</a>
+      <a href="topics/go.md">🐹 Go</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#cloud">☁️ Cloud</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#aws">🟠 AWS</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#azure">🔷 Azure</a>
+      <a href="topics/operating-system.md">🐧 OS</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#linux">Linux</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#shell-scripting">Bash</a>
+      <a href="topics/databases.md">🗄️ SQL</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#cicd">🔄 CI/CD</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#terraform">🏗️ Terraform</a>
+      <a href="topics/prometheus.md">🔥 Prometheus</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#observability">📈 Observability</a>
+      <a href="topics/system-design.md">🏛️ System Design</a>
+      <a href="topics/elastic.md">🔍 Elastic</a>
+      <a href="https://github.com/bregman-arie/devops-exercises#questions-you-can-ask">💬 Ask interviewer</a>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Credits:</strong> <a href="https://github.com/bregman-arie">Arie Bregman</a> & 209+ contributors · <a href="https://github.com/bregman-arie/devops-exercises">devops-exercises</a></p>
+    <p style="margin-top:.4rem">Hub by <a href="https://github.com/devsecforge">devsecforge</a> · <a href="LICENSE">MIT</a> · <a href="https://github.com/devsecforge/DevOps-learn-and-Practice">DevOps-learn-and-Practice</a></p>
+  </footer>
+</div>
+
+<script>
+const CATEGORIES = {
+  profile:     { label: 'Profile Hub',           emoji: '🏠', bg: 'rgba(43,80,228,.2)' },
+  learn:       { label: 'Learn & Practice',      emoji: '🎓', bg: 'rgba(22,192,96,.15)' },
+  lab:         { label: 'DevSecOps Labs',        emoji: '🧪', bg: 'rgba(251,140,26,.15)' },
+  architecture:{ label: 'Architecture & Cloud', emoji: '🏛️', bg: 'rgba(158,27,69,.2)' },
+  soc:         { label: 'SOC · Detection · IR', emoji: '🎯', bg: 'rgba(239,45,60,.15)' },
+  governance:  { label: 'Governance & Privacy', emoji: '📜', bg: 'rgba(22,192,96,.12)' },
+  ai:          { label: 'AI Security & Agents', emoji: '🤖', bg: 'rgba(16,208,196,.15)' },
+  appsec:      { label: 'AppSec & Tooling',     emoji: '🔍', bg: 'rgba(107,44,145,.2)' },
+};
+
+const REPOS = [
+  {"name":"devsecforge","icon":"🏠","cat":"profile","color":"#2B50E4","overview":"Profile hub — README, resources & links to all projects"},
+  {"name":"DevOps-learn-and-Practice","icon":"🔴","cat":"learn","color":"#EF2D3C","overview":"You are here — 2624+ DevOps/SRE exercises hub & repo portal"},
+  {"name":"devsecops-roadmap","icon":"🗺️","cat":"learn","color":"#16C060","overview":"Structured learning path — start here"},
+  {"name":"devsecops-exercises","icon":"📚","cat":"learn","color":"#22D3EE","overview":"72+ security Q&A — interview prep"},
+  {"name":"security-awareness-training-content","icon":"🎓","cat":"learn","color":"#16C060","overview":"Security awareness training modules"},
+  {"name":"security-operations-toolkit","icon":"🛡️","cat":"lab","color":"#FB8C1A","overview":"CI/CD security gate — SAST, SCA, secrets, containers"},
+  {"name":"kubernetes-security-lab","icon":"☸️","cat":"lab","color":"#326CE5","overview":"5-layer Kubernetes defense lab"},
+  {"name":"devsecops-pipeline-security-gates","icon":"⚙️","cat":"lab","color":"#FB8C1A","overview":"Reusable pipeline security gates"},
+  {"name":"secure-terraform-aws","icon":"🔐","cat":"lab","color":"#FF9900","overview":"Hardened AWS Terraform patterns"},
+  {"name":"container-image-hardening","icon":"📦","cat":"lab","color":"#22D3EE","overview":"Container image hardening"},
+  {"name":"secrets-management-patterns","icon":"🔑","cat":"lab","color":"#1E3AA8","overview":"Secrets & KMS patterns"},
+  {"name":"zero-trust-reference-architecture","icon":"🛡️","cat":"architecture","color":"#9E1B45","overview":"NIST 800-207 Zero Trust reference"},
+  {"name":"cloud-security-baseline","icon":"☁️","cat":"architecture","color":"#2B50E4","overview":"Azure/AWS cloud guardrails"},
+  {"name":"aws-security-baseline","icon":"🟠","cat":"architecture","color":"#FF9900","overview":"AWS security baseline"},
+  {"name":"cloud-iam-least-privilege-toolkit","icon":"👤","cat":"architecture","color":"#1E3AA8","overview":"IAM least-privilege toolkit"},
+  {"name":"cloud-security-posture-dashboard","icon":"📊","cat":"architecture","color":"#22D3EE","overview":"CSPM dashboard framework"},
+  {"name":"soc-detection-engineering","icon":"🎯","cat":"soc","color":"#EF2D3C","overview":"MITRE ATT&CK detections — Sentinel/Splunk"},
+  {"name":"siem-detection-content-library","icon":"📡","cat":"soc","color":"#2B50E4","overview":"SIEM detection content library"},
+  {"name":"incident-response-playbooks","icon":"🚨","cat":"soc","color":"#EF2D3C","overview":"NIST 800-61 IR playbooks"},
+  {"name":"incident-response-automation-playbooks","icon":"⚡","cat":"soc","color":"#FB8C1A","overview":"Automated IR playbooks"},
+  {"name":"security-metrics-dashboard","icon":"📊","cat":"soc","color":"#22D3EE","overview":"SOC & exec metrics"},
+  {"name":"threat-intel-feed-aggregator","icon":"🛰️","cat":"soc","color":"#0B1533","overview":"Threat intel feed aggregation"},
+  {"name":"purple-team-exercise-framework","icon":"🟣","cat":"soc","color":"#6B2C91","overview":"Purple team exercise framework"},
+  {"name":"ransomware-tabletop-exercise-kit","icon":"🔒","cat":"soc","color":"#EF2D3C","overview":"Ransomware tabletop kit"},
+  {"name":"compliance-as-code","icon":"📜","cat":"governance","color":"#16C060","overview":"ISO/NIST/CIS compliance as code"},
+  {"name":"privacy-skills","icon":"🔏","cat":"governance","color":"#1E3AA8","overview":"Privacy framework skills"},
+  {"name":"vulnerability-management-program","icon":"🎯","cat":"governance","color":"#2B50E4","overview":"Vulnerability management program"},
+  {"name":"threat-modeling-toolkit","icon":"🗺️","cat":"governance","color":"#16C060","overview":"STRIDE threat modeling"},
+  {"name":"ai-security-lab","icon":"🤖","cat":"ai","color":"#10D0C4","overview":"OWASP LLM Top 10 lab"},
+  {"name":"agent-security-skills","icon":"🧠","cat":"ai","color":"#22D3EE","overview":"AI agent defensive skills + A2A"},
+  {"name":"security-intel-mcp","icon":"🛰️","cat":"ai","color":"#0B1533","overview":"CVE · EPSS · KEV MCP server"},
+  {"name":"api-security-testing-framework","icon":"🔍","cat":"appsec","color":"#EF2D3C","overview":"API security testing"},
+  {"name":"secure-header-linter","icon":"🌐","cat":"appsec","color":"#0B1533","overview":"HTTP security headers linter"},
+  {"name":"phishing-simulation-toolkit","icon":"🎣","cat":"appsec","color":"#EF2D3C","overview":"Phishing simulation toolkit"}
+];
+
+function repoUrl(name) {
+  if (name === 'DevOps-learn-and-Practice') return 'https://github.com/devsecforge/DevOps-learn-and-Practice';
+  return 'https://github.com/devsecforge/' + encodeURIComponent(name);
+}
+
+function renderTile(r, delay) {
+  const cat = CATEGORIES[r.cat] || { label: r.cat };
+  return `
+    <article class="repo-tile" style="--accent:${r.color};animation-delay:${delay}ms" data-name="${r.name.toLowerCase()}">
+      <div class="top">
+        <span class="icon">${r.icon}</span>
+        <div class="meta">
+          <div class="name">${r.name}</div>
+          <div class="cat-label">${cat.label}</div>
+        </div>
+      </div>
+      <p class="overview">${r.overview}</p>
+      <a class="open-btn" href="${repoUrl(r.name)}" target="_blank" rel="noopener">Open repository →</a>
+    </article>`;
+}
+
+function render(filter = '') {
+  const q = filter.trim().toLowerCase();
+  const portal = document.getElementById('portal');
+  const empty = document.getElementById('empty');
+  const filtered = REPOS.filter(r =>
+    !q || r.name.toLowerCase().includes(q) || r.overview.toLowerCase().includes(q) || r.cat.includes(q)
+  );
+  empty.style.display = filtered.length ? 'none' : 'block';
+  const order = Object.keys(CATEGORIES);
+  let html = '';
+  let delay = 0;
+  for (const catId of order) {
+    const items = filtered.filter(r => r.cat === catId);
+    if (!items.length) continue;
+    const c = CATEGORIES[catId];
+    html += `<div class="cat-section" id="${catId === 'learn' ? 'portal' : ''}">
+      <div class="cat-header" style="background:${c.bg};border-left:4px solid ${items[0].color}">
+        <span class="emoji">${c.emoji}</span>
+        <span>${c.label}</span>
+        <span style="margin-left:auto;font-size:.75rem;opacity:.7">${items.length} repos</span>
+      </div>
+      <div class="repo-grid">${items.map(r => renderTile(r, delay += 40)).join('')}</div>
+    </div>`;
+  }
+  portal.innerHTML = html;
+}
+
+document.getElementById('search').addEventListener('input', e => render(e.target.value));
+render();
+</script>
+</div>
+</body>
+</html>
