@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compliance | devsecforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --navy:#0B1533; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.65; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.45), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.35), transparent 50%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .back { display:inline-block; margin-bottom:1rem; padding:.45rem .9rem; background:var(--red); color:#fff; text-decoration:none; border-radius:8px; font-weight:600; font-size:.85rem; }
+    .back.blue { background:var(--royal); margin-left:.4rem; }
+    h1 { color:var(--cyan); font-size:1.75rem; margin:.5rem 0 1rem; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.5rem 0 .65rem; border-bottom:1px solid rgba(239,45,60,.3); padding-bottom:.3rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1rem 0 .4rem; }
+    p, li { color:var(--muted); font-size:.9rem; }
+    ul { margin:.5rem 0 .5rem 1.25rem; }
+    li { margin:.25rem 0; }
+    hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:1.5rem 0; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    td, th { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    a { color:var(--cyan); }
+    details.qa { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.25); border-radius:10px; padding:.75rem 1rem; margin:.65rem 0; }
+    details.qa summary { cursor:pointer; font-weight:600; color:var(--text); }
+    details.qa p { margin-top:.65rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.65rem; margin:1rem 0; }
+    .grid a { display:block; padding:.65rem; background:rgba(11,21,51,.8); border:1px solid rgba(34,211,238,.3); border-radius:10px; text-decoration:none; color:var(--text); font-weight:600; font-size:.85rem; }
+    .grid a:hover { border-color:var(--cyan); background:rgba(43,80,228,.25); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../security-exercises.html">← Portal</a>
+    <a class="back blue" href="https://devsecforge.github.io/devsecforge/DevOps-learn-and-Practice/">Home</a>
+    <h1>Compliance &amp; Governance</h1>
+<h2>What is the difference between a standard, a framework, and a regulation?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>Standard</strong> = specific requirements (ISO 27001 controls). <strong>Framework</strong> = structured guidance (NIST CSF). <strong>Regulation</strong> = legally enforceable (GDPR, HIPAA, PCI-DSS).</p>
+</details>
+<h2>What does &quot;compliance as code&quot; mean?</h2>
+<details>
+<summary>Answer</summary>
+<p>Automating control checks via policy engines and CI — continuous evidence instead of annual manual audits alone. See <a href="https://github.com/devsecforge/compliance-as-code">compliance-as-code</a>.</p>
+</details>
+<h2>Map NIST CSF functions in one sentence each.</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>Govern</strong> — risk strategy. <strong>Identify</strong> — assets and risks. <strong>Protect</strong> — safeguards. <strong>Detect</strong> — anomalies. <strong>Respond</strong> — incidents. <strong>Recover</strong> — resilience.</p>
+</details>
+<h2>What is GDPR&#x27;s data minimization principle?</h2>
+<details>
+<summary>Answer</summary>
+<p>Collect and retain only personal data <strong>adequate, relevant, and limited</strong> to the stated purpose — reduces breach impact and compliance scope.</p>
+</details>
+<h2>What is a SOC 2 Type II report?</h2>
+<details>
+<summary>Answer</summary>
+<p>Independent auditor attestation that security controls operated <strong>effectively over a period</strong> (typically 6–12 months) — common vendor due diligence artifact.</p>
+</details>
+<h2>How does ISO 27001 differ from NIST CSF?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>ISO 27001</strong> is certifiable ISMS standard with Annex A controls. <strong>NIST CSF</strong> is voluntary, flexible framework — often used together (CSF for structure, ISO for certification path).</p>
+</details>
+<h2>What is continuous control monitoring?</h2>
+<details>
+<summary>Answer</summary>
+<p>Automated, near-real-time verification that controls remain effective — e.g., MFA enforced, encryption on, public buckets blocked — vs point-in-time assessments.</p>
+</details>
+<h2>What is a risk register?</h2>
+<details>
+<summary>Answer</summary>
+<p>Living inventory of risks: likelihood, impact, owner, treatment (accept/mitigate/transfer/avoid), and status — foundation of governance programs.</p>
+</details>
+<h2>What is third-party risk management (TPRM)?</h2>
+<details>
+<summary>Answer</summary>
+<p>Assessing vendors who access data/systems — questionnaires, SOC reports, penetration tests, contractual SLAs, and ongoing monitoring for supply-chain exposure.</p>
+</details>
+<h2>Why map controls across frameworks?</h2>
+<details>
+<summary>Answer</summary>
+<p>Avoid duplicate work — one detective control (e.g., MFA) may satisfy ISO A.9, NIST PR.AC, CIS IG1, and PCI 8.3 simultaneously.</p>
+</details>
+  </div>
+</body>
+</html>

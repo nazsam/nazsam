@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevSecOps Roadmap | devsecforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --navy:#0B1533; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.65; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.45), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.35), transparent 50%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .back { display:inline-block; margin-bottom:1rem; padding:.45rem .9rem; background:var(--red); color:#fff; text-decoration:none; border-radius:8px; font-weight:600; font-size:.85rem; }
+    .back.blue { background:var(--royal); margin-left:.4rem; }
+    h1 { color:var(--cyan); font-size:1.75rem; margin:.5rem 0 1rem; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.5rem 0 .65rem; border-bottom:1px solid rgba(239,45,60,.3); padding-bottom:.3rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1rem 0 .4rem; }
+    p, li { color:var(--muted); font-size:.9rem; }
+    ul { margin:.5rem 0 .5rem 1.25rem; }
+    li { margin:.25rem 0; }
+    hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:1.5rem 0; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    td, th { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    a { color:var(--cyan); }
+    details.qa { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.25); border-radius:10px; padding:.75rem 1rem; margin:.65rem 0; }
+    details.qa summary { cursor:pointer; font-weight:600; color:var(--text); }
+    details.qa p { margin-top:.65rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.65rem; margin:1rem 0; }
+    .grid a { display:block; padding:.65rem; background:rgba(11,21,51,.8); border:1px solid rgba(34,211,238,.3); border-radius:10px; text-decoration:none; color:var(--text); font-weight:600; font-size:.85rem; }
+    .grid a:hover { border-color:var(--cyan); background:rgba(43,80,228,.25); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../index.html">← Portal</a>
+    <a class="back blue" href="https://devsecforge.github.io/devsecforge/DevOps-learn-and-Practice/">Home</a>
+    <hr/>
+<h2>📖 What this is</h2>
+<p>A structured, honest roadmap I&#x27;m working through <strong>in public</strong>. Every box below is either done ✅</p>
+<p>or in progress. Where a stage produced something real, I link the repo that proves it. It doubles</p>
+<p>as a study path anyone can follow — everything referenced is free.</p>
+<p><strong>Principle:</strong> breadth of awareness, depth in one lane. Go deep on <strong>DevSecOps + Cloud Security</strong></p>
+<p>first; keep AI-security as a lighter parallel track. Ship small, ship often, learn out loud.</p>
+<p>&gt; 📊 See also: <a href="docs/LEARN-CYBERSECURITY-FREE.md">Learn cybersecurity free</a> · <a href="docs/RESOURCES.md">curated resources</a> · <a href="docs/PROJECTS.md">project ideas per stage</a></p>
+<hr/>
+<h2>📅 Vision · 2019 → 2025</h2>
+<table><tr><th>Year</th><th>Focus</th></tr><tr><td><strong>2019</strong></td><td>Cloud scale — landing zones, IAM baselines, encryption, CSPM</td></tr><tr><td><strong>2020</strong></td><td>Remote-first Zero Trust — identity-centric access, endpoint hardening</td></tr><tr><td><strong>2021</strong></td><td>DevSecOps maturity — CI gates, GitOps, container &amp; IaC security</td></tr><tr><td><strong>2022</strong></td><td>Detection engineering — ATT&amp;CK mapping, SOC automation, purple team</td></tr><tr><td><strong>2023</strong></td><td>Governance + AI risk — NIST CSF 2.0, ISO 42001, LLM security frameworks</td></tr><tr><td><strong>2024</strong></td><td><strong>devsecforge foundation</strong> — profile, flagships, architecture &amp; lab repos</td></tr><tr><td><strong>2025</strong></td><td><strong>Structured systems</strong> — core labs, exercises, A2A agent skills, tagged releases</td></tr></table>
+<h3>🔧 Core 2025 repositories</h3>
+<ul>
+<li><strong><a href="https://github.com/devsecforge/2025-secure-ci-cd-lab">2025-secure-ci-cd-lab</a></strong> — CI/CD pipeline with security checks</li>
+<li><strong><a href="https://github.com/devsecforge/2025-k8s-security-blueprints">2025-k8s-security-blueprints</a></strong> — K8s hardening patterns</li>
+<li><strong><a href="https://github.com/devsecforge/2025-ai-threat-modeling">2025-ai-threat-modeling</a></strong> — AI-assisted threat modeling</li>
+<li><strong><a href="https://github.com/devsecforge/devsecops-exercises">devsecops-exercises</a></strong> — security Q&amp;A (<a href="https://github.com/bregman-arie/devops-exercises">devops-exercises</a> style)</li>
+<li><strong><a href="https://github.com/devsecforge/agent-security-skills">agent-security-skills</a></strong> — defensive skills + <a href="https://github.com/a2aproject/A2A">A2A</a> Agent Cards</li>
+</ul>
+<p>Each repo documents <strong>what / why / how / when</strong> — not just the final artifact.</p>
+<hr/>
+<h2>🧭 The path</h2>
+<h3>Phase 0 — Foundations</h3>
+<ul>
+<li>[x] Linux &amp; Bash fluency (files, permissions, processes, pipes)</li>
+<li>[x] Git &amp; GitHub workflows (branching, PRs, protected branches)</li>
+<li>[ ] Networking basics (TCP/IP, DNS, TLS)</li>
+<li>[ ] One scripting language for automation (Python)</li>
+</ul>
+<h3>Phase 1 — Secure CI/CD *(core)*</h3>
+<ul>
+<li>[x] Secret scanning (gitleaks) &amp;nbsp;→ 🛡️ <strong><a href="https://github.com/devsecforge/security-operations-toolkit">security-operations-toolkit</a></strong></li>
+<li>[x] SAST (Semgrep) &amp;nbsp;→ *same repo*</li>
+<li>[x] SCA / dependency CVEs (Trivy) &amp;nbsp;→ *same repo*</li>
+<li>[x] Pipeline security gate in GitHub Actions &amp;nbsp;→ *same repo*</li>
+<li>[ ] DAST (OWASP ZAP baseline)</li>
+<li>[ ] SBOM (Syft) + artifact signing (Cosign)</li>
+</ul>
+<h3>Phase 2 — Container &amp; Kubernetes security</h3>
+<ul>
+<li>[x] Image scanning &amp; hardening (non-root, read-only FS, drop caps)</li>
+<li>[x] Pod Security Admission, RBAC, NetworkPolicy &amp;nbsp;→ ☸️ <strong><a href="https://github.com/devsecforge/kubernetes-security-lab">kubernetes-security-lab</a></strong></li>
+<li>[x] Runtime detection (Falco) &amp;nbsp;→ *same repo*</li>
+<li>[ ] Policy engine (Kyverno / OPA Gatekeeper)</li>
+<li>[ ] CIS Benchmark node hardening (kube-bench)</li>
+</ul>
+<h3>Phase 3 — Cloud &amp; IaC security</h3>
+<ul>
+<li>[x] IaC scanning (tfsec / checkov) &amp;nbsp;→ 🔐 <strong><a href="https://github.com/devsecforge/secure-terraform-aws">secure-terraform-aws</a></strong></li>
+<li>[x] Least-privilege IAM (no wildcards, scoped ARNs) &amp;nbsp;→ *same repo*</li>
+<li>[x] Encryption at rest (KMS) + TLS enforcement &amp;nbsp;→ *same repo*</li>
+<li>[ ] Cloud detection (GuardDuty / Security Hub concepts)</li>
+<li>[ ] Secrets management (Vault / cloud KMS)</li>
+</ul>
+<h3>Phase 4 — Defense &amp; operations</h3>
+<ul>
+<li>[x] Threat modeling (STRIDE) &amp;nbsp;→ *docs in the repos above*</li>
+<li>[ ] Logging &amp; detection (SIEM concepts, ELK / Wazuh)</li>
+<li>[ ] Incident response playbooks</li>
+<li>[ ] Supply-chain security (SLSA, provenance)</li>
+</ul>
+<h3>Phase 5 — AI / LLM security *(parallel, lighter)*</h3>
+<ul>
+<li>[ ] OWASP Top 10 for LLM Applications</li>
+<li>[ ] Prompt-injection lab (build a small demo)</li>
+<li>[ ] Guardrails &amp; secure AI in CI/CD</li>
+</ul>
+<hr/>
+<h2>📈 Progress</h2>
+<p>```</p>
+<p>Phase 0  Foundations ................ ██████░░░░  2/4</p>
+<p>Phase 1  Secure CI/CD .............. ██████░░░░  4/6</p>
+<p>Phase 2  Container &amp; K8s ........... ██████░░░░  3/5</p>
+<p>Phase 3  Cloud &amp; IaC ............... ██████░░░░  3/5</p>
+<p>Phase 4  Defense &amp; ops ............. ██░░░░░░░░  1/4</p>
+<p>Phase 5  AI / LLM security ......... ░░░░░░░░░░  0/3</p>
+<p>```</p>
+<p>_Updated as I go. Boxes above are the source of truth._</p>
+<hr/>
+<h2>🎯 Certifications (only listed once earned)</h2>
+<ul>
+<li>[ ] CompTIA Security+</li>
+<li>[ ] AWS Cloud Practitioner → Solutions Architect Associate</li>
+<li>[ ] (stretch) Certified Kubernetes Security Specialist (CKS)</li>
+</ul>
+<h2>🤝 Contributing</h2>
+<p>Suggestions for stages or resources are welcome — see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<h2>📄 License</h2>
+<p><a href="LICENSE">MIT</a> © 2026 devsecforge</p>
+<hr/>
+  </div>
+</body>
+</html>

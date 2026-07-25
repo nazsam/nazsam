@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identity | devsecforge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --navy:#0B1533; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.65; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.45), transparent 55%),
+        radial-gradient(ellipse 70% 55% at 85% 25%, rgba(239,45,60,.35), transparent 50%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .back { display:inline-block; margin-bottom:1rem; padding:.45rem .9rem; background:var(--red); color:#fff; text-decoration:none; border-radius:8px; font-weight:600; font-size:.85rem; }
+    .back.blue { background:var(--royal); margin-left:.4rem; }
+    h1 { color:var(--cyan); font-size:1.75rem; margin:.5rem 0 1rem; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.5rem 0 .65rem; border-bottom:1px solid rgba(239,45,60,.3); padding-bottom:.3rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1rem 0 .4rem; }
+    p, li { color:var(--muted); font-size:.9rem; }
+    ul { margin:.5rem 0 .5rem 1.25rem; }
+    li { margin:.25rem 0; }
+    hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:1.5rem 0; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    td, th { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    a { color:var(--cyan); }
+    details.qa { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.25); border-radius:10px; padding:.75rem 1rem; margin:.65rem 0; }
+    details.qa summary { cursor:pointer; font-weight:600; color:var(--text); }
+    details.qa p { margin-top:.65rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.65rem; margin:1rem 0; }
+    .grid a { display:block; padding:.65rem; background:rgba(11,21,51,.8); border:1px solid rgba(34,211,238,.3); border-radius:10px; text-decoration:none; color:var(--text); font-weight:600; font-size:.85rem; }
+    .grid a:hover { border-color:var(--cyan); background:rgba(43,80,228,.25); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../security-exercises.html">← Portal</a>
+    <a class="back blue" href="https://devsecforge.github.io/devsecforge/DevOps-learn-and-Practice/">Home</a>
+    <h1>Identity &amp; Zero Trust</h1>
+<h2>What are the three core principles of Zero Trust?</h2>
+<details>
+<summary>Answer</summary>
+<p>1. <strong>Verify explicitly</strong> — authenticate and authorize every request. 2. <strong>Least privilege access</strong> — just-in-time, just-enough. 3. <strong>Assume breach</strong> — segment, monitor, limit blast radius.</p>
+</details>
+<h2>What is phishing-resistant MFA?</h2>
+<details>
+<summary>Answer</summary>
+<p>MFA resistant to credential phishing — <strong>FIDO2/WebAuthn</strong> security keys or passkeys. SMS and push-only MFA are weaker against AiTM (adversary-in-the-middle) attacks.</p>
+</details>
+<h2>What is Conditional Access?</h2>
+<details>
+<summary>Answer</summary>
+<p>Policy engine (Microsoft Entra and similar) that grants/denies/requires step-up auth based on <strong>user, device, location, risk score, and app sensitivity</strong> — core Zero Trust enforcement.</p>
+</details>
+<h2>Explain the difference between authentication and authorization.</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>Authentication</strong> = proving identity (who). <strong>Authorization</strong> = determining permitted actions (what). AuthN without AuthZ still allows over-privileged access.</p>
+</details>
+<h2>What is Privileged Identity Management (PIM)?</h2>
+<details>
+<summary>Answer</summary>
+<p>Just-in-time elevation to admin roles with approval, time bounds, and audit — reduces standing privileged access, a top attacker target.</p>
+</details>
+<h2>What is legacy authentication and why block it?</h2>
+<details>
+<summary>Answer</summary>
+<p>Protocols that <strong>don&#x27;t support MFA</strong> (basic auth, some IMAP/POP/SMTP). Attackers bypass MFA via these paths — disable at tenant level where possible.</p>
+</details>
+<h2>What is an impossible-travel alert?</h2>
+<details>
+<summary>Answer</summary>
+<p>Detection of two successful sign-ins from geographically distant locations in a <strong>physically implausible</strong> time window — possible credential compromise or token theft.</p>
+</details>
+<h2>How does OAuth differ from SAML in enterprise SSO?</h2>
+<details>
+<summary>Answer</summary>
+<p><strong>SAML</strong> = XML-based, common for browser SSO to SaaS. <strong>OAuth 2.0 / OIDC</strong> = token-based, dominant for modern APIs and mobile/SPA. Many enterprises use both.</p>
+</details>
+<h2>What is a service principal vs a managed identity?</h2>
+<details>
+<summary>Answer</summary>
+<p>Both are non-human identities. <strong>Managed identity</strong> is platform-managed (no credential rotation burden). <strong>Service principal</strong> is app registration you manage — common for CI/CD and third-party integrations.</p>
+</details>
+<h2>What signals would you use for risk-based authentication?</h2>
+<details>
+<summary>Answer</summary>
+<p>Impossible travel, unfamiliar device, anonymous IP/Tor, password spray patterns, impossible token use, sign-in from atypical country, and recent credential leak exposure.</p>
+</details>
+  </div>
+</body>
+</html>
