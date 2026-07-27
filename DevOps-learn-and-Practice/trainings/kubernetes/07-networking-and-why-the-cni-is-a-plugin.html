@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Networking — and why the CNI is a plugin | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.7; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.4), transparent 55%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:820px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(239,45,60,.35); }
+    .nav-top a:hover { background:var(--red); }
+    .nav-top a.blue { background:rgba(43,80,228,.4); }
+    .chapter-nav { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.2); border-radius:12px; padding:1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--cyan); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; }
+    .chapter-nav li { margin:.2rem 0; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--cyan); }
+    .chapter-nav a.active { color:var(--red); font-weight:700; }
+    h1 { color:var(--cyan); font-size:1.65rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.92rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--royal); padding:.75rem 1rem; margin:1rem 0; background:rgba(43,80,228,.12); border-radius:0 10px 10px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    th { color:var(--cyan); background:rgba(11,21,51,.8); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; color:var(--cyan); }
+    a { color:var(--cyan); }
+    .badge { display:inline-block; padding:.25rem .6rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(239,45,60,.25); color:var(--red); margin-bottom:.5rem; }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram { background:rgba(11,21,51,.85); border:1px solid rgba(34,211,238,.25); border-radius:12px; padding:1rem; margin:1rem 0; font-family:monospace; font-size:.78rem; color:var(--cyan); white-space:pre-wrap; line-height:1.5; }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">← Trainings</a>
+      <a class="blue" href="../../index.html">Portal</a>
+      <a class="blue" href="index.html">K8s course</a>
+      <a href="https://github.com/devsecforge/kubernetes-security-lab">Security lab ↗</a>
+    </div><div class="chapter-nav"><h3>☸️ Understanding Kubernetes — 17 chapters</h3><ol><li><a href="00-what-kubernetes-actually-is.html" class="">00 — What Kubernetes actually is</a></li><li><a href="01-the-core-idea-desired-state-and-reconciliation.html" class="">01 — The core idea — desired state and reconciliation</a></li><li><a href="02-the-object-model-a-spec-and-a-status.html" class="">02 — The object model — a spec and a status</a></li><li><a href="03-how-the-parts-talk-the-watch-and-reconcile-fabric.html" class="">03 — How the parts talk — the watch and reconcile fabric</a></li><li><a href="04-the-control-plane-the-decision-layer.html" class="">04 — The control plane — the decision layer</a></li><li><a href="05-the-worker-nodes-the-execution-layer.html" class="">05 — The worker nodes — the execution layer</a></li><li><a href="06-pods-and-the-workloads-you-build-with.html" class="">06 — Pods and the workloads you build with</a></li><li><a href="07-networking-and-why-the-cni-is-a-plugin.html" class="active">07 — Networking — and why the CNI is a plugin</a></li><li><a href="08-storage-and-why-the-csi-is-a-plugin.html" class="">08 — Storage — and why the CSI is a plugin</a></li><li><a href="09-configuration-and-secrets-with-a-warning.html" class="">09 — Configuration and secrets — with a warning</a></li><li><a href="10-scaling-at-every-layer.html" class="">10 — Scaling — at every layer</a></li><li><a href="11-extending-kubernetes-crds-and-operators.html" class="">11 — Extending Kubernetes — CRDs and operators</a></li><li><a href="12-what-it-takes-to-run.html" class="">12 — What it takes to run</a></li><li><a href="13-behavior-under-real-failure.html" class="">13 — Behavior under real failure</a></li><li><a href="14-what-it-takes-to-be-enterprise-ready.html" class="">14 — What it takes to be enterprise-ready</a></li><li><a href="15-the-sharp-edges-worth-memorizing.html" class="">15 — The sharp edges worth memorizing</a></li><li><a href="16-where-to-go-next.html" class="">16 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="06-pods-and-the-workloads-you-build-with.html">← 06</a> <a href="08-storage-and-why-the-csi-is-a-plugin.html">08 →</a></p></div><span class="badge">Chapter 07</span><h1>Networking — and why the CNI is a plugin</h1><p>Kubernetes lays down a network model but, quite deliberately, does not build it. The model itself is refreshingly simple. Every pod gets its own unique IP address, any pod can talk directly to any other pod across nodes without network address translation getting in the way, and the address a pod sees for itself is the same one everyone else uses to reach it. Kubernetes states those requirements and then hands the actual implementation to a pluggable component called the Container Network Interface, or CNI.</p>
+<h3>The four layers, from a container out</h3>
+<p>Kubernetes networking is easiest to hold in your head as four layers, working from the innermost outward. The innermost is the containers inside a single pod, which share one network namespace and talk to each other over loopback at 127.0.0.1, exactly as if they were processes on the same machine. One layer out, every pod has its own unique IP and can reach any other pod directly across the cluster with no address translation in the way, and this pod network is the layer the CNI builds. One layer out again, a service places a single stable virtual IP in front of a group of pods, so callers reach the group by one unchanging address even as the pods behind it come and go. The outermost layer is how the world outside gets in, through a node port, a load balancer, or an ingress.</p>
+<p>Following a request the whole way in makes those layers concrete. A public load balancer takes traffic on a friendly port like 80 and forwards it to a node port, which is a high port in the 30000 to 32767 range that is opened on every node in the cluster and stays fixed unless the service is recreated. The node port is routed inward to the service&#x27;s cluster IP, which is virtual and deliberately unreachable from outside, and the cluster IP in turn forwards to one of the healthy pods behind it. Inside that pod, the receiving container is reached over loopback. Every hop moves one layer further in, from the real host network, to the virtual service network, to the pod, to the container.</p>
+<h3>Why a plugin</h3>
+<p>Networking needs vary enormously between a small on-premise cluster, a multi-zone cloud, and a segmented regulated environment. Kubernetes lets you choose a plugin that fits rather than forcing one design on everyone.</p>
+<h3>Choosing a network plugin</h3>
+<p>Plugins differ in how they move packets, and it matters. Some create an overlay that wraps pod traffic to carry it between nodes, simple and portable at a small cost. Others route natively for speed and add policy enforcement. Cilium uses eBPF for high-performance networking, fine-grained policy, and often replaces kube-proxy entirely. The CNI choice sets your performance, your security model, and which features you can even use.</p>
+<h3>Services, DNS, and getting traffic in</h3>
+<p>Above the raw network sit the pieces you work with. A Service gives a stable address to a set of pods, in types: ClusterIP for internal, NodePort on a fixed node port, LoadBalancer for external. CoreDNS gives every service a predictable name. An Ingress routes external traffic in and terminates TLS, with the Gateway API as its more capable successor.</p>
+<p>The LoadBalancer type is worth a closer look, because where the load balancer actually comes from depends on where you run. On a cloud, the provider creates one for you automatically. On your own hardware, often called bare metal, there is no cloud load balancer to ask for, so you install a small add-on such as MetalLB or kube-vip to do that job, handing out and advertising the public addresses itself. These can work in one of two ways. The simpler is Layer 2 mode, where one node volunteers to answer for the address on the local network and passes incoming traffic on from there. It is easy to set up, but every connection to that service arrives through that one node. The other is BGP mode, named after the routing protocol that networks use to tell each other where addresses live. Here the cluster announces the address to your network&#x27;s routers, which then spread incoming traffic across all the nodes and recover faster if one fails, though this does need routers that understand BGP.</p>
+<h3>Finding another service inside the cluster</h3>
+<p>So far we have followed a request coming in from outside, but pods also need to find and talk to each other inside the cluster, and they do it through the same DNS. This is what people mean by service discovery. Every service is automatically given a name of the form service.namespace.svc.cluster.local, and CoreDNS answers that name with the service&#x27;s stable ClusterIP. A pod reaches another service simply by connecting to the name. Within the same namespace the short form, just the service name on its own, is enough. To reach a service in a different namespace, the pod adds the namespace, as in orders.payments, and CoreDNS resolves it exactly the same way, since names work across the whole cluster no matter which namespace they live in. From there the request follows the same internal hops as before, because the ClusterIP is virtual and kube-proxy passes the connection on to one healthy pod behind the service. The rule of thumb is to always reach other services by name and never by pod IP, since pod IPs change all the time while the service name and its ClusterIP stay put.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> The default network is open. Any pod can reach any other until you apply network policies, and those policies only work if your CNI enforces them. A compromised frontend otherwise has a clear path to your backend.</blockquote>
+<h3>Two escape hatches, HostPort and HostNetwork</h3>
+<p>Two escape hatches sidestep this layering entirely, and both are worth recognizing when you see them. A HostPort binds a container&#x27;s port straight to a port on the specific node the pod happens to land on, so it is reachable at that node&#x27;s own IP rather than through a service. HostNetwork goes further and places the pod directly into the host&#x27;s network namespace, so the pod uses the host&#x27;s IP and sees every one of its interfaces. Both trade away the isolation the pod network normally gives you.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> HostNetwork is powerful and genuinely dangerous. A pod sitting in the host&#x27;s network namespace can reach anything the node can reach, sidesteps network policy, and can collide with ports the host is already using, so reserve it for the rare infrastructure component that truly needs it and keep ordinary workloads well away from it.</blockquote></div></body></html>
