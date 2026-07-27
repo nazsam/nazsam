@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>What goes in the repository, and how you express it | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --purple:#8B5CF6; --mint:#34D399; --amber:#FBBF24; --text:#F4F0FF; --muted:#A89BC6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; --navy:#12082A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#0A0618; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 15% 8%, rgba(139,92,246,.45), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 88% 18%, rgba(52,211,153,.35), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 95%, rgba(251,191,36,.2), transparent 55%),
+        linear-gradient(165deg,#0A0618,#12082A 45%,#1a0f3d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(139,92,246,.45); }
+    .nav-top a:hover { background:var(--purple); }
+    .nav-top a.mint { background:rgba(52,211,153,.35); }
+    .nav-top a.mint:hover { background:var(--mint); color:#0A0618; }
+    .chapter-nav { background:rgba(18,8,42,.85); border:1px solid rgba(139,92,246,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--mint); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; columns:2; column-gap:1.5rem; }
+    .chapter-nav li { margin:.2rem 0; break-inside:avoid; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--mint); }
+    .chapter-nav a.active { color:var(--amber); font-weight:700; }
+    h1 { color:var(--mint); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--purple); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--amber); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--purple); padding:.85rem 1rem; margin:1rem 0; background:rgba(139,92,246,.12); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--amber); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(139,92,246,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); margin-bottom:.35rem; }
+    .eli10 p { color:#E8E0FF; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--mint); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(52,211,153,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--mint); margin-bottom:.35rem; }
+    .scenario p { color:#E8E0FF; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--mint); background:rgba(18,8,42,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--mint); }
+    a { color:var(--mint); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(139,92,246,.3); color:var(--purple); margin-bottom:.5rem; border:1px solid rgba(139,92,246,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(18,8,42,.9); border:1px solid rgba(139,92,246,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+    @media (max-width:600px) { .chapter-nav ol { columns:1; } }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="mint" href="../../index.html">Portal</a>
+      <a class="mint" href="index.html">GitOps course</a>
+      <a href="../kubernetes/index.html">Kubernetes primer</a>
+    </div><div class="chapter-nav"><h3>GitOps — Understanding GitOps (11 chapters)</h3><ol><li><a href="00-what-gitops-is-for.html" class="">00 — What GitOps is for</a></li><li><a href="01-the-core-idea-and-the-four-principles.html" class="">01 — The core idea, and the four principles</a></li><li><a href="02-pull-rather-than-push.html" class="">02 — Pull rather than push</a></li><li><a href="03-the-reconciliation-cycle-and-what-starts-it.html" class="">03 — The reconciliation cycle, and what starts it</a></li><li><a href="04-where-the-agent-runs-and-how-often-it-looks.html" class="">04 — Where the agent runs, and how often it looks</a></li><li><a href="05-drift-and-what-to-do-about-it.html" class="">05 — Drift, and what to do about it</a></li><li><a href="06-what-goes-in-the-repository-and-how-you-express-it.html" class="active">06 — What goes in the repository, and how you express it</a></li><li><a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html" class="">07 — Secrets, the one thing that cannot sit there in the clear</a></li><li><a href="08-promotion-pinning-and-who-is-allowed-to-change-pro.html" class="">08 — Promotion, pinning, and who is allowed to change production</a></li><li><a href="09-behavior-under-failure.html" class="">09 — Behavior under failure</a></li><li><a href="10-where-to-go-next.html" class="">10 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="05-drift-and-what-to-do-about-it.html">&larr; 05</a> <a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html">07 &rarr;</a></p></div><span class="badge">Chapter 06</span><h1>What goes in the repository, and how you express it</h1><h3>The two categories</h3>
+<p>Cluster configuration is everything defining the governance baseline, which means namespace definitions and labels, network policies including the default-deny starting position, resource quotas and limit ranges, roles and bindings, ingress classes, storage classes, disruption budgets, and admission control policies. Application configuration is the workloads themselves, so deployments, statefulsets, daemonsets, services, application ingress rules, autoscalers, volume claims, config maps, and references to secrets.</p>
+<p>Every item in that first list appeared in chapter fourteen of the Kubernetes primer as something stock Kubernetes deliberately leaves for you to fill in. Putting them under the same repository control as your applications is how the filling-in becomes repeatable rather than something one person did once by hand and then left.</p>
+<p>Cluster configuration lands first, so that applications deploy into namespaces which already have their quota, network policy, and access bindings in place, and getting that order backward causes real problems. That sequencing only works when the governance objects live in the same system as the workloads they govern.</p>
+<h3>Separating code from configuration</h3>
+<p>Separating application source code from deployment configuration pays back faster than anything else in this chapter. Source lives in one repository and deployment configuration lives in another. That separation stops a build from being triggered by the commit that updated an image tag, which is otherwise a loop you will build by accident and then spend an afternoon diagnosing. It also lets repository permissions differ, so a wide group can write code while a narrower group approves what actually runs in production, and it keeps deployment history legible because the log of the deployment repository is a log of deployments.</p>
+<h3>Separating environments</h3>
+<p>Branch-per-environment gives each environment its own branch inside one repository, so developers commit to a development branch, promotion to staging is a merge, and promotion to production is a merge into main. Its strength is that promotion becomes a pull request, so every promotion arrives with a review gate and leaves a merge commit behind as its record. Its weakness is divergence, because a branch receiving an environment-specific fix accumulates differences, and every later merge grows more expensive and more likely to carry something you did not intend.</p>
+<p>Directory-per-environment keeps one branch and separates environments into directory trees, so production sits alongside staging and development in the same commit graph. Promotion becomes a change within that branch, usually an overlay edit or a values file update. Its strength is that nothing diverges and the whole system is visible in one tree at one revision. Its weakness is that a commit straight into the production directory goes live immediately, unless branch protection and required review are standing in the way.</p>
+<p>Directory-per-environment is the more common modern choice, because its weakness is fixable with repository controls you should have configured anyway, while branch divergence never goes away.</p>
+<h3>Manifest formats</h3>
+<p>Raw Kubernetes YAML is easy to read, and it duplicates heavily as soon as you have more than one environment. Kustomize handles that with a base directory of common definitions and per-environment overlay directories that patch it, working by patching rather than templating, and it already ships inside kubectl. It suits cases where the differences between your environments are few and structural.</p>
+<p>Helm suits the opposite case, where the differences are numerous and parameterized, and you will need it regardless because almost all third-party software ships as a chart. The Helm primer covers how charts and values actually work, and the pattern here is one values file per environment sitting alongside the chart. Pin the chart version rather than letting it float, and pin image digests wherever your registry makes that practical.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> A floating reference changes what deploys with no commit. A release tag that somebody can move is as floating as a latest tag, and neither leaves a trace behind. Six months on you cannot reconstruct what was running on a given date, which is the first thing an auditor asks you.</blockquote>
+<p>Larger platforms sometimes add a third step called rendered manifests, where CI does the templating and commits the finished plain YAML, so a reviewer sees exactly what will change rather than the values that will change it.</p>
+<p>Whichever format you land on, keep the repository self-contained, because an agent that cannot resolve part of your tree has no way to tell you which part it missed.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> Submodules can be skipped without an error. Repository submodules are unsupported in some implementations, and where they are unsupported nothing warns you. The deployment simply lacks whatever the submodule held, reports success, and leaves you debugging the application instead of the checkout.</blockquote>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>Two drawers in the repo: <strong>rules of the house</strong> (namespaces, quotas, network policies) and <strong>the furniture</strong> (your apps). Put rules in first so every app moves into a room that already has walls and locks. Keep app code in a different repo from deployment config — like keeping recipes separate from the shopping list.</p></div></div></body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The reconciliation cycle, and what starts it | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --purple:#8B5CF6; --mint:#34D399; --amber:#FBBF24; --text:#F4F0FF; --muted:#A89BC6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; --navy:#12082A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#0A0618; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 15% 8%, rgba(139,92,246,.45), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 88% 18%, rgba(52,211,153,.35), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 95%, rgba(251,191,36,.2), transparent 55%),
+        linear-gradient(165deg,#0A0618,#12082A 45%,#1a0f3d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(139,92,246,.45); }
+    .nav-top a:hover { background:var(--purple); }
+    .nav-top a.mint { background:rgba(52,211,153,.35); }
+    .nav-top a.mint:hover { background:var(--mint); color:#0A0618; }
+    .chapter-nav { background:rgba(18,8,42,.85); border:1px solid rgba(139,92,246,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--mint); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; columns:2; column-gap:1.5rem; }
+    .chapter-nav li { margin:.2rem 0; break-inside:avoid; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--mint); }
+    .chapter-nav a.active { color:var(--amber); font-weight:700; }
+    h1 { color:var(--mint); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--purple); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--amber); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--purple); padding:.85rem 1rem; margin:1rem 0; background:rgba(139,92,246,.12); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--amber); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(139,92,246,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); margin-bottom:.35rem; }
+    .eli10 p { color:#E8E0FF; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--mint); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(52,211,153,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--mint); margin-bottom:.35rem; }
+    .scenario p { color:#E8E0FF; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--mint); background:rgba(18,8,42,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--mint); }
+    a { color:var(--mint); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(139,92,246,.3); color:var(--purple); margin-bottom:.5rem; border:1px solid rgba(139,92,246,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(18,8,42,.9); border:1px solid rgba(139,92,246,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+    @media (max-width:600px) { .chapter-nav ol { columns:1; } }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="mint" href="../../index.html">Portal</a>
+      <a class="mint" href="index.html">GitOps course</a>
+      <a href="../kubernetes/index.html">Kubernetes primer</a>
+    </div><div class="chapter-nav"><h3>GitOps — Understanding GitOps (11 chapters)</h3><ol><li><a href="00-what-gitops-is-for.html" class="">00 — What GitOps is for</a></li><li><a href="01-the-core-idea-and-the-four-principles.html" class="">01 — The core idea, and the four principles</a></li><li><a href="02-pull-rather-than-push.html" class="">02 — Pull rather than push</a></li><li><a href="03-the-reconciliation-cycle-and-what-starts-it.html" class="active">03 — The reconciliation cycle, and what starts it</a></li><li><a href="04-where-the-agent-runs-and-how-often-it-looks.html" class="">04 — Where the agent runs, and how often it looks</a></li><li><a href="05-drift-and-what-to-do-about-it.html" class="">05 — Drift, and what to do about it</a></li><li><a href="06-what-goes-in-the-repository-and-how-you-express-it.html" class="">06 — What goes in the repository, and how you express it</a></li><li><a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html" class="">07 — Secrets, the one thing that cannot sit there in the clear</a></li><li><a href="08-promotion-pinning-and-who-is-allowed-to-change-pro.html" class="">08 — Promotion, pinning, and who is allowed to change production</a></li><li><a href="09-behavior-under-failure.html" class="">09 — Behavior under failure</a></li><li><a href="10-where-to-go-next.html" class="">10 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="02-pull-rather-than-push.html">&larr; 02</a> <a href="04-where-the-agent-runs-and-how-often-it-looks.html">04 &rarr;</a></p></div><span class="badge">Chapter 03</span><h1>The reconciliation cycle, and what starts it</h1><p>A reconciliation cycle is five steps, and every implementation performs some version of all of them. The agent fetches the source at a specified reference, then renders that source into plain Kubernetes objects, which means running a Kustomize build, templating a Helm chart, or doing nothing at all when the repository already holds raw manifests. Chapter 6 covers what Kustomize and Helm each do, and the point here is that the agent always ends up holding plain objects whichever format it started from. It compares those rendered objects against what is live in the cluster, applies whatever differences it finds, and reports the outcome so you can see what happened.</p>
+<figure class="diagram-wrap"><svg viewBox="0 0 560 160" width="560" height="160" xmlns="http://www.w3.org/2000/svg">
+<p>  &lt;defs&gt;&lt;marker id=&quot;r1&quot; markerWidth=&quot;8&quot; markerHeight=&quot;8&quot; refX=&quot;6&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L8,3 L0,6 Z&quot; fill=&quot;#34D399&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;</p>
+<p>  &lt;g font-size=&quot;11&quot; font-weight=&quot;600&quot; fill=&quot;#F4F0FF&quot;&gt;</p>
+<p>    &lt;rect x=&quot;10&quot; y=&quot;55&quot; width=&quot;80&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;50&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot;&gt;fetch&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;93&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot; font-weight=&quot;400&quot;&gt;at ref&lt;/text&gt;</p>
+<p>    &lt;rect x=&quot;110&quot; y=&quot;55&quot; width=&quot;80&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;150&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot;&gt;render&lt;/text&gt;&lt;text x=&quot;150&quot; y=&quot;93&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot; font-weight=&quot;400&quot;&gt;plain YAML&lt;/text&gt;</p>
+<p>    &lt;rect x=&quot;210&quot; y=&quot;55&quot; width=&quot;80&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;250&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot;&gt;compare&lt;/text&gt;&lt;text x=&quot;250&quot; y=&quot;93&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot; font-weight=&quot;400&quot;&gt;vs live&lt;/text&gt;</p>
+<p>    &lt;rect x=&quot;310&quot; y=&quot;55&quot; width=&quot;80&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;350&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot;&gt;apply&lt;/text&gt;&lt;text x=&quot;350&quot; y=&quot;93&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot; font-weight=&quot;400&quot;&gt;diff&lt;/text&gt;</p>
+<p>    &lt;rect x=&quot;410&quot; y=&quot;55&quot; width=&quot;80&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot;&gt;report&lt;/text&gt;&lt;text x=&quot;450&quot; y=&quot;93&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot; font-weight=&quot;400&quot;&gt;outcome&lt;/text&gt;</p>
+<p>  &lt;/g&gt;</p>
+<p>  &lt;line x1=&quot;90&quot; y1=&quot;80&quot; x2=&quot;105&quot; y2=&quot;80&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#r1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;190&quot; y1=&quot;80&quot; x2=&quot;205&quot; y2=&quot;80&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#r1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;290&quot; y1=&quot;80&quot; x2=&quot;305&quot; y2=&quot;80&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#r1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;390&quot; y1=&quot;80&quot; x2=&quot;405&quot; y2=&quot;80&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#r1)&quot;/&gt;</p>
+<p>  &lt;path d=&quot;M450 110 Q280 145 50 110&quot; fill=&quot;none&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 4&quot; marker-end=&quot;url(#r1)&quot;/&gt;</p>
+<p>  &lt;text x=&quot;280&quot; y=&quot;138&quot; text-anchor=&quot;middle&quot; fill=&quot;#FBBF24&quot; font-size=&quot;10&quot;&gt;runs again — level-triggered, not one-shot&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;Five steps every GitOps engine performs, then repeats forever.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<p>The return path is the whole point. A cycle that has finished is simply a cycle about to start.</p>
+<h3>What a sync does and does not tell you</h3>
+<p>A successful sync tells you less than it appears to, because applying an object successfully means the API server accepted it and nothing beyond that. Implementations that assess workload health separately from sync status are handing you two genuinely different signals, and the health one is the readiness and liveness territory from chapter six of the Kubernetes primer. Watch both at the moment you are deciding whether a release worked.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> A green sync is not a healthy application. Your deployment can report a completed sync while every pod behind it restarts in a loop on a bad value. The dashboard stays green, the rollout looks finished, and the only place the trouble shows is a pod list nobody thought to open.</blockquote>
+<h3>Ordering</h3>
+<p>The cluster will not work out the ordering on your behalf. Custom resource definitions have to exist before the custom resources that use them, and that follows directly from what chapter eleven said about a CRD being only a shape until a controller acts on it. Cert-manager has to be running before an ingress asks it for a certificate, and a database operator has to be installed before you declare a database. Argo CD expresses this with sync waves, Flux with dependency declarations between its Kustomization objects, and Helm with chart hooks, and the underlying requirement is identical in all three.</p>
+<h3>Pruning</h3>
+<p>Pruning means that removing a resource from the repository removes it from the cluster, and that behavior is what makes the repository authoritative rather than merely additive. Read the scoping semantics of your own implementation before you change it.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> Pruning is dangerous in either position. Left disabled, deletions never propagate, so orphaned resources accumulate for months with nobody noticing. Enabled with a path or label scope wider than you intended, it deletes resources another team owns. Neither failure announces itself at the moment you make the change.</blockquote>
+<h3>What starts a cycle</h3>
+<p>Polling means the agent asks the repository at a fixed interval whether anything has changed. It is predictable, it works when the repository has no route back to the agent, and its interval sets both your worst-case deployment latency and a multiplier on load against the repository and the cluster API. Webhooks mean the repository notifies the agent the moment a push lands, which brings latency down to almost nothing and fails silently whenever a delivery goes missing. Configure both of them, with webhooks for latency and polling as the backstop that catches whatever a webhook missed, because choosing only one leaves you either slow or occasionally wrong and running the two together costs almost nothing.</p>
+<p>Webhooks are unavailable wherever the agent cannot be reached from the repository, and that covers more real environments than you would expect. Air-gapped clusters, remote industrial or retail sites behind network address translation, and management connections opened on demand rather than held open all fall into that category. Polling is the only mechanism available in those places, so the interval stops being a default you accept and becomes a number you choose deliberately and write down.</p>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>The robot does five chores in order: get the recipe, translate it into steps, compare steps to what&#x27;s built, fix differences, tell you what happened — then start over. Webhooks are a doorbell (&quot;recipe updated!&quot;). Polling is checking the mailbox every few minutes. Use both so you never miss a delivery.</p></div></div></body></html>

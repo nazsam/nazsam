@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The core idea, and the four principles | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --purple:#8B5CF6; --mint:#34D399; --amber:#FBBF24; --text:#F4F0FF; --muted:#A89BC6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; --navy:#12082A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#0A0618; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 15% 8%, rgba(139,92,246,.45), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 88% 18%, rgba(52,211,153,.35), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 95%, rgba(251,191,36,.2), transparent 55%),
+        linear-gradient(165deg,#0A0618,#12082A 45%,#1a0f3d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(139,92,246,.45); }
+    .nav-top a:hover { background:var(--purple); }
+    .nav-top a.mint { background:rgba(52,211,153,.35); }
+    .nav-top a.mint:hover { background:var(--mint); color:#0A0618; }
+    .chapter-nav { background:rgba(18,8,42,.85); border:1px solid rgba(139,92,246,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--mint); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; columns:2; column-gap:1.5rem; }
+    .chapter-nav li { margin:.2rem 0; break-inside:avoid; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--mint); }
+    .chapter-nav a.active { color:var(--amber); font-weight:700; }
+    h1 { color:var(--mint); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--purple); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--amber); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--purple); padding:.85rem 1rem; margin:1rem 0; background:rgba(139,92,246,.12); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--amber); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(139,92,246,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); margin-bottom:.35rem; }
+    .eli10 p { color:#E8E0FF; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--mint); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(52,211,153,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--mint); margin-bottom:.35rem; }
+    .scenario p { color:#E8E0FF; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--mint); background:rgba(18,8,42,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--mint); }
+    a { color:var(--mint); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(139,92,246,.3); color:var(--purple); margin-bottom:.5rem; border:1px solid rgba(139,92,246,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(18,8,42,.9); border:1px solid rgba(139,92,246,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+    @media (max-width:600px) { .chapter-nav ol { columns:1; } }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="mint" href="../../index.html">Portal</a>
+      <a class="mint" href="index.html">GitOps course</a>
+      <a href="../kubernetes/index.html">Kubernetes primer</a>
+    </div><div class="chapter-nav"><h3>GitOps — Understanding GitOps (11 chapters)</h3><ol><li><a href="00-what-gitops-is-for.html" class="">00 — What GitOps is for</a></li><li><a href="01-the-core-idea-and-the-four-principles.html" class="active">01 — The core idea, and the four principles</a></li><li><a href="02-pull-rather-than-push.html" class="">02 — Pull rather than push</a></li><li><a href="03-the-reconciliation-cycle-and-what-starts-it.html" class="">03 — The reconciliation cycle, and what starts it</a></li><li><a href="04-where-the-agent-runs-and-how-often-it-looks.html" class="">04 — Where the agent runs, and how often it looks</a></li><li><a href="05-drift-and-what-to-do-about-it.html" class="">05 — Drift, and what to do about it</a></li><li><a href="06-what-goes-in-the-repository-and-how-you-express-it.html" class="">06 — What goes in the repository, and how you express it</a></li><li><a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html" class="">07 — Secrets, the one thing that cannot sit there in the clear</a></li><li><a href="08-promotion-pinning-and-who-is-allowed-to-change-pro.html" class="">08 — Promotion, pinning, and who is allowed to change production</a></li><li><a href="09-behavior-under-failure.html" class="">09 — Behavior under failure</a></li><li><a href="10-where-to-go-next.html" class="">10 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="00-what-gitops-is-for.html">&larr; 00</a> <a href="02-pull-rather-than-push.html">02 &rarr;</a></p></div><span class="badge">Chapter 01</span><h1>The core idea, and the four principles</h1><h3>The loop you already know</h3>
+<p>A controller compares the spec you declared against the status it observes, then acts to close the gap, continuously and without being asked, which is the mechanism chapter one of the Kubernetes primer covered. Chapter eleven then showed you that same loop handed outward to operators, watching your own custom object types instead of the built-in ones.</p>
+<p>GitOps is that loop pointed one level further out again. An agent compares an entire repository against an entire cluster, closes whatever gap it finds, and then does it again. It is level-triggered in exactly the way the core controllers are, so it looks at the state of the world as it finds it rather than depending on having seen every event along the way. An agent that was restarted or briefly disconnected simply looks at reality when it wakes up and corrects whatever gap is there.</p>
+<p>The repository becomes the authoritative record of intent, which matters more than any feature you will read about later, so asking the cluster what is running answers a different question from asking what should be running. When the two disagree, the repository is correct by definition, and reconciliation is the thing that resolves the disagreement.</p>
+<p>Rolling back a bad change becomes reverting a commit and letting the agent do the rest, which turns your recovery path into an operation your team already performs several times a day for unrelated reasons.</p>
+<figure class="diagram-wrap"><svg viewBox="0 0 520 200" width="520" height="200" xmlns="http://www.w3.org/2000/svg">
+<p>  &lt;defs&gt;&lt;marker id=&quot;a1&quot; markerWidth=&quot;8&quot; markerHeight=&quot;8&quot; refX=&quot;6&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L8,3 L0,6 Z&quot; fill=&quot;#34D399&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;</p>
+<p>  &lt;rect x=&quot;20&quot; y=&quot;70&quot; width=&quot;110&quot; height=&quot;60&quot; rx=&quot;10&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;75&quot; y=&quot;95&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;Repository&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;75&quot; y=&quot;112&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;10&quot;&gt;desired state&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;205&quot; y=&quot;70&quot; width=&quot;110&quot; height=&quot;60&quot; rx=&quot;10&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;260&quot; y=&quot;95&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;GitOps agent&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;260&quot; y=&quot;112&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;10&quot;&gt;compare &amp; apply&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;390&quot; y=&quot;70&quot; width=&quot;110&quot; height=&quot;60&quot; rx=&quot;10&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;445&quot; y=&quot;95&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;Cluster&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;445&quot; y=&quot;112&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;10&quot;&gt;actual state&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;130&quot; y1=&quot;100&quot; x2=&quot;200&quot; y2=&quot;100&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#a1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;315&quot; y1=&quot;100&quot; x2=&quot;385&quot; y2=&quot;100&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#a1)&quot;/&gt;</p>
+<p>  &lt;path d=&quot;M445 135 Q260 175 75 135&quot; fill=&quot;none&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;6 4&quot; marker-end=&quot;url(#a1)&quot;/&gt;</p>
+<p>  &lt;text x=&quot;260&quot; y=&quot;168&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;10&quot;&gt;observes &amp; reconciles continuously&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;GitOps extends the Kubernetes reconciliation loop one level outward — repository vs cluster.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<blockquote class="principle"><strong>Principle:</strong> The repository holds the intent and the cluster holds only the consequence. Any time you change that consequence directly, you have stepped outside the model, and the model will eventually change it back.</blockquote>
+<h3>The four principles</h3>
+<p>The OpenGitOps project, a working group under the CNCF, published a short statement of what GitOps requires. A system managed by GitOps expresses its desired state declaratively. That desired state is stored in a way that enforces immutability and versioning and retains a complete version history. Software agents automatically pull the desired state from the source. And software agents continuously reconcile, observing actual state and attempting to apply the desired state.</p>
+<p>Read the second principle closely, because it describes the properties the storage has to have rather than naming Git specifically. Git is the usual answer and the reason the model carries that name, and an OCI registry holding versioned artifacts, each one addressed by a hash of its own content, satisfies the same requirement. Several implementations accept OCI artifacts as a first-class source for that reason, which matters in air-gapped sites where a registry is already how artifacts reach the network.</p>
+<p>The fourth principle is where the implementations diverge most, and most arguments about what counts as real GitOps turn out to be arguments about one word in it, continuously. Hold that word loosely in your head until chapter four deals with it properly.</p>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>The four principles in kid words: (1) Write down exactly what you want. (2) Keep that writing in a safe diary that never loses old pages. (3) A helper robot reads the diary by itself. (4) The robot keeps checking — &quot;does reality match the diary?&quot; — and fixes mismatches forever.</p></div></div></body></html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Where the agent runs, and how often it looks | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --purple:#8B5CF6; --mint:#34D399; --amber:#FBBF24; --text:#F4F0FF; --muted:#A89BC6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; --navy:#12082A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#0A0618; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 15% 8%, rgba(139,92,246,.45), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 88% 18%, rgba(52,211,153,.35), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 95%, rgba(251,191,36,.2), transparent 55%),
+        linear-gradient(165deg,#0A0618,#12082A 45%,#1a0f3d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(139,92,246,.45); }
+    .nav-top a:hover { background:var(--purple); }
+    .nav-top a.mint { background:rgba(52,211,153,.35); }
+    .nav-top a.mint:hover { background:var(--mint); color:#0A0618; }
+    .chapter-nav { background:rgba(18,8,42,.85); border:1px solid rgba(139,92,246,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--mint); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; columns:2; column-gap:1.5rem; }
+    .chapter-nav li { margin:.2rem 0; break-inside:avoid; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--mint); }
+    .chapter-nav a.active { color:var(--amber); font-weight:700; }
+    h1 { color:var(--mint); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--purple); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--amber); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--purple); padding:.85rem 1rem; margin:1rem 0; background:rgba(139,92,246,.12); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--amber); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(139,92,246,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); margin-bottom:.35rem; }
+    .eli10 p { color:#E8E0FF; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--mint); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(52,211,153,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--mint); margin-bottom:.35rem; }
+    .scenario p { color:#E8E0FF; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--mint); background:rgba(18,8,42,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--mint); }
+    a { color:var(--mint); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(139,92,246,.3); color:var(--purple); margin-bottom:.5rem; border:1px solid rgba(139,92,246,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(18,8,42,.9); border:1px solid rgba(139,92,246,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+    @media (max-width:600px) { .chapter-nav ol { columns:1; } }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="mint" href="../../index.html">Portal</a>
+      <a class="mint" href="index.html">GitOps course</a>
+      <a href="../kubernetes/index.html">Kubernetes primer</a>
+    </div><div class="chapter-nav"><h3>GitOps — Understanding GitOps (11 chapters)</h3><ol><li><a href="00-what-gitops-is-for.html" class="">00 — What GitOps is for</a></li><li><a href="01-the-core-idea-and-the-four-principles.html" class="">01 — The core idea, and the four principles</a></li><li><a href="02-pull-rather-than-push.html" class="">02 — Pull rather than push</a></li><li><a href="03-the-reconciliation-cycle-and-what-starts-it.html" class="">03 — The reconciliation cycle, and what starts it</a></li><li><a href="04-where-the-agent-runs-and-how-often-it-looks.html" class="active">04 — Where the agent runs, and how often it looks</a></li><li><a href="05-drift-and-what-to-do-about-it.html" class="">05 — Drift, and what to do about it</a></li><li><a href="06-what-goes-in-the-repository-and-how-you-express-it.html" class="">06 — What goes in the repository, and how you express it</a></li><li><a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html" class="">07 — Secrets, the one thing that cannot sit there in the clear</a></li><li><a href="08-promotion-pinning-and-who-is-allowed-to-change-pro.html" class="">08 — Promotion, pinning, and who is allowed to change production</a></li><li><a href="09-behavior-under-failure.html" class="">09 — Behavior under failure</a></li><li><a href="10-where-to-go-next.html" class="">10 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="03-the-reconciliation-cycle-and-what-starts-it.html">&larr; 03</a> <a href="05-drift-and-what-to-do-about-it.html">05 &rarr;</a></p></div><span class="badge">Chapter 04</span><h1>Where the agent runs, and how often it looks</h1><p>The implementations diverge on a single axis that carries two questions. Where does the reconciler run, and how continuously does it observe the cluster. Both questions have defensible answers, so this is a design decision rather than a ranking.</p>
+<figure class="diagram-wrap"><svg viewBox="0 0 560 320" width="560" height="320" xmlns="http://www.w3.org/2000/svg">
+<p>  &lt;text x=&quot;95&quot; y=&quot;22&quot; text-anchor=&quot;middle&quot; fill=&quot;#34D399&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot;&gt;Agent per cluster&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;70&quot; y=&quot;35&quot; width=&quot;50&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;95&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot;&gt;Git&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;85&quot; width=&quot;55&quot; height=&quot;35&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;57&quot; y=&quot;107&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;9&quot;&gt;agent&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;110&quot; y=&quot;85&quot; width=&quot;55&quot; height=&quot;35&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;137&quot; y=&quot;107&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;9&quot;&gt;cluster&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;140&quot; width=&quot;55&quot; height=&quot;35&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;57&quot; y=&quot;162&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;9&quot;&gt;agent&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;110&quot; y=&quot;140&quot; width=&quot;55&quot; height=&quot;35&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;137&quot; y=&quot;162&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;9&quot;&gt;cluster&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;280&quot; y=&quot;22&quot; text-anchor=&quot;middle&quot; fill=&quot;#34D399&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot;&gt;Hub and spoke&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;255&quot; y=&quot;35&quot; width=&quot;50&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;280&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot;&gt;Git&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;245&quot; y=&quot;75&quot; width=&quot;70&quot; height=&quot;40&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;280&quot; y=&quot;95&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;9&quot;&gt;hub cluster&lt;/text&gt;&lt;text x=&quot;280&quot; y=&quot;108&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;8&quot;&gt;runs agents&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;220&quot; y=&quot;140&quot; width=&quot;45&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;242&quot; y=&quot;159&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;8&quot;&gt;spoke&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;280&quot; y=&quot;140&quot; width=&quot;45&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;302&quot; y=&quot;159&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;8&quot;&gt;spoke&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;340&quot; y=&quot;140&quot; width=&quot;45&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;362&quot; y=&quot;159&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;8&quot;&gt;spoke&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;465&quot; y=&quot;22&quot; text-anchor=&quot;middle&quot; fill=&quot;#34D399&quot; font-size=&quot;11&quot; font-weight=&quot;700&quot;&gt;Central control plane&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;440&quot; y=&quot;35&quot; width=&quot;50&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;465&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot;&gt;Git&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;425&quot; y=&quot;75&quot; width=&quot;80&quot; height=&quot;40&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;465&quot; y=&quot;95&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;9&quot;&gt;control plane&lt;/text&gt;&lt;text x=&quot;465&quot; y=&quot;108&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;8&quot;&gt;outside clusters&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;405&quot; y=&quot;140&quot; width=&quot;45&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;427&quot; y=&quot;159&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;8&quot;&gt;cluster&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;465&quot; y=&quot;140&quot; width=&quot;45&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;487&quot; y=&quot;159&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;8&quot;&gt;cluster&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;525&quot; y=&quot;140&quot; width=&quot;30&quot; height=&quot;30&quot; rx=&quot;6&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;540&quot; y=&quot;159&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;8&quot;&gt;...&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;280&quot; y=&quot;210&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;10&quot;&gt;Where the reconciling code runs — and how continuously it watches — is the main design choice.&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;40&quot; y=&quot;230&quot; width=&quot;480&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;rgba(139,92,246,.1)&quot; stroke=&quot;rgba(139,92,246,.3)&quot;/&gt;</p>
+<p>  &lt;text x=&quot;280&quot; y=&quot;255&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;11&quot; font-weight=&quot;600&quot;&gt;Argo CD / Flux&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;280&quot; y=&quot;275&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;10&quot;&gt;continuous in-cluster · fastest drift correction&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;280&quot; y=&quot;292&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;10&quot;&gt;Portainer · event-driven central plane · no repo creds in clusters&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;Three places the reconciler can sit — each with different tradeoffs.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<h3>Argo CD</h3>
+<p>Argo CD runs as a set of controllers inside a cluster, principally an application controller, a repository server that fetches and renders sources, and an API server sitting behind its interface. It reconciles continuously, and it can target either the cluster it runs in or remote clusters registered to it, so one instance can serve a whole fleet, or you can run one per cluster, or one per group of clusters. With automated sync, pruning, and self-healing turned on together, an out-of-band change to a managed resource is reverted within seconds. ApplicationSets generate applications from a template plus a generator, so adding a labeled cluster or a new directory produces deployments without anyone writing another manifest by hand.</p>
+<h3>Flux</h3>
+<p>Flux runs as a set of narrower controllers, each with a single job. A source controller acquires artifacts from repositories, OCI registries, Helm repositories, and buckets, then serves them internally to the others. A Kustomize controller and a Helm controller apply what it fetched, and a notification controller handles events in both directions. Two further controllers, installed optionally, scan registries for new image versions and write updated tags back into the repository, which is the one situation where a GitOps agent legitimately commits to Git. The standard deployment bootstraps Flux into each cluster, and a hub-and-spoke arrangement is supported too, with one cluster&#x27;s controllers reconciling the others through their kubeconfigs, the credential files that say how to reach a cluster and as whom. Reconciliation is continuous either way, and the source controller&#x27;s local artifact cache keeps drift correction working through a repository outage.</p>
+<h3>Portainer</h3>
+<p>Portainer runs its reconciliation engine in its own control plane rather than inside the managed clusters. Those clusters never poll the repository and never hold repository credentials, and they are engaged at the point an update is applied to them. Reconciliation is event-driven, triggered by deployment events and by polling intervals, rather than being a loop that watches live cluster state between cycles. An option to re-apply the full declared state on every cycle regardless of detected change is available where convergence matters more than the API load it costs.</p>
+<h3>The tradeoff, from both sides</h3>
+<p>Continuous in-cluster reconciliation gives you the fastest drift correction available and satisfies that fourth principle in its strongest form, and it costs you an agent plus read credentials in every cluster, per-cluster configuration to maintain and upgrade, and real scaling work as the fleet grows, with component tuning becoming a platform task of its own at large application counts. Centralized event-driven reconciliation gives you one credential store, one audit stream, nothing to bootstrap or upgrade in each cluster, and no cluster-side dependency on the repository, and it costs you the window between cycles, during which the cluster can be wrong with nothing observing it.</p>
+<p>Per-cluster agents keep each cluster independent, so a cluster carries on reconciling from its cached source even when the management plane is unreachable. Hub and centralized models concentrate delivery for the whole fleet into one place, which becomes a single point of failure for delivery even though the running workloads carry on unaffected.</p>
+<p>These approaches coexist far more often than a side-by-side comparison implies. Running Argo CD or Flux for continuous repository-driven delivery while a separate operational control plane handles access control, fleet visibility, policy, and day-two workflows is a common arrangement in mature platform teams, and neither layer displaces the other.</p>
+<div class="scenario"><span class="scenario-label">Real scenario</span><p><strong>Fleet of 40 edge stores:</strong> Each store has a small k3s cluster behind NAT — no inbound webhooks. You deploy Flux with a 5-minute poll interval and a local artifact cache. When GitHub is down, stores keep self-healing from cache. HQ uses a central dashboard for visibility but does not hold production kubectl access.</p></div></div></body></html>
