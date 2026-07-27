@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Charts, values, and templates | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --helm:#0EA5E9; --navy:#0F1689; --coral:#F97316; --text:#EFF6FF; --muted:#94A3C8; --green:#16C060; --red:#EF2D3C; --gold:#FBBF24; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#060D24; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 12% 10%, rgba(15,22,137,.55), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 90% 15%, rgba(14,165,233,.4), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 98%, rgba(249,115,22,.25), transparent 55%),
+        linear-gradient(165deg,#060D24,#0a1535 45%,#0f1f4d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(15,22,137,.6); }
+    .nav-top a:hover { background:var(--navy); }
+    .nav-top a.helm { background:rgba(14,165,233,.4); }
+    .nav-top a.helm:hover { background:var(--helm); color:#060D24; }
+    .chapter-nav { background:rgba(10,21,53,.9); border:1px solid rgba(14,165,233,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--helm); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.82rem; }
+    .chapter-nav li { margin:.25rem 0; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--helm); }
+    .chapter-nav a.active { color:var(--coral); font-weight:700; }
+    h1 { color:var(--helm); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--coral); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--gold); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--navy); padding:.85rem 1rem; margin:1rem 0; background:rgba(15,22,137,.2); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--gold); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(14,165,233,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:.35rem; }
+    .eli10 p { color:#DBEAFE; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--helm); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(14,165,233,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--helm); margin-bottom:.35rem; }
+    .scenario p { color:#DBEAFE; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--helm); background:rgba(10,21,53,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--helm); }
+    a { color:var(--helm); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(14,165,233,.2); color:var(--helm); margin-bottom:.5rem; border:1px solid rgba(14,165,233,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(10,21,53,.92); border:1px solid rgba(14,165,233,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="helm" href="../../index.html">Portal</a>
+      <a class="helm" href="index.html">Helm course</a>
+      <a href="../kubernetes/index.html">Kubernetes</a>
+      <a href="../gitops/index.html">GitOps</a>
+    </div><div class="chapter-nav"><h3>How Helm works — 6 chapters (Helm 4)</h3><ol><li><a href="00-what-helm-is.html" class="">00 — What Helm is</a></li><li><a href="01-charts-values-and-templates.html" class="active">01 — Charts, values, and templates</a></li><li><a href="02-how-an-install-actually-works.html" class="">02 — How an install actually works</a></li><li><a href="03-releases-upgrades-and-rollbacks.html" class="">03 — Releases, upgrades, and rollbacks</a></li><li><a href="04-where-charts-come-from.html" class="">04 — Where charts come from</a></li><li><a href="05-where-to-go-next.html" class="">05 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="00-what-helm-is.html">&larr; 00</a> <a href="02-how-an-install-actually-works.html">02 &rarr;</a></p></div><span class="badge">Chapter 01</span><h1>Charts, values, and templates</h1><p>The whole of Helm rests on three things that fit together, and if you get these you get Helm. A <strong>chart</strong> is the package: a folder of files that describes an application as a set of Kubernetes manifests, except the parts that tend to change are left as blanks. A <strong>values file</strong> is where those blanks get their settings, the knobs a user is meant to turn, like how many replicas to run, which image version to use, or how much memory to request. And <strong>templates</strong> are the manifests with the blanks still in them, written in Go&#x27;s templating syntax, so a line like <code>replicas: {{ .Values.replicas }}</code> is a manifest waiting for a number. When you install, Helm pours your values into the blanks in the templates, and out comes ordinary Kubernetes YAML.</p>
+<p>&lt;figure class=&quot;diagram-wrap&quot;&gt;&lt;svg viewBox=&quot;0 0 520 180&quot; width=&quot;520&quot; height=&quot;180&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;</p>
+<p>  &lt;defs&gt;&lt;marker id=&quot;h1&quot; markerWidth=&quot;8&quot; markerHeight=&quot;8&quot; refX=&quot;6&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L8,3 L0,6 Z&quot; fill=&quot;#0EA5E9&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;</p>
+<p>  &lt;rect x=&quot;20&quot; y=&quot;50&quot; width=&quot;120&quot; height=&quot;80&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#F97316&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;80&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;values.yaml&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;80&quot; y=&quot;98&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;replicas: 3&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;80&quot; y=&quot;115&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;image: v2.1&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;200&quot; y=&quot;50&quot; width=&quot;120&quot; height=&quot;80&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#0F1689&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;260&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;template&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;260&quot; y=&quot;98&quot; text-anchor=&quot;middle&quot; fill=&quot;#0EA5E9&quot; font-size=&quot;9&quot;&gt;replicas: {{ .Values.replicas }}&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;380&quot; y=&quot;50&quot; width=&quot;120&quot; height=&quot;80&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#16C060&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;440&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;real YAML&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;440&quot; y=&quot;98&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;replicas: 3&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;140&quot; y1=&quot;90&quot; x2=&quot;195&quot; y2=&quot;90&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;320&quot; y1=&quot;90&quot; x2=&quot;375&quot; y2=&quot;90&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h1)&quot;/&gt;</p>
+<p>  &lt;text x=&quot;168&quot; y=&quot;82&quot; fill=&quot;#F97316&quot; font-size=&quot;9&quot;&gt;fills in&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;348&quot; y=&quot;82&quot; fill=&quot;#16C060&quot; font-size=&quot;9&quot;&gt;renders&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;260&quot; y=&quot;155&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;Your settings drop into blanks — out comes ordinary Kubernetes YAML&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;Chart + values + templates = manifests ready for the cluster.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<h3>What is in a chart</h3>
+<p>A chart is just a folder with a known layout. Chart.yaml holds the metadata, the chart&#x27;s name, version, and description, and values.yaml holds the default settings. The templates/ folder holds the templated manifests, along with a NOTES.txt that prints friendly usage tips after an install and a _helpers.tpl for snippets shared across templates. A charts/ folder holds any other charts this one depends on. And a crds/ folder holds any custom resource definitions the chart ships.</p>
+<p>&lt;figure class=&quot;diagram-wrap&quot;&gt;&lt;svg viewBox=&quot;0 0 400 260&quot; width=&quot;400&quot; height=&quot;260&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;</p>
+<p>  &lt;rect x=&quot;120&quot; y=&quot;10&quot; width=&quot;160&quot; height=&quot;35&quot; rx=&quot;6&quot; fill=&quot;#0a1535&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;200&quot; y=&quot;32&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;11&quot; font-weight=&quot;600&quot;&gt;mychart/&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;60&quot; width=&quot;150&quot; height=&quot;28&quot; rx=&quot;5&quot; fill=&quot;#0a1535&quot; stroke=&quot;#F97316&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;78&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;Chart.yaml — metadata&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;95&quot; width=&quot;150&quot; height=&quot;28&quot; rx=&quot;5&quot; fill=&quot;#0a1535&quot; stroke=&quot;#F97316&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;113&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;values.yaml — defaults&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;130&quot; width=&quot;150&quot; height=&quot;28&quot; rx=&quot;5&quot; fill=&quot;#0a1535&quot; stroke=&quot;#16C060&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;148&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;templates/ — manifests&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;165&quot; width=&quot;150&quot; height=&quot;28&quot; rx=&quot;5&quot; fill=&quot;#0a1535&quot; stroke=&quot;#16C060&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;183&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;charts/ — subcharts&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;200&quot; width=&quot;150&quot; height=&quot;28&quot; rx=&quot;5&quot; fill=&quot;#0a1535&quot; stroke=&quot;#FBBF24&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;218&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;crds/ — install once&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;220&quot; y=&quot;130&quot; width=&quot;150&quot; height=&quot;50&quot; rx=&quot;6&quot; fill=&quot;rgba(14,165,233,.15)&quot; stroke=&quot;#0EA5E9&quot;/&gt;</p>
+<p>  &lt;text x=&quot;295&quot; y=&quot;152&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;NOTES.txt&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;295&quot; y=&quot;168&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;9&quot;&gt;_helpers.tpl&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;Standard chart folder layout — know where to look for each piece.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<h3>CRDs, yes you can install them with Helm</h3>
+<p>A CRD is just another kind of Kubernetes object, so there is nothing exotic about installing one with Helm. A chart can ship its own custom resource definitions and stand up a brand-new object type as part of the very same install that deploys the app, no differently from the way it creates a Deployment or a Service.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> CRDs are installed once, not upgraded. Helm installs the CRDs in a chart&#x27;s crds/ folder on the very first install and then leaves them alone, never upgrading or deleting them on later runs. So if a chart later ships a newer version of a CRD, Helm will not apply it for you, and updating it is a step you do by hand, which is the surprise that catches almost everyone at least once.</blockquote>
+<h3>Changing the settings</h3>
+<p>You rarely edit a chart itself, and instead override its values from the outside, either with a whole file of your own using <code>-f my-values.yaml</code>, or with individual settings using <code>--set replicas=3</code>. The order they apply in matters, and it trips people up, so hold onto it: the chart&#x27;s own values.yaml is the baseline, a file passed with <code>-f</code> layers on top of that, and anything set with <code>--set</code> beats both.</p>
+<h3>Charts that build on other charts</h3>
+<p>Most real charts are not one thing, they are several. A web app might need a database and a cache running alongside it, and rather than cram all of that into one giant chart, Helm lets a chart pull in other charts as ready-made building blocks. A chart lists the other charts it needs in its Chart.yaml, those needed charts are called its subcharts, and they sit in the charts/ folder. When you install the top chart, Helm installs it and all of its subcharts together as a single release, so one command can stand up the app, its database, and its cache in one go.</p>
+<p>&lt;figure class=&quot;diagram-wrap&quot;&gt;&lt;svg viewBox=&quot;0 0 480 220&quot; width=&quot;480&quot; height=&quot;220&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;</p>
+<p>  &lt;defs&gt;&lt;marker id=&quot;h2&quot; markerWidth=&quot;8&quot; markerHeight=&quot;8&quot; refX=&quot;6&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L8,3 L0,6 Z&quot; fill=&quot;#0EA5E9&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;</p>
+<p>  &lt;rect x=&quot;160&quot; y=&quot;15&quot; width=&quot;160&quot; height=&quot;55&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;240&quot; y=&quot;38&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;myapp chart&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;240&quot; y=&quot;55&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;your app templates&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;40&quot; y=&quot;100&quot; width=&quot;120&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#F97316&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;100&quot; y=&quot;122&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;11&quot;&gt;postgresql&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;100&quot; y=&quot;138&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;9&quot;&gt;subchart&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;180&quot; y=&quot;100&quot; width=&quot;120&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#F97316&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;240&quot; y=&quot;122&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;11&quot;&gt;redis&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;240&quot; y=&quot;138&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;9&quot;&gt;subchart&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;240&quot; y1=&quot;70&quot; x2=&quot;100&quot; y2=&quot;98&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;240&quot; y1=&quot;70&quot; x2=&quot;240&quot; y2=&quot;98&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;rect x=&quot;340&quot; y=&quot;95&quot; width=&quot;120&quot; height=&quot;60&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#16C060&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;400&quot; y=&quot;118&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;11&quot; font-weight=&quot;600&quot;&gt;helm install&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;400&quot; y=&quot;138&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;9&quot;&gt;one release&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;300&quot; y1=&quot;125&quot; x2=&quot;335&quot; y2=&quot;125&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h2)&quot;/&gt;</p>
+<p>  &lt;text x=&quot;240&quot; y=&quot;195&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;App + database + cache — one command, one release&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;Subcharts nest inside the parent — configure each under its own values key.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<p>Configuring a subchart is the one part that catches people, so here is the trick. Because a subchart is its own chart with its own values, you set its options in a section of your values file named after it. If the database subchart is called postgresql, then anything you put under a postgresql key in your values is handed to that subchart, while the app&#x27;s own settings sit at the top level next to it. Once you see that the values file is simply divided into a section for each chart, the nesting stops being mysterious.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> Whitespace will fight you at first. Templates are just text, and YAML cares deeply about indentation, so a stray space can break a render in confusing ways. Getting the whitespace controls right, the <code>{{-</code> and <code>-}}</code> that trim it, is a small rite of passage for everyone who writes their first chart. You are not doing it wrong, it just takes a few goes.</blockquote>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p><strong>Chart</strong> = recipe book with blanks. <strong>Values</strong> = your choices (3 cookies, chocolate chips). <strong>Template</strong> = the page with <code>{{ .Values.count }}</code> where the number goes. Helm is the chef who fills in blanks and serves finished YAML.</p></div>
+<div class="scenario"><span class="scenario-label">Try this scenario</span><p><strong>Subchart values:</strong> You install <code>myapp</code> which bundles PostgreSQL. Your app needs 2 replicas but the database needs persistent storage. In <code>values.yaml</code>:</p><p>```</p><p>replicas: 2</p><p>postgresql:</p><p>  persistence:</p><p>    enabled: true</p><p>    size: 10Gi</p><p>```</p><p>The <code>postgresql:</code> section configures the subchart — not magic, just namespacing.</p></div></div></body></html>

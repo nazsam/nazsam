@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>How an install actually works | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --helm:#0EA5E9; --navy:#0F1689; --coral:#F97316; --text:#EFF6FF; --muted:#94A3C8; --green:#16C060; --red:#EF2D3C; --gold:#FBBF24; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#060D24; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 12% 10%, rgba(15,22,137,.55), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 90% 15%, rgba(14,165,233,.4), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 98%, rgba(249,115,22,.25), transparent 55%),
+        linear-gradient(165deg,#060D24,#0a1535 45%,#0f1f4d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(15,22,137,.6); }
+    .nav-top a:hover { background:var(--navy); }
+    .nav-top a.helm { background:rgba(14,165,233,.4); }
+    .nav-top a.helm:hover { background:var(--helm); color:#060D24; }
+    .chapter-nav { background:rgba(10,21,53,.9); border:1px solid rgba(14,165,233,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--helm); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.82rem; }
+    .chapter-nav li { margin:.25rem 0; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--helm); }
+    .chapter-nav a.active { color:var(--coral); font-weight:700; }
+    h1 { color:var(--helm); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--coral); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--gold); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--navy); padding:.85rem 1rem; margin:1rem 0; background:rgba(15,22,137,.2); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--gold); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(14,165,233,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:.35rem; }
+    .eli10 p { color:#DBEAFE; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--helm); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(14,165,233,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--helm); margin-bottom:.35rem; }
+    .scenario p { color:#DBEAFE; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--helm); background:rgba(10,21,53,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--helm); }
+    a { color:var(--helm); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(14,165,233,.2); color:var(--helm); margin-bottom:.5rem; border:1px solid rgba(14,165,233,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(10,21,53,.92); border:1px solid rgba(14,165,233,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="helm" href="../../index.html">Portal</a>
+      <a class="helm" href="index.html">Helm course</a>
+      <a href="../kubernetes/index.html">Kubernetes</a>
+      <a href="../gitops/index.html">GitOps</a>
+    </div><div class="chapter-nav"><h3>How Helm works — 6 chapters (Helm 4)</h3><ol><li><a href="00-what-helm-is.html" class="">00 — What Helm is</a></li><li><a href="01-charts-values-and-templates.html" class="">01 — Charts, values, and templates</a></li><li><a href="02-how-an-install-actually-works.html" class="active">02 — How an install actually works</a></li><li><a href="03-releases-upgrades-and-rollbacks.html" class="">03 — Releases, upgrades, and rollbacks</a></li><li><a href="04-where-charts-come-from.html" class="">04 — Where charts come from</a></li><li><a href="05-where-to-go-next.html" class="">05 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="01-charts-values-and-templates.html">&larr; 01</a> <a href="03-releases-upgrades-and-rollbacks.html">03 &rarr;</a></p></div><span class="badge">Chapter 02</span><h1>How an install actually works</h1><p>You normally use Helm in two passes, a dry run first, which rehearses an install and shows you exactly what it would do without changing anything on the cluster, and then the real install, which actually deploys it. Both drive the same machinery, so the clearest way in is to follow a real install through first, then see how a dry run simply stops short of the steps that touch the cluster.</p>
+<p>When you run <code>helm install myapp ./mychart</code>, a clear sequence of steps happens, and notably none of it involves a Helm server, because there is not one.</p>
+<p>First, Helm reads the chart and merges your values with the chart&#x27;s defaults. Second, it renders the templates on your own machine into a plain set of Kubernetes manifests, and at this point nothing has touched the cluster yet. Third, it sends those manifests to the Kubernetes API server using your credentials, and Kubernetes creates the objects, with Helm 4 leaning on Kubernetes&#x27; own server-side apply to work out the changes. Fourth, Kubernetes does its usual job of making those objects real, and Helm can wait and watch until they report healthy. Fifth, Helm records what it did as a release, stored right inside the cluster as a Secret, holding the rendered manifests, the values used, and a revision number.</p>
+<p>&lt;figure class=&quot;diagram-wrap&quot;&gt;&lt;svg viewBox=&quot;0 0 560 200&quot; width=&quot;560&quot; height=&quot;200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;</p>
+<p>  &lt;defs&gt;&lt;marker id=&quot;h3&quot; markerWidth=&quot;8&quot; markerHeight=&quot;8&quot; refX=&quot;6&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L8,3 L0,6 Z&quot; fill=&quot;#0EA5E9&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;</p>
+<p>  &lt;text x=&quot;140&quot; y=&quot;22&quot; text-anchor=&quot;middle&quot; fill=&quot;#F97316&quot; font-size=&quot;12&quot; font-weight=&quot;700&quot;&gt;ON YOUR MACHINE&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;420&quot; y=&quot;22&quot; text-anchor=&quot;middle&quot; fill=&quot;#16C060&quot; font-size=&quot;12&quot; font-weight=&quot;700&quot;&gt;ON THE CLUSTER&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;40&quot; width=&quot;100&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;80&quot; y=&quot;67&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;chart + values&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;150&quot; y=&quot;40&quot; width=&quot;100&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;200&quot; y=&quot;62&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;render&lt;/text&gt;&lt;text x=&quot;200&quot; y=&quot;76&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;8&quot;&gt;templates to YAML&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;130&quot; y1=&quot;62&quot; x2=&quot;145&quot; y2=&quot;62&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h3)&quot;/&gt;</p>
+<p>  &lt;rect x=&quot;150&quot; y=&quot;110&quot; width=&quot;100&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;4 3&quot;/&gt;&lt;text x=&quot;200&quot; y=&quot;132&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;--dry-run&lt;/text&gt;&lt;text x=&quot;200&quot; y=&quot;146&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;8&quot;&gt;preview only&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;310&quot; y=&quot;110&quot; width=&quot;100&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#94A3C8&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;360&quot; y=&quot;137&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;validate&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;250&quot; y1=&quot;132&quot; x2=&quot;305&quot; y2=&quot;132&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h3)&quot;/&gt;</p>
+<p>  &lt;rect x=&quot;310&quot; y=&quot;40&quot; width=&quot;100&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#16C060&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;360&quot; y=&quot;62&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;apply&lt;/text&gt;&lt;text x=&quot;360&quot; y=&quot;76&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;8&quot;&gt;real install&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;250&quot; y1=&quot;62&quot; x2=&quot;305&quot; y2=&quot;62&quot; stroke=&quot;#16C060&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h3)&quot;/&gt;</p>
+<p>  &lt;rect x=&quot;430&quot; y=&quot;40&quot; width=&quot;100&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#16C060&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;480&quot; y=&quot;62&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;objects&lt;/text&gt;&lt;text x=&quot;480&quot; y=&quot;76&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;8&quot;&gt;created&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;410&quot; y1=&quot;62&quot; x2=&quot;425&quot; y2=&quot;62&quot; stroke=&quot;#16C060&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h3)&quot;/&gt;</p>
+<p>  &lt;rect x=&quot;430&quot; y=&quot;110&quot; width=&quot;100&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#0a1535&quot; stroke=&quot;#0F1689&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;480&quot; y=&quot;132&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;10&quot;&gt;release&lt;/text&gt;&lt;text x=&quot;480&quot; y=&quot;146&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;8&quot;&gt;saved as Secret&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;410&quot; y1=&quot;132&quot; x2=&quot;425&quot; y2=&quot;132&quot; stroke=&quot;#0F1689&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h3)&quot;/&gt;</p>
+<p>  &lt;text x=&quot;280&quot; y=&quot;185&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;10&quot;&gt;Dry run rehearses — real install applies and records the release&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;No Helm server — render locally, apply via Kubernetes API, store release in cluster.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<p>That saved record is the bit that pays off later, because it is what every upgrade and rollback quietly leans on. Since Helm kept exactly what it deployed and with which settings, it can compare, upgrade, and undo later without any guesswork. A release is simply a named, versioned installation of a chart into a namespace, and the cluster itself remembers it.</p>
+<h3>How a dry run actually works</h3>
+<p>A dry run is that same flow with the last steps switched off. Helm still reads the chart, merges your values, and renders the templates into manifests, just as a real install would, but then it stops before anything is created. At its simplest it shows you the manifests it would have applied, so you can read exactly what is about to be deployed. You can also ask it to hand those manifests to the cluster for a check, where the cluster runs the same validation it would run for real and tells you whether they would be accepted, still without creating anything. Either way the cluster is left exactly as it was, which is what makes a dry run a safe rehearsal you can repeat as often as you like.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> Previewing is not installing. Both <code>helm template</code> and <code>helm install --dry-run</code> let you preview an install, and neither one deploys anything. It is easy to run a clean preview, see tidy YAML or a green dry run, and assume the app is up when nothing has actually been created. A preview is only a rehearsal, so look for the real objects in the cluster before you trust that anything is running.</blockquote>
+<h3>Hooks, the extra steps around an install</h3>
+<p>Sometimes a chart needs to do something at a precise moment, like run a database migration just before an upgrade or load seed data right after the first install, and that is what hooks are for. A hook is an ordinary Kubernetes resource, usually a Job, marked with a special annotation that tells Helm exactly when to run it, whether that is pre-install, post-upgrade, pre-delete, or one of the other points in a release&#x27;s life. Helm runs that resource at the named moment and waits for it to finish before carrying on with everything else. Unlike the Deployment or Service in a chart, a hook is not meant to stick around as part of the running app, it does its one job and gets out of the way. This is how charts handle the awkward tasks that have to happen in a particular order, the migrations, the backups, the one-off setup, without anyone running them by hand at the console.</p>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>Install is like ordering furniture: (1) pick options, (2) factory builds pieces on paper, (3) delivery truck brings them, (4) workers assemble, (5) store keeps the receipt. Dry run = you get the receipt preview but nothing arrives. Hooks = &quot;call the electrician before moving the sofa in.&quot;</p></div>
+<div class="scenario"><span class="scenario-label">Try this scenario</span><p><strong>Safe first deploy:</strong> Before touching prod, run:</p><p>```</p><p>helm install myapp ./mychart -f prod.yaml --dry-run --debug</p><p>```</p><p>Read the rendered YAML. Fix typos. Then run the same command without <code>--dry-run</code>. Confirm with <code>kubectl get pods -n myapp</code>.</p></div></div></body></html>
