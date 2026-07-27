@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Promotion, pinning, and who is allowed to change production | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --purple:#8B5CF6; --mint:#34D399; --amber:#FBBF24; --text:#F4F0FF; --muted:#A89BC6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; --navy:#12082A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#0A0618; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 15% 8%, rgba(139,92,246,.45), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 88% 18%, rgba(52,211,153,.35), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 95%, rgba(251,191,36,.2), transparent 55%),
+        linear-gradient(165deg,#0A0618,#12082A 45%,#1a0f3d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(139,92,246,.45); }
+    .nav-top a:hover { background:var(--purple); }
+    .nav-top a.mint { background:rgba(52,211,153,.35); }
+    .nav-top a.mint:hover { background:var(--mint); color:#0A0618; }
+    .chapter-nav { background:rgba(18,8,42,.85); border:1px solid rgba(139,92,246,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--mint); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; columns:2; column-gap:1.5rem; }
+    .chapter-nav li { margin:.2rem 0; break-inside:avoid; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--mint); }
+    .chapter-nav a.active { color:var(--amber); font-weight:700; }
+    h1 { color:var(--mint); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--purple); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--amber); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--purple); padding:.85rem 1rem; margin:1rem 0; background:rgba(139,92,246,.12); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--amber); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(139,92,246,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); margin-bottom:.35rem; }
+    .eli10 p { color:#E8E0FF; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--mint); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(52,211,153,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--mint); margin-bottom:.35rem; }
+    .scenario p { color:#E8E0FF; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--mint); background:rgba(18,8,42,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--mint); }
+    a { color:var(--mint); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(139,92,246,.3); color:var(--purple); margin-bottom:.5rem; border:1px solid rgba(139,92,246,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(18,8,42,.9); border:1px solid rgba(139,92,246,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+    @media (max-width:600px) { .chapter-nav ol { columns:1; } }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="mint" href="../../index.html">Portal</a>
+      <a class="mint" href="index.html">GitOps course</a>
+      <a href="../kubernetes/index.html">Kubernetes primer</a>
+    </div><div class="chapter-nav"><h3>GitOps — Understanding GitOps (11 chapters)</h3><ol><li><a href="00-what-gitops-is-for.html" class="">00 — What GitOps is for</a></li><li><a href="01-the-core-idea-and-the-four-principles.html" class="">01 — The core idea, and the four principles</a></li><li><a href="02-pull-rather-than-push.html" class="">02 — Pull rather than push</a></li><li><a href="03-the-reconciliation-cycle-and-what-starts-it.html" class="">03 — The reconciliation cycle, and what starts it</a></li><li><a href="04-where-the-agent-runs-and-how-often-it-looks.html" class="">04 — Where the agent runs, and how often it looks</a></li><li><a href="05-drift-and-what-to-do-about-it.html" class="">05 — Drift, and what to do about it</a></li><li><a href="06-what-goes-in-the-repository-and-how-you-express-it.html" class="">06 — What goes in the repository, and how you express it</a></li><li><a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html" class="">07 — Secrets, the one thing that cannot sit there in the clear</a></li><li><a href="08-promotion-pinning-and-who-is-allowed-to-change-pro.html" class="active">08 — Promotion, pinning, and who is allowed to change production</a></li><li><a href="09-behavior-under-failure.html" class="">09 — Behavior under failure</a></li><li><a href="10-where-to-go-next.html" class="">10 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html">&larr; 07</a> <a href="09-behavior-under-failure.html">09 &rarr;</a></p></div><span class="badge">Chapter 08</span><h1>Promotion, pinning, and who is allowed to change production</h1><h3>Reference types</h3>
+<p>Every implementation maps a deployment to a specific reference in the source, and there are three kinds of reference to choose from. A branch reference tracks the head of that branch and moves with every merge. A tag reference names a specific point and stays there until somebody deliberately moves it. A commit hash is immutable and gives you the strongest guarantee available.</p>
+<table><tr><th>Reference</th><th>Changes when</th><th>Appropriate for</th></tr><tr><td>Branch</td><td>anybody merges to that branch</td><td>development and staging</td></tr><tr><td>Tag</td><td>somebody deliberately moves the tag</td><td>production releases</td></tr><tr><td>Commit hash</td><td>never, it is immutable</td><td>production, strongest guarantee</td></tr></table>
+<p>Branch tracking suits development and staging, where rapid iteration is worth more than control over timing. Production should track a tag or a commit hash instead. Under branch tracking, production changes whenever somebody merges, which puts the timing of every production change in the hands of whoever happened to merge rather than whoever is accountable for that change landing.</p>
+<h3>A representative promotion</h3>
+<p>A feature merges into the development branch, the development environment reconciles, and the change gets validated there. A reviewed pull request promotes it to staging, which reconciles and gets validated in turn. A release tag is then cut from the validated staging revision. An authorized operator updates the production configuration to reference that new tag, which is itself a controlled change subject to its own access control, and production reconciles against an explicit, immutable release.</p>
+<figure class="diagram-wrap"><svg viewBox="0 0 560 120" width="560" height="120" xmlns="http://www.w3.org/2000/svg">
+<p>  &lt;defs&gt;&lt;marker id=&quot;pr1&quot; markerWidth=&quot;8&quot; markerHeight=&quot;8&quot; refX=&quot;6&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L8,3 L0,6 Z&quot; fill=&quot;#34D399&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;</p>
+<p>  &lt;rect x=&quot;10&quot; y=&quot;40&quot; width=&quot;90&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;55&quot; y=&quot;60&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;10&quot;&gt;dev branch&lt;/text&gt;&lt;text x=&quot;55&quot; y=&quot;75&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot;&gt;auto sync&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;130&quot; y=&quot;40&quot; width=&quot;90&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#8B5CF6&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;175&quot; y=&quot;60&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;10&quot;&gt;staging PR&lt;/text&gt;&lt;text x=&quot;175&quot; y=&quot;75&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot;&gt;reviewed&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;250&quot; y=&quot;40&quot; width=&quot;90&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#FBBF24&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;295&quot; y=&quot;60&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;10&quot;&gt;release tag&lt;/text&gt;&lt;text x=&quot;295&quot; y=&quot;75&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot;&gt;immutable&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;370&quot; y=&quot;40&quot; width=&quot;90&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#EF2D3C&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;415&quot; y=&quot;60&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;10&quot;&gt;production&lt;/text&gt;&lt;text x=&quot;415&quot; y=&quot;75&quot; text-anchor=&quot;middle&quot; fill=&quot;#A89BC6&quot; font-size=&quot;9&quot;&gt;pinned ref&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;490&quot; y=&quot;40&quot; width=&quot;60&quot; height=&quot;45&quot; rx=&quot;8&quot; fill=&quot;#1a0f3d&quot; stroke=&quot;#16C060&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;520&quot; y=&quot;67&quot; text-anchor=&quot;middle&quot; fill=&quot;#F4F0FF&quot; font-size=&quot;10&quot;&gt;live&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;100&quot; y1=&quot;62&quot; x2=&quot;125&quot; y2=&quot;62&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#pr1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;220&quot; y1=&quot;62&quot; x2=&quot;245&quot; y2=&quot;62&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#pr1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;340&quot; y1=&quot;62&quot; x2=&quot;365&quot; y2=&quot;62&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#pr1)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;460&quot; y1=&quot;62&quot; x2=&quot;485&quot; y2=&quot;62&quot; stroke=&quot;#34D399&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#pr1)&quot;/&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;Typical promotion path — dev fast, production pinned to an immutable tag or commit.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<p>Organizations with formal change approval turn automatic synchronization off on production, so a person has to trigger the reconciliation once the change has been signed off.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> Repository access is production access. Once the repository is the only path into the cluster, repository access has become production access, and it needs governing to the same standard. That means branch protection on production references with required review and required status checks, restrictions on who can push directly, protected tags, and repository permissions reviewed as seriously as the cluster RBAC from chapter fourteen. A team that spent months tightening cluster access and left the deployment repository writable by everybody has not made production any safer.</blockquote>
+<p>Agent credentials should be read-only, because a GitOps agent reads desired state and applies it, and the one exception is image automation writing tags back. Whatever kind of credential it is, it belongs to a service identity rather than to a named person whose departure would quietly break delivery for everybody.</p>
+<h3>Audit</h3>
+<p>Repository history tells you what changed, why, and who approved it, since the pull request carries the review. Your agent&#x27;s log tells you when that change was applied and to which environment, which the repository has no way of knowing. Neither half is sufficient alone, so send both to your SIEM, because together they let you answer, months afterward, who approved a change, when it merged, and when it actually reached production.</p>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p><strong>Dev</strong> = sandbox where you try new toys. <strong>Staging</strong> = dress rehearsal. <strong>Production</strong> = the real show — pin the script to a specific page number (tag or commit), not &quot;whatever was written last.&quot;</p></div></div></body></html>

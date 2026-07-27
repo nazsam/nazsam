@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Behavior under failure | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --purple:#8B5CF6; --mint:#34D399; --amber:#FBBF24; --text:#F4F0FF; --muted:#A89BC6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; --navy:#12082A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#0A0618; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 15% 8%, rgba(139,92,246,.45), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 88% 18%, rgba(52,211,153,.35), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 95%, rgba(251,191,36,.2), transparent 55%),
+        linear-gradient(165deg,#0A0618,#12082A 45%,#1a0f3d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(139,92,246,.45); }
+    .nav-top a:hover { background:var(--purple); }
+    .nav-top a.mint { background:rgba(52,211,153,.35); }
+    .nav-top a.mint:hover { background:var(--mint); color:#0A0618; }
+    .chapter-nav { background:rgba(18,8,42,.85); border:1px solid rgba(139,92,246,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--mint); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; columns:2; column-gap:1.5rem; }
+    .chapter-nav li { margin:.2rem 0; break-inside:avoid; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--mint); }
+    .chapter-nav a.active { color:var(--amber); font-weight:700; }
+    h1 { color:var(--mint); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--purple); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--amber); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--purple); padding:.85rem 1rem; margin:1rem 0; background:rgba(139,92,246,.12); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--amber); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(139,92,246,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); margin-bottom:.35rem; }
+    .eli10 p { color:#E8E0FF; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--mint); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(52,211,153,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--mint); margin-bottom:.35rem; }
+    .scenario p { color:#E8E0FF; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--mint); background:rgba(18,8,42,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--mint); }
+    a { color:var(--mint); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(139,92,246,.3); color:var(--purple); margin-bottom:.5rem; border:1px solid rgba(139,92,246,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(18,8,42,.9); border:1px solid rgba(139,92,246,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+    @media (max-width:600px) { .chapter-nav ol { columns:1; } }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="mint" href="../../index.html">Portal</a>
+      <a class="mint" href="index.html">GitOps course</a>
+      <a href="../kubernetes/index.html">Kubernetes primer</a>
+    </div><div class="chapter-nav"><h3>GitOps — Understanding GitOps (11 chapters)</h3><ol><li><a href="00-what-gitops-is-for.html" class="">00 — What GitOps is for</a></li><li><a href="01-the-core-idea-and-the-four-principles.html" class="">01 — The core idea, and the four principles</a></li><li><a href="02-pull-rather-than-push.html" class="">02 — Pull rather than push</a></li><li><a href="03-the-reconciliation-cycle-and-what-starts-it.html" class="">03 — The reconciliation cycle, and what starts it</a></li><li><a href="04-where-the-agent-runs-and-how-often-it-looks.html" class="">04 — Where the agent runs, and how often it looks</a></li><li><a href="05-drift-and-what-to-do-about-it.html" class="">05 — Drift, and what to do about it</a></li><li><a href="06-what-goes-in-the-repository-and-how-you-express-it.html" class="">06 — What goes in the repository, and how you express it</a></li><li><a href="07-secrets-the-one-thing-that-cannot-sit-there-in-the.html" class="">07 — Secrets, the one thing that cannot sit there in the clear</a></li><li><a href="08-promotion-pinning-and-who-is-allowed-to-change-pro.html" class="">08 — Promotion, pinning, and who is allowed to change production</a></li><li><a href="09-behavior-under-failure.html" class="active">09 — Behavior under failure</a></li><li><a href="10-where-to-go-next.html" class="">10 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="08-promotion-pinning-and-who-is-allowed-to-change-pro.html">&larr; 08</a> <a href="10-where-to-go-next.html">10 &rarr;</a></p></div><span class="badge">Chapter 09</span><h1>Behavior under failure</h1><p>When the repository is unreachable, your running workloads are unaffected and keep serving on their last applied state. What you lose is the ability to change anything and, depending on the implementation, the ability to correct drift. Agents that maintain a local cache of the fetched artifact keep reconciling against that cache, which is a meaningful difference during a long outage of a hosted repository service, so find out which behavior yours has before you need to know.</p>
+<p><strong>Keeps working:</strong> Pods already running stay up and keep serving requests. The last applied state stays in force on every cluster. Service routing, in-cluster DNS, and pod networking are untouched. An agent with a local artifact cache carries on correcting drift.</p>
+<p><strong>Stops until it returns:</strong> No new deployments, promotions, or configuration changes. No drift correction where the agent has to fetch the source first. No rollback by revert, because the revert cannot be fetched. No new deployment records, since nothing is being applied.</p>
+<p>When the agent or control plane goes down, the shape is the same as chapter thirteen of the Kubernetes primer described, because the data plane keeps flowing while the management plane goes dark. Per-cluster agents localize that to one cluster, while hub and centralized architectures make it fleet-wide, and that is the concrete cost of the topology choice from chapter four.</p>
+<p>When a bad commit lands, the agent applies it faithfully, because applying what the repository says is the whole job. Reverting the commit is your rollback path, and rehearsing that path before you need it under pressure is time well spent. This is also where health assessment and progressive delivery earn their keep, because a sync reporting success while the application degrades is the failure a minimal setup will never catch.</p>
+<p>Point a fresh cluster at the repository and it converges to the declared state, so rebuilding after a disaster becomes an ordinary job rather than a procedure nobody has tested. It works only when the repository is genuinely complete, which is why the secrets pattern and the coverage of cluster configuration matter more than they first appear to. A repository that rebuilds most of a cluster will not get you back into production.</p>
+<div class="scenario"><span class="scenario-label">Real scenario</span><p><strong>GitHub outage (3 hours):</strong> Flux clusters with artifact cache keep self-healing manual drift. New deploys blocked. Team practices <code>git revert</code> rollback in staging beforehand — production rollback takes 90 seconds once Git returns. Clusters without cache sit frozen — no drift correction, apps still run.</p></div>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>If the recipe book shop is closed, the kitchen keeps serving today&#x27;s menu — it just can&#x27;t get new recipes. If the robot breaks, same story. If someone slips a bad recipe in the book, the robot cooks it faithfully — undo means tearing out that page (git revert), not yelling at the robot.</p></div></div></body></html>
