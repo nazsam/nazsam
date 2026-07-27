@@ -161,7 +161,7 @@
 <header class="training-hero">
   <div class="training-banner">
     <div class="flow-bg"></div>
-    <div class="banner-content">GitOps Training Module · KubeSchool</div>
+    <div class="banner-content">GitOps Training Module · devsecforge</div>
   </div>
   <h1>Understanding GitOps</h1>
   <p class="sub">An operational primer — how your declaration reaches the cluster, and who is permitted to change it afterward.</p>
@@ -177,11 +177,10 @@
 <p>GitOps describes a set of principles that several tools implement in materially different ways, so the word covers Argo CD, Flux, and Portainer&#x27;s Git integration alike, and chapter four is where their real differences live. It also sits alongside continuous integration rather than replacing it, because CI builds and tests and publishes artifacts while GitOps takes a declared state and makes it real. Most teams run both, with a commit as the handoff between them.</p>
 <div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>Think of your cluster like a LEGO city on a table. Without GitOps, anyone can walk up and move pieces whenever they want — and nobody writes down what changed. With GitOps, there is one instruction book (the Git repo). A robot reads the book and builds the city to match. If someone sneaks in and moves a piece, the robot puts it back.</p></div>
 <div class="scenario"><span class="scenario-label">Real scenario</span><p><strong>Friday 2 AM:</strong> An on-call engineer bumps a deployment&#x27;s memory limit with <code>kubectl edit</code> to stop OOM kills. The outage ends. Monday&#x27;s deploy runs from CI and silently removes the fix. Pods crash again. With GitOps, the fix would have been a commit — reviewed, tracked, and kept.</p></div>
-<p class="meta"><strong>Source:</strong> <a href="https://kubeschool.portainer.io">KubeSchool — Understanding GitOps</a> · Concepts over configuration · 11 chapters</p>
 </div>
 <footer class="portal-footer">
   <p><a href="../../index.html">Portal</a> · <a href="../../trainings/index.html">Trainings</a> ·
-  <a href="https://kubeschool.portainer.io">KubeSchool</a> · <a href="https://github.com/devsecforge">devsecforge</a></p>
+  <a href="https://github.com/devsecforge">devsecforge</a></p>
 </footer>
 </div>
 </div>
