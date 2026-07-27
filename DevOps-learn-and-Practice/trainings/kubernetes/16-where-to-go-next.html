@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Where to go next | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.7; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.4), transparent 55%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:820px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(239,45,60,.35); }
+    .nav-top a:hover { background:var(--red); }
+    .nav-top a.blue { background:rgba(43,80,228,.4); }
+    .chapter-nav { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.2); border-radius:12px; padding:1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--cyan); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; }
+    .chapter-nav li { margin:.2rem 0; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--cyan); }
+    .chapter-nav a.active { color:var(--red); font-weight:700; }
+    h1 { color:var(--cyan); font-size:1.65rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.92rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--royal); padding:.75rem 1rem; margin:1rem 0; background:rgba(43,80,228,.12); border-radius:0 10px 10px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    th { color:var(--cyan); background:rgba(11,21,51,.8); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; color:var(--cyan); }
+    a { color:var(--cyan); }
+    .badge { display:inline-block; padding:.25rem .6rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(239,45,60,.25); color:var(--red); margin-bottom:.5rem; }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram { background:rgba(11,21,51,.85); border:1px solid rgba(34,211,238,.25); border-radius:12px; padding:1rem; margin:1rem 0; font-family:monospace; font-size:.78rem; color:var(--cyan); white-space:pre-wrap; line-height:1.5; }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">← Trainings</a>
+      <a class="blue" href="../../index.html">Portal</a>
+      <a class="blue" href="index.html">K8s course</a>
+      <a href="https://github.com/devsecforge/kubernetes-security-lab">Security lab ↗</a>
+    </div><div class="chapter-nav"><h3>☸️ Understanding Kubernetes — 17 chapters</h3><ol><li><a href="00-what-kubernetes-actually-is.html" class="">00 — What Kubernetes actually is</a></li><li><a href="01-the-core-idea-desired-state-and-reconciliation.html" class="">01 — The core idea — desired state and reconciliation</a></li><li><a href="02-the-object-model-a-spec-and-a-status.html" class="">02 — The object model — a spec and a status</a></li><li><a href="03-how-the-parts-talk-the-watch-and-reconcile-fabric.html" class="">03 — How the parts talk — the watch and reconcile fabric</a></li><li><a href="04-the-control-plane-the-decision-layer.html" class="">04 — The control plane — the decision layer</a></li><li><a href="05-the-worker-nodes-the-execution-layer.html" class="">05 — The worker nodes — the execution layer</a></li><li><a href="06-pods-and-the-workloads-you-build-with.html" class="">06 — Pods and the workloads you build with</a></li><li><a href="07-networking-and-why-the-cni-is-a-plugin.html" class="">07 — Networking — and why the CNI is a plugin</a></li><li><a href="08-storage-and-why-the-csi-is-a-plugin.html" class="">08 — Storage — and why the CSI is a plugin</a></li><li><a href="09-configuration-and-secrets-with-a-warning.html" class="">09 — Configuration and secrets — with a warning</a></li><li><a href="10-scaling-at-every-layer.html" class="">10 — Scaling — at every layer</a></li><li><a href="11-extending-kubernetes-crds-and-operators.html" class="">11 — Extending Kubernetes — CRDs and operators</a></li><li><a href="12-what-it-takes-to-run.html" class="">12 — What it takes to run</a></li><li><a href="13-behavior-under-real-failure.html" class="">13 — Behavior under real failure</a></li><li><a href="14-what-it-takes-to-be-enterprise-ready.html" class="">14 — What it takes to be enterprise-ready</a></li><li><a href="15-the-sharp-edges-worth-memorizing.html" class="">15 — The sharp edges worth memorizing</a></li><li><a href="16-where-to-go-next.html" class="active">16 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="15-the-sharp-edges-worth-memorizing.html">← 15</a> </p></div><span class="badge">Chapter 16</span><h1>Where to go next</h1><p>The best way to cement this model is to run a cluster and watch these behaviors happen, breaking things on purpose and seeing the system recover. The official documentation at <a href="https://kubernetes.io">kubernetes.io</a> is the authoritative reference for every object and mechanism described here, and it is the source to trust over any blog when the details matter.</p>
+<p>Once you can read and write the specs for deployments, services, ingress, and persistent storage, once probes and resource requests are second nature, and once you understand which of the enterprise gaps your environment has filled and how, you have the foundation to work on real clusters with genuine confidence.</p>
+<p>When you are ready to deploy real applications onto the cluster, the companion KubeSchool primer on how Helm works walks through how packaging and installing them onto Kubernetes works. The primer on how GitOps works then covers how that packaged application reaches the cluster under version control, and who is allowed to change it once it is there.</p>
+<p>Go deeper: <a href="https://architecture.portainer.io">Portainer Enterprise Reference Architecture</a> — cluster configuration, identity and access, container registries, GitOps, policy enforcement, secret management, observability, security audit and SIEM integration, and data protection.</p>
+<p><strong>Practice on devsecforge:</strong> <a href="https://github.com/devsecforge/kubernetes-security-lab">kubernetes-security-lab</a></p></div></body></html>

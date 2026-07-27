@@ -275,6 +275,7 @@
     <div class="nav-links">
       <a href="#portal">📦 All Repos</a>
       <a href="#learn">📚 Topics</a>
+      <a href="trainings/kubernetes/index.html">☸️ Kubernetes Training</a>
       <a href="security-exercises.html">🛡️ Security Q&A</a>
       <a href="roadmap.html">🗺️ Roadmap</a>
       <a href="topics/index.html">📑 Topics</a>
@@ -308,6 +309,7 @@
     <div class="quick-start">
       <a class="qs red" href="https://github.com/bregman-arie/devops-exercises">▶ devops-exercises ↗</a>
       <a class="qs green" href="roadmap.html">🗺️ Roadmap</a>
+      <a class="qs blue" href="trainings/kubernetes/index.html">☸️ Kubernetes Training</a>
       <a class="qs blue" href="security-exercises.html">📚 Security Q&A</a>
       <a class="qs orange" href="https://github.com/devsecforge/security-operations-toolkit">🔧 Hands-On Lab</a>
     </div>
@@ -333,7 +335,7 @@
       <div class="topic-card"><div class="icon">🗄️</div><h3>SQL & Mongo</h3><p class="obj"><strong>Objective:</strong> Relational & document DBs</p><p class="out"><strong>Outcomes:</strong> JOINs · NoSQL trade-offs · Queries</p><a class="btn" href="topics/databases.html">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#databases">Exercises ↗</a></div>
       <div class="topic-card"><div class="icon">🔍</div><h3>Elastic Stack</h3><p class="obj"><strong>Objective:</strong> ELK — search, logs, dashboards</p><p class="out"><strong>Outcomes:</strong> Grok · Shards · Kibana · Security</p><a class="btn" href="topics/elastic.html">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#elastic">Exercises ↗</a></div>
       <div class="topic-card"><div class="icon">🏛️</div><h3>System Design</h3><p class="obj"><strong>Objective:</strong> Scalable resilient architectures</p><p class="out"><strong>Outcomes:</strong> Cache · CDN · Design interviews</p><a class="btn" href="topics/system-design.html">Topic guide</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#system-design">Exercises ↗</a></div>
-      <div class="topic-card"><div class="icon">☸️</div><h3>Kubernetes</h3><p class="obj"><strong>Objective:</strong> Container orchestration at scale</p><p class="out"><strong>Outcomes:</strong> Workloads · RBAC · CKA prep</p><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#kubernetes">Upstream ↗</a></div>
+      <div class="topic-card"><div class="icon">☸️</div><h3>Kubernetes</h3><p class="obj"><strong>Objective:</strong> Container orchestration at scale</p><p class="out"><strong>Outcomes:</strong> Architecture · Workloads · RBAC · CKA prep</p><a class="btn" href="trainings/kubernetes/index.html">17-chapter primer</a><a class="btn sec" href="https://github.com/bregman-arie/devops-exercises#kubernetes">Exercises ↗</a></div>
       <div class="topic-card"><div class="icon">🛡️</div><h3>Security</h3><p class="obj"><strong>Objective:</strong> DevSecOps in DevOps context</p><p class="out"><strong>Outcomes:</strong> Shift-left · Secrets · Sec Q&A</p><a class="btn" href="security-exercises.html">Security Q&A</a></div>
     </div>
 
@@ -342,7 +344,7 @@
       <a href="https://github.com/bregman-arie/devops-exercises#devops">⚙️ DevOps</a>
       <a href="https://github.com/bregman-arie/devops-exercises#git">📦 Git</a>
       <a href="topics/network.html">🌐 Network</a>
-      <a href="https://github.com/bregman-arie/devops-exercises#kubernetes">☸️ Kubernetes</a>
+      <a href="trainings/kubernetes/index.html">☸️ Kubernetes</a>
       <a href="https://github.com/bregman-arie/devops-exercises#python">🐍 Python</a>
       <a href="topics/go.html">🐹 Go</a>
       <a href="https://github.com/bregman-arie/devops-exercises#cloud">☁️ Cloud</a>
@@ -364,7 +366,7 @@
   </section>
 
   <footer>
-    <p><a href="https://github.com/devsecforge">devsecforge</a> · <a href="index.html">Portal</a> · <a href="security-exercises.html">Security Q&A</a> · <a href="roadmap.html">Roadmap</a> · <a href="faq.html">FAQ</a></p>
+    <p><a href="https://github.com/devsecforge">devsecforge</a> · <a href="index.html">Portal</a> · <a href="trainings/kubernetes/index.html">Kubernetes Training</a> · <a href="security-exercises.html">Security Q&A</a> · <a href="roadmap.html">Roadmap</a> · <a href="faq.html">FAQ</a></p>
   </footer>
 </div>
 
@@ -387,7 +389,7 @@ const REPOS = [
   {"name":"devsecops-exercises","icon":"📚","cat":"learn","color":"#22D3EE","overview":"72+ security Q&A with collapsible answers","objective":"Self-test DevSecOps & security knowledge","outcomes":"Interview prep · flashcards · memorize rhythm","learn":"security-exercises.html — 12 topics with answers"},
   {"name":"security-awareness-training-content","icon":"🎓","cat":"learn","color":"#16C060","overview":"Security awareness modules for teams","objective":"Deliver security awareness training","outcomes":"Ready modules · phishing · password hygiene","learn":"README.md · content modules by topic"},
   {"name":"security-operations-toolkit","icon":"🛡️","cat":"lab","color":"#FB8C1A","overview":"CI/CD security gate — SAST, SCA, secrets, containers","objective":"Hands-on DevSecOps pipeline security","outcomes":"Run gates in CI · scan secrets · containers · IaC","learn":"README.md · .github/workflows · gate configs"},
-  {"name":"kubernetes-security-lab","icon":"☸️","cat":"lab","color":"#326CE5","overview":"5-layer Kubernetes defense lab","objective":"Harden Kubernetes clusters in practice","outcomes":"PSA · RBAC · NetworkPolicy · Falco · audit","learn":"README.md · manifests/ · lab scenarios"},
+  {"name":"kubernetes-security-lab","icon":"☸️","cat":"lab","color":"#326CE5","overview":"5-layer Kubernetes defense lab","objective":"Harden Kubernetes clusters in practice","outcomes":"PSA · RBAC · NetworkPolicy · Falco · audit","learn":"trainings/kubernetes/ — architecture primer · README.md · manifests/"},
   {"name":"devsecops-pipeline-security-gates","icon":"⚙️","cat":"lab","color":"#FB8C1A","overview":"Reusable pipeline gates for GitHub Actions & GitLab","objective":"Drop-in secure CI/CD gates","outcomes":"Reusable workflows · policy checks · shift-left","learn":"README.md · examples/ · gate templates"},
   {"name":"secure-terraform-aws","icon":"🔐","cat":"lab","color":"#FF9900","overview":"Hardened AWS Terraform — S3, KMS, IAM","objective":"Secure AWS infrastructure as code","outcomes":"Hardened modules · tfsec · checkov patterns","learn":"README.md · terraform/ · security controls"},
   {"name":"container-image-hardening","icon":"📦","cat":"lab","color":"#22D3EE","overview":"Container image hardening & supply-chain hygiene","objective":"Build minimal secure container images","outcomes":"Distroless · non-root · scan · sign images","learn":"README.md · Dockerfile patterns · checklists"},

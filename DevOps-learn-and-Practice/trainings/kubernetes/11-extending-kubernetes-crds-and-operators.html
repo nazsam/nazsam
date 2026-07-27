@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Extending Kubernetes — CRDs and operators | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --royal:#2B50E4; --cyan:#22D3EE; --text:#F2F7FF; --muted:#8AA0C6; --green:#16C060; --red:#EF2D3C; --orange:#FB8C1A; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#070C1C; color:var(--text); line-height:1.7; min-height:100vh;
+      background-image: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(43,80,228,.4), transparent 55%),
+        linear-gradient(160deg,#070C1C,#0B1533 50%,#1a1040); }
+    .wrap { max-width:820px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(239,45,60,.35); }
+    .nav-top a:hover { background:var(--red); }
+    .nav-top a.blue { background:rgba(43,80,228,.4); }
+    .chapter-nav { background:rgba(11,21,51,.75); border:1px solid rgba(34,211,238,.2); border-radius:12px; padding:1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--cyan); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.8rem; }
+    .chapter-nav li { margin:.2rem 0; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--cyan); }
+    .chapter-nav a.active { color:var(--red); font-weight:700; }
+    h1 { color:var(--cyan); font-size:1.65rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--red); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--cyan); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.92rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--royal); padding:.75rem 1rem; margin:1rem 0; background:rgba(43,80,228,.12); border-radius:0 10px 10px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.5rem .65rem; text-align:left; }
+    th { color:var(--cyan); background:rgba(11,21,51,.8); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.1rem .35rem; border-radius:4px; font-size:.85em; color:var(--cyan); }
+    a { color:var(--cyan); }
+    .badge { display:inline-block; padding:.25rem .6rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(239,45,60,.25); color:var(--red); margin-bottom:.5rem; }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram { background:rgba(11,21,51,.85); border:1px solid rgba(34,211,238,.25); border-radius:12px; padding:1rem; margin:1rem 0; font-family:monospace; font-size:.78rem; color:var(--cyan); white-space:pre-wrap; line-height:1.5; }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">← Trainings</a>
+      <a class="blue" href="../../index.html">Portal</a>
+      <a class="blue" href="index.html">K8s course</a>
+      <a href="https://github.com/devsecforge/kubernetes-security-lab">Security lab ↗</a>
+    </div><div class="chapter-nav"><h3>☸️ Understanding Kubernetes — 17 chapters</h3><ol><li><a href="00-what-kubernetes-actually-is.html" class="">00 — What Kubernetes actually is</a></li><li><a href="01-the-core-idea-desired-state-and-reconciliation.html" class="">01 — The core idea — desired state and reconciliation</a></li><li><a href="02-the-object-model-a-spec-and-a-status.html" class="">02 — The object model — a spec and a status</a></li><li><a href="03-how-the-parts-talk-the-watch-and-reconcile-fabric.html" class="">03 — How the parts talk — the watch and reconcile fabric</a></li><li><a href="04-the-control-plane-the-decision-layer.html" class="">04 — The control plane — the decision layer</a></li><li><a href="05-the-worker-nodes-the-execution-layer.html" class="">05 — The worker nodes — the execution layer</a></li><li><a href="06-pods-and-the-workloads-you-build-with.html" class="">06 — Pods and the workloads you build with</a></li><li><a href="07-networking-and-why-the-cni-is-a-plugin.html" class="">07 — Networking — and why the CNI is a plugin</a></li><li><a href="08-storage-and-why-the-csi-is-a-plugin.html" class="">08 — Storage — and why the CSI is a plugin</a></li><li><a href="09-configuration-and-secrets-with-a-warning.html" class="">09 — Configuration and secrets — with a warning</a></li><li><a href="10-scaling-at-every-layer.html" class="">10 — Scaling — at every layer</a></li><li><a href="11-extending-kubernetes-crds-and-operators.html" class="active">11 — Extending Kubernetes — CRDs and operators</a></li><li><a href="12-what-it-takes-to-run.html" class="">12 — What it takes to run</a></li><li><a href="13-behavior-under-real-failure.html" class="">13 — Behavior under real failure</a></li><li><a href="14-what-it-takes-to-be-enterprise-ready.html" class="">14 — What it takes to be enterprise-ready</a></li><li><a href="15-the-sharp-edges-worth-memorizing.html" class="">15 — The sharp edges worth memorizing</a></li><li><a href="16-where-to-go-next.html" class="">16 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="10-scaling-at-every-layer.html">← 10</a> <a href="12-what-it-takes-to-run.html">12 →</a></p></div><span class="badge">Chapter 11</span><h1>Extending Kubernetes — CRDs and operators</h1><p>Kubernetes is extensible by design, which is what turns it from a product into a platform. The object-and-controller pattern the core is built from is handed to you, unchanged, so you can teach Kubernetes about things it has never heard of and have it manage them with the same machinery it uses for pods. Operators are a framework for teaching Kubernetes new tricks. Out of the box it knows how to run generic workloads and little about what is inside them, and an operator teaches it to run something specific and complicated and, from then on, to just know how. Almost every serious piece of software you will meet on Kubernetes, the databases, the certificate managers, the monitoring stacks, the service meshes, arrives as exactly this kind of taught trick.</p>
+<h3>Custom Resource Definitions</h3>
+<p>A Custom Resource Definition adds your own object type to the Kubernetes API. Once it is installed, a new kind of object exists alongside the built-in ones, and it behaves like a first-class citizen in every way that matters. You create and edit it with the same tools, you secure it with the same role-based access control, you watch it and version it like anything else, and it lives in the same store. A database, a message queue, or a whole application can become a named object you declare and manage through the standard API.</p>
+<p>A CRD on its own is only a shape, though, and that limit is the point. Installing the definition teaches the API server to accept and store objects of the new type, and nothing more. It gives you a place to declare what you want, with no behavior behind it yet. The object will sit there, valid and inert, until something running in the cluster is watching it and acting on it. That something is a controller, and getting that controller into the cluster is what an operator is for.</p>
+<h3>Operators</h3>
+<p>Standing up a fully clustered, highly available MySQL by hand is real work that only an experienced database engineer gets right. You have to provision several instances, elect a primary and attach replicas to it, configure replication between them, wire up automatic failover so that a dying primary is replaced without losing data, schedule and verify backups, and know how to move between versions without taking the database down. A MySQL operator captures all of that judgment in code. You declare, in a few lines, that you want a three-node highly available MySQL cluster, and the operator does everything the engineer would have done, then keeps doing it, watching the cluster and correcting it whenever reality drifts from what you asked for. That is the trick, taught once and performed forever.</p>
+<p>Underneath the metaphor, an operator is a package of things you install into the cluster. It bundles the custom resource definitions for the new object types, the access permissions they need, and, at its heart, a new controller that is deployed and runs as an ordinary workload alongside your applications. That controller is the part that actually knows how to do the job. It runs the same reconciliation loop from chapter one, pointed at the new object type, so it watches the custom resources, compares the desired state you declared against the observed state of the real world, and acts to close the gap, over and over. What makes it powerful is that the loop never stops. The trick is not a one-time script that deploys the database and walks away, it is a permanent caretaker that holds the database in the shape you asked for and steps in the moment it drifts, which is exactly the operational knowledge a skilled human would apply, captured and applied without anyone being paged.</p>
+<p>The same pattern shows up everywhere once you look. A certificate manager operator watches for certificate objects and issues and renews the real certificates behind them, so the certificate expiry that the enterprise chapter warns about is handled for you. A monitoring operator stands up and configures an entire metrics stack from a handful of custom resources. Message queues, service meshes, and whole application platforms ship as operators too. In every case the shape is identical to the MySQL example above. You declare intent in a custom object, and the operator does the ongoing work.</p>
+<h3>Not all operators are equal</h3>
+<p>Operators vary widely in how much they actually take off your hands, and the Operator Framework&#x27;s capability model is a useful way to talk about that maturity. It runs across five levels, from an operator that can only install and configure its software, through one that can upgrade it safely, one that can handle the full lifecycle including backup and failover, one that surfaces deep metrics and insights, and finally one that acts on those insights on its own by scaling, tuning, and healing without a human. The higher the level, the closer the operator gets to running the software as a genuine service. It is worth checking where an operator sits on this scale before you rely on it, because the label operator promises much more than some of them deliver.</p>
+<h3>Admission webhooks</h3>
+<p>The third extension point plugs into the request pipeline from chapter four rather than the reconciliation loop. An admission webhook lets your own code inspect every object as it is created or changed, and either modify it, which Kubernetes calls a mutating webhook, or reject it, which it calls a validating webhook, before it is stored. This is how defaults get injected, how sidecars get added automatically, and how the policy engines in the enterprise chapter enforce their rules. It is the same admission stage the core uses, opened up for you to hook into.</p>
+<blockquote class="principle"><strong>Principle:</strong> Extending Kubernetes is not a special mode, it is the ordinary pattern turned outward. A CRD gives you a new object, an operator installs a controller that runs the same reconcile loop the core runs, and a webhook gives you a seat in the same admission pipeline. Learn the core and you already understand how the whole ecosystem is built.</blockquote></div></body></html>
