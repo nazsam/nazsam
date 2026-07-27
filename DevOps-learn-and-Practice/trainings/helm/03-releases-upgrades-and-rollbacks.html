@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Releases, upgrades, and rollbacks | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --helm:#0EA5E9; --navy:#0F1689; --coral:#F97316; --text:#EFF6FF; --muted:#94A3C8; --green:#16C060; --red:#EF2D3C; --gold:#FBBF24; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#060D24; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 12% 10%, rgba(15,22,137,.55), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 90% 15%, rgba(14,165,233,.4), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 98%, rgba(249,115,22,.25), transparent 55%),
+        linear-gradient(165deg,#060D24,#0a1535 45%,#0f1f4d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(15,22,137,.6); }
+    .nav-top a:hover { background:var(--navy); }
+    .nav-top a.helm { background:rgba(14,165,233,.4); }
+    .nav-top a.helm:hover { background:var(--helm); color:#060D24; }
+    .chapter-nav { background:rgba(10,21,53,.9); border:1px solid rgba(14,165,233,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--helm); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.82rem; }
+    .chapter-nav li { margin:.25rem 0; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--helm); }
+    .chapter-nav a.active { color:var(--coral); font-weight:700; }
+    h1 { color:var(--helm); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--coral); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--gold); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--navy); padding:.85rem 1rem; margin:1rem 0; background:rgba(15,22,137,.2); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--gold); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(14,165,233,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:.35rem; }
+    .eli10 p { color:#DBEAFE; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--helm); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(14,165,233,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--helm); margin-bottom:.35rem; }
+    .scenario p { color:#DBEAFE; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--helm); background:rgba(10,21,53,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--helm); }
+    a { color:var(--helm); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(14,165,233,.2); color:var(--helm); margin-bottom:.5rem; border:1px solid rgba(14,165,233,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(10,21,53,.92); border:1px solid rgba(14,165,233,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="helm" href="../../index.html">Portal</a>
+      <a class="helm" href="index.html">Helm course</a>
+      <a href="../kubernetes/index.html">Kubernetes</a>
+      <a href="../gitops/index.html">GitOps</a>
+    </div><div class="chapter-nav"><h3>How Helm works — 6 chapters (Helm 4)</h3><ol><li><a href="00-what-helm-is.html" class="">00 — What Helm is</a></li><li><a href="01-charts-values-and-templates.html" class="">01 — Charts, values, and templates</a></li><li><a href="02-how-an-install-actually-works.html" class="">02 — How an install actually works</a></li><li><a href="03-releases-upgrades-and-rollbacks.html" class="active">03 — Releases, upgrades, and rollbacks</a></li><li><a href="04-where-charts-come-from.html" class="">04 — Where charts come from</a></li><li><a href="05-where-to-go-next.html" class="">05 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="02-how-an-install-actually-works.html">&larr; 02</a> <a href="04-where-charts-come-from.html">04 &rarr;</a></p></div><span class="badge">Chapter 03</span><h1>Releases, upgrades, and rollbacks</h1><p>Everything after the first install is built on that release record. Each time you change a value or move to a newer chart and run <code>helm upgrade</code>, Helm renders the new version, applies the difference to the cluster, and saves a new revision, version 2, then version 3, and so on. Running <code>helm history myapp</code> shows you the whole trail of what was deployed when.</p>
+<p>&lt;figure class=&quot;diagram-wrap&quot;&gt;&lt;svg viewBox=&quot;0 0 520 140&quot; width=&quot;520&quot; height=&quot;140&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;</p>
+<p>  &lt;defs&gt;&lt;marker id=&quot;h4&quot; markerWidth=&quot;8&quot; markerHeight=&quot;8&quot; refX=&quot;6&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L8,3 L0,6 Z&quot; fill=&quot;#0EA5E9&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;</p>
+<p>  &lt;rect x=&quot;30&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;55&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#94A3C8&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;80&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;11&quot; font-weight=&quot;600&quot;&gt;Revision 1&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;80&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;9&quot;&gt;first install&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;170&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;55&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#94A3C8&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;220&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;11&quot; font-weight=&quot;600&quot;&gt;Revision 2&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;220&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; fill=&quot;#94A3C8&quot; font-size=&quot;9&quot;&gt;upgrade&lt;/text&gt;</p>
+<p>  &lt;rect x=&quot;310&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;55&quot; rx=&quot;10&quot; fill=&quot;#0a1535&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot;/&gt;</p>
+<p>  &lt;text x=&quot;360&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot; fill=&quot;#EFF6FF&quot; font-size=&quot;11&quot; font-weight=&quot;600&quot;&gt;Revision 3&lt;/text&gt;</p>
+<p>  &lt;text x=&quot;360&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; fill=&quot;#16C060&quot; font-size=&quot;9&quot;&gt;current&lt;/text&gt;</p>
+<p>  &lt;line x1=&quot;130&quot; y1=&quot;77&quot; x2=&quot;165&quot; y2=&quot;77&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h4)&quot;/&gt;</p>
+<p>  &lt;line x1=&quot;270&quot; y1=&quot;77&quot; x2=&quot;305&quot; y2=&quot;77&quot; stroke=&quot;#0EA5E9&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#h4)&quot;/&gt;</p>
+<p>  &lt;path d=&quot;M360 110 Q220 130 80 110&quot; fill=&quot;none&quot; stroke=&quot;#F97316&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 4&quot; marker-end=&quot;url(#h4)&quot;/&gt;</p>
+<p>  &lt;text x=&quot;220&quot; y=&quot;128&quot; text-anchor=&quot;middle&quot; fill=&quot;#F97316&quot; font-size=&quot;10&quot;&gt;helm rollback 2&lt;/text&gt;</p>
+<p>&lt;/svg&gt;&lt;figcaption&gt;Every upgrade saves a revision — rollback points at an older one instantly.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<p>Because every past revision is still stored in the cluster, <code>helm rollback myapp 2</code> puts you back exactly where revision 2 was. That is the feature people fall in love with the first time an upgrade goes sideways at two in the morning. Helm keeps the last ten revisions by default and quietly prunes older ones, which you can change if you need a longer trail. And uninstalling a release removes the objects Helm created and, unless you ask it to keep the history, forgets the release as well.</p>
+<blockquote class="sharp"><strong>Sharp edge:</strong> Your secrets end up in the release. The release Secret stores the fully rendered manifests, so any secret values you passed in are sitting inside it. Treat release storage as sensitive, keep plaintext secrets out of values files you commit to version control, and reach for a proper secrets tool when it matters. It is also why a release has a rough size ceiling of about one megabyte, which very large charts can bump into.</blockquote>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>A <strong>release</strong> is a saved game. Each upgrade saves a new slot (revision). Bad upgrade? Load revision 2 — you&#x27;re back where you were in seconds, not rebuilding from scratch.</p></div>
+<div class="scenario"><span class="scenario-label">Try this scenario</span><p><strong>2 AM rollback:</strong> New image causes crash loop. You run <code>helm history payments-api</code> — revision 3 is broken, revision 2 was fine. <code>helm rollback payments-api 2</code>. Pods recover in under a minute. Next day: fix the image tag in values and upgrade properly.</p></div></div></body></html>

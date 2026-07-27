@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>What Helm is | devsecforge Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+    :root { --helm:#0EA5E9; --navy:#0F1689; --coral:#F97316; --text:#EFF6FF; --muted:#94A3C8; --green:#16C060; --red:#EF2D3C; --gold:#FBBF24; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:#060D24; color:var(--text); line-height:1.75; min-height:100vh;
+      background-image:
+        radial-gradient(ellipse 70% 55% at 12% 10%, rgba(15,22,137,.55), transparent 55%),
+        radial-gradient(ellipse 60% 50% at 90% 15%, rgba(14,165,233,.4), transparent 50%),
+        radial-gradient(ellipse 55% 45% at 50% 98%, rgba(249,115,22,.25), transparent 55%),
+        linear-gradient(165deg,#060D24,#0a1535 45%,#0f1f4d); }
+    .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+    .nav-top { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(15,22,137,.6); }
+    .nav-top a:hover { background:var(--navy); }
+    .nav-top a.helm { background:rgba(14,165,233,.4); }
+    .nav-top a.helm:hover { background:var(--helm); color:#060D24; }
+    .chapter-nav { background:rgba(10,21,53,.9); border:1px solid rgba(14,165,233,.35); border-radius:14px; padding:1rem 1.1rem; margin:1.5rem 0; }
+    .chapter-nav h3 { color:var(--helm); font-size:.9rem; margin-bottom:.65rem; }
+    .chapter-nav ol { margin-left:1.25rem; font-size:.82rem; }
+    .chapter-nav li { margin:.25rem 0; }
+    .chapter-nav a { color:var(--muted); text-decoration:none; }
+    .chapter-nav a:hover { color:var(--helm); }
+    .chapter-nav a.active { color:var(--coral); font-weight:700; }
+    h1 { color:var(--helm); font-size:1.7rem; margin:1rem 0 .75rem; line-height:1.25; }
+    h2 { color:var(--coral); font-size:1.15rem; margin:1.75rem 0 .6rem; }
+    h3 { color:var(--gold); font-size:1rem; margin:1.25rem 0 .45rem; }
+    p { color:var(--muted); font-size:.93rem; margin:.65rem 0; }
+    ul, ol { margin:.5rem 0 .75rem 1.35rem; color:var(--muted); font-size:.9rem; }
+    li { margin:.35rem 0; }
+    blockquote { border-left:4px solid var(--navy); padding:.85rem 1rem; margin:1rem 0; background:rgba(15,22,137,.2); border-radius:0 12px 12px 0; }
+    blockquote strong { color:var(--text); }
+    .sharp { border-left-color:var(--red); background:rgba(239,45,60,.12); }
+    .principle { border-left-color:var(--green); background:rgba(22,192,96,.1); }
+    .eli10 { border-left:4px solid var(--gold); padding:1rem 1.1rem; margin:1.25rem 0; background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(14,165,233,.1)); border-radius:0 14px 14px 0; }
+    .eli10-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:.35rem; }
+    .eli10 p { color:#DBEAFE; font-size:.9rem; }
+    .scenario { border-left:4px solid var(--helm); padding:1rem 1.1rem; margin:1.25rem 0; background:rgba(14,165,233,.1); border-radius:0 14px 14px 0; }
+    .scenario-label { display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--helm); margin-bottom:.35rem; }
+    .scenario p { color:#DBEAFE; font-size:.9rem; }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem; }
+    th, td { border:1px solid rgba(255,255,255,.12); padding:.55rem .7rem; text-align:left; }
+    th { color:var(--helm); background:rgba(10,21,53,.9); }
+    td { color:var(--muted); }
+    code { background:rgba(0,0,0,.35); padding:.12rem .4rem; border-radius:4px; font-size:.85em; color:var(--helm); }
+    a { color:var(--helm); }
+    .badge { display:inline-block; padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; background:rgba(14,165,233,.2); color:var(--helm); margin-bottom:.5rem; border:1px solid rgba(14,165,233,.4); }
+    .meta { font-size:.8rem; color:var(--muted); margin-bottom:1rem; }
+    .diagram-wrap { background:rgba(10,21,53,.92); border:1px solid rgba(14,165,233,.35); border-radius:16px; padding:1.25rem; margin:1.5rem 0; overflow-x:auto; }
+    .diagram-wrap figcaption { text-align:center; font-size:.78rem; color:var(--muted); margin-top:.75rem; font-style:italic; }
+    .diagram-wrap svg { display:block; margin:0 auto; max-width:100%; height:auto; }
+</style></head><body><div class="wrap"><div class="nav-top">
+      <a href="../index.html">&larr; Trainings</a>
+      <a class="helm" href="../../index.html">Portal</a>
+      <a class="helm" href="index.html">Helm course</a>
+      <a href="../kubernetes/index.html">Kubernetes</a>
+      <a href="../gitops/index.html">GitOps</a>
+    </div><div class="chapter-nav"><h3>How Helm works — 6 chapters (Helm 4)</h3><ol><li><a href="00-what-helm-is.html" class="active">00 — What Helm is</a></li><li><a href="01-charts-values-and-templates.html" class="">01 — Charts, values, and templates</a></li><li><a href="02-how-an-install-actually-works.html" class="">02 — How an install actually works</a></li><li><a href="03-releases-upgrades-and-rollbacks.html" class="">03 — Releases, upgrades, and rollbacks</a></li><li><a href="04-where-charts-come-from.html" class="">04 — Where charts come from</a></li><li><a href="05-where-to-go-next.html" class="">05 — Where to go next</a></li></ol>
+    <p style="margin-top:.75rem"><a href="01-charts-values-and-templates.html">01 &rarr;</a></p></div><span class="badge">Chapter 00</span><h1>What Helm is</h1><p>Deploying an application to Kubernetes by hand means writing a pile of YAML. You need a Deployment, a Service, probably a ConfigMap, maybe an Ingress and a few more objects, and then you copy and tweak all of it for every environment and every app you run. It works, but it gets tedious fast and it goes wrong easily, because the interesting differences between environments are buried in a lot of near-identical text.</p>
+<p>Helm is the answer to that, and it is the package manager for Kubernetes. In the same way your laptop uses something like Homebrew or apt to install software with a single command, Helm installs whole applications onto a cluster from a reusable package called a chart, with the settings you actually care about pulled out front where you can change them. Instead of hand-editing twenty files, you install a chart and pass in a handful of values.</p>
+<p>The rest of this comes down to a short story you will see repeated. You package an application as a chart, you install that chart to create a running release, you change and upgrade that release over time, and the charts themselves come from repositories you can pull from. Everything that follows is just those few ideas in more detail.</p>
+<div class="eli10"><span class="eli10-label">Explain like you are 10</span><p>Kubernetes YAML by hand is like building a LEGO set by sorting thousands of tiny pieces yourself every time. Helm is the box with the picture on the front — same set, one command, and you only choose the color of the roof (your values).</p></div>
+<div class="scenario"><span class="scenario-label">Try this scenario</span><p><strong>Monday deploy:</strong> Your team maintains 12 nearly identical Deployment YAML files for staging and prod. Someone copies staging to prod but forgets to change the image tag. Prod runs last week&#x27;s build. With Helm, one chart + <code>prod-values.yaml</code> — the tag lives in one obvious place.</p></div>
+<p class="meta"><strong>Source:</strong> <a href="https://kubeschool.portainer.io">KubeSchool — How Helm works</a> · Written for Helm 4 · 6 chapters</p></div></body></html>

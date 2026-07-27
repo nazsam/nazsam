@@ -1,31 +1,33 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Trainings | devsecforge</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/><style>
-    :root { --purple:#8B5CF6; --mint:#34D399; --text:#F4F0FF; --muted:#A89BC6; }
+    :root { --helm:#0EA5E9; --text:#EFF6FF; --muted:#94A3C8; }
     * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:Inter,system-ui,sans-serif; background:#0A0618; color:var(--text); line-height:1.7; min-height:100vh;
-      background-image: radial-gradient(ellipse 70% 55% at 20% 10%, rgba(139,92,246,.4), transparent 55%),
-        linear-gradient(160deg,#0A0618,#12082A 50%,#1a0f3d); }
+    body { font-family:Inter,system-ui,sans-serif; background:#060D24; color:var(--text); line-height:1.7; min-height:100vh;
+      background-image: radial-gradient(ellipse 70% 55% at 20% 10%, rgba(14,165,233,.35), transparent 55%),
+        linear-gradient(160deg,#060D24,#0a1535 50%,#0f1f4d); }
     .wrap { max-width:820px; margin:0 auto; padding:1.5rem 1rem 3rem; }
-    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(139,92,246,.45); margin-right:.35rem; display:inline-block; margin-bottom:.5rem; }
-    h1 { color:var(--mint); margin:1rem 0; }
-    p { color:var(--muted); }
-    a { color:var(--mint); }
+    .nav-top a { padding:.4rem .75rem; border-radius:8px; font-size:.78rem; font-weight:600; text-decoration:none; color:#fff; background:rgba(14,165,233,.4); margin-right:.35rem; display:inline-block; margin-bottom:.5rem; }
+    h1 { color:var(--helm); margin:1rem 0; } p { color:var(--muted); } a { color:var(--helm); }
     </style></head><body><div class="wrap"><div class="nav-top"><a href="../index.html">&larr; Portal</a></div><h1>Trainings</h1>
-<p>Structured learning hosted on this portal — read here, practice in linked labs. Each course includes diagrams, ELI10 explanations, and real scenarios.</p>
+<p>Structured learning on this portal — diagrams, ELI10 explanations, and hands-on scenarios in every course.</p>
 <div style="display:grid;gap:1rem;margin-top:1.5rem">
+  <a href="helm/index.html" style="display:block;padding:1.25rem;background:rgba(10,21,53,.9);border:2px solid #0EA5E9;border-radius:14px;text-decoration:none;color:#fff">
+    <strong style="font-size:1.2rem">How Helm works</strong><br/>
+    <span style="color:#94A3C8;font-size:.85rem">6 chapters · charts · values · releases · rollbacks · Helm 4</span>
+  </a>
   <a href="gitops/index.html" style="display:block;padding:1.25rem;background:rgba(18,8,42,.85);border:2px solid #8B5CF6;border-radius:14px;text-decoration:none;color:#fff">
     <strong style="font-size:1.2rem">Understanding GitOps</strong><br/>
-    <span style="color:#A89BC6;font-size:.85rem">11 chapters · pull vs push · drift · promotion · secrets · SVG diagrams</span>
+    <span style="color:#A89BC6;font-size:.85rem">11 chapters · pull vs push · drift · promotion · secrets</span>
   </a>
   <a href="kubernetes/index.html" style="display:block;padding:1.25rem;background:rgba(11,21,51,.8);border:2px solid #326CE5;border-radius:14px;text-decoration:none;color:#fff">
     <strong style="font-size:1.2rem">Understanding Kubernetes</strong><br/>
-    <span style="color:#8AA0C6;font-size:.85rem">17 chapters · desired state · control plane · networking · enterprise readiness</span>
+    <span style="color:#8AA0C6;font-size:.85rem">17 chapters · architecture · control plane · networking</span>
   </a>
   <a href="../security-exercises.html" style="display:block;padding:1.25rem;background:rgba(11,21,51,.8);border:2px solid #EF2D3C;border-radius:14px;text-decoration:none;color:#fff">
     <strong style="font-size:1.2rem">Security Exercises</strong><br/>
-    <span style="color:#8AA0C6;font-size:.85rem">72+ DevSecOps Q&A with expandable answers</span>
+    <span style="color:#8AA0C6;font-size:.85rem">72+ DevSecOps Q&A</span>
   </a>
   <a href="../roadmap.html" style="display:block;padding:1.25rem;background:rgba(11,21,51,.8);border:2px solid #16C060;border-radius:14px;text-decoration:none;color:#fff">
     <strong style="font-size:1.2rem">DevSecOps Roadmap</strong><br/>
-    <span style="color:#8AA0C6;font-size:.85rem">Structured learning path with phases</span>
+    <span style="color:#8AA0C6;font-size:.85rem">Structured learning path</span>
   </a>
 </div></div></body></html>
