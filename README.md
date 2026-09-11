@@ -1,14 +1,14 @@
 <!--
   ════════════════════════════════════════════════════════════════════════
-  PROFILE README — repo: devsecforge/devsecforge
+  PROFILE README — repo: nazsam/nazsam
   Cybersecurity • Cloud • DevSecOps • AI Security & Privacy • Governance
   Stats widgets pull LIVE data from GitHub.
   ════════════════════════════════════════════════════════════════════════
 -->
 
 <!-- ░░░░░░░░░░░░░░░░░░░░ HERO BANNER ░░░░░░░░░░░░░░░░░░░░ -->
-<a href="https://github.com/devsecforge">
-    <img src="assets/header-banner.png" width="100%" alt="devsecforge -- Cybersecurity, Cloud, DevSecOps, AI Security" /></a>
+<a href="https://github.com/nazsam">
+    <img src="assets/header-banner.png" width="100%" alt="nazsam -- Cybersecurity, Cloud, DevSecOps, AI Security" /></a>
 
 <div align="center">
 
@@ -20,12 +20,12 @@
 <img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" />
 
 <!-- TYPING ANIMATION -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+over+a+decade+and+a+half;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/naz-cyber-solutions)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+over+a+decade+and+a+half;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/samicybersecurity)
 
-<a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <img src="https://img.shields.io/badge/Canada%20%F0%9F%87%A8%F0%9F%87%A6-1E3AA8?style=for-the-badge" />
-<img src="https://komarev.com/ghpvc/?username=devsecforge&label=Profile%20views&color=22D3EE&style=for-the-badge" />
+<img src="https://komarev.com/ghpvc/?username=nazsam&label=Profile%20views&color=22D3EE&style=for-the-badge" />
 
 </div>
 
@@ -284,40 +284,40 @@ I believe great technology is built on strong architecture, intelligent automati
 > over a decade and a half distilled into open reference material — architecture, detection, response, governance & AI security — plus hands-on DevSecOps labs. **13 focused repositories, one coherent security program.**
 
 <div align="center">
-<a href="https://github.com/devsecforge/zero-trust-reference-architecture"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
-<a href="https://github.com/devsecforge/soc-detection-engineering"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
-<a href="https://github.com/devsecforge/ai-security-lab"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=devsecforge&repo=ai-security-lab&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
+<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
+<a href="https://github.com/nazsam/soc-detection-engineering"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
+<a href="https://github.com/nazsam/ai-security-lab"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=ai-security-lab&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
 </div>
 
 🏛️ ![Security Architecture](https://img.shields.io/badge/SECURITY_ARCHITECTURE-9E1B45?style=for-the-badge)
-- 🛡️ **[zero-trust-reference-architecture](https://github.com/devsecforge/zero-trust-reference-architecture)** — NIST 800-207 principles, maturity model, ISO/CIS control mappings, Azure/AWS enforcement.
-- ☁️ **[cloud-security-baseline](https://github.com/devsecforge/cloud-security-baseline)** — Azure Policy + AWS Terraform guardrails mapped to CIS / NIST CSF, with a CSPM operating model.
+- 🛡️ **[zero-trust-reference-architecture](https://github.com/nazsam/zero-trust-reference-architecture)** — NIST 800-207 principles, maturity model, ISO/CIS control mappings, Azure/AWS enforcement.
+- ☁️ **[cloud-security-baseline](https://github.com/nazsam/cloud-security-baseline)** — Azure Policy + AWS Terraform guardrails mapped to CIS / NIST CSF, with a CSPM operating model.
 
 🎯 ![SOC · Detection · IR](https://img.shields.io/badge/SOC_%C2%B7_DETECTION_%C2%B7_INCIDENT_RESPONSE-EF2D3C?style=for-the-badge)
-- 🎯 **[soc-detection-engineering](https://github.com/devsecforge/soc-detection-engineering)** — Sentinel KQL + Splunk detections mapped to MITRE ATT&CK.
-- 🚨 **[incident-response-playbooks](https://github.com/devsecforge/incident-response-playbooks)** — NIST 800-61 IR playbooks, tabletop exercises & report templates.
-- 📊 **[security-metrics-dashboard](https://github.com/devsecforge/security-metrics-dashboard)** — SOC / exec / DORA metrics catalog, KQL, and board-ready reporting.
+- 🎯 **[soc-detection-engineering](https://github.com/nazsam/soc-detection-engineering)** — Sentinel KQL + Splunk detections mapped to MITRE ATT&CK.
+- 🚨 **[incident-response-playbooks](https://github.com/nazsam/incident-response-playbooks)** — NIST 800-61 IR playbooks, tabletop exercises & report templates.
+- 📊 **[security-metrics-dashboard](https://github.com/nazsam/security-metrics-dashboard)** — SOC / exec / DORA metrics catalog, KQL, and board-ready reporting.
 
 📜 ![Governance & Compliance](https://img.shields.io/badge/GOVERNANCE_%26_COMPLIANCE-16C060?style=for-the-badge)
-- 📜 **[compliance-as-code](https://github.com/devsecforge/compliance-as-code)** — ISO 27001 / NIST CSF / CIS crosswalk + OPA & Azure Policy enforcement + continuous-evidence model.
-- 🔏 **[privacy-skills](https://github.com/devsecforge/privacy-skills)** — structured privacy & data-protection skills mapped to GDPR · CCPA · PIPEDA · EU AI Act · HIPAA · LGPD · PIPL · DPDP.
+- 📜 **[compliance-as-code](https://github.com/nazsam/compliance-as-code)** — ISO 27001 / NIST CSF / CIS crosswalk + OPA & Azure Policy enforcement + continuous-evidence model.
+- 🔏 **[privacy-skills](https://github.com/nazsam/privacy-skills)** — structured privacy & data-protection skills mapped to GDPR · CCPA · PIPEDA · EU AI Act · HIPAA · LGPD · PIPL · DPDP.
 
 🤖 ![AI Security](https://img.shields.io/badge/AI_SECURITY-10D0C4?style=for-the-badge)
-- 🤖 **[ai-security-lab](https://github.com/devsecforge/ai-security-lab)** — OWASP LLM Top 10, prompt-injection guardrails, STRIDE-for-AI threat model, NIST AI RMF / ISO 42001.
-- 🧠 **[agent-security-skills](https://github.com/devsecforge/agent-security-skills)** — framework-mapped defensive security skills for AI agents (MITRE ATT&CK · NIST CSF · D3FEND · NIST AI RMF), schema-validated in CI.
+- 🤖 **[ai-security-lab](https://github.com/nazsam/ai-security-lab)** — OWASP LLM Top 10, prompt-injection guardrails, STRIDE-for-AI threat model, NIST AI RMF / ISO 42001.
+- 🧠 **[agent-security-skills](https://github.com/nazsam/agent-security-skills)** — framework-mapped defensive security skills for AI agents (MITRE ATT&CK · NIST CSF · D3FEND · NIST AI RMF), schema-validated in CI.
 
 🧪 ![DevSecOps Labs](https://img.shields.io/badge/DEVSECOPS_LABS-FB8C1A?style=for-the-badge) <sub>building in public</sub>
-- 🛡️ **[security-operations-toolkit](https://github.com/devsecforge/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
-- ☸️ **[kubernetes-security-lab](https://github.com/devsecforge/kubernetes-security-lab)** — 5-layer defense-in-depth: Pod Security Admission, RBAC, NetworkPolicy, Falco.
-- 🔐 **[secure-terraform-aws](https://github.com/devsecforge/secure-terraform-aws)** — Secure-by-default AWS: hardened S3/KMS, least-privilege IAM, tfsec + checkov.
-- 🛰️ **[security-intel-mcp](https://github.com/devsecforge/security-intel-mcp)** — MCP server giving AI assistants CVE (NVD), EPSS & CISA KEV intelligence with combined risk enrichment.
+- 🛡️ **[security-operations-toolkit](https://github.com/nazsam/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
+- ☸️ **[kubernetes-security-lab](https://github.com/nazsam/kubernetes-security-lab)** — 5-layer defense-in-depth: Pod Security Admission, RBAC, NetworkPolicy, Falco.
+- 🔐 **[secure-terraform-aws](https://github.com/nazsam/secure-terraform-aws)** — Secure-by-default AWS: hardened S3/KMS, least-privilege IAM, tfsec + checkov.
+- 🛰️ **[security-intel-mcp](https://github.com/nazsam/security-intel-mcp)** — MCP server giving AI assistants CVE (NVD), EPSS & CISA KEV intelligence with combined risk enrichment.
 
 ---
 
 <a id="writing"></a>
 ## ✍️ Writing & Thought Leadership
 
-> 24 articles on practical security, cloud & AI — for engineers and leaders. Full archive → [`articles/`](https://github.com/devsecforge/devsecforge/tree/main/articles) · cross-posted on <a href="https://www.linkedin.com/in/naz-cyber-solutions">LinkedIn</a>
+> 24 articles on practical security, cloud & AI — for engineers and leaders. Full archive → [`articles/`](https://github.com/nazsam/nazsam/tree/main/articles) · cross-posted on <a href="https://www.linkedin.com/in/samicybersecurity">LinkedIn</a>
 
 <details>
 <summary><b>🛡️ Cybersecurity, SOC & Zero Trust</b> — 5 articles</summary>
@@ -378,7 +378,7 @@ I believe great technology is built on strong architecture, intelligent automati
 
 </details>
 
-<sub>📝 Also publishing on <a href="https://www.linkedin.com/in/naz-cyber-solutions">LinkedIn</a>.</sub>
+<sub>📝 Also publishing on <a href="https://www.linkedin.com/in/samicybersecurity">LinkedIn</a>.</sub>
 
 ---
 
@@ -406,10 +406,10 @@ this profile repository itself.
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=devsecforge&show_icons=true&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533&count_private=true&include_all_commits=true" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=devsecforge&layout=compact&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=nazsam&show_icons=true&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533&count_private=true&include_all_commits=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazsam&layout=compact&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=devsecforge&theme=tokyo-night&hide_border=true&area=true&color=22D3EE&line=22D3EE&point=ffffff" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=nazsam&theme=tokyo-night&hide_border=true&area=true&color=22D3EE&line=22D3EE&point=ffffff" width="100%" />
 
 </div>
 
@@ -422,7 +422,7 @@ this profile repository itself.
 
 Open to **security leadership · cloud security architecture · AI security · vCISO / advisory · consulting**.
 
-<a href="https://www.linkedin.com/in/naz-cyber-solutions"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email%20me-Let's%20talk-2ea043?style=for-the-badge" /></a>
 
 </div>
