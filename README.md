@@ -23,7 +23,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+over+a+decade+and+a+half;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/samicybersecurity)
 
 <a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:naz2005@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <img src="https://img.shields.io/badge/Canada%20%F0%9F%87%A8%F0%9F%87%A6-1E3AA8?style=for-the-badge" />
 <img src="https://komarev.com/ghpvc/?username=nazsam&label=Profile%20views&color=22D3EE&style=for-the-badge" />
 
@@ -45,35 +45,32 @@
 <a id="about"></a>
 <img src="assets/about-banner.svg" width="100%" alt="About Me — Who I Am" />
 
-### **Building secure, intelligent platforms for the future**
+### **I help teams ship fast without shipping risk**
 
-***Technology never stands still. My mission is to make sure security keeps pace with innovation.***
+***Cybersecurity & AI Architect · Forward Deployed Engineer · DevSecOps Lead · Canada 🇨🇦***
 
-I help organizations design, build, and operate digital platforms that are secure, resilient, and ready for the future. My work brings together cybersecurity, cloud computing, artificial intelligence, platform engineering, infrastructure, networking, and automation, so security becomes part of every decision instead of an afterthought.
+Most organizations don't have a security problem. They have a speed problem: innovation moves faster than the controls meant to protect it. I close that gap.
 
-I believe great technology is built on strong architecture, intelligent automation, and continuous improvement. Whether I'm designing cloud platforms, securing artificial intelligence, improving engineering practices, or modernizing enterprise infrastructure, my goal stays the same: deliver solutions that protect people, support business growth, and inspire confidence.
+With over 15 years in security leadership, I work where **cybersecurity, cloud, AI and backend engineering** meet. I embed directly with engineering teams to design, build and run platforms that are secure by default: Zero Trust landing zones across Azure, AWS and GCP, hardened LLM and agentic AI systems, and security built into the architecture, the pipeline and the code, so it speeds delivery up instead of slowing it down.
 
-**What I focus on**
+**💡 What I bring**
 
-- Building secure cloud platforms
-- Protecting artificial intelligence systems
-- Creating modern engineering practices
-- Automating security and operations
-- Designing resilient enterprise architecture
-- Strengthening security operations
-- Developing zero trust strategies
-- Enabling secure innovation
+- 🛡️ **Security operations leadership:** 24/7 SOC, incident response, threat hunting, detection engineering
+- ☁️ **Cloud security architecture:** Zero Trust, secure landing zones, CSPM, identity and encryption across Azure, AWS and GCP
+- 🤖 **AI security and governance:** OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO/IEC 42001, privacy by design
+- ⚙️ **DevSecOps and automation:** secure CI/CD gates, IaC, policy as code, container and Kubernetes security
+- 🧩 **Forward deployed and backend engineering:** working side by side with engineering teams to build APIs, integrations and MCP tooling that hold up in production
 
-**My approach**
+**🧭 How I work**
 
-  ```
-  Secure by Design
-  Automate by Default
-  Trust Nothing, Verify Everything
-  Build for the Future
-  ```
+```
+Secure by Design
+Automate by Default
+Trust Nothing, Verify Everything
+Build for the Future
+```
 
-  *Security should never slow innovation. It should make innovation possible.*
+*Security should never slow innovation. It should make innovation possible.*
 
 ---
 
@@ -423,7 +420,7 @@ this profile repository itself.
 Open to **security leadership · cloud security architecture · AI security · vCISO / advisory · consulting**.
 
 <a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:snaz2004@yahoo.com"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email%20me-Let's%20talk-2ea043?style=for-the-badge" /></a>
+<a href="mailto:naz2005@gmail.com"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email%20me-Let's%20talk-2ea043?style=for-the-badge" /></a>
 
 </div>
 
