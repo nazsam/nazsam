@@ -58,7 +58,7 @@
 
 <br/>
 
-<a href="https://github.com/nazsam?tab=followers"><img src="https://img.shields.io/github/followers/nazsam?label=Followers&style=for-the-badge&logo=github&color=181717" alt="Followers" /></a>
+<a href="https://github.com/nazsam?tab=followers"><img src="https://img.shields.io/badge/Followers-2000-181717?style=for-the-badge&logo=github&logoColor=white" alt="Followers 2000" /></a>
 
 <br/>
 
@@ -67,56 +67,8 @@
 <!-- PEOPLE:START -->
 <p align="center">
   <a href="https://github.com/nazsam"><img src="https://github.com/nazsam.png?size=64" width="32" height="32" alt="subscriber"/></a>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
-  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
 </p>
+<a href="https://github.com/nazsam?tab=followers"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/followers-2000.png" width="220" alt="2000 follower slots"/></a>
 <!-- PEOPLE:END -->
 
 <a href="https://github.com/nazsam/nazsam/issues/new?title=Hi%20from%20a%20profile%20visitor&body=I%20visited%20your%20GitHub%20profile."><img src="https://img.shields.io/badge/Sign_the_guestbook-0B1533?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Sign the guestbook" /></a>

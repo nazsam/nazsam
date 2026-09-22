@@ -37,7 +37,8 @@ jobs:
               'security-operations-toolkit',
               'kubernetes-security-lab',
             ];
-            const SLOTS = 50;
+            const SLOTS = 2000;
+            const SHOW_AVATARS = 48;
             const people = new Map();
             const followers = await github.paginate(github.rest.users.listFollowersForUser, {
               username: owner,
@@ -64,15 +65,14 @@ jobs:
                 core.warning(`Could not list stargazers for ${repo}: ${err.message}`);
               }
             }
-            const active = [...people.values()].slice(0, SLOTS);
-            const cells = [];
+            const active = [...people.values()].slice(0, Math.min(SHOW_AVATARS, SLOTS));
+            const cells = [
+              `<a href="https://github.com/${owner}"><img src="https://github.com/${owner}.png?size=64" width="32" height="32" alt="subscriber"/></a>`,
+            ];
             for (const p of active) {
               cells.push(`<a href="${p.href}"><img src="${p.avatar}" width="32" height="32" alt="subscriber"/></a>`);
             }
-            while (cells.length < SLOTS) {
-              cells.push(`<img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>`);
-            }
-            const inner = `<p align="center">\n  ${cells.join('\n  ')}\n</p>`;
+            const inner = `<p align="center">\n  ${cells.join('\n  ')}\n</p>\n<a href="https://github.com/${owner}?tab=followers"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/followers-2000.png" width="220" alt="2000 follower slots"/></a>`;
             const readmePath = 'README.md';
             const readme = fs.readFileSync(readmePath, 'utf8');
             const start = '<!-- PEOPLE:START -->';
