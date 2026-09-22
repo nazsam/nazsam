@@ -38,6 +38,11 @@ jobs:
               'kubernetes-security-lab',
             ];
             const people = new Map();
+            people.set(owner, {
+              login: owner,
+              avatar: `https://github.com/${owner}.png?size=96`,
+              href: `https://github.com/${owner}`,
+            });
             const followers = await github.paginate(github.rest.users.listFollowersForUser, {
               username: owner,
               per_page: 100,
