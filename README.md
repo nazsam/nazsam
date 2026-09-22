@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="assets/hero-banner.png" width="100%" alt="Let's build robust, secure and scalable solutions — DevSecOps, Cloud Security, AI & Data Engineering" />
+<img src="assets/hero-banner.png" width="100%" height="auto" alt="Let's build robust, secure and scalable solutions — Azure, AWS, GCP, Kubernetes, Docker, Terraform, Python" />
 
 # Sami Naz
 
