@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120" role="img" aria-label="api-security-testing-framework">
+  <rect width="400" height="120" rx="12" fill="#0B1533"/>
+  <rect x="1" y="1" width="398" height="118" rx="11" fill="none" stroke="#1E3A5F" stroke-width="1"/>
+  <path d="M28 34 h18 a4 4 0 0 1 4 4 v2 h-26 v-2 a4 4 0 0 1 4-4 z" fill="#F59E0B"/>
+  <rect x="20" y="40" width="30" height="20" rx="3" fill="#F59E0B"/>
+  <text x="62" y="48" fill="#22D3EE" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">api-security-testing-framework</text>
+  <text x="20" y="82" fill="#A9B7DB" font-family="Segoe UI, Arial, sans-serif" font-size="13">API security testing</text>
+  <circle cx="26" cy="100" r="5" fill="#22D3EE"/>
+  <text x="36" y="104" fill="#8AA0C6" font-family="Segoe UI, Arial, sans-serif" font-size="12">Python</text>
+  <text x="320" y="104" fill="#8AA0C6" font-family="Segoe UI, Arial, sans-serif" font-size="12">public</text>
+</svg>

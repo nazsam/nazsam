@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170" viewBox="0 0 300 170" role="img" aria-label="Top languages">
+  <rect width="300" height="170" rx="12" fill="#0B1533"/>
+  <rect x="1" y="1" width="298" height="168" rx="11" fill="none" stroke="#1E3A5F"/>
+  <text x="20" y="36" fill="#22D3EE" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Top languages</text>
+  <text x="20" y="70" fill="#A9B7DB" font-family="Segoe UI, Arial, sans-serif" font-size="13">Python</text>
+  <rect x="20" y="78" width="200" height="10" rx="5" fill="#12203A"/>
+  <rect x="20" y="78" width="130" height="10" rx="5" fill="#3572A5"/>
+  <text x="20" y="114" fill="#A9B7DB" font-family="Segoe UI, Arial, sans-serif" font-size="13">Shell</text>
+  <rect x="20" y="122" width="200" height="10" rx="5" fill="#12203A"/>
+  <rect x="20" y="122" width="90" height="10" rx="5" fill="#89E051"/>
+  <text x="20" y="154" fill="#8AA0C6" font-family="Segoe UI, Arial, sans-serif" font-size="11">From public repositories</text>
+</svg>
