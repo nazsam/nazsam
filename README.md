@@ -43,17 +43,6 @@
 
 </div>
 
-<a id="featured"></a>
-
-## Featured
-
-<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="zero-trust-reference-architecture" /></a>
-<a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="soc-detection-engineering" /></a>
-<a href="https://github.com/nazsam/agent-security-skills"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=agent-security-skills&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="agent-security-skills" /></a>
-<a href="https://github.com/nazsam/ai-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=ai-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="ai-security-lab" /></a>
-<a href="https://github.com/nazsam/security-operations-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=security-operations-toolkit&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="security-operations-toolkit" /></a>
-<a href="https://github.com/nazsam/kubernetes-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=kubernetes-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="kubernetes-security-lab" /></a>
-
 </td>
 <td valign="top" width="240" align="center">
 
@@ -82,6 +71,23 @@
 </td>
 </tr>
 </table>
+
+---
+
+<a id="featured"></a>
+
+## Featured
+
+<div align="center">
+
+<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="zero-trust-reference-architecture" /></a>
+<a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="soc-detection-engineering" /></a>
+<a href="https://github.com/nazsam/agent-security-skills"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=agent-security-skills&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="agent-security-skills" /></a>
+<a href="https://github.com/nazsam/ai-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=ai-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="ai-security-lab" /></a>
+<a href="https://github.com/nazsam/security-operations-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=security-operations-toolkit&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="security-operations-toolkit" /></a>
+<a href="https://github.com/nazsam/kubernetes-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=kubernetes-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="kubernetes-security-lab" /></a>
+
+</div>
 
 ---
 
