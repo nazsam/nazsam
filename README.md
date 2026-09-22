@@ -1,427 +1,304 @@
 <!--
-  ════════════════════════════════════════════════════════════════════════
-  PROFILE README — repo: nazsam/nazsam
-  Cybersecurity • Cloud • DevSecOps • AI Security & Privacy • Governance
-  Stats widgets pull LIVE data from GitHub.
-  ════════════════════════════════════════════════════════════════════════
+  GitHub profile README — repo: nazsam/nazsam
+  Identity: Sami Naz / Sam Naz / nazsam
+  Live profile: https://github.com/nazsam
 -->
-
-<!-- ░░░░░░░░░░░░░░░░░░░░ HERO BANNER ░░░░░░░░░░░░░░░░░░░░ -->
-<a href="https://github.com/nazsam">
-    <img src="assets/header-banner.png" width="100%" alt="nazsam -- Cybersecurity, Cloud, DevSecOps, AI Security" /></a>
 
 <div align="center">
 
-<!-- ELITE CREDENTIAL LINE -->
-<img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/CISM-1B75BB?style=for-the-badge" />
-<img src="https://img.shields.io/badge/CISA-00539B?style=for-the-badge" />
-<img src="https://img.shields.io/badge/CRISC-6B2C91?style=for-the-badge" />
-<img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" />
+<img src="assets/hero-banner.png" width="100%" alt="Let's build robust, secure and scalable solutions — DevSecOps, Cloud Security, AI & Data Engineering" />
 
-<!-- TYPING ANIMATION -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=22D3EE&center=true&vCenter=true&width=760&height=55&lines=Securing+enterprise+environments+for+over+a+decade+and+a+half;Leading+SOC%2C+Incident+Response+%26+Threat+Hunting;Cloud+Security+Strategy+%E2%80%94+Azure+%C2%B7+AWS+%C2%B7+GCP;DevSecOps+%26+Security+Automation+at+scale;AI+Security+%26+Privacy+%E2%80%94+securing+the+next+frontier)](https://www.linkedin.com/in/samicybersecurity)
+# Sami Naz
 
-<a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:naz2005@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<img src="https://img.shields.io/badge/Canada%20%F0%9F%87%A8%F0%9F%87%A6-1E3AA8?style=for-the-badge" />
-<img src="https://komarev.com/ghpvc/?username=nazsam&label=Profile%20views&color=22D3EE&style=for-the-badge" />
+**DevSecOps · Cloud Security · AI & Data Engineering**
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=22D3EE&center=true&vCenter=true&width=780&height=50&lines=Crafting+secure%2C+scalable%2C+intelligent+systems;DevSecOps+%7C+Zero+Trust+%7C+IAM;AI+Security+%26+Data+Engineering;Security.+Intelligence.+Automation.+Impact.)](https://www.linkedin.com/in/samicybersecurity)
+
+<img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge" alt="CISSP" />
+<img src="https://img.shields.io/badge/CISM-1B75BB?style=for-the-badge" alt="CISM" />
+<img src="https://img.shields.io/badge/CISA-00539B?style=for-the-badge" alt="CISA" />
+<img src="https://img.shields.io/badge/CRISC-6B2C91?style=for-the-badge" alt="CRISC" />
+<img src="https://img.shields.io/badge/CCSP-F97316?style=for-the-badge" alt="CCSP" />
+<img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" alt="ISO 27001 Lead Auditor" />
+
+<br/>
+
+<a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://github.com/nazsam"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="mailto:naz2005@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<img src="https://img.shields.io/badge/Canada-1E3AA8?style=for-the-badge&logo=googleearth&logoColor=white" alt="Canada" />
+<img src="https://komarev.com/ghpvc/?username=nazsam&label=Profile%20views&color=22D3EE&style=for-the-badge" alt="Profile views" />
+
+<p>
+  <a href="#about-me"><img src="https://img.shields.io/badge/🌍_About-1E3A8A?style=for-the-badge" alt="About" /></a>
+  <a href="#certifications"><img src="https://img.shields.io/badge/🎓_Certs-0EA5E9?style=for-the-badge" alt="Certifications" /></a>
+  <a href="#core-competencies"><img src="https://img.shields.io/badge/🧠_Skills-0D9488?style=for-the-badge" alt="Skills" /></a>
+  <a href="#featured-repositories"><img src="https://img.shields.io/badge/📂_Repos-E11D48?style=for-the-badge" alt="Repos" /></a>
+  <a href="#github-activity"><img src="https://img.shields.io/badge/📊_Stats-7C3AED?style=for-the-badge" alt="Stats" /></a>
+  <a href="#open-for-collaboration"><img src="https://img.shields.io/badge/🤝_Collaborate-EA580C?style=for-the-badge" alt="Collaborate" /></a>
+</p>
 
 </div>
 
-<!-- ░░░░░░░░░░░░░░░░░░░░ NAV BAR ░░░░░░░░░░░░░░░░░░░░ -->
-<p align="center">
-  <a href="#about"><img src="https://img.shields.io/badge/🏠_About-2B50E4?style=for-the-badge" /></a>
-  <a href="#certs"><img src="https://img.shields.io/badge/🎓_Certifications-1E3AA8?style=for-the-badge" /></a>
-  <a href="#stack"><img src="https://img.shields.io/badge/🧰_Stack-2B50E4?style=for-the-badge" /></a>
-  <a href="#projects"><img src="https://img.shields.io/badge/🚀_Projects-1E3AA8?style=for-the-badge" /></a>
-  <a href="#ai"><img src="https://img.shields.io/badge/🤖_AI_Security-10D0C4?style=for-the-badge" /></a>
-  <a href="#writing"><img src="https://img.shields.io/badge/✍️_Writing-2B50E4?style=for-the-badge" /></a>
-  <a href="#contact"><img src="https://img.shields.io/badge/📫_Contact-16C060?style=for-the-badge" /></a>
-</p>
+---
+
+Crafting **secure, scalable, intelligent systems** across Cybersecurity, Cloud, AI, and Data Engineering.
+
+Multi-disciplinary, multi-cultural experience delivering high-impact solutions for enterprises, startups, and B2B clients.
+
+Committed to building **secure automation**, **AI-powered engineering**, and **Zero-Trust cloud architectures** that stand out in modern tech ecosystems.
+
+> GitHub upload dates are public evidence — not the start of the career. Industry delivery at **Canada Cloud Solution** since **January 2021**. Third-party work is credited in [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
 ---
 
-<a id="about"></a>
-<img src="assets/about-banner.svg" width="100%" alt="About Me — Who I Am" />
+<img src="assets/about-banner.svg" width="100%" alt="Who I am — About Me" />
 
-### **I help teams ship fast without shipping risk**
+<a id="about-me"></a>
 
-***Cybersecurity & AI Architect · Forward Deployed Engineer · DevSecOps Lead · Canada 🇨🇦***
+## About Me
 
-Most organizations don't have a security problem. They have a speed problem: innovation moves faster than the controls meant to protect it. I close that gap.
+I am **Sami Naz** — I build secure, intelligent, automated systems that help organizations scale safely.
 
-With over 15 years in security leadership, I work where **cybersecurity, cloud, AI and backend engineering** meet. I embed directly with engineering teams to design, build and run platforms that are secure by default: Zero Trust landing zones across Azure, AWS and GCP, hardened LLM and agentic AI systems, and security built into the architecture, the pipeline and the code, so it speeds delivery up instead of slowing it down.
+My work spans **Cybersecurity, Cloud, AI, and Data Engineering**, which is how I design end-to-end solutions that are both high-performance and high-security. I thrive where innovation meets responsibility: solutions that protect, optimize, and elevate business outcomes.
 
-**💡 What I bring**
-
-- 🛡️ **Security operations leadership:** 24/7 SOC, incident response, threat hunting, detection engineering
-- ☁️ **Cloud security architecture:** Zero Trust, secure landing zones, CSPM, identity and encryption across Azure, AWS and GCP
-- 🤖 **AI security and governance:** OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO/IEC 42001, privacy by design
-- ⚙️ **DevSecOps and automation:** secure CI/CD gates, IaC, policy as code, container and Kubernetes security
-- 🧩 **Forward deployed and backend engineering:** working side by side with engineering teams to build APIs, integrations and MCP tooling that hold up in production
-
-**🧭 How I work**
+Since **January 2021** I have led customer-facing work at **Canada Cloud Solution (CCS)** across operations, platform, cloud, cybersecurity, and AI — including public-sector, energy, and manufacturing engagements. Before CCS I was a Cyber Security Architect at **Long View Systems** and an MIS/IT advisor at the **University of Hail**.
 
 ```
 Secure by Design
 Automate by Default
 Trust Nothing, Verify Everything
-Build for the Future
+Security. Intelligence. Automation. Impact.
 ```
 
-*Security should never slow innovation. It should make innovation possible.*
+**What I ship**
+
+- DevSecOps and CI/CD security guardrails (SAST, SCA, secrets, IaC, containers)
+- Zero Trust, IAM, and multi-cloud security (Azure, AWS, GCP)
+- SOC/SIEM detection engineering and incident response
+- AI / LLM / agent security and secure automation
+- Data pipelines, Spark / Databricks workflows, and model tracking with MLflow
 
 ---
 
-## 🎯 Focus Areas
+<img src="assets/section-certs.svg" width="100%" alt="Certifications" />
 
-> ![Cybersecurity & SOC](https://img.shields.io/badge/🛡️_CYBERSECURITY_&_SOC-EF2D3C?style=for-the-badge)
-> 24/7 SOC leadership · Incident Response & Forensics · Threat Hunting (ATT&CK) · Detection Engineering · SIEM / XDR / SOAR
->
->> ![Cloud Security](https://img.shields.io/badge/☁️_CLOUD_SECURITY-2B50E4?style=for-the-badge)
->> Azure · AWS · GCP · Secure landing zones · CSPM & posture management · Identity & Zero Trust · Encryption & KMS
->>
->>> ![DevSecOps](https://img.shields.io/badge/⚙️_DEVSECOPS-FB8C1A?style=for-the-badge)
->>> Secure CI/CD gates · IaC & container security · SAST · SCA · DAST · Policy-as-code · Security automation
->>>
->>>> ![AI Security & Privacy](https://img.shields.io/badge/🤖_AI_SECURITY_&_PRIVACY-10D0C4?style=for-the-badge)
->>>> LLM / ML security · AI governance · Data privacy & DLP · Model risk & red-teaming · Responsible AI
+<a id="certifications"></a>
+
+## Certifications
+
+### Professional
+
+<p>
+  <img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge" alt="CISSP" />
+  <img src="https://img.shields.io/badge/CISM-1B75BB?style=for-the-badge" alt="CISM" />
+  <img src="https://img.shields.io/badge/CISA-00539B?style=for-the-badge" alt="CISA" />
+  <img src="https://img.shields.io/badge/CRISC-6B2C91?style=for-the-badge" alt="CRISC" />
+  <img src="https://img.shields.io/badge/CCSP-F97316?style=for-the-badge" alt="CCSP" />
+  <img src="https://img.shields.io/badge/ISO_27001_Lead_Auditor-0A7E8C?style=for-the-badge" alt="ISO 27001 Lead Auditor" />
+  <img src="https://img.shields.io/badge/AZ--500-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AZ-500" />
+  <img src="https://img.shields.io/badge/SC--200-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="SC-200" />
+  <img src="https://img.shields.io/badge/AI--102-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AI-102" />
+  <img src="https://img.shields.io/badge/AWS_Security_Specialty-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Security Specialty" />
+  <img src="https://img.shields.io/badge/ITIL_4-5315A5?style=for-the-badge" alt="ITIL 4" />
+</p>
+
+### Cloud, identity, AI & instruction
+
+<p>
+  <img src="https://img.shields.io/badge/GenAI_Foundations_%26_AI_Agents-7C3AED?style=for-the-badge" alt="GenAI Foundations & AI Agents Development" />
+  <img src="https://img.shields.io/badge/Security_Instructor-E11D48?style=for-the-badge" alt="Security Instructor Certification" />
+  <img src="https://img.shields.io/badge/Senior_Security_Engineer-0F766E?style=for-the-badge" alt="Senior Security Engineer Certification" />
+  <img src="https://img.shields.io/badge/Cybersecurity_GRC_Analyst-1E3A8A?style=for-the-badge" alt="Cybersecurity GRC Analyst" />
+  <img src="https://img.shields.io/badge/SOC_Analyst-BE123C?style=for-the-badge" alt="Cyber Security Operations Center Analyst" />
+  <img src="https://img.shields.io/badge/Pluralsight_Author-EE2C2C?style=for-the-badge" alt="Pluralsight Author — Security & Cloud" />
+  <img src="https://img.shields.io/badge/Azure_Cloud_Fundamentals-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Cloud Fundamentals" />
+  <img src="https://img.shields.io/badge/AWS_Cloud_Practitioner-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Cloud Practitioner" />
+  <img src="https://img.shields.io/badge/Google_Cloud_Foundations-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud Foundations" />
+  <img src="https://img.shields.io/badge/Okta_IAM-007DC1?style=for-the-badge&logo=okta&logoColor=white" alt="Okta Identity & Access Management" />
+  <img src="https://img.shields.io/badge/JumpCloud_Directory-14B8A6?style=for-the-badge" alt="JumpCloud Directory Services" />
+  <img src="https://img.shields.io/badge/Cloud_Security_Solutions_Specialist-0EA5E9?style=for-the-badge" alt="Cloud Security Solutions Specialist" />
+</p>
 
 ---
 
-<a id="ai"></a>
-## 🤖 AI Security & Privacy
+<img src="assets/section-skills.svg" width="100%" alt="Skills and stack" />
 
-> Securing AI is the defining security challenge of this decade. I focus on governing and hardening AI/ML systems and protecting the data that powers them — mapping emerging AI risk to the frameworks below.
+<a id="core-competencies"></a>
+
+## Core Competencies
+
+`DevSecOps` `Cloud Security` `Application Security` `Zero Trust` `IAM` `SOC/SIEM` `Secure SDLC` `Threat Modeling` `CI/CD Security` `AI Security` `Data Engineering` `Multi-Cloud Architecture` `Automation` `Infrastructure Systems Analysis` `Cybersecurity Operations`
+
+## 🔗 Connect With Me
+
+<p>
+<a href="https://www.linkedin.com/in/samicybersecurity" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
+&nbsp;
+<a href="https://github.com/nazsam" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>
+&nbsp;
+<a href="mailto:naz2005@gmail.com"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="Email" height="30" width="40" /></a>
+</p>
+
+**[LinkedIn](https://www.linkedin.com/in/samicybersecurity)** &nbsp;&nbsp; **[GitHub](https://github.com/nazsam)** &nbsp;&nbsp; **[Email](mailto:naz2005@gmail.com)**
+
+## 🛠️ Languages & Tools
+
+<table>
+  <tr>
+    <td valign="center" width="160"><h3>☁️ Cloud</h3></td>
+    <td>
+      <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://cloud.google.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://azure.microsoft.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" width="40" height="40"/></a>
+      <br/>AWS &nbsp;&nbsp; GCP &nbsp;&nbsp; Azure
+    </td>
+  </tr>
+  <tr>
+    <td valign="center"><h3>🐳 DevOps</h3></td>
+    <td>
+      <a href="https://www.docker.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://kubernetes.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://www.terraform.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg" alt="Terraform" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://git-scm.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://www.linux.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" width="40" height="40"/></a>
+      <br/>Docker &nbsp; Kubernetes &nbsp; Jenkins &nbsp; Terraform &nbsp; Git &nbsp; Linux
+    </td>
+  </tr>
+  <tr>
+    <td valign="center"><h3>🗄️ Databases</h3></td>
+    <td>
+      <a href="https://www.mysql.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://www.mongodb.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://mariadb.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" alt="MariaDB" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://www.oracle.com/database" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle" width="40" height="40"/></a>
+      <br/>MySQL &nbsp; PostgreSQL &nbsp; MongoDB &nbsp; MariaDB &nbsp; Oracle
+    </td>
+  </tr>
+  <tr>
+    <td valign="center"><h3>💻 Languages</h3></td>
+    <td>
+      <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://go.dev" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Go" width="40" height="40"/></a>
+      &nbsp;
+      <a href="https://www.gnu.org/software/bash" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash" width="40" height="40"/></a>
+      <br/>Python &nbsp; JavaScript &nbsp; Go &nbsp; Bash
+    </td>
+  </tr>
+</table>
+
+---
+
+<img src="assets/section-featured.svg" width="100%" alt="Featured repositories" />
+
+<a id="featured-repositories"></a>
+
+## Featured Repositories
+
+Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence of the work above.
+
+### 🔐 DevSecOps & Cloud Security
 
 <div align="center">
-
-![NIST AI RMF](https://img.shields.io/badge/NIST_AI_RMF-Aligned-005EA2?style=for-the-badge)
-![ISO/IEC 42001](https://img.shields.io/badge/ISO%2FIEC_42001-AI_Mgmt_System-0A7E8C?style=for-the-badge)
-![OWASP LLM Top 10](https://img.shields.io/badge/OWASP_LLM_Top_10-000000?style=for-the-badge&logo=owasp&logoColor=white)
-![MITRE ATLAS](https://img.shields.io/badge/MITRE_ATLAS-C00?style=for-the-badge)
-![EU AI Act](https://img.shields.io/badge/EU_AI_Act-Aware-003399?style=for-the-badge)
-![Agentic AI](https://img.shields.io/badge/Agentic_AI-Trending-FF5DA2?style=for-the-badge)
-
+  <a href="https://github.com/nazsam/security-operations-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=security-operations-toolkit&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="security-operations-toolkit" /></a>
+  <a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="zero-trust-reference-architecture" /></a>
+  <a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="soc-detection-engineering" /></a>
+  <a href="https://github.com/nazsam/kubernetes-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=kubernetes-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="kubernetes-security-lab" /></a>
 </div>
 
-| Domain | What I Cover |
+| Theme | Repositories |
 |---|---|
-| 🧠 **LLM / ML Security** | Prompt injection, jailbreaks, insecure output handling, model/data poisoning, supply-chain risk — mapped to **OWASP LLM Top 10** & **MITRE ATLAS** |
-| 🏛️ **AI Governance** | AI risk management & assurance aligned to **NIST AI RMF** and **ISO/IEC 42001** — model inventories, approval gates, accountability frameworks |
-| 🔏 **Data Privacy** | Data classification, DLP, minimization, and privacy-by-design under **GDPR / PIPEDA**; securing training & inference data end-to-end |
-| ⚙️ **Secure AI in CI/CD** | Guardrails, secrets hygiene, and provenance for model & dependency pipelines — security gates baked into MLOps |
-| 🤖 **Agentic AI Security** <sub>·trending</sub> | Threat modeling for autonomous AI agents — tool-scoping, sandboxing, permission boundaries, and agent-to-agent trust |
-| 🎯 **AI Red-Teaming & Adversarial Testing** <sub>·trending</sub> | Structured adversarial testing of models & pipelines against **MITRE ATLAS** and **OWASP LLM** attack techniques |
-| ☁️ **Cloud AI Workload Security** | Securing Azure AI, AWS Bedrock & GCP Vertex AI workloads — identity, network isolation, and data-boundary controls |
-| 🧭 **Responsible & Ethical AI** | Bias, fairness, and transparency reviews woven into the model lifecycle and governance gates |
-| 🔗 **Third-Party AI & Vendor Risk** | Due diligence and continuous risk assessment for third-party models, APIs, and AI vendors |
+| Automated CI/CD security guardrails | [security-operations-toolkit](https://github.com/nazsam/security-operations-toolkit) · [devsecops-pipeline-security-gates](https://github.com/nazsam/devsecops-pipeline-security-gates) |
+| Zero-Trust IAM | [zero-trust-reference-architecture](https://github.com/nazsam/zero-trust-reference-architecture) · [cloud-iam-least-privilege-toolkit](https://github.com/nazsam/cloud-iam-least-privilege-toolkit) |
+| SOC / SIEM detection engineering | [soc-detection-engineering](https://github.com/nazsam/soc-detection-engineering) · [siem-detection-content-library](https://github.com/nazsam/siem-detection-content-library) |
+| Cloud security hardening | [cloud-security-baseline](https://github.com/nazsam/cloud-security-baseline) · [aws-security-baseline](https://github.com/nazsam/aws-security-baseline) · [secure-terraform-aws](https://github.com/nazsam/secure-terraform-aws) |
+
+### 🤖 AI & Data Engineering
+
+<div align="center">
+  <a href="https://github.com/nazsam/agent-security-skills"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=agent-security-skills&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="agent-security-skills" /></a>
+  <a href="https://github.com/nazsam/ai-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=ai-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="ai-security-lab" /></a>
+</div>
+
+| Theme | What you'll find |
+|---|---|
+| AI agents for cybersecurity | [agent-security-skills](https://github.com/nazsam/agent-security-skills) — defensive skills mapped to ATT&CK, NIST CSF, D3FEND, NIST AI RMF |
+| LLM-powered security automation | [ai-security-lab](https://github.com/nazsam/ai-security-lab) — prompt-injection study, STRIDE-for-AI, OWASP LLM / NIST AI RMF |
+| Data pipelines & ML ops | Spark · Databricks · MLflow · ETL/ELT patterns in delivery work |
+
+### 🛡️ Application Security
+
+<div align="center">
+  <a href="https://github.com/nazsam/threat-modeling-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=threat-modeling-toolkit&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="threat-modeling-toolkit" /></a>
+  <a href="https://github.com/nazsam/api-security-testing-framework"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=api-security-testing-framework&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="api-security-testing-framework" /></a>
+</div>
+
+| Theme | Repositories |
+|---|---|
+| Threat modeling templates | [threat-modeling-toolkit](https://github.com/nazsam/threat-modeling-toolkit) |
+| Secure SDLC automation | [devsecops-pipeline-security-gates](https://github.com/nazsam/devsecops-pipeline-security-gates) · [compliance-as-code](https://github.com/nazsam/compliance-as-code) · [secrets-management-patterns](https://github.com/nazsam/secrets-management-patterns) |
+| API security testing | [api-security-testing-framework](https://github.com/nazsam/api-security-testing-framework) · [secure-header-linter](https://github.com/nazsam/secure-header-linter) |
 
 ---
 
-<a id="certs"></a>
-## 🎓 Certifications
+<a id="github-activity"></a>
+
+## GitHub Activity
 
 <div align="center">
 
-**🔐 Security Leadership & Governance**
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=nazsam&show_icons=true&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB&bg_color=0B1533" alt="nazsam GitHub stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazsam&layout=compact&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB&bg_color=0B1533" alt="Top languages" />
 
-<img src="https://img.shields.io/badge/CISSP-Certified_Information_Systems_Security_Professional-EE3124?style=flat-square" />
-<img src="https://img.shields.io/badge/CISM-Certified_Information_Security_Manager-1B75BB?style=flat-square" />
-<img src="https://img.shields.io/badge/CISA-Certified_Information_Systems_Auditor-00539B?style=flat-square" />
-<img src="https://img.shields.io/badge/CRISC-Risk_%26_Information_Systems_Control-6B2C91?style=flat-square" />
-<img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=flat-square" />
+<br/>
 
-**☁️ Cloud — AWS & Azure**
+<img src="https://streak-stats.demolab.com/?user=nazsam&theme=tokyonight&hide_border=true&background=0B1533&ring=22D3EE&fire=F59E0B&currStreakLabel=22D3EE" alt="GitHub streak" />
 
-<img src="https://img.shields.io/badge/AWS_Certified-Cloud_Practitioner-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS_Certified-Solutions_Architect_Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS_Certified-DevOps_Engineer_Professional-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS_Certified-Advanced_Networking_Specialty-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure-Solutions_Architect_Expert-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure_Security-AZ--500-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+<br/>
 
-**🪟 Microsoft & Foundations**
-
-<img src="https://img.shields.io/badge/Security_Operations-SC--200-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
-<img src="https://img.shields.io/badge/M365_Administrator-MS--102-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
-<img src="https://img.shields.io/badge/CompTIA-Security%2B-E31E24?style=flat-square&logo=comptia&logoColor=white" />
-<img src="https://img.shields.io/badge/CompTIA-Network%2B-E31E24?style=flat-square&logo=comptia&logoColor=white" />
-<img src="https://img.shields.io/badge/JAMF-Certified_Administrator-5C5C5C?style=flat-square&logo=jamf&logoColor=white" />
-
-**🎯 AI & Emerging — _On My Roadmap_** <sub>(targeting / in progress)</sub>
-
-<img src="https://img.shields.io/badge/IAPP-AIGP_·_AI_Governance-8AA0C6?style=flat-square" />
-<img src="https://img.shields.io/badge/ISACA-AAISM_·_AI_Security_Mgmt-8AA0C6?style=flat-square" />
-<img src="https://img.shields.io/badge/ISACA-AAIA_·_AI_Audit-8AA0C6?style=flat-square" />
-<img src="https://img.shields.io/badge/Microsoft-AI--102_Azure_AI_Engineer-8AA0C6?style=flat-square&logo=microsoft&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS-Certified_AI_Practitioner-8AA0C6?style=flat-square&logo=amazonwebservices&logoColor=white" />
-
-**🎓 Education**
-
-<img src="https://img.shields.io/badge/MSc-Information_Technology_(MSIT)-1E3AA8?style=flat-square" />
+<img src="https://raw.githubusercontent.com/nazsam/nazsam/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
 
 </div>
 
 ---
 
-<a id="stack"></a>
-## 🧰 Technical Arsenal
+<img src="assets/section-connect.svg" width="100%" alt="Let's connect" />
 
-**🧩 Core Skills**
-<br>
-![Cloud Cybersecurity](https://img.shields.io/badge/Cloud_Cybersecurity-0B1533?style=flat-square)
-![DevOps](https://img.shields.io/badge/DevOps-FB8C1A?style=flat-square)
-![Cloud Security](https://img.shields.io/badge/Cloud_Security-2B50E4?style=flat-square)
-![Cloud Computing](https://img.shields.io/badge/Cloud_Computing-1E3AA8?style=flat-square)
-![Systems Engineer](https://img.shields.io/badge/Systems_Engineer-5B6C88?style=flat-square)
-![SysOps Linux Administrator](https://img.shields.io/badge/SysOps_Linux_Administrator-5B6C88?style=flat-square)
+<a id="open-for-collaboration"></a>
 
-**🛰️ SIEM · XDR · SOAR**
-<br>
-![Microsoft Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
-![Splunk](https://img.shields.io/badge/Splunk_ES-000000?style=for-the-badge&logo=splunk&logoColor=white)
-![Defender XDR](https://img.shields.io/badge/Defender_XDR-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
-![CrowdStrike](https://img.shields.io/badge/CrowdStrike_Falcon-E01F3D?style=for-the-badge&logo=crowdstrike&logoColor=white)
-![Security Copilot](https://img.shields.io/badge/Security_Copilot-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+## Open for Collaboration
 
-**☁️ Cloud Security — Azure · AWS · GCP**
-<br>
-<img src="https://skillicons.dev/icons?i=azure,aws,gcp&theme=dark" height="44" />
-&nbsp;
-![Defender for Cloud](https://img.shields.io/badge/Defender_for_Cloud-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![AWS Security Hub](https://img.shields.io/badge/Security_Hub-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GuardDuty](https://img.shields.io/badge/GuardDuty-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Control Tower](https://img.shields.io/badge/Control_Tower-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
+If you are building something in **AI, Cybersecurity, Privacy, IAM, Cloud, or Data Engineering**, I love to collaborate.
 
-**🔑 Identity & Zero Trust**
-<br>
-![Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![PIM](https://img.shields.io/badge/Privileged_Identity_Mgmt-0078D4?style=flat-square)
-![Conditional Access](https://img.shields.io/badge/Conditional_Access-0078D4?style=flat-square)
-![MFA / SSO](https://img.shields.io/badge/MFA_%2F_SSO-1E3AA8?style=flat-square)
-![Zero Trust](https://img.shields.io/badge/Zero_Trust_Architecture-0B1533?style=flat-square)
-
-**⚙️ DevSecOps · IaC · Automation**
-<br>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,ansible,vagrant,githubactions,python,powershell&theme=dark" height="44" />
-&nbsp;
-![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aqua&logoColor=white)
-![Semgrep](https://img.shields.io/badge/Semgrep-0B1533?style=flat-square&logo=semgrep&logoColor=white)
-![Chef](https://img.shields.io/badge/Chef-F09820?style=flat-square&logo=chef&logoColor=white)
-
-**🐧 Operating Systems**
-<br>
-<img src="https://skillicons.dev/icons?i=ubuntu,centos,kali,windows&theme=dark" height="44" />
-&nbsp;
-![Windows Server 2019](https://img.shields.io/badge/Windows_Server_2019-0078D4?style=flat-square&logo=windows&logoColor=white)
-
-**🔀 Version Control & CI/CD Pipeline**
-<br>
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,jenkins,circleci&theme=dark" height="44" />
-
-**☁️ Cloud Technologies — AWS**
-<br>
-![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white)
-![S3](https://img.shields.io/badge/S3-FF9900?style=flat-square&logo=amazons3&logoColor=white)
-![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
-
-**📝 Scripting & Programming Languages**
-<br>
-<img src="https://skillicons.dev/icons?i=python,bash&theme=dark" height="44" />
-&nbsp;
-![Groovy](https://img.shields.io/badge/Groovy-4298B8?style=flat-square&logo=apachegroovy&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-CB171E?style=flat-square)
-
-**🗄️ Web & Database Management**
-<br>
-![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-6C78AF?style=flat-square&logo=phpmyadmin&logoColor=white)
-![cPanel](https://img.shields.io/badge/cPanel-FF6C2C?style=flat-square&logo=cpanel&logoColor=white)
-![SQL Databases](https://img.shields.io/badge/SQL_Databases-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![NoSQL Databases](https://img.shields.io/badge/NoSQL_Databases-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-**📡 Monitoring Tools**
-<br>
-![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
-![Nagios](https://img.shields.io/badge/Nagios-000000?style=flat-square&logo=nagios&logoColor=white)
-
-**🤖 AI Security · Data**
-<br>
-![OWASP LLM](https://img.shields.io/badge/OWASP_LLM_Top_10-000000?style=flat-square&logo=owasp&logoColor=white)
-![NIST AI RMF](https://img.shields.io/badge/NIST_AI_RMF-005EA2?style=flat-square)
-![Purview](https://img.shields.io/badge/Microsoft_Purview_DLP-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![Intune](https://img.shields.io/badge/Intune-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-
-**📋 Governance & Frameworks**
-<br>
-![NIST CSF](https://img.shields.io/badge/NIST_CSF-005EA2?style=flat-square)
-![ISO 27001](https://img.shields.io/badge/ISO_27001-0A7E8C?style=flat-square)
-![ISO 42001](https://img.shields.io/badge/ISO_42001-0A7E8C?style=flat-square)
-![CIS Controls](https://img.shields.io/badge/CIS_Controls-D22730?style=flat-square)
-![PCI-DSS](https://img.shields.io/badge/PCI--DSS-004C97?style=flat-square)
-![COBIT](https://img.shields.io/badge/COBIT-6B2C91?style=flat-square)
-![ITIL](https://img.shields.io/badge/ITIL-EF3D42?style=flat-square)
-
-<br>
-
-**🗂️ Everything at a Glance**
-
-<div align="center">
-<img src="https://skillicons.dev/icons?i=azure,aws,gcp,docker,kubernetes,terraform,ansible,vagrant,git,github,githubactions,gitlab,jenkins,python,bash,mysql,postgresql,mongodb,ubuntu,centos,kali,linux,windows,php&theme=dark" />
-</div>
-
----
-
-<a id="projects"></a>
-## 🚀 Featured Work
-
-> over a decade and a half distilled into open reference material — architecture, detection, response, governance & AI security — plus hands-on DevSecOps labs. **13 focused repositories, one coherent security program.**
-
-<div align="center">
-<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
-<a href="https://github.com/nazsam/soc-detection-engineering"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
-<a href="https://github.com/nazsam/ai-security-lab"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=ai-security-lab&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" /></a>
-</div>
-
-🏛️ ![Security Architecture](https://img.shields.io/badge/SECURITY_ARCHITECTURE-9E1B45?style=for-the-badge)
-- 🛡️ **[zero-trust-reference-architecture](https://github.com/nazsam/zero-trust-reference-architecture)** — NIST 800-207 principles, maturity model, ISO/CIS control mappings, Azure/AWS enforcement.
-- ☁️ **[cloud-security-baseline](https://github.com/nazsam/cloud-security-baseline)** — Azure Policy + AWS Terraform guardrails mapped to CIS / NIST CSF, with a CSPM operating model.
-
-🎯 ![SOC · Detection · IR](https://img.shields.io/badge/SOC_%C2%B7_DETECTION_%C2%B7_INCIDENT_RESPONSE-EF2D3C?style=for-the-badge)
-- 🎯 **[soc-detection-engineering](https://github.com/nazsam/soc-detection-engineering)** — Sentinel KQL + Splunk detections mapped to MITRE ATT&CK.
-- 🚨 **[incident-response-playbooks](https://github.com/nazsam/incident-response-playbooks)** — NIST 800-61 IR playbooks, tabletop exercises & report templates.
-- 📊 **[security-metrics-dashboard](https://github.com/nazsam/security-metrics-dashboard)** — SOC / exec / DORA metrics catalog, KQL, and board-ready reporting.
-
-📜 ![Governance & Compliance](https://img.shields.io/badge/GOVERNANCE_%26_COMPLIANCE-16C060?style=for-the-badge)
-- 📜 **[compliance-as-code](https://github.com/nazsam/compliance-as-code)** — ISO 27001 / NIST CSF / CIS crosswalk + OPA & Azure Policy enforcement + continuous-evidence model.
-- 🔏 **[privacy-skills](https://github.com/nazsam/privacy-skills)** — structured privacy & data-protection skills mapped to GDPR · CCPA · PIPEDA · EU AI Act · HIPAA · LGPD · PIPL · DPDP.
-
-🤖 ![AI Security](https://img.shields.io/badge/AI_SECURITY-10D0C4?style=for-the-badge)
-- 🤖 **[ai-security-lab](https://github.com/nazsam/ai-security-lab)** — OWASP LLM Top 10, prompt-injection guardrails, STRIDE-for-AI threat model, NIST AI RMF / ISO 42001.
-- 🧠 **[agent-security-skills](https://github.com/nazsam/agent-security-skills)** — framework-mapped defensive security skills for AI agents (MITRE ATT&CK · NIST CSF · D3FEND · NIST AI RMF), schema-validated in CI.
-
-🧪 ![DevSecOps Labs](https://img.shields.io/badge/DEVSECOPS_LABS-FB8C1A?style=for-the-badge) <sub>building in public</sub>
-- 🛡️ **[security-operations-toolkit](https://github.com/nazsam/security-operations-toolkit)** — CI/CD security gate: secret, SAST, SCA, IaC & container scanning.
-- ☸️ **[kubernetes-security-lab](https://github.com/nazsam/kubernetes-security-lab)** — 5-layer defense-in-depth: Pod Security Admission, RBAC, NetworkPolicy, Falco.
-- 🔐 **[secure-terraform-aws](https://github.com/nazsam/secure-terraform-aws)** — Secure-by-default AWS: hardened S3/KMS, least-privilege IAM, tfsec + checkov.
-- 🛰️ **[security-intel-mcp](https://github.com/nazsam/security-intel-mcp)** — MCP server giving AI assistants CVE (NVD), EPSS & CISA KEV intelligence with combined risk enrichment.
-
----
-
-<a id="writing"></a>
-## ✍️ Writing & Thought Leadership
-
-> 24 articles on practical security, cloud & AI — for engineers and leaders. Full archive → [`articles/`](https://github.com/nazsam/nazsam/tree/main/articles) · cross-posted on <a href="https://www.linkedin.com/in/samicybersecurity">LinkedIn</a>
-
-<details>
-<summary><b>🛡️ Cybersecurity, SOC & Zero Trust</b> — 5 articles</summary>
-<br>
-
-- 🔐 [Zero Trust in Practice](articles/zero-trust-in-practice.md) — turning NIST 800-207 into Conditional Access & least-privilege that actually ship
-- 🎯 [Detection Engineering That Works](articles/detection-engineering-that-works.md) — high-fidelity Sentinel/Splunk rules mapped to MITRE ATT&CK, not alert noise
-- 📐 [Detection Engineering with Sigma Rules](articles/detection-engineering-with-sigma-rules.md) — vendor-agnostic threat detection you can port across SIEMs
-- 🪪 [Identity Is the New Perimeter](articles/identity-is-the-new-perimeter.md) — lessons from a decade of IAM breaches
-- 🧯 [Ransomware Resilience](articles/ransomware-resilience.md) — building an incident response plan that actually works under pressure
-
-</details>
-
-<details>
-<summary><b>☁️ Cloud & Infrastructure Security</b> — 2 articles</summary>
-<br>
-
-- ☁️ *Cloud security baselines — policy-as-code guardrails for Azure & AWS* &nbsp;`(coming soon)`
-- 🌐 [CSPM in a Multi-Cloud World](articles/cspm-in-a-multi-cloud-world.md) — one posture-management operating model across Azure, AWS & GCP
-
-</details>
-
-<details>
-<summary><b>🤖 AI & LLM Security</b> — 7 articles</summary>
-<br>
-
-- 🤖 [Securing AI: A Leader's Field Guide](articles/securing-ai-a-leaders-guide.md) — OWASP LLM Top 10, NIST AI RMF & ISO 42001, privacy-by-design
-- 🕹️ [Agentic AI Security](articles/agentic-ai-security.md) — threat-modeling autonomous agents before they run wild
-- 📋 [The OWASP LLM Top 10, Explained](articles/owasp-llm-top-10-explained.md) — for security leaders, not just ML engineers
-- 💉 [Prompt Injection 101](articles/prompt-injection-101.md) — the new SQL injection, and how to defend against it
-- 🔍 [Securing RAG Pipelines](articles/securing-rag-pipelines.md) — data leakage risks in retrieval-augmented generation
-- 🧪 [Red-Teaming LLMs](articles/red-teaming-llms.md) — a practical playbook using MITRE ATLAS
-- 🛡️ [Zero Trust for AI Workloads](articles/zero-trust-for-ai-workloads.md) — extending ZTA principles to model endpoints
-
-</details>
-
-<details>
-<summary><b>📜 Governance, Privacy & Compliance</b> — 6 articles</summary>
-<br>
-
-- 🧾 [Building an AI-BOM](articles/building-an-ai-bom.md) — model supply-chain visibility for security teams
-- 🗓️ [NIST AI RMF in Practice](articles/nist-ai-rmf-in-practice.md) — a 90-day implementation plan
-- ⚖️ [ISO/IEC 42001 vs NIST AI RMF](articles/iso-42001-vs-nist-ai-rmf.md) — which AI governance framework fits your org
-- 🕵️ [Shadow AI](articles/shadow-ai.md) — discovering and governing the AI tools your employees already use
-- 🤝 [The CISO's Guide to Third-Party AI Risk](articles/cisos-guide-to-third-party-ai-risk.md) — vendor due diligence for the AI era
-- 🔏 [Data Privacy by Design](articles/data-privacy-by-design.md) — embedding GDPR & PIPEDA into the SDLC
-
-</details>
-
-<details>
-<summary><b>⚙️ DevSecOps & Automation</b> — 4 articles</summary>
-<br>
-
-- 📦 [SBOM & Software Supply Chain Security](articles/sbom-and-software-supply-chain-security.md) — what SolarWinds taught the industry
-- ☸️ [Kubernetes Security in Production](articles/kubernetes-security-in-production.md) — beyond the basics
-- 📏 [Continuous Compliance](articles/continuous-compliance.md) — turning audits into code with policy-as-code
-- 🔄 [DevSecOps Meets AIOps](articles/devsecops-meets-aiops.md) — automating security at machine speed
-
-</details>
-
-<sub>📝 Also publishing on <a href="https://www.linkedin.com/in/samicybersecurity">LinkedIn</a>.</sub>
-
----
-
-## 🚀 Building in Public
-
-> **Launched July 2026** — over a decade and a half of security leadership brought into the open as working,
-> framework-mapped projects. This is an intentional body of work, and it's actively growing.
-
-**Shipped so far:** 14 repositories total — 13 focused projects spanning security architecture, SOC & incident response,
-security metrics, governance & compliance, AI security, AI-agent & privacy skills, and an MCP tool, plus
-this profile repository itself.
-
-**On the roadmap:**
-- [ ] Expand the **agent-security-skills** & **privacy-skills** libraries toward broader framework coverage
-- [ ] Add **DAST + SBOM/signing** (ZAP · Syft · Cosign) to the DevSecOps toolkit
-- [ ] Publish the first **articles** on LinkedIn (drafts ready in [`articles/`](articles/))
-- [ ] Grow **security-intel-mcp** with more threat-intel sources
-- [ ] Earn/refresh a cloud-security cert and share the notes
-
-<sub>⭐ Following along? Star the repos you find useful — new work ships regularly.</sub>
-
----
-
-## 📊 GitHub Activity
+Let's create something powerful together.
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=nazsam&show_icons=true&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533&count_private=true&include_all_commits=true" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazsam&layout=compact&theme=tokyonight&hide_border=true&title_color=22D3EE&icon_color=2B50E4&text_color=A9B7DB&bg_color=0B1533" />
+<a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:naz2005@gmail.com"><img src="https://img.shields.io/badge/naz2005@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://github.com/nazsam"><img src="https://img.shields.io/badge/github.com/nazsam-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nazsam&theme=tokyo-night&hide_border=true&area=true&color=22D3EE&line=22D3EE&point=ffffff" width="100%" />
+<br/>
 
-</div>
+**Security. Intelligence. Automation. Impact.**  
+That's the engineering philosophy behind every project I build.
 
----
-
-<a id="contact"></a>
-## 🤝 Let's Connect
-
-<div align="center">
-
-Open to **security leadership · cloud security architecture · AI security · vCISO / advisory · consulting**.
-
-<a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:naz2005@gmail.com"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email%20me-Let's%20talk-2ea043?style=for-the-badge" /></a>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0B1533,50:0E7490,100:1E3A8A&height=120&section=footer&text=Sami%20Naz%20%C2%B7%20nazsam&fontSize=22&fontAlignY=70&desc=Security.%20Intelligence.%20Automation.%20Impact.&descAlignY=88&descSize=14&fontColor=E2E8F0" width="100%" alt="Footer wave" />
 
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,30:1E3AA8,70:1E3AA8,100:0B1533&height=130&section=footer&text=Secure%20by%20design.%20Secure%20the%20future.&fontColor=ffffff&fontSize=22&fontAlignY=72" width="100%" />

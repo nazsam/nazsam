@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="Featured Repositories">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A0B10"/>
+      <stop offset="1" stop-color="#7F1D1D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="1" cy="0" r="0.75">
+      <stop offset="0" stop-color="#FB7185" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FB7185" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="120" rx="12" fill="url(#g)"/>
+  <rect width="1200" height="120" rx="12" fill="url(#glow)"/>
+  <rect x="0" y="0" width="10" height="120" fill="#FB7185"/>
+  <text x="40" y="42" fill="#FDA4AF" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4">DEVSECOPS · AI · DATA · APPLICATION SECURITY</text>
+  <text x="40" y="86" fill="#FFF1F2" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Featured Work</text>
+</svg>
