@@ -52,6 +52,10 @@
 
 <img src="https://komarev.com/ghpvc/?username=nazsam&label=VISITORS&color=22D3EE&style=for-the-badge" alt="Profile visitors" />
 
+<br/><br/>
+
+<a href="https://github.com/nazsam"><img src="https://img.shields.io/badge/SUBSCRIBE-Follow_on_GitHub-22D3EE?style=for-the-badge&logo=github&logoColor=0B1533" alt="Subscribe — follow on GitHub" /></a>
+
 <br/>
 
 <a href="https://github.com/nazsam?tab=followers"><img src="https://img.shields.io/github/followers/nazsam?label=Followers&style=for-the-badge&logo=github&color=181717" alt="Followers" /></a>
@@ -62,7 +66,56 @@
 
 <!-- PEOPLE:START -->
 <p align="center">
-  <a href="https://github.com/nazsam" title="nazsam"><img src="https://github.com/nazsam.png?size=96" width="48" height="48" alt="nazsam"/></a>
+  <a href="https://github.com/nazsam"><img src="https://github.com/nazsam.png?size=64" width="32" height="32" alt="subscriber"/></a>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
+  <img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>
 </p>
 <!-- PEOPLE:END -->
 
