@@ -37,18 +37,16 @@ jobs:
               'security-operations-toolkit',
               'kubernetes-security-lab',
             ];
+            const SLOTS = 50;
             const people = new Map();
-            people.set(owner, {
-              login: owner,
-              avatar: `https://github.com/${owner}.png?size=96`,
-              href: `https://github.com/${owner}`,
-            });
             const followers = await github.paginate(github.rest.users.listFollowersForUser, {
               username: owner,
               per_page: 100,
             });
             for (const u of followers) {
-              people.set(u.login, { login: u.login, avatar: u.avatar_url, href: u.html_url });
+              if (u && u.login && u.login !== owner) {
+                people.set(u.login, { href: u.html_url, avatar: `${u.html_url}.png?size=64` });
+              }
             }
             for (const repo of featured) {
               try {
@@ -59,23 +57,22 @@ jobs:
                 });
                 for (const u of stars) {
                   if (u && u.login && u.login !== owner) {
-                    people.set(u.login, { login: u.login, avatar: u.avatar_url, href: u.html_url });
+                    people.set(u.login, { href: u.html_url, avatar: `${u.html_url}.png?size=64` });
                   }
                 }
               } catch (err) {
                 core.warning(`Could not list stargazers for ${repo}: ${err.message}`);
               }
             }
-            const list = [...people.values()].slice(0, 42);
-            let inner;
-            if (list.length === 0) {
-              inner = '<p align="center"><em>No followers or stargazers yet — <a href="https://github.com/nazsam">be the first to follow</a>.</em></p>';
-            } else {
-              const avatars = list.map((p) =>
-                `<a href="${p.href}" title="${p.login}"><img src="${p.avatar}" width="48" height="48" alt="${p.login}"/></a>`
-              ).join('\n  ');
-              inner = `<p align="center">\n  ${avatars}\n</p>`;
+            const active = [...people.values()].slice(0, SLOTS);
+            const cells = [];
+            for (const p of active) {
+              cells.push(`<a href="${p.href}"><img src="${p.avatar}" width="32" height="32" alt="subscriber"/></a>`);
             }
+            while (cells.length < SLOTS) {
+              cells.push(`<img src="assets/subscriber-slot.svg" width="32" height="32" alt=""/>`);
+            }
+            const inner = `<p align="center">\n  ${cells.join('\n  ')}\n</p>`;
             const readmePath = 'README.md';
             const readme = fs.readFileSync(readmePath, 'utf8');
             const start = '<!-- PEOPLE:START -->';
