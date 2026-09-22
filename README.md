@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="assets/hero-compact.png" width="100%" height="auto" alt="Let's build robust, secure and scalable solutions — Azure, AWS, GCP, Kubernetes, Docker, Terraform, Python" />
+<img src="assets/hero-named.png" width="100%" height="auto" alt="Sami Naz — Let's build robust, secure and scalable solutions" />
 
 # Sami Naz
 
@@ -33,10 +33,28 @@
   <a href="#about-me"><img src="https://img.shields.io/badge/🌍_About-1E3A8A?style=for-the-badge" alt="About" /></a>
   <a href="#certifications"><img src="https://img.shields.io/badge/🎓_Certs-0EA5E9?style=for-the-badge" alt="Certifications" /></a>
   <a href="#core-competencies"><img src="https://img.shields.io/badge/🧠_Skills-0D9488?style=for-the-badge" alt="Skills" /></a>
-  <a href="#featured-repositories"><img src="https://img.shields.io/badge/📂_Repos-E11D48?style=for-the-badge" alt="Repos" /></a>
+  <a href="#featured"><img src="https://img.shields.io/badge/⭐_Featured-E11D48?style=for-the-badge" alt="Featured" /></a>
+  <a href="#profile-visitors"><img src="https://img.shields.io/badge/👀_Visitors-0EA5E9?style=for-the-badge" alt="Visitors" /></a>
   <a href="#github-activity"><img src="https://img.shields.io/badge/📊_Stats-7C3AED?style=for-the-badge" alt="Stats" /></a>
   <a href="#open-for-collaboration"><img src="https://img.shields.io/badge/🤝_Collaborate-EA580C?style=for-the-badge" alt="Collaborate" /></a>
 </p>
+
+</div>
+
+---
+
+<a id="featured"></a>
+
+## Featured
+
+<div align="center">
+
+<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=zero-trust-reference-architecture&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="zero-trust-reference-architecture" /></a>
+<a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=soc-detection-engineering&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="soc-detection-engineering" /></a>
+<a href="https://github.com/nazsam/agent-security-skills"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=agent-security-skills&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="agent-security-skills" /></a>
+<a href="https://github.com/nazsam/ai-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=ai-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="ai-security-lab" /></a>
+<a href="https://github.com/nazsam/security-operations-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=security-operations-toolkit&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="security-operations-toolkit" /></a>
+<a href="https://github.com/nazsam/kubernetes-security-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nazsam&repo=kubernetes-security-lab&theme=tokyonight&hide_border=true&bg_color=0B1533&title_color=22D3EE&icon_color=F59E0B&text_color=A9B7DB" alt="kubernetes-security-lab" /></a>
 
 </div>
 
@@ -275,6 +293,27 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 <img src="https://raw.githubusercontent.com/nazsam/nazsam/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
 
 </div>
+
+<a id="profile-visitors"></a>
+
+## Profile visitors
+
+GitHub does not publish the names of people who open a profile. The counter below is the visit count. The people list is everyone who **follows** [`nazsam`](https://github.com/nazsam) or stars a featured repository.
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=nazsam&label=VISITORS&color=22D3EE&style=for-the-badge" alt="Profile visitors" />
+  <a href="https://github.com/nazsam?tab=followers"><img src="https://img.shields.io/github/followers/nazsam?label=Followers&style=for-the-badge&logo=github&color=181717" alt="Followers" /></a>
+</p>
+
+### People
+
+<!-- PEOPLE:START -->
+<p align="center"><em>No followers or stargazers yet — <a href="https://github.com/nazsam">be the first to follow</a>.</em></p>
+<!-- PEOPLE:END -->
+
+<p align="center">
+  <a href="https://github.com/nazsam/nazsam/issues/new?title=Hi%20from%20a%20profile%20visitor&body=I%20visited%20your%20GitHub%20profile."><img src="https://img.shields.io/badge/Sign_the_guestbook-0B1533?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Sign the guestbook" /></a>
+</p>
 
 ---
 

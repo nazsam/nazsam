@@ -1,0 +1,95 @@
+name: Refresh community people
+
+# GitHub does not disclose who viewed a profile. This job lists people who
+# follow nazsam or starred a featured repo, then writes their avatars into README.md.
+
+on:
+  schedule:
+    - cron: "0 */8 * * *"
+  workflow_dispatch:
+  watch:
+    types: [started]
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Build people block
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const owner = 'nazsam';
+            const featured = [
+              'zero-trust-reference-architecture',
+              'soc-detection-engineering',
+              'agent-security-skills',
+              'ai-security-lab',
+              'security-operations-toolkit',
+              'kubernetes-security-lab',
+            ];
+            const people = new Map();
+            const followers = await github.paginate(github.rest.users.listFollowersForUser, {
+              username: owner,
+              per_page: 100,
+            });
+            for (const u of followers) {
+              people.set(u.login, { login: u.login, avatar: u.avatar_url, href: u.html_url });
+            }
+            for (const repo of featured) {
+              try {
+                const stars = await github.paginate(github.rest.activity.listStargazersForRepo, {
+                  owner,
+                  repo,
+                  per_page: 100,
+                });
+                for (const u of stars) {
+                  if (u && u.login && u.login !== owner) {
+                    people.set(u.login, { login: u.login, avatar: u.avatar_url, href: u.html_url });
+                  }
+                }
+              } catch (err) {
+                core.warning(`Could not list stargazers for ${repo}: ${err.message}`);
+              }
+            }
+            const list = [...people.values()].slice(0, 42);
+            let inner;
+            if (list.length === 0) {
+              inner = '<p align="center"><em>No followers or stargazers yet — <a href="https://github.com/nazsam">be the first to follow</a>.</em></p>';
+            } else {
+              const avatars = list.map((p) =>
+                `<a href="${p.href}" title="${p.login}"><img src="${p.avatar}" width="48" height="48" alt="${p.login}"/></a>`
+              ).join('\n  ');
+              inner = `<p align="center">\n  ${avatars}\n</p>`;
+            }
+            const readmePath = 'README.md';
+            const readme = fs.readFileSync(readmePath, 'utf8');
+            const start = '<!-- PEOPLE:START -->';
+            const end = '<!-- PEOPLE:END -->';
+            const next = readme.replace(
+              new RegExp(`${start}[\\s\\S]*?${end}`),
+              `${start}\n${inner}\n${end}`
+            );
+            if (next === readme) {
+              core.setFailed('PEOPLE markers not found in README.md');
+              return;
+            }
+            fs.writeFileSync(readmePath, next);
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && echo "No people changes" && exit 0
+          git commit -m "Refresh community people on the profile README."
+          git push
