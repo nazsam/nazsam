@@ -133,12 +133,12 @@
 
 <div align="center">
 
-<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
-<a href="https://github.com/nazsam/soc-detection-engineering"><img src="assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
-<a href="https://github.com/nazsam/agent-security-skills"><img src="assets/pins/agent-security-skills.png" alt="agent-security-skills" /></a>
-<a href="https://github.com/nazsam/ai-security-lab"><img src="assets/pins/ai-security-lab.png" alt="ai-security-lab" /></a>
-<a href="https://github.com/nazsam/security-operations-toolkit"><img src="assets/pins/security-operations-toolkit.png" alt="security-operations-toolkit" /></a>
-<a href="https://github.com/nazsam/kubernetes-security-lab"><img src="assets/pins/kubernetes-security-lab.png" alt="kubernetes-security-lab" /></a>
+<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
+<a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
+<a href="https://github.com/nazsam/agent-security-skills"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/agent-security-skills.png" alt="agent-security-skills" /></a>
+<a href="https://github.com/nazsam/ai-security-lab"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/ai-security-lab.png" alt="ai-security-lab" /></a>
+<a href="https://github.com/nazsam/security-operations-toolkit"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/security-operations-toolkit.png" alt="security-operations-toolkit" /></a>
+<a href="https://github.com/nazsam/kubernetes-security-lab"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/kubernetes-security-lab.png" alt="kubernetes-security-lab" /></a>
 
 </div>
 
@@ -318,10 +318,10 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 ### 🔐 DevSecOps & Cloud Security
 
 <div align="center">
-  <a href="https://github.com/nazsam/security-operations-toolkit"><img src="assets/pins/security-operations-toolkit.png" alt="security-operations-toolkit" /></a>
-  <a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
-  <a href="https://github.com/nazsam/soc-detection-engineering"><img src="assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
-  <a href="https://github.com/nazsam/kubernetes-security-lab"><img src="assets/pins/kubernetes-security-lab.png" alt="kubernetes-security-lab" /></a>
+  <a href="https://github.com/nazsam/security-operations-toolkit"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/security-operations-toolkit.png" alt="security-operations-toolkit" /></a>
+  <a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
+  <a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
+  <a href="https://github.com/nazsam/kubernetes-security-lab"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/kubernetes-security-lab.png" alt="kubernetes-security-lab" /></a>
 </div>
 
 | Theme | Repositories |
@@ -334,8 +334,8 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 ### 🤖 AI & Data Engineering
 
 <div align="center">
-  <a href="https://github.com/nazsam/agent-security-skills"><img src="assets/pins/agent-security-skills.png" alt="agent-security-skills" /></a>
-  <a href="https://github.com/nazsam/ai-security-lab"><img src="assets/pins/ai-security-lab.png" alt="ai-security-lab" /></a>
+  <a href="https://github.com/nazsam/agent-security-skills"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/agent-security-skills.png" alt="agent-security-skills" /></a>
+  <a href="https://github.com/nazsam/ai-security-lab"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/ai-security-lab.png" alt="ai-security-lab" /></a>
 </div>
 
 | Theme | What you'll find |
@@ -347,8 +347,8 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 ### 🛡️ Application Security
 
 <div align="center">
-  <a href="https://github.com/nazsam/threat-modeling-toolkit"><img src="assets/pins/threat-modeling-toolkit.png" alt="threat-modeling-toolkit" /></a>
-  <a href="https://github.com/nazsam/api-security-testing-framework"><img src="assets/pins/api-security-testing-framework.png" alt="api-security-testing-framework" /></a>
+  <a href="https://github.com/nazsam/threat-modeling-toolkit"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/threat-modeling-toolkit.png" alt="threat-modeling-toolkit" /></a>
+  <a href="https://github.com/nazsam/api-security-testing-framework"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/api-security-testing-framework.png" alt="api-security-testing-framework" /></a>
 </div>
 
 | Theme | Repositories |
@@ -365,16 +365,16 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 
 <div align="center">
 
-<img height="170" src="assets/github-stats.png" alt="nazsam GitHub stats" />
-<img height="170" src="assets/github-langs.png" alt="Top languages" />
+<img height="170" src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/github-stats.png" alt="nazsam GitHub stats" />
+<img height="170" src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/github-langs.png" alt="Top languages" />
 
 <br/>
 
-<img src="assets/github-streak.svg" alt="GitHub streak" />
+<img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/github-streak.svg" alt="GitHub streak" />
 
 <br/>
 
-<img src="assets/github-snake.png" alt="Contribution snake" />
+<img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/github-snake.png" alt="Contribution snake" />
 
 </div>
 
