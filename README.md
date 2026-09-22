@@ -133,12 +133,12 @@
 
 <div align="center">
 
-<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="assets/pins/zero-trust-reference-architecture.svg" alt="zero-trust-reference-architecture" /></a>
-<a href="https://github.com/nazsam/soc-detection-engineering"><img src="assets/pins/soc-detection-engineering.svg" alt="soc-detection-engineering" /></a>
-<a href="https://github.com/nazsam/agent-security-skills"><img src="assets/pins/agent-security-skills.svg" alt="agent-security-skills" /></a>
-<a href="https://github.com/nazsam/ai-security-lab"><img src="assets/pins/ai-security-lab.svg" alt="ai-security-lab" /></a>
-<a href="https://github.com/nazsam/security-operations-toolkit"><img src="assets/pins/security-operations-toolkit.svg" alt="security-operations-toolkit" /></a>
-<a href="https://github.com/nazsam/kubernetes-security-lab"><img src="assets/pins/kubernetes-security-lab.svg" alt="kubernetes-security-lab" /></a>
+<a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
+<a href="https://github.com/nazsam/soc-detection-engineering"><img src="assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
+<a href="https://github.com/nazsam/agent-security-skills"><img src="assets/pins/agent-security-skills.png" alt="agent-security-skills" /></a>
+<a href="https://github.com/nazsam/ai-security-lab"><img src="assets/pins/ai-security-lab.png" alt="ai-security-lab" /></a>
+<a href="https://github.com/nazsam/security-operations-toolkit"><img src="assets/pins/security-operations-toolkit.png" alt="security-operations-toolkit" /></a>
+<a href="https://github.com/nazsam/kubernetes-security-lab"><img src="assets/pins/kubernetes-security-lab.png" alt="kubernetes-security-lab" /></a>
 
 </div>
 
@@ -235,11 +235,11 @@ Security. Intelligence. Automation. Impact.
 ## 🔗 Connect With Me
 
 <p>
-<a href="https://www.linkedin.com/in/samicybersecurity" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/samicybersecurity" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.png" alt="LinkedIn" height="30" width="40" /></a>
 &nbsp;
-<a href="https://github.com/nazsam" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>
+<a href="https://github.com/nazsam" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.png" alt="GitHub" height="30" width="40" /></a>
 &nbsp;
-<a href="mailto:naz2005@gmail.com"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="Email" height="30" width="40" /></a>
+<a href="mailto:naz2005@gmail.com"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.png" alt="Email" height="30" width="40" /></a>
 </p>
 
 **[LinkedIn](https://www.linkedin.com/in/samicybersecurity)** &nbsp;&nbsp; **[GitHub](https://github.com/nazsam)** &nbsp;&nbsp; **[Email](mailto:naz2005@gmail.com)**
@@ -250,56 +250,56 @@ Security. Intelligence. Automation. Impact.
   <tr>
     <td valign="center" width="160"><h3>☁️ Cloud</h3></td>
     <td>
-      <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" width="40" height="40"/></a>
+      <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/amazonwebservices/amazonwebservices-original-wordmark.png" alt="AWS" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://cloud.google.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" width="40" height="40"/></a>
+      <a href="https://cloud.google.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.png" alt="GCP" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://azure.microsoft.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" width="40" height="40"/></a>
+      <a href="https://azure.microsoft.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.png" alt="Azure" width="40" height="40"/></a>
       <br/>AWS &nbsp;&nbsp; GCP &nbsp;&nbsp; Azure
     </td>
   </tr>
   <tr>
     <td valign="center"><h3>🐳 DevOps</h3></td>
     <td>
-      <a href="https://www.docker.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/></a>
+      <a href="https://www.docker.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.png" alt="Docker" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://kubernetes.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40"/></a>
+      <a href="https://kubernetes.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.png" alt="Kubernetes" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="40" height="40"/></a>
+      <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.png" alt="Jenkins" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://www.terraform.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg" alt="Terraform" width="40" height="40"/></a>
+      <a href="https://www.terraform.io" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.png" alt="Terraform" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://git-scm.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" width="40" height="40"/></a>
+      <a href="https://git-scm.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.png" alt="Git" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://www.linux.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" width="40" height="40"/></a>
+      <a href="https://www.linux.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.png" alt="Linux" width="40" height="40"/></a>
       <br/>Docker &nbsp; Kubernetes &nbsp; Jenkins &nbsp; Terraform &nbsp; Git &nbsp; Linux
     </td>
   </tr>
   <tr>
     <td valign="center"><h3>🗄️ Databases</h3></td>
     <td>
-      <a href="https://www.mysql.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" width="40" height="40"/></a>
+      <a href="https://www.mysql.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.png" alt="MySQL" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" height="40"/></a>
+      <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.png" alt="PostgreSQL" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://www.mongodb.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="40" height="40"/></a>
+      <a href="https://www.mongodb.com" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.png" alt="MongoDB" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://mariadb.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" alt="MariaDB" width="40" height="40"/></a>
+      <a href="https://mariadb.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.png" alt="MariaDB" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://www.oracle.com/database" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle" width="40" height="40"/></a>
+      <a href="https://www.oracle.com/database" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.png" alt="Oracle" width="40" height="40"/></a>
       <br/>MySQL &nbsp; PostgreSQL &nbsp; MongoDB &nbsp; MariaDB &nbsp; Oracle
     </td>
   </tr>
   <tr>
     <td valign="center"><h3>💻 Languages</h3></td>
     <td>
-      <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" width="40" height="40"/></a>
+      <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.png" alt="Python" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.png" alt="JavaScript" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://go.dev" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Go" width="40" height="40"/></a>
+      <a href="https://go.dev" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.png" alt="Go" width="40" height="40"/></a>
       &nbsp;
-      <a href="https://www.gnu.org/software/bash" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash" width="40" height="40"/></a>
+      <a href="https://www.gnu.org/software/bash" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.png" alt="Bash" width="40" height="40"/></a>
       <br/>Python &nbsp; JavaScript &nbsp; Go &nbsp; Bash
     </td>
   </tr>
@@ -318,10 +318,10 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 ### 🔐 DevSecOps & Cloud Security
 
 <div align="center">
-  <a href="https://github.com/nazsam/security-operations-toolkit"><img src="assets/pins/security-operations-toolkit.svg" alt="security-operations-toolkit" /></a>
-  <a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="assets/pins/zero-trust-reference-architecture.svg" alt="zero-trust-reference-architecture" /></a>
-  <a href="https://github.com/nazsam/soc-detection-engineering"><img src="assets/pins/soc-detection-engineering.svg" alt="soc-detection-engineering" /></a>
-  <a href="https://github.com/nazsam/kubernetes-security-lab"><img src="assets/pins/kubernetes-security-lab.svg" alt="kubernetes-security-lab" /></a>
+  <a href="https://github.com/nazsam/security-operations-toolkit"><img src="assets/pins/security-operations-toolkit.png" alt="security-operations-toolkit" /></a>
+  <a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
+  <a href="https://github.com/nazsam/soc-detection-engineering"><img src="assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
+  <a href="https://github.com/nazsam/kubernetes-security-lab"><img src="assets/pins/kubernetes-security-lab.png" alt="kubernetes-security-lab" /></a>
 </div>
 
 | Theme | Repositories |
@@ -334,8 +334,8 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 ### 🤖 AI & Data Engineering
 
 <div align="center">
-  <a href="https://github.com/nazsam/agent-security-skills"><img src="assets/pins/agent-security-skills.svg" alt="agent-security-skills" /></a>
-  <a href="https://github.com/nazsam/ai-security-lab"><img src="assets/pins/ai-security-lab.svg" alt="ai-security-lab" /></a>
+  <a href="https://github.com/nazsam/agent-security-skills"><img src="assets/pins/agent-security-skills.png" alt="agent-security-skills" /></a>
+  <a href="https://github.com/nazsam/ai-security-lab"><img src="assets/pins/ai-security-lab.png" alt="ai-security-lab" /></a>
 </div>
 
 | Theme | What you'll find |
@@ -347,8 +347,8 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 ### 🛡️ Application Security
 
 <div align="center">
-  <a href="https://github.com/nazsam/threat-modeling-toolkit"><img src="assets/pins/threat-modeling-toolkit.svg" alt="threat-modeling-toolkit" /></a>
-  <a href="https://github.com/nazsam/api-security-testing-framework"><img src="assets/pins/api-security-testing-framework.svg" alt="api-security-testing-framework" /></a>
+  <a href="https://github.com/nazsam/threat-modeling-toolkit"><img src="assets/pins/threat-modeling-toolkit.png" alt="threat-modeling-toolkit" /></a>
+  <a href="https://github.com/nazsam/api-security-testing-framework"><img src="assets/pins/api-security-testing-framework.png" alt="api-security-testing-framework" /></a>
 </div>
 
 | Theme | Repositories |
@@ -365,8 +365,8 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 
 <div align="center">
 
-<img height="170" src="assets/github-stats.svg" alt="nazsam GitHub stats" />
-<img height="170" src="assets/github-langs.svg" alt="Top languages" />
+<img height="170" src="assets/github-stats.png" alt="nazsam GitHub stats" />
+<img height="170" src="assets/github-langs.png" alt="Top languages" />
 
 <br/>
 
@@ -374,7 +374,7 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 
 <br/>
 
-<img src="assets/github-snake.svg" alt="Contribution snake" />
+<img src="assets/github-snake.png" alt="Contribution snake" />
 
 </div>
 
