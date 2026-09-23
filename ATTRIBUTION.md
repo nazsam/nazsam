@@ -24,7 +24,6 @@ I did **not** create these projects. I use, study, or reference them.
 |---|---|---|---|---|---|---|
 | OWASP Cheat Sheet Series | https://github.com/OWASP/CheatSheetSeries | [OWASP](https://github.com/OWASP) | Organization | [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 2018-12-21 | User / reference |
 | PayloadsAllTheThings | https://github.com/swisskyrepo/PayloadsAllTheThings | [swisskyrepo](https://github.com/swisskyrepo) | User | MIT (GitHub license field) | 2016-10-18 | User / study |
-| SecLists | https://github.com/danielmiessler/SecLists | [danielmiessler](https://github.com/danielmiessler) (Daniel Miessler) | User | MIT (GitHub license field) | 2012-02-19 | User / study |
 | Awesome Penetration Testing | https://github.com/enaqx/awesome-pentest | [enaqx](https://github.com/enaqx) | User | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (stated in README; GitHub license API has no SPDX file) | 2014-08-03 | User / reference |
 | Nuclei | https://github.com/projectdiscovery/nuclei | [projectdiscovery](https://github.com/projectdiscovery) | Organization | MIT (GitHub license field) | 2020-04-03 | User / reference |
 
@@ -33,10 +32,6 @@ Homepage / docs:
 - Cheat Sheet Series: https://cheatsheetseries.owasp.org
 - PayloadsAllTheThings: https://swisskyrepo.github.io/PayloadsAllTheThings/
 - Nuclei: https://docs.projectdiscovery.io/tools/nuclei
-
-### SecLists (context)
-
-SecLists is a collection of security-testing lists used during assessments, including usernames, passwords, URLs, sensitive-data patterns, fuzzing payloads, web shells, and related material. **Author: Daniel Miessler.** Not mine.
 
 ### Awesome Penetration Testing (context)
 
