@@ -23,4 +23,4 @@ An AI agent acting on a user's behalf needs its own identity in the access model
 - Give AI agents their own scoped identity distinct from the human user they act for.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

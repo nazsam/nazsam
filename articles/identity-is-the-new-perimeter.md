@@ -23,4 +23,4 @@ Start with access reviews that identify unused permissions — most organization
 - Regular access reviews consistently surface far more unused privilege than teams expect.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

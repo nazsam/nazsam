@@ -23,4 +23,4 @@ Start with an inventory, not a perfect BOM: list every model and API endpoint cu
 - This is becoming a compliance requirement, not just a best practice, under emerging AI regulation.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

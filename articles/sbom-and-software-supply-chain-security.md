@@ -23,4 +23,4 @@ An SBOM alone is just a list. The value comes from feeding it into vulnerability
 - Pair SBOM generation with artifact signing to close the provenance gap, not just the inventory gap.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

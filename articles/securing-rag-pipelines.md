@@ -23,4 +23,4 @@ Preserve source-document ACLs through the entire pipeline and enforce them at qu
 - Retrieved content is untrusted input and needs the same injection defenses as any external data source.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

@@ -27,4 +27,4 @@ If you need a certificate to unlock deals or satisfy a customer's vendor-risk qu
 - Choose based on whether a third-party certificate is a business requirement, not framework popularity.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

@@ -23,4 +23,4 @@ Structure your Sigma rules around ATT&CK techniques rather than ad-hoc incident-
 - Manage the rule repository like a codebase — version control, review, and CI validation included.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

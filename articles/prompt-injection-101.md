@@ -23,4 +23,4 @@ There's no single fix, but layering matters: treat all retrieved content as data
 - Any AI system with both "reads untrusted content" and "can take action" capabilities needs this threat modeled explicitly.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

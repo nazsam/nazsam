@@ -23,4 +23,4 @@ Existing vendors are rolling out AI features into products you've already approv
 - Existing vendors adding AI features to already-approved products is a growing blind spot — build renewal-cycle checks for it.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

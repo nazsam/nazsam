@@ -23,4 +23,4 @@ Map each OWASP LLM risk to an existing control family you already run: prompt in
 - Map each risk to an existing control family instead of building a parallel AI-only program.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

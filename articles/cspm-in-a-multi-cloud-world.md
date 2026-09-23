@@ -23,4 +23,4 @@ The highest-leverage move is shifting posture enforcement left, into the same In
 - Shift posture enforcement into IaC pipelines to prevent drift instead of only detecting it after deployment.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
