@@ -1,10 +1,10 @@
 <!--
   GitHub profile README — repo: nazsam/nazsam
-  Identity: Sami Naz / Sam Naz / nazsam
+  Identity: Sam Naz / nazsam
   Live profile: https://github.com/nazsam
 -->
 
-<img src="assets/hero-named.png" width="100%" height="auto" alt="Sami Naz — Let's build robust, secure and scalable solutions" />
+<img src="assets/hero-named.png" width="100%" height="auto" alt="Sam Naz — Let's build robust, secure and scalable solutions" />
 
 <table>
 <tr>
@@ -12,7 +12,7 @@
 
 <div align="center">
 
-# Sami Naz
+# Sam Naz
 
 **DevSecOps · Cloud Security · AI & Data Engineering**
 
@@ -112,7 +112,7 @@ Committed to building **secure automation**, **AI-powered engineering**, and **Z
 
 ## About Me
 
-I am **Sami Naz** — I build secure, intelligent, automated systems that help organizations scale safely.
+I am **Sam Naz** — I build secure, intelligent, automated systems that help organizations scale safely.
 
 My work spans **Cybersecurity, Cloud, AI, and Data Engineering**, which is how I design end-to-end solutions that are both high-performance and high-security. I thrive where innovation meets responsibility: solutions that protect, optimize, and elevate business outcomes.
 
@@ -353,6 +353,6 @@ Let's create something powerful together.
 **Security. Intelligence. Automation. Impact.**  
 That's the engineering philosophy behind every project I build.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0B1533,50:0E7490,100:1E3A8A&height=120&section=footer&text=Sami%20Naz%20%C2%B7%20nazsam&fontSize=22&fontAlignY=70&desc=Security.%20Intelligence.%20Automation.%20Impact.&descAlignY=88&descSize=14&fontColor=E2E8F0" width="100%" alt="Footer wave" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0B1533,50:0E7490,100:1E3A8A&height=120&section=footer&text=Sam%20Naz%20%C2%B7%20nazsam&fontSize=22&fontAlignY=70&desc=Security.%20Intelligence.%20Automation.%20Impact.&descAlignY=88&descSize=14&fontColor=E2E8F0" width="100%" alt="Footer wave" />
 
 </div>
