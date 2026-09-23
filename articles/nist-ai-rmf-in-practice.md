@@ -27,4 +27,4 @@ Not a perfect program — a *running* one. You should have a living inventory, a
 - A governance cadence matters more than a one-time audit; risk management is a process, not a checkbox.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

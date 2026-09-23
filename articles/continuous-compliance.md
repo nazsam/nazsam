@@ -23,4 +23,4 @@ The highest-value outcome of continuous compliance isn't the real-time dashboard
 - Continuous evidence collection eliminates the pre-audit scramble that traditional compliance programs treat as normal.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
