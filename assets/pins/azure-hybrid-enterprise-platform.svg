@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120" role="img" aria-label="Azure Hybrid Enterprise Platform">
+  <rect width="400" height="120" rx="12" fill="#071427"/>
+  <rect x="1" y="1" width="398" height="118" rx="11" fill="none" stroke="#0E4A6E" stroke-width="1"/>
+  <rect x="20" y="28" width="28" height="28" rx="6" fill="#0078D4"/>
+  <path d="M27 42 h14 v8 h-14 z" fill="#50E6FF"/>
+  <text x="58" y="40" fill="#38BDF8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Azure Hybrid Enterprise Platform</text>
+  <text x="20" y="78" fill="#A9B7DB" font-family="Segoe UI, Arial, sans-serif" font-size="13">Landing zone · Identity · File services · P2S</text>
+  <circle cx="26" cy="100" r="5" fill="#38BDF8"/>
+  <text x="36" y="104" fill="#8AA0C6" font-family="Segoe UI, Arial, sans-serif" font-size="12">HCL</text>
+  <text x="320" y="104" fill="#8AA0C6" font-family="Segoe UI, Arial, sans-serif" font-size="12">public</text>
+</svg>
