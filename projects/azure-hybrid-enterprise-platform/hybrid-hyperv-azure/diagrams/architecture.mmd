@@ -1,0 +1,13 @@
+flowchart LR
+  staff[Staff laptops] -->|OpenVPN 443 split tunnel| ovpn[OpenVPN VM]
+  ovpn --> lan[LAN 10.1.0.0/16]
+  lan --> ad[AD DS]
+  lan --> hv[Hyper-V]
+  lan --> fs[File servers DFS]
+  ad -->|Entra Connect PHS| entra[Entra ID]
+  hv -->|Arc| arc[Azure Arc]
+  fs -->|File Sync| afs[Azure Files]
+  hv -->|ASR| asr[Site Recovery]
+  fs -->|Backup| vault[Recovery Services]
+  arc --> law[Log Analytics]
+  vault --> law

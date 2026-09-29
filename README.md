@@ -37,6 +37,7 @@
   <a href="#certifications"><img src="https://img.shields.io/badge/🎓_Certs-0EA5E9?style=for-the-badge" alt="Certifications" /></a>
   <a href="#core-competencies"><img src="https://img.shields.io/badge/🧠_Skills-0D9488?style=for-the-badge" alt="Skills" /></a>
   <a href="#featured"><img src="https://img.shields.io/badge/⭐_Featured-E11D48?style=for-the-badge" alt="Featured" /></a>
+  <a href="#projects"><img src="https://img.shields.io/badge/📁_Projects-0284C7?style=for-the-badge" alt="Projects" /></a>
   <a href="#github-activity"><img src="https://img.shields.io/badge/📊_Stats-7C3AED?style=for-the-badge" alt="Stats" /></a>
   <a href="#open-for-collaboration"><img src="https://img.shields.io/badge/🤝_Collaborate-EA580C?style=for-the-badge" alt="Collaborate" /></a>
 </p>
@@ -85,6 +86,7 @@
 
 <div align="center">
 
+<a href="https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/azure-hybrid-enterprise-platform.png" alt="Azure Hybrid Enterprise Platform" /></a>
 <a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
 <a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
 <a href="https://github.com/nazsam/agent-security-skills"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/agent-security-skills.png" alt="agent-security-skills" /></a>
@@ -93,6 +95,31 @@
 <a href="https://github.com/nazsam/kubernetes-security-lab"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/kubernetes-security-lab.png" alt="kubernetes-security-lab" /></a>
 
 </div>
+
+---
+
+<img src="assets/section-projects.svg" width="100%" alt="Projects" />
+
+<a id="projects"></a>
+
+## Projects
+
+### Azure Hybrid Enterprise Platform
+
+Terraform reference labs for a mid-size enterprise: CAF-style hub-spoke landing zone, hybrid Hyper-V identity, DFS with Azure File Sync, and Entra ID Point-to-Site access.
+
+<div align="center">
+  <a href="https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/azure-hybrid-enterprise-platform.png" alt="Azure Hybrid Enterprise Platform" /></a>
+</div>
+
+| Lab | What it demonstrates |
+|---|---|
+| [Azure landing zone](https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform/azure-landing-zone-lab) | Hub-spoke, Key Vault, Storage, optional Firewall / VPN / WAF / SQL / AKS — cheap `learn` default |
+| [Hybrid Hyper-V + Azure](https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform/hybrid-hyperv-azure) | Entra Connect, LAN OpenVPN, Azure Arc, Files, backup/DR, monitoring |
+| [DFS + Azure File Sync](https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform/dfs-azure-file-sync) | Windows Server 2025, DFS-N, DFS-R on a separate volume, cloud tiering |
+| [Private P2S VPN](https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform/azure-p2s-vpn-lab) | Entra ID + MFA, OpenVPN/443, jumpbox-only access, split tunnel |
+
+Learning and demo environments — not a production subscription. Start with the landing-zone `learn` profile.
 
 ---
 
@@ -270,6 +297,7 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 ### 🔐 DevSecOps & Cloud Security
 
 <div align="center">
+  <a href="https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/azure-hybrid-enterprise-platform.png" alt="Azure Hybrid Enterprise Platform" /></a>
   <a href="https://github.com/nazsam/security-operations-toolkit"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/security-operations-toolkit.png" alt="security-operations-toolkit" /></a>
   <a href="https://github.com/nazsam/zero-trust-reference-architecture"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/zero-trust-reference-architecture.png" alt="zero-trust-reference-architecture" /></a>
   <a href="https://github.com/nazsam/soc-detection-engineering"><img src="https://raw.githubusercontent.com/nazsam/nazsam/main/assets/pins/soc-detection-engineering.png" alt="soc-detection-engineering" /></a>
@@ -278,6 +306,7 @@ Public GitHub under [`nazsam`](https://github.com/nazsam) is hands-on evidence o
 
 | Theme | Repositories |
 |---|---|
+| Azure hybrid enterprise platform | [Azure Hybrid Enterprise Platform](https://github.com/nazsam/nazsam/tree/main/projects/azure-hybrid-enterprise-platform) — landing zone, Hyper-V identity, DFS File Sync, Entra ID P2S |
 | Automated CI/CD security guardrails | [security-operations-toolkit](https://github.com/nazsam/security-operations-toolkit) · [devsecops-pipeline-security-gates](https://github.com/nazsam/devsecops-pipeline-security-gates) |
 | Zero-Trust IAM | [zero-trust-reference-architecture](https://github.com/nazsam/zero-trust-reference-architecture) · [cloud-iam-least-privilege-toolkit](https://github.com/nazsam/cloud-iam-least-privilege-toolkit) |
 | SOC / SIEM detection engineering | [soc-detection-engineering](https://github.com/nazsam/soc-detection-engineering) · [siem-detection-content-library](https://github.com/nazsam/siem-detection-content-library) |

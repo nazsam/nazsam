@@ -1,0 +1,6 @@
+subscription_id = "00000000-0000-0000-0000-000000000000"
+tenant_id       = "00000000-0000-0000-0000-000000000000"
+location        = "canadacentral"
+name_prefix     = "p2slab"
+admin_username  = "azadmin"
+p2s_pool        = "172.16.201.0/24"

@@ -1,0 +1,17 @@
+# Copy to terraform.tfvars and fill in real values. Do not commit terraform.tfvars.
+
+subscription_id     = "00000000-0000-0000-0000-000000000000"
+tenant_id           = "00000000-0000-0000-0000-000000000000"
+location            = "canadacentral"
+name_prefix         = "alzlab"
+profile             = "learn"
+admin_source_prefix = "1.2.3.4/32"
+admin_username      = "azadmin"
+
+# Optional overrides (null = use the profile):
+# enable_firewall          = false
+# enable_vpn_gateway       = false
+# enable_waf               = false
+# enable_sql               = false
+# enable_aks               = false
+# enable_management_groups = false
