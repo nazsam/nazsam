@@ -28,4 +28,4 @@ Sandboxing agent execution environments, scoping tool permissions per-task rathe
 - Human-in-the-loop checkpoints for irreversible actions are not optional yet — the tooling to fully automate safe autonomy isn't mature.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
