@@ -23,4 +23,4 @@ The automation pipeline is itself a system that needs the OWASP LLM Top 10 and a
 - The automation pipeline needs its own security guardrails — it's a privileged system, not just a productivity tool.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*

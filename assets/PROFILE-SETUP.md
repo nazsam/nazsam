@@ -30,7 +30,7 @@ as you go.
 
 ## ✅ LinkedIn
 - **Headline:** `Senior Cybersecurity Leader | CISSP · CISM · CISA · CRISC | SOC · Cloud Security · DevSecOps · AI Security | vCISO & Advisory`
-- **Featured:** add `github.com/devsecforge` + 1–2 flagship repos
+- **Featured:** add `github.com/nazsam` + 1–2 flagship repos
 - **About opener:** _Senior cybersecurity leader with 15+ years securing enterprise environments across Azure, AWS & hybrid — SOC, IR, cloud security, and governance. Now building an open DevSecOps & AI-security portfolio._
 
 ## 📣 LinkedIn post bank (schedule ~1–2 per week)
@@ -38,31 +38,31 @@ as you go.
 ### Post 1 — Launch
 > 🚀 I've been quietly building something. 15+ years of security leadership, now open-sourced: 14 repositories spanning Zero Trust architecture, SOC detection engineering, incident response, compliance-as-code, AI security, and hands-on DevSecOps labs.
 > Everything's framework-mapped (MITRE ATT&CK, NIST CSF, NIST AI RMF), documented, and CI-validated.
-> 👉 github.com/devsecforge
+> 👉 github.com/nazsam
 > Building in public — feedback and stars welcome. #cybersecurity #devsecops #cloudsecurity #AIsecurity #ZeroTrust
 
 ### Post 2 — Zero Trust
 > "Zero Trust" is the most over-marketed phrase in security. It's not a product you buy — it's an operating model, and the gap between the principle and a working implementation is where most programs stall.
 > I wrote up how I translate NIST 800-207 into controls that actually ship — identity-first, report-only rollout, break-glass, least privilege as a *practice*.
-> 👉 github.com/devsecforge/zero-trust-reference-architecture
+> 👉 github.com/nazsam/zero-trust-reference-architecture
 > #ZeroTrust #cybersecurity #cloudsecurity #NIST
 
 ### Post 3 — Detection engineering
 > Every SOC I've inherited had the same problem: too many alerts, too little signal. More rules didn't help. Better rules did.
 > High-fidelity detection engineering = fidelity over volume, every rule mapped to MITRE ATT&CK, every alert paired with a runbook, and relentless false-positive tuning.
-> A library of Sentinel KQL + Splunk detections, done that way: 👉 github.com/devsecforge/soc-detection-engineering
+> A library of Sentinel KQL + Splunk detections, done that way: 👉 github.com/nazsam/soc-detection-engineering
 > #SOC #detectionengineering #MITREATTACK #blueteam
 
 ### Post 4 — Securing AI
 > Your organization is already using AI — whether security approved it or not. The question isn't whether to allow it; it's whether you'll govern it before an incident forces the conversation.
 > Prompt injection, insecure output handling, excessive agency — the new attack surface, and the guardrails for it (OWASP LLM Top 10 + NIST AI RMF).
-> 👉 github.com/devsecforge/ai-security-lab
+> 👉 github.com/nazsam/ai-security-lab
 > #AIsecurity #LLMsecurity #OWASP #cybersecurity
 
 ### Post 5 — Personal / credibility
 > 15 years in cybersecurity taught me one thing above all: the fundamentals win. Phishing-resistant MFA, least privilege, segmentation, and detection you can trust stop more attacks than any shiny tool.
 > That's the philosophy behind everything I'm now sharing openly.
-> 👉 github.com/devsecforge
+> 👉 github.com/nazsam
 > #cybersecurity #securityleadership #CISO
 
 ---

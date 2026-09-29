@@ -27,4 +27,4 @@ Most clusters run with fully open pod-to-pod networking by default. A default-de
 - Default-deny NetworkPolicy per namespace is one of the highest-leverage, most-skipped configuration changes.
 
 ---
-*Part of the [devsecforge](https://github.com/devsecforge/devsecforge) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
+*Part of the [Sam Naz](https://github.com/nazsam/nazsam) writing series — also cross-posted on [LinkedIn](https://www.linkedin.com/in/naz-cyber-solutions).*
