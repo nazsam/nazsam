@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="logo-dark.svg" width="420" alt="devsecforge" />
+  <img src="logo-dark.svg" width="420" alt="nazsam" />
 </div>
 
-# devsecforge — Brand Guide
+# nazsam — Brand Guide
 
-The visual system for the **devsecforge** personal brand. Keep it consistent everywhere — GitHub,
+The visual system for the **nazsam** personal brand. Keep it consistent everywhere — GitHub,
 LinkedIn, slides, docs — so every touchpoint reads as one identity.
 
 ---
@@ -27,7 +27,7 @@ Use it on the shield outline, dividers, and banner accents — sparingly, for po
 
 ## 🔷 Logo
 
-**Concept:** a **shield** (security) forging an **anvil + spark** (the "forge" in devsecforge).
+**Concept:** a **shield** (security) forging an **anvil + spark** (the mark).
 
 | File | Use |
 |------|-----|
@@ -67,4 +67,4 @@ Tagline: **“Secure by design. Secure the future.”**
 
 ---
 
-<sub>© 2026 devsecforge (S. Naz). Logo & assets MIT-licensed within this repository.</sub>
+<sub>© 2026 nazsam (S. Naz). Logo & assets MIT-licensed within this repository.</sub>
