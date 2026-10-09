@@ -28,10 +28,10 @@ jobs:
             github-contribution-grid-snake.svg
             github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Commit as S Naz
+      - name: Commit as nazsam
         run: |
-          git config user.name "S Naz"
-          git config user.email "306537611+devsecforge@users.noreply.github.com"
+          git config user.name "nazsam"
+          git config user.email "105013824+nazsam@users.noreply.github.com"
           git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
           git diff --cached --quiet && echo "No snake changes" && exit 0
           git commit -m "Update contribution snake."
