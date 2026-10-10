@@ -1,18 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="nazsam forge shield logo">
   <defs>
     <radialGradient id="bg" cx="0.5" cy="0.4" r="0.68">
-      <stop offset="0" stop-color="#2F5BF0"/>
-      <stop offset="0.6" stop-color="#2B50E4"/>
-      <stop offset="1" stop-color="#1E3AA8"/>
+      <stop offset="0" stop-color="#2B50E4"/>
+      <stop offset="0.6" stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#132C5E"/>
     </radialGradient>
+    <linearGradient id="rc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B50E4"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
   </defs>
   <circle cx="256" cy="256" r="248" fill="url(#bg)"/>
   <circle cx="256" cy="256" r="248" fill="none" stroke="#22D3EE" stroke-width="16"/>
+  
+  <circle cx="400" cy="110" r="35.4" fill="#22D3EE" opacity="0.16"/>
+  <circle cx="400" cy="110" r="20.8" fill="#A5F3FC"/>
+  <circle cx="400" cy="110" r="20.8" fill="none" stroke="#22D3EE" stroke-opacity="0.55" stroke-width="1.5"/>
+  <path d="M333.44,139.12 L334.7,142.0 L337.6,143.28 L334.7,144.5 L333.44,147.44 L332.2,144.5 L329.28,143.28 L332.2,142.0 Z" fill="#22D3EE" opacity="0.8"/>
+  <path d="M454.08,69.7 L454.9,71.7 L456.94,72.56 L454.9,73.4 L454.08,75.42 L453.2,73.4 L451.21999999999997,72.56 L453.2,71.7 Z" fill="#22D3EE" opacity="0.6"/>
+  <path d="M366.72,57.739999999999995 L367.4,59.4 L369.06,60.08 L367.4,60.8 L366.72,62.42 L366.0,60.8 L364.38000000000005,60.08 L366.0,59.4 Z" fill="#22D3EE" opacity="0.5"/>
   <g transform="translate(150,100) scale(1.9)">
-    <path d="M56,4 L112,24 L112,80 C112,122 86,146 56,158 C26,146 0,122 0,80 L0,24 Z" fill="#0B1533" stroke="#22D3EE" stroke-width="6"/>
-    <rect x="26" y="72" width="20" height="12" fill="#F2F7FF"/>
-    <path d="M32,84 L80,84 L90,104 L22,104 Z" fill="#F2F7FF"/>
-    <path d="M28,104 L84,104 L84,118 L28,118 Z" fill="#22D3EE"/>
-    <path d="M88,44 l4,14 l14,4 l-14,4 l-4,14 l-4,-14 l-14,-4 l14,-4 Z" fill="#EAF7FF"/>
+    <path d="M56,4 L112,24 L112,80 C112,122 86,146 56,158 C26,146 0,122 0,80 L0,24 Z" fill="#132C5E" stroke="url(#rc)" stroke-width="6"/>
+  <rect x="26" y="72" width="20" height="12" fill="#F2F7FF"/>
+  <path d="M32,84 L80,84 L90,104 L22,104 Z" fill="#F2F7FF"/>
+  <path d="M28,104 L84,104 L84,118 L28,118 Z" fill="#2B50E4"/>
+  <path d="M88,44 l4,14 l14,4 l-14,4 l-4,14 l-4,-14 l-14,-4 l14,-4 Z" fill="#A5F3FC"/>
   </g>
 </svg>

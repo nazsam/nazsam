@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="260" viewBox="0 0 1280 260" role="img" aria-label="Let's build robust, secure and scalable solutions">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.15">
-      <stop offset="0" stop-color="#070C1C"/>
-      <stop offset="0.52" stop-color="#0B1533"/>
-      <stop offset="1" stop-color="#13243c"/>
+      <stop offset="0" stop-color="#132C5E"/>
+      <stop offset="0.52" stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#2B50E4"/>
     </linearGradient>
-    <radialGradient id="cyan" cx="0.92" cy="0.18" r="0.55">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.22"/>
+    <radialGradient id="moon" cx="0.92" cy="0.18" r="0.55">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
@@ -22,17 +22,24 @@
     </pattern>
   </defs>
   <rect width="1280" height="260" fill="url(#bg)"/>
-  <rect width="1280" height="260" fill="url(#cyan)"/>
+  <rect width="1280" height="260" fill="url(#moon)"/>
   <rect width="820" height="260" fill="url(#grid)" opacity="0.85"/>
+  
+  <circle cx="1170" cy="55" r="30.6" fill="#22D3EE" opacity="0.16"/>
+  <circle cx="1170" cy="55" r="18.0" fill="#A5F3FC"/>
+  <circle cx="1170" cy="55" r="18.0" fill="none" stroke="#22D3EE" stroke-opacity="0.55" stroke-width="1.5"/>
+  <path d="M1112.4,79.96 L1113.6,82.6 L1116.24,83.8 L1113.6,85.0 L1112.4,87.64 L1111.2,85.0 L1108.5600000000002,83.8 L1111.2,82.6 Z" fill="#22D3EE" opacity="0.8"/>
+  <path d="M1216.8,19.96 L1217.6,21.8 L1219.44,22.6 L1217.6,23.4 L1216.8,25.240000000000002 L1216.0,23.4 L1214.1599999999999,22.6 L1216.0,21.8 Z" fill="#22D3EE" opacity="0.6"/>
+  <path d="M1141.2,9.640000000000004 L1141.8,11.2 L1143.3600000000001,11.800000000000004 L1141.8,12.4 L1141.2,13.960000000000004 L1140.6,12.4 L1139.04,11.800000000000004 L1140.6,11.2 Z" fill="#22D3EE" opacity="0.5"/>
   <g transform="translate(44,86) scale(0.48)">
-    <path d="M56,4 L112,24 L112,80 C112,122 86,146 56,158 C26,146 0,122 0,80 L0,24 Z" fill="#0B1533" stroke="url(#shield)" stroke-width="6"/>
-    <rect x="26" y="72" width="20" height="12" fill="#F2F7FF"/>
-    <path d="M32,84 L80,84 L90,104 L22,104 Z" fill="#F2F7FF"/>
-    <path d="M28,104 L84,104 L84,118 L28,118 Z" fill="#2B50E4"/>
-    <path d="M88,44 l4,14 l14,4 l-14,4 l-4,14 l-4,-14 l-14,-4 l14,-4 Z" fill="#22D3EE"/>
+    <path d="M56,4 L112,24 L112,80 C112,122 86,146 56,158 C26,146 0,122 0,80 L0,24 Z" fill="#132C5E" stroke="url(#shield)" stroke-width="6"/>
+  <rect x="26" y="72" width="20" height="12" fill="#F2F7FF"/>
+  <path d="M32,84 L80,84 L90,104 L22,104 Z" fill="#F2F7FF"/>
+  <path d="M28,104 L84,104 L84,118 L28,118 Z" fill="#2B50E4"/>
+  <path d="M88,44 l4,14 l14,4 l-14,4 l-4,14 l-4,-14 l-14,-4 l14,-4 Z" fill="#A5F3FC"/>
   </g>
   <rect x="150" y="62" width="56" height="3" rx="1.5" fill="url(#accent)"/>
   <text x="150" y="104" fill="#F2F7FF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Let's build robust,</text>
   <text x="150" y="144" fill="#F2F7FF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">secure &amp; scalable solutions.</text>
-  <text x="150" y="176" fill="#8AA0C6" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.4">DEVSECOPS  ·  CYBER SECURITY ARCHITECT  ·  AI SECURITY &amp; ZERO TRUST  ·  MULTI-CLOUD</text>
+  <text x="150" y="176" fill="#8AA0C6" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.4">DEVSECOPS  &#183;  CYBER SECURITY ARCHITECT  &#183;  AI SECURITY &amp; ZERO TRUST  &#183;  MULTI-CLOUD</text>
 </svg>

@@ -14,14 +14,24 @@ LinkedIn, slides, docs — so every touchpoint reads as one identity.
 | Role | Name | Hex | Use |
 |------|------|-----|-----|
 | ■ Primary | **Royal Blue** | `#2B50E4` | Primary brand color, accents, links, key UI |
-| ■ Accent | **Electric Cyan** | `#22D3EE` | Highlights, the "sec" in the wordmark, sparks |
-| ■ Surface (dark) | **Deep Navy** | `#0B1533` | Dark backgrounds, cards, the shield fill |
-| ■ Background | **Midnight** | `#070C1C` | Deepest background |
+| ■ Accent | **Electric Cyan** | `#22D3EE` | Highlights, the "sam" in the wordmark, sparks |
+| ■ Surface (dark) | **Deep Blue** | `#132C5E` | Dark backgrounds, cards, the shield fill |
+| ■ Background | **Deep Blue (mid)** | `#1E3A8A` | Gradient midpoint |
 | ■ Text (on dark) | **Off-White** | `#F2F7FF` | Body text and wordmark on dark |
 | ■ Muted | **Slate** | `#8AA0C6` | Secondary text, captions |
 
-**Signature gradient:** Royal Blue `#2B50E4` → Electric Cyan `#22D3EE` (top-left → bottom-right).
-Use it on the shield outline, dividers, and banner accents — sparingly, for pop.
+**Signature gradient:** Deep Blue `#132C5E` → `#1E3A8A` → Royal Blue `#2B50E4` (top-left →
+bottom-right), with a soft cyan glow in one corner. This replaces the old near-black
+`#0B1533`/`#070C1C` panels — same royal-blue-and-cyan identity, just lighter, with no pure
+black or near-black surface anywhere.
+
+A small **moon-and-stars** motif (a glowing cyan circle with a thin halo, plus 2–3 sparkle
+stars) appears once per banner, upper right, as a recurring signature touch.
+
+### Real brand logos
+Where a tool/platform has an official mark (Azure, AWS, GCP, Kubernetes, Docker, Terraform,
+Python, Linux, GitHub, LinkedIn, Gmail, etc.), use that mark in its real, official colors —
+never recolor a third-party logo to match the palette.
 
 ---
 
@@ -43,14 +53,16 @@ Use it on the shield outline, dividers, and banner accents — sparingly, for po
 - Minimum icon size: **24px** (mark stays legible; below that use a solid-fill variant).
 
 ### Do ✅
-- Use the gradient shield on dark; the solid royal-blue shield on light.
-- Keep the wordmark lowercase, monospace, with **sec** in the accent color.
-- Maintain the palette across all assets.
+- Use the royal-blue-to-cyan gradient shield on dark; the solid royal-blue shield on light.
+- Keep the wordmark lowercase, monospace, with **sam** in the accent cyan color.
+- Maintain the palette across all assets — no pure black, no near-black panels.
+- Keep real third-party logos in their own official colors.
 
 ### Don't ❌
 - Don't recolor the wordmark outside the palette.
 - Don't stretch, rotate, or add drop shadows/outlines.
 - Don't place the dark logo on a busy or low-contrast background.
+- Don't recolor an official brand logo (Azure, AWS, GCP, etc.) to match the theme.
 
 ---
 
@@ -63,7 +75,7 @@ Use it on the shield outline, dividers, and banner accents — sparingly, for po
 
 ## 🗣️ Voice
 Confident, precise, honest. Security-leader tone: outcomes over hype, evidence over adjectives.
-Tagline: **“Secure by design. Secure the future.”**
+Tagline: **"Secure by design. Secure the future."**
 
 ---
 
