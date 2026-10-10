@@ -18,28 +18,28 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=22D3EE&center=true&vCenter=true&width=620&height=50&lines=Crafting+secure%2C+scalable%2C+intelligent+systems;DevSecOps+%7C+Zero+Trust+%7C+IAM;AI+Security+%26+Data+Engineering;Security.+Intelligence.+Automation.+Impact.)](https://www.linkedin.com/in/samicybersecurity)
 
-<img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge" alt="CISSP" />
-<img src="https://img.shields.io/badge/CISM-1B75BB?style=for-the-badge" alt="CISM" />
-<img src="https://img.shields.io/badge/CISA-00539B?style=for-the-badge" alt="CISA" />
-<img src="https://img.shields.io/badge/CRISC-6B2C91?style=for-the-badge" alt="CRISC" />
-<img src="https://img.shields.io/badge/CCSP-F97316?style=for-the-badge" alt="CCSP" />
-<img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-0A7E8C?style=for-the-badge" alt="ISO 27001 Lead Auditor" />
+<img src="https://img.shields.io/badge/CISSP-2B50E4?style=for-the-badge" alt="CISSP" />
+<img src="https://img.shields.io/badge/CISM-2B50E4?style=for-the-badge" alt="CISM" />
+<img src="https://img.shields.io/badge/CISA-2B50E4?style=for-the-badge" alt="CISA" />
+<img src="https://img.shields.io/badge/CRISC-2B50E4?style=for-the-badge" alt="CRISC" />
+<img src="https://img.shields.io/badge/CCSP-2B50E4?style=for-the-badge" alt="CCSP" />
+<img src="https://img.shields.io/badge/ISO_27001-Lead_Auditor-2B50E4?style=for-the-badge" alt="ISO 27001 Lead Auditor" />
 
 <br/>
 
 <a href="https://www.linkedin.com/in/samicybersecurity"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://github.com/nazsam"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="mailto:naz2005@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<img src="https://img.shields.io/badge/Canada-1E3AA8?style=for-the-badge&logo=googleearth&logoColor=white" alt="Canada" />
+<img src="https://img.shields.io/badge/%F0%9F%87%A8%F0%9F%87%A6_Canada-2B50E4?style=for-the-badge" alt="Canada" />
 
 <p>
-  <a href="#about-me"><img src="https://img.shields.io/badge/🌍_About-1E3A8A?style=for-the-badge" alt="About" /></a>
-  <a href="#certifications"><img src="https://img.shields.io/badge/🎓_Certs-0EA5E9?style=for-the-badge" alt="Certifications" /></a>
-  <a href="#core-competencies"><img src="https://img.shields.io/badge/🧠_Skills-0D9488?style=for-the-badge" alt="Skills" /></a>
-  <a href="#featured"><img src="https://img.shields.io/badge/⭐_Featured-E11D48?style=for-the-badge" alt="Featured" /></a>
-  <a href="#projects"><img src="https://img.shields.io/badge/📁_Projects-0284C7?style=for-the-badge" alt="Projects" /></a>
-  <a href="#github-activity"><img src="https://img.shields.io/badge/📊_Stats-7C3AED?style=for-the-badge" alt="Stats" /></a>
-  <a href="#open-for-collaboration"><img src="https://img.shields.io/badge/🤝_Collaborate-EA580C?style=for-the-badge" alt="Collaborate" /></a>
+  <a href="#about-me"><img src="https://img.shields.io/badge/🌍_About-2B50E4?style=for-the-badge" alt="About" /></a>
+  <a href="#certifications"><img src="https://img.shields.io/badge/🎓_Certs-22D3EE?style=for-the-badge" alt="Certifications" /></a>
+  <a href="#core-competencies"><img src="https://img.shields.io/badge/🧠_Skills-2B50E4?style=for-the-badge" alt="Skills" /></a>
+  <a href="#featured"><img src="https://img.shields.io/badge/⭐_Featured-22D3EE?style=for-the-badge" alt="Featured" /></a>
+  <a href="#projects"><img src="https://img.shields.io/badge/📁_Projects-2B50E4?style=for-the-badge" alt="Projects" /></a>
+  <a href="#github-activity"><img src="https://img.shields.io/badge/📊_Stats-22D3EE?style=for-the-badge" alt="Stats" /></a>
+  <a href="#open-for-collaboration"><img src="https://img.shields.io/badge/🤝_Collaborate-2B50E4?style=for-the-badge" alt="Collaborate" /></a>
 </p>
 
 </div>
@@ -55,11 +55,11 @@
 
 <br/><br/>
 
-<a href="https://github.com/nazsam"><img src="https://img.shields.io/badge/SUBSCRIBE-Follow_on_GitHub-22D3EE?style=for-the-badge&logo=github&logoColor=0B1533" alt="Subscribe — follow on GitHub" /></a>
+<a href="https://github.com/nazsam"><img src="https://img.shields.io/badge/SUBSCRIBE-Follow_on_GitHub-22D3EE?style=for-the-badge&logo=github&logoColor=132C5E" alt="Subscribe — follow on GitHub" /></a>
 
 <br/>
 
-<a href="https://github.com/nazsam?tab=followers"><img src="https://img.shields.io/badge/Followers-2000-181717?style=for-the-badge&logo=github&logoColor=white" alt="Followers 2000" /></a>
+<a href="https://github.com/nazsam?tab=followers"><img src="https://img.shields.io/badge/Followers-2000-2B50E4?style=for-the-badge&logo=github&logoColor=white" alt="Followers 2000" /></a>
 
 <br/>
 
@@ -71,7 +71,7 @@
 </p>
 <!-- PEOPLE:END -->
 
-<a href="https://github.com/nazsam/nazsam/issues/new?title=Hi%20from%20a%20profile%20visitor&body=I%20visited%20your%20GitHub%20profile."><img src="https://img.shields.io/badge/Sign_the_guestbook-0B1533?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Sign the guestbook" /></a>
+<a href="https://github.com/nazsam/nazsam/issues/new?title=Hi%20from%20a%20profile%20visitor&body=I%20visited%20your%20GitHub%20profile."><img src="https://img.shields.io/badge/Sign_the_guestbook-2B50E4?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Sign the guestbook" /></a>
 
 </td>
 </tr>
@@ -170,34 +170,34 @@ Security. Intelligence. Automation. Impact.
 ### Professional
 
 <p>
-  <img src="https://img.shields.io/badge/CISSP-EE3124?style=for-the-badge" alt="CISSP" />
-  <img src="https://img.shields.io/badge/CISM-1B75BB?style=for-the-badge" alt="CISM" />
-  <img src="https://img.shields.io/badge/CISA-00539B?style=for-the-badge" alt="CISA" />
-  <img src="https://img.shields.io/badge/CRISC-6B2C91?style=for-the-badge" alt="CRISC" />
-  <img src="https://img.shields.io/badge/CCSP-F97316?style=for-the-badge" alt="CCSP" />
-  <img src="https://img.shields.io/badge/ISO_27001_Lead_Auditor-0A7E8C?style=for-the-badge" alt="ISO 27001 Lead Auditor" />
+  <img src="https://img.shields.io/badge/CISSP-2B50E4?style=for-the-badge" alt="CISSP" />
+  <img src="https://img.shields.io/badge/CISM-2B50E4?style=for-the-badge" alt="CISM" />
+  <img src="https://img.shields.io/badge/CISA-2B50E4?style=for-the-badge" alt="CISA" />
+  <img src="https://img.shields.io/badge/CRISC-2B50E4?style=for-the-badge" alt="CRISC" />
+  <img src="https://img.shields.io/badge/CCSP-2B50E4?style=for-the-badge" alt="CCSP" />
+  <img src="https://img.shields.io/badge/ISO_27001_Lead_Auditor-2B50E4?style=for-the-badge" alt="ISO 27001 Lead Auditor" />
   <img src="https://img.shields.io/badge/AZ--500-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AZ-500" />
   <img src="https://img.shields.io/badge/SC--200-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="SC-200" />
   <img src="https://img.shields.io/badge/AI--102-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AI-102" />
   <img src="https://img.shields.io/badge/AWS_Security_Specialty-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Security Specialty" />
-  <img src="https://img.shields.io/badge/ITIL_4-5315A5?style=for-the-badge" alt="ITIL 4" />
+  <img src="https://img.shields.io/badge/ITIL_4-2B50E4?style=for-the-badge" alt="ITIL 4" />
 </p>
 
 ### Cloud, identity, AI & instruction
 
 <p>
-  <img src="https://img.shields.io/badge/GenAI_Foundations_%26_AI_Agents-7C3AED?style=for-the-badge" alt="GenAI Foundations & AI Agents Development" />
-  <img src="https://img.shields.io/badge/Security_Instructor-E11D48?style=for-the-badge" alt="Security Instructor Certification" />
-  <img src="https://img.shields.io/badge/Senior_Security_Engineer-0F766E?style=for-the-badge" alt="Senior Security Engineer Certification" />
-  <img src="https://img.shields.io/badge/Cybersecurity_GRC_Analyst-1E3A8A?style=for-the-badge" alt="Cybersecurity GRC Analyst" />
-  <img src="https://img.shields.io/badge/SOC_Analyst-BE123C?style=for-the-badge" alt="Cyber Security Operations Center Analyst" />
-  <img src="https://img.shields.io/badge/Pluralsight_Author-EE2C2C?style=for-the-badge" alt="Pluralsight Author — Security & Cloud" />
+  <img src="https://img.shields.io/badge/GenAI_Foundations_%26_AI_Agents-2B50E4?style=for-the-badge" alt="GenAI Foundations & AI Agents Development" />
+  <img src="https://img.shields.io/badge/Security_Instructor-2B50E4?style=for-the-badge" alt="Security Instructor Certification" />
+  <img src="https://img.shields.io/badge/Senior_Security_Engineer-2B50E4?style=for-the-badge" alt="Senior Security Engineer Certification" />
+  <img src="https://img.shields.io/badge/Cybersecurity_GRC_Analyst-2B50E4?style=for-the-badge" alt="Cybersecurity GRC Analyst" />
+  <img src="https://img.shields.io/badge/SOC_Analyst-2B50E4?style=for-the-badge" alt="Cyber Security Operations Center Analyst" />
+  <img src="https://img.shields.io/badge/Pluralsight_Author-2B50E4?style=for-the-badge" alt="Pluralsight Author — Security & Cloud" />
   <img src="https://img.shields.io/badge/Azure_Cloud_Fundamentals-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Cloud Fundamentals" />
   <img src="https://img.shields.io/badge/AWS_Cloud_Practitioner-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Cloud Practitioner" />
   <img src="https://img.shields.io/badge/Google_Cloud_Foundations-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud Foundations" />
   <img src="https://img.shields.io/badge/Okta_IAM-007DC1?style=for-the-badge&logo=okta&logoColor=white" alt="Okta Identity & Access Management" />
-  <img src="https://img.shields.io/badge/JumpCloud_Directory-14B8A6?style=for-the-badge" alt="JumpCloud Directory Services" />
-  <img src="https://img.shields.io/badge/Cloud_Security_Solutions_Specialist-0EA5E9?style=for-the-badge" alt="Cloud Security Solutions Specialist" />
+  <img src="https://img.shields.io/badge/JumpCloud_Directory-2B50E4?style=for-the-badge" alt="JumpCloud Directory Services" />
+  <img src="https://img.shields.io/badge/Cloud_Security_Solutions_Specialist-2B50E4?style=for-the-badge" alt="Cloud Security Solutions Specialist" />
 </p>
 
 ---
@@ -381,6 +381,6 @@ Let's create something powerful together.
 **Security. Intelligence. Automation. Impact.**  
 That's the engineering philosophy behind every project I build.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0B1533,50:0E7490,100:1E3A8A&height=120&section=footer&text=Sam%20Naz%20%C2%B7%20nazsam&fontSize=22&fontAlignY=70&desc=Security.%20Intelligence.%20Automation.%20Impact.&descAlignY=88&descSize=14&fontColor=E2E8F0" width="100%" alt="Footer wave" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:132C5E,50:1E3A8A,100:2B50E4&height=120&section=footer&text=Sam%20Naz%20%C2%B7%20nazsam&fontSize=22&fontAlignY=70&desc=Security.%20Intelligence.%20Automation.%20Impact.&descAlignY=88&descSize=14&fontColor=F2F7FF" width="100%" alt="Footer wave" />
 
 </div>
