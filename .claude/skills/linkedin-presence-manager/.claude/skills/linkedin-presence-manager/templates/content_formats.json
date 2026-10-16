@@ -1,0 +1,12 @@
+{
+  "formats": [
+    "linkedin_post",
+    "carousel_outline",
+    "short_article",
+    "comment_thread",
+    "newsletter_intro",
+    "executive_summary",
+    "dm_message",
+    "poll_post"
+  ]
+}
