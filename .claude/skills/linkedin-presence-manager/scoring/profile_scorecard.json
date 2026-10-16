@@ -1,0 +1,45 @@
+{
+  "categories": {
+    "headline": {
+      "weight": 20,
+      "checks": [
+        "clear role",
+        "industry keywords",
+        "value proposition"
+      ]
+    },
+    "about": {
+      "weight": 20,
+      "checks": [
+        "career story",
+        "achievements",
+        "call to action"
+      ]
+    },
+    "experience": {
+      "weight": 20,
+      "checks": [
+        "quantified results",
+        "leadership",
+        "business impact"
+      ]
+    },
+    "skills": {
+      "weight": 20,
+      "checks": [
+        "relevant skills",
+        "endorsements",
+        "industry alignment"
+      ]
+    },
+    "activity": {
+      "weight": 20,
+      "checks": [
+        "posting frequency",
+        "engagement",
+        "content quality"
+      ]
+    }
+  },
+  "max_score": 100
+}
