@@ -1,0 +1,27 @@
+{
+  "remove_ai_phrases": [
+    "delve into",
+    "unlock the power",
+    "in today's fast-paced world",
+    "game changer",
+    "leverage",
+    "revolutionize",
+    "cutting-edge",
+    "synergy"
+  ],
+  "cleanup": {
+    "remove_invisible_unicode": true,
+    "normalize_quotes": true,
+    "normalize_dashes": true,
+    "remove_extra_spaces": true
+  },
+  "scoring": {
+    "max_score": 100,
+    "criteria": [
+      "natural wording",
+      "sentence variation",
+      "conversational tone",
+      "readability"
+    ]
+  }
+}
