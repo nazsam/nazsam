@@ -1,0 +1,9 @@
+{
+  "reply_templates": [
+    "Thank you for your comment. I completely agree with your perspective on {topic}.",
+    "Great observation. I have seen something similar when working on {topic}.",
+    "I appreciate you sharing that. Your experience adds valuable context.",
+    "Interesting point. I think many professionals could benefit from considering that approach.",
+    "Thank you for contributing to the discussion. That's an important aspect of {topic}."
+  ]
+}
