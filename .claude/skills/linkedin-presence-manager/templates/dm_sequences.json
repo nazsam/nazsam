@@ -1,0 +1,26 @@
+{
+  "networking_sequence": [
+    {
+      "day": 1,
+      "message": "Hi {{name}}, I came across your profile and enjoyed your insights on {{topic}}. I'd love to connect."
+    },
+    {
+      "day": 4,
+      "message": "Thanks for connecting. I was especially interested in your experience with {{topic}}. What has been your biggest lesson in that area?"
+    },
+    {
+      "day": 10,
+      "message": "I recently came across this resource related to {{topic}} and thought of our conversation. Hope you find it useful."
+    }
+  ],
+  "recruiter_sequence": [
+    {
+      "day": 1,
+      "message": "Hi {{name}}, I'm exploring opportunities in IT leadership, cybersecurity, cloud, and AI. I would enjoy connecting."
+    },
+    {
+      "day": 3,
+      "message": "Thank you for connecting. Please let me know if opportunities matching my background become available."
+    }
+  ]
+}
