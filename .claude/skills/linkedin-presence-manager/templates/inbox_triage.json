@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Recruiter",
+    "Potential Client",
+    "Networking",
+    "Partnership",
+    "Speaking Opportunity",
+    "Job Opportunity",
+    "Spam",
+    "Follow-up Required"
+  ],
+  "priorities": [
+    "High",
+    "Medium",
+    "Low"
+  ]
+}
